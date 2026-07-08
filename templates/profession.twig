@@ -225,12 +225,11 @@
 				<!-- Ezoic 102: under_page_title -->
 				<!-- AdSense: Top (High Visibility) -->
 				{% include 'partials/ads/display.twig' with {'slot_name': 'profession_top'} %}
-				<p class="text-sm text-slate-500 mb-6 font-medium">
-					<svg class="w-4 h-4 inline-block mr-1 -mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-					</svg>
-					Senast uppdaterad:
-					{{ "now"|date("j F Y") | replace({'January': 'januari', 'February': 'februari', 'March': 'mars', 'April': 'april', 'May': 'maj', 'June': 'juni', 'July': 'juli', 'August': 'augusti', 'September': 'september', 'October': 'oktober', 'November': 'november', 'December': 'december'}) }}
+\t\t\t\t<p class="text-sm text-slate-500 mb-6 font-medium">
+\t\t\t\t\t<svg class="w-4 h-4 inline-block mr-1 -mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+\t\t\t\t\t\t<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+\t\t\t\t\t</svg>
+\t\t\t\t\tData från SCB {{ profession.scb.year|default('2024') }} · Uppdaterad {{ "now"|date("j F Y") | replace({'January': 'januari', 'February': 'februari', 'March': 'mars', 'April': 'april', 'May': 'maj', 'June': 'juni', 'July': 'juli', 'August': 'augusti', 'September': 'september', 'October': 'oktober', 'November': 'november', 'December': 'december'}) }}
 				</p>
 
 				<!-- Author E-E-A-T (Top) -->

@@ -190,6 +190,9 @@ class ProfessionController
         // Let's try to get it from query param or just default to null (national) for now.
         $jobs = $this->jobService->getJobs($profession['title'], null, 6);
 
+        // SEO: Last-Modified header (Google freshness signal)
+        $response = $response->withHeader('Last-Modified', gmdate('D, d M Y H:i:s \G\M\T'));
+
         return $this->view->render($response, 'profession.twig', [
             'title' => $title,
             'description' => $description,
