@@ -1,0 +1,87 @@
+{% extends "home.twig" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    
+    <div class="prose prose-lg prose-indigo mx-auto">
+        <span class="text-indigo-600 font-semibold tracking-wide uppercase text-sm">Begreppsförklaring</span>
+        <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Bruttolön och Nettolön – Vad är skillnaden?</h1>
+        
+        <p class="lead text-xl text-gray-500">
+            När man pratar om lön dyker orden <strong>bruttolön</strong> och <strong>nettolön</strong> alltid upp. Att blanda ihop dem kan bli en dyr affär när du löneförhandlar. Här reder vi ut begreppen en gång för alla.
+        </p>
+
+        <div class="my-8 bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-r-lg">
+            <h3 class="text-indigo-900 font-bold text-lg mt-0">Kortfattat</h3>
+            <ul class="list-disc list-inside text-indigo-800 space-y-1 mb-0">
+                <li><strong>Bruttolön:</strong> Lönen <em>innan</em> skatten är dragen (det som står i anställningsavtalet).</li>
+                <li><strong>Nettolön:</strong> Lönen <em>efter</em> skatt (de pengar som faktiskt kommer in på kontot).</li>
+            </ul>
+            <div class="mt-4 pt-4 border-t border-indigo-200 text-sm">
+                <strong>Se även:</strong> <a href="/jobbskatteavdrag" class="underline hover:text-indigo-900">Så fungerar jobbskatteavdraget</a> &bull; <a href="/statlig-skatt" class="underline hover:text-indigo-900">Gräns för statlig skatt</a>
+            </div>
+        </div>
+
+        <h2>Vad är Bruttolön?</h2>
+        <p>bruttolön är den summa du och din arbetsgivare har kommit överens om i ditt anställningsavtal. Det är denna summa som ligger till grund för din pension, sjukpenning och eventuella arbetslöshetsersättning.</p>
+        <p>Om du tjänar 35 000 kr i månaden enligt kontraktet, är det din bruttolön.</p>
+
+        <h2>Vad är Nettolön?</h2>
+        <p>Nettolön är det belopp som återstår när arbetsgivaren har dragit av den preliminära skatten (kommunalskatt och eventuell statlig skatt) från bruttolönen. Det är alltså "pengar i handen".</p>
+
+        <h3>Räkneexempel</h3>
+        <p>Låt oss säga att du bor i Stockholm och har en skattetabell på ca 30% (inklusive jobbskatteavdrag).</p>
+        
+        <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+            <table class="min-w-full divide-y divide-gray-300">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Post</th>
+                        <th scope="col" class="px-3 py-3.5 text-right text-sm font-semibold text-gray-900">Belopp</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 bg-white">
+                    <tr>
+                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">Bruttolön</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-right">35 000 kr</td>
+                    </tr>
+                    <tr>
+                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm text-gray-500 sm:pl-6">Skatt (ca 24% eff.)</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500 text-right">- 8 400 kr</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-bold text-gray-900 sm:pl-6">Nettolön</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-base font-bold text-green-600 text-right">26 600 kr</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Contextual Links to Professions -->
+        <div class="mt-12 p-6 bg-indigo-50 rounded-xl border border-indigo-100">
+            <h3 class="text-lg font-bold text-slate-900 mb-4">Se nettolön för populära yrken</h3>
+            <p class="text-sm text-slate-600 mb-4">Vill du veta vad en <a href="/lon/sjukskoterska" class="text-indigo-600 hover:underline font-medium">sjuksköterska</a>, <a href="/lon/larare" class="text-indigo-600 hover:underline font-medium">lärare</a> eller <a href="/lon/elektriker" class="text-indigo-600 hover:underline font-medium">elektriker</a> får ut efter skatt? Klicka på ett yrke nedan för att se detaljerad lönestatistik.</p>
+            <div class="flex flex-wrap gap-2">
+                <a href="/lon/sjukskoterska" class="inline-flex items-center px-3 py-1.5 rounded-full bg-white text-sm font-medium text-slate-700 ring-1 ring-inset ring-slate-200 hover:bg-indigo-100 hover:text-indigo-700 transition-colors">Sjuksköterska</a>
+                <a href="/lon/larare" class="inline-flex items-center px-3 py-1.5 rounded-full bg-white text-sm font-medium text-slate-700 ring-1 ring-inset ring-slate-200 hover:bg-indigo-100 hover:text-indigo-700 transition-colors">Lärare</a>
+                <a href="/lon/polis" class="inline-flex items-center px-3 py-1.5 rounded-full bg-white text-sm font-medium text-slate-700 ring-1 ring-inset ring-slate-200 hover:bg-indigo-100 hover:text-indigo-700 transition-colors">Polis</a>
+                <a href="/lon/elektriker" class="inline-flex items-center px-3 py-1.5 rounded-full bg-white text-sm font-medium text-slate-700 ring-1 ring-inset ring-slate-200 hover:bg-indigo-100 hover:text-indigo-700 transition-colors">Elektriker</a>
+                <a href="/lon/lakare" class="inline-flex items-center px-3 py-1.5 rounded-full bg-white text-sm font-medium text-slate-700 ring-1 ring-inset ring-slate-200 hover:bg-indigo-100 hover:text-indigo-700 transition-colors">Läkare</a>
+                <a href="/lon/underskoterska" class="inline-flex items-center px-3 py-1.5 rounded-full bg-white text-sm font-medium text-slate-700 ring-1 ring-inset ring-slate-200 hover:bg-indigo-100 hover:text-indigo-700 transition-colors">Undersköterska</a>
+                <a href="/yrken" class="inline-flex items-center px-3 py-1.5 rounded-full bg-indigo-600 text-sm font-medium text-white hover:bg-indigo-500 transition-colors">Visa alla yrken →</a>
+            </div>
+        </div>
+
+        <div class="mt-10 not-prose">
+            <div class="bg-gray-900 rounded-xl p-8 text-center sm:p-12">
+                <h3 class="text-2xl font-bold text-white mb-4">Vill du veta din exakta nettolön?</h3>
+                <p class="text-gray-300 mb-8 mx-auto max-w-xl">Använd vår kalkylator som tar hänsyn till exakt vilken kommun du bor i, din ålder och aktuella skattetabeller för 2026.</p>
+                <a href="/" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100">
+                    Gå till kalkylatorn
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

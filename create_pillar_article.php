@@ -1,0 +1,257 @@
+<?php
+/**
+ * Pillar Article: Lön efter skatt 2026
+ * SEO Target: 74,000 searches/month
+ * URL: /lon-efter-skatt
+ */
+
+// Article metadata for SEO
+$article = [
+    'slug' => 'lon-efter-skatt',
+    'title' => 'Lön efter skatt 2026 - Räkna ut din nettolön',
+    'meta_title' => 'Lön efter skatt 2026 - Räkna ut din nettolön | Räkna Lön',
+    'meta_description' => 'Räkna ut din lön efter skatt 2026. Gratis lönekalkylator visar exakt nettolön, skatt & jobbskatteavdrag. Uppdaterad med 2026 års skatteregler ✓',
+    'canonical' => 'https://raknalon.se/lon-efter-skatt',
+    'published' => '2026-01-14',
+    'updated' => '2026-01-14',
+    'author' => 'Räkna Lön',
+    
+    // Hero section
+    'hero' => [
+        'h1' => 'Lön efter skatt 2026',
+        'subtitle' => 'Din bruttolön minus skatt = din nettolön. Så enkelt är det. Tja, nästan...',
+        'cta' => 'Räkna ut din nettolön →'
+    ],
+    
+    // Table of Contents
+    'toc' => [
+        ['id' => 'kalkylator', 'title' => '🧮 Lönekalkylator'],
+        ['id' => 'skatter-2026', 'title' => '📊 Skattesatser 2026'],
+        ['id' => 'berakna-steg', 'title' => '🔢 Räkna steg för steg'],
+        ['id' => 'exempel', 'title' => '💰 Löneexempel'],
+        ['id' => 'kommuner', 'title' => '🏠 Kommuner med lägst/högst skatt'],
+        ['id' => 'faq', 'title' => '❓ Vanliga frågor']
+    ],
+    
+    // Content sections
+    'sections' => [
+        
+        // Section 1: Intro with humor
+        'intro' => [
+            'content' => '
+**Spoiler alert:** Staten tar ungefär en tredjedel av din lön. Men oroa dig inte – du får världens bästa föräldraförsäkring, gratis sjukvård och riktigt snygga cykelvägar i retur! 🇸🇪
+
+I den här guiden förklarar vi exakt hur mycket skatt du betalar på din lön 2026. Vi lovar att göra det så okomplicerat som möjligt. (Typ som IKEA-instruktioner, fast utan överblivna skruvar.)
+            '
+        ],
+        
+        // Section 2: Tax rates 2026
+        'skatter_2026' => [
+            'title' => 'Skattesatser 2026: Så här mycket försvinner',
+            'emoji' => '📊',
+            'content' => '
+Sverige har ett av världens högsta skattetryck. Men istället för att gråta, låt oss förstå systemet!
+
+### Kommunalskatt (den stora bidragstagaren)
+| Nivå | Skattesats |
+|------|------------|
+| **Rikssnitt** | 32,38% |
+| **Lägst (Österåker)** | 28,93% |
+| **Högst (Dorotea)** | 35,65% |
+| Stockholm | 31,58% |
+| Göteborg | 33,97% |
+| Malmö | 33,76% |
+
+**Fun fact:** Skillnaden mellan Österåker och Dorotea = **86 000 kr per år** på en 50 000 kr-lön. Det är typ en bra begagnad bil! 🚗
+
+### Statlig inkomstskatt (för höginkomsttagare)
+- **Brytpunkt 2026:** 55 033 kr/mån (660 400 kr/år)
+- **Skattesats:** 20% på allt över brytpunkten
+
+Tjänar du under 55 000 kr/mån? Grattis, du slipper statlig skatt! 🎉
+Tjänar du 80 000 kr/mån? Välkommen till 52-55% marginalskatt... 😅
+
+### Jobbskatteavdrag (Staten ger tillbaka lite)
+- **Max avdrag:** ~4 366 kr/mån
+- **Nytt 2026:** +400 kr/mån extra för vanliga löntagare!
+
+Jobbskatteavdraget är statens sätt att säga "bra jobbat att du jobbar!". Ju mer du jobbar, desto större avdrag (upp till en viss gräns).
+            '
+        ],
+        
+        // Section 3: Step by step calculation
+        'berakna_steg' => [
+            'title' => 'Räkna ut lön efter skatt: Steg för steg',
+            'emoji' => '🔢',
+            'content' => '
+Här är formeln som Skatteverket använder. Häng med!
+
+**FORMEL:**
+```
+Nettolön = Bruttolön - Kommunalskatt - Statlig skatt + Jobbskatteavdrag
+```
+
+### 1️⃣ Starta med bruttolön
+Din lön innan någon petat på den. T.ex. 40 000 kr.
+
+### 2️⃣ Dra av grundavdraget
+Alla får ett skatteavdrag som minskar din beskattningsbara inkomst.
+- Låg inkomst: ~17 300 - 24 900 kr/år
+- Medel: ~25 000 - 45 200 kr/år
+- Hög: ~17 300 kr/år (ja, det minskar igen)
+
+### 3️⃣ Räkna ut kommunalskatten
+Beskattningsbar inkomst × kommunalskatt (t.ex. 32,38%)
+
+### 4️⃣ Statlig skatt (om du tjänar mycket)
+(Inkomst över 660 400 kr/år) × 20%
+
+### 5️⃣ Lägg till jobbskatteavdraget
+Det här är din vän! Upp till 4 366 kr/mån tillbaka.
+
+### 6️⃣ = Nettolön! 💵
+Det som landar på kontot den 25:e. Party! 🎊
+            '
+        ],
+        
+        // Section 4: Practical examples
+        'exempel' => [
+            'title' => 'Löneexempel 2026: Vad får du egentligen behålla?',
+            'emoji' => '💰',
+            'table' => [
+                ['brutto' => 25000, 'netto' => 18500, 'skatt_procent' => 26, 'kommentar' => 'Ingångslön många yrken'],
+                ['brutto' => 30000, 'netto' => 22200, 'skatt_procent' => 26, 'kommentar' => 'Undersköterska, barnskötare'],
+                ['brutto' => 35000, 'netto' => 25800, 'skatt_procent' => 26, 'kommentar' => 'Elektriker, lastbilschaufför'],
+                ['brutto' => 40000, 'netto' => 28100, 'skatt_procent' => 30, 'kommentar' => 'Sjuksköterska, lärare'],
+                ['brutto' => 45000, 'netto' => 31500, 'skatt_procent' => 30, 'kommentar' => 'Ingenjör, ekonom'],
+                ['brutto' => 50000, 'netto' => 34900, 'skatt_procent' => 30, 'kommentar' => 'Strax under brytpunkten'],
+                ['brutto' => 60000, 'netto' => 40200, 'skatt_procent' => 33, 'kommentar' => 'IT-arkitekt, läkare (ST)'],
+                ['brutto' => 80000, 'netto' => 51400, 'skatt_procent' => 36, 'kommentar' => 'VD, överläkare']
+            ],
+            'note' => '⚠️ Beräknat med rikssnitt 32,38%. Din kommun kan ge mer eller mindre!'
+        ],
+        
+        // Section 5: Regional comparison
+        'kommuner' => [
+            'title' => 'Kommuner med lägst & högst skatt 2026',
+            'emoji' => '🏠',
+            'content' => '
+**Vill du spara pengar? Flytta!** (Vi skämtar... typ.)
+
+### 🏆 Top 5 Lägst skatt
+| Kommun | Skattesats | Besparing vs snitt* |
+|--------|------------|---------------------|
+| 1. Österåker | 28,93% | +20 700 kr/år |
+| 2. Kävlinge | 29,59% | +16 740 kr/år |
+| 3. Lidingö | 29,67% | +16 260 kr/år |
+| 4. Vellinge | 29,68% | +16 200 kr/år |
+| 5. Solna | 29,70% | +16 080 kr/år |
+
+### 😰 Top 5 Högst skatt
+| Kommun | Skattesats | Extra kostnad vs snitt* |
+|--------|------------|-------------------------|
+| 1. Dorotea | 35,65% | -19 620 kr/år |
+| 2. Nordmaling | 36,49% | -24 660 kr/år |
+| 3. Vilhelmina | 35,50% | -18 720 kr/år |
+| 4. Sorsele | 35,45% | -18 420 kr/år |
+| 5. Degerfors | 35,30% | -17 520 kr/år |
+
+*Beräknat på 50 000 kr/mån bruttolön jämfört med rikssnitt 32,38%
+
+**Insikten?** Bor du i Österåker istället för Dorotea = **86 040 kr mer** i fickan varje år. Det är en fin semester till Maldiverna! 🏝️
+            '
+        ],
+        
+        // Section 6: FAQ (for schema markup)
+        'faq' => [
+            'title' => 'Vanliga frågor om lön efter skatt',
+            'emoji' => '❓',
+            'questions' => [
+                [
+                    'q' => 'Hur mycket skatt betalar jag på 40 000 kr?',
+                    'a' => 'Med en bruttolön på 40 000 kr betalar du cirka 11 900 kr i skatt (efter jobbskatteavdrag) och får ungefär 28 100 kr netto. Det motsvarar en effektiv skatt på ca 30%.'
+                ],
+                [
+                    'q' => 'Vad är skillnaden mellan brutto och netto?',
+                    'a' => 'Bruttolön är din lön före skatt – det som står i anställningsavtalet. Nettolön är det som faktiskt landar på ditt bankkonto efter att skatt dragits. Skillnaden kallas för innehållen skatt.'
+                ],
+                [
+                    'q' => 'När börjar statlig skatt?',
+                    'a' => 'Statlig inkomstskatt (20%) börjar 2026 när din årsinkomst överstiger 660 400 kr, motsvarande cirka 55 033 kr/mån brutto. Inkomst under denna gräns beskattas bara med kommunalskatt.'
+                ],
+                [
+                    'q' => 'Hur beskattas bonus och övertid?',
+                    'a' => 'Bonus och övertidsersättning beskattas exakt som vanlig lön i Sverige – det finns inga specialregler. Din marginalskatt avgör vad du får behålla. Tjänar du 80 000 kr/mån? Då blir bara ~45% av bonusen kvar.'
+                ],
+                [
+                    'q' => 'När får jag skatteåterbäring 2026?',
+                    'a' => 'Lämnar du in deklarationen digitalt senast 31 mars får du skatteåterbäring redan 7-10 april. Väntar du till 2 maj? Då kommer pengarna i juni. Tips: Registrera ditt bankkonto på Skatteverket.se!'
+                ],
+                [
+                    'q' => 'Vad är jobbskatteavdrag?',
+                    'a' => 'Jobbskatteavdraget är en skattereduktion för dig som arbetar. 2026 kan du få upp till 4 366 kr/mån i avdrag. Det innebär att du betalar mindre skatt än vad procentsatsen antyder. Tack staten! 🎉'
+                ],
+                [
+                    'q' => 'Hur räknar jag ut min nettolön?',
+                    'a' => 'Enklast: Använd vår lönekalkylator ovan! Manuellt: Ta din bruttolön, dra av kommunalskatt (ca 32%), lägg till jobbskatteavdrag (ca 3-4k), och eventuell statlig skatt om du tjänar över 55k/mån.'
+                ],
+                [
+                    'q' => 'Spelar det roll vilken kommun jag bor i?',
+                    'a' => 'Absolut! Kommunalskatten varierar från 28,93% (Österåker) till 35,65% (Dorotea). På en 50 000 kr-lön är skillnaden 86 000 kr per år – så ja, det spelar roll!'
+                ]
+            ]
+        ],
+        
+        // Section 7: 2026 Changes
+        'nyheter_2026' => [
+            'title' => 'Nyheter 2026: Vad har ändrats?',
+            'emoji' => '🆕',
+            'content' => '
+Regeringen har gjort några ändringar för 2026. Här är det viktigaste:
+
+✅ **Förstärkt jobbskatteavdrag** – +400 kr/mån för vanliga inkomster
+✅ **Höjd brytpunkt** – Nu 660 400 kr/år (var 625 800 kr)
+✅ **Sänkt moms på mat** – 6% istället för 12% (apr 2026 - dec 2027)
+✅ **SINK-skatt sänkt** – 22,5% för utländska arbetstagare (var 25%)
+✅ **Ungdomsrabatt** – Sänkta arbetsgivaravgifter för 19-23 åringar
+
+**Summa summarum:** Du får behålla lite mer av din lön 2026! 🎊
+            '
+        ],
+        
+        // CTA Section
+        'cta' => [
+            'title' => 'Se vad just DU tjänar efter skatt',
+            'content' => 'Vill du veta exakt hur mycket du får ut? Kolla in våra lönestatistik för ditt yrke:',
+            'links' => [
+                ['title' => 'Sjuksköterska lön', 'url' => '/lon/sjukskoterska'],
+                ['title' => 'Läkare lön', 'url' => '/lon/lakare'],
+                ['title' => 'Elektriker lön', 'url' => '/lon/elektriker'],
+                ['title' => 'Lärare lön', 'url' => '/lon/larare'],
+                ['title' => 'Alla 180 yrken →', 'url' => '/yrken']
+            ]
+        ]
+    ],
+    
+    // Schema.org FAQ markup
+    'schema_faq' => true,
+    
+    // Internal linking
+    'related_articles' => [
+        '/lon/sjukskoterska' => 'Sjuksköterska lön 2026',
+        '/lon/lakare' => 'Läkare lön 2026',
+        '/lon/elektriker' => 'Elektriker lön 2026',
+        '/yrken' => 'Alla yrken och löner'
+    ]
+];
+
+// Export as JSON for use in templates
+file_put_contents(__DIR__ . '/data/articles/lon-efter-skatt.json', 
+    json_encode($article, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)
+);
+
+echo "✅ Article data saved to: data/articles/lon-efter-skatt.json\n";
+echo "📝 Title: {$article['title']}\n";
+echo "🔗 URL: {$article['canonical']}\n";
+echo "📊 Sections: " . count($article['sections']) . "\n";
+echo "❓ FAQs: " . count($article['sections']['faq']['questions']) . "\n";

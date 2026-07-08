@@ -1,0 +1,53 @@
+            {% if profession.faq %}
+            <hr class="my-12 border-slate-200">
+            
+            <h2 id="faq" class="text-2xl font-bold text-slate-900 mb-6">Vanliga frågor om {{ profession.title|lower }} lön</h2>
+            <div class="not-prose bg-slate-50 rounded-xl border border-slate-200 divide-y divide-slate-200">
+                {% for item in profession.faq %}
+                <div class="p-6">
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">{{ item.question }}</h4>
+                    <p class="text-slate-600 leading-relaxed">{{ item.answer }}</p>
+                </div>
+                {% endfor %}
+
+                {# ====== FAQs dynamiques SCB ====== #}
+                {% if profession.scb is defined and profession.scb.salary_total > 0 %}
+                <div class="p-6 bg-indigo-50/50">
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Vad är medellönen för en {{ profession.title|lower }} {{ profession.scb.year }}?</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        Enligt SCB:s officiella statistik är medellönen för en {{ profession.title|lower }} 
+                        <strong>{{ profession.scb.salary_total|number_format(0, ',', ' ') }} kr</strong> per månad i privat sektor ({{ profession.scb.year }}).
+                    </p>
+                </div>
+                
+                {% if profession.scb.salary_men > 0 and profession.scb.salary_women > 0 %}
+                <div class="p-6 bg-indigo-50/50">
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Tjänar män eller kvinnor mer som {{ profession.title|lower }}?</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        {% if profession.scb.gender_gap_percent < 100 %}
+                        Män tjänar i genomsnitt <strong>{{ profession.scb.salary_men|number_format(0, ',', ' ') }} kr</strong> 
+                        medan kvinnor tjänar <strong>{{ profession.scb.salary_women|number_format(0, ',', ' ') }} kr</strong>.
+                        Kvinnor tjänar alltså {{ profession.scb.gender_gap_percent }}% av mäns lön, 
+                        en skillnad på {{ (profession.scb.salary_men - profession.scb.salary_women)|number_format(0, ',', ' ') }} kr/mån.
+                        {% else %}
+                        I detta yrke tjänar kvinnor faktiskt mer än män: 
+                        <strong>{{ profession.scb.salary_women|number_format(0, ',', ' ') }} kr</strong> mot 
+                        <strong>{{ profession.scb.salary_men|number_format(0, ',', ' ') }} kr</strong>.
+                        {% endif %}
+                    </p>
+                </div>
+                {% endif %}
+                
+                {% if profession.scb.evolution_10y_percent is defined %}
+                <div class="p-6 bg-indigo-50/50">
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Hur har lönen för {{ profession.title|lower }} utvecklats?</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        Lönen för {{ profession.title|lower }} har ökat med <strong>{{ profession.scb.evolution_10y_percent }}%</strong> 
+                        under de senaste 10 åren (2014-2024), enligt SCB. 
+                        Det motsvarar en årlig ökning på cirka {{ (profession.scb.evolution_10y_percent / 10)|round(1) }}%.
+                    </p>
+                </div>
+                {% endif %}
+                {% endif %}
+            </div>
+            {% endif %}

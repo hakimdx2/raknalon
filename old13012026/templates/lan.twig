@@ -1,0 +1,252 @@
+{% extends "home.twig" %}
+
+{% block head_extra %}
+{# Schema.org pour la page Län #}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "{{ title }}",
+    "description": "{{ meta_description }}",
+    "url": "https://raknalon.se{{ canonical }}"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {% for faq in faqs %}
+        {
+            "@type": "Question",
+            "name": "{{ faq.question }}",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ faq.answer }}"
+            }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Hem",
+            "item": "https://raknalon.se/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Kommunal lön",
+            "item": "https://raknalon.se/kommunal-lon"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "{{ lan.lan_name }}",
+            "item": "https://raknalon.se{{ canonical }}"
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="bg-slate-50 pt-12 pb-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {# Breadcrumb - Style from profession.twig #}
+        <nav class="flex mb-8" aria-label="Breadcrumb">
+            <ol role="list" class="flex items-center space-x-2">
+                <li><a href="/" class="text-sm font-medium text-slate-500 hover:text-indigo-600">Hem</a></li>
+                <li><span class="text-slate-300">/</span></li>
+                <li><a href="/kommunal-lon" class="text-sm font-medium text-slate-500 hover:text-indigo-600">Kommunal lön</a></li>
+                <li><span class="text-slate-300">/</span></li>
+                <li><span class="text-sm font-medium text-indigo-600" aria-current="page">{{ lan.lan_name }}</span></li>
+            </ol>
+        </nav>
+
+        {# Header - Style from profession.twig #}
+        <div class="text-center mb-12">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <span class="inline-flex items-center rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+                    Lönestatistik 2024
+                </span>
+                <span class="inline-flex items-center rounded-md bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-700/10">
+                    #{{ rank }} av {{ totalLan }} län
+                </span>
+            </div>
+            <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl mb-4">
+                Medellön i {{ lan.lan_name }}
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                Genomsnittslön, skattesats och lönestatistik för {{ lan.lan_name }}.
+                {% if diffNational >= 0 %}
+                {{ diffNational }}% över riksgenomsnittet.
+                {% else %}
+                {{ diffNational|abs }}% under riksgenomsnittet.
+                {% endif %}
+            </p>
+        </div>
+
+        {# Stats Grid - Style from profession.twig #}
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-3 mb-12">
+            <div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 px-6 py-6">
+                <dt class="truncate text-sm font-medium text-slate-500">Medellön</dt>
+                <dd class="mt-2 text-3xl font-bold tracking-tight text-slate-900">{{ lan.salary_estimate|number_format(0, ',', ' ') }} kr</dd>
+                <dd class="mt-2 flex items-center text-sm {% if diffNational >= 0 %}text-emerald-600{% else %}text-red-600{% endif %} font-medium">
+                    {% if diffNational >= 0 %}
+                    <svg class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L8.586 10l-4.293 4.293z" clip-rule="evenodd"/></svg>
+                    +{{ diffNational }}% vs riket
+                    {% else %}
+                    <svg class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414l4.293 4.293A1 1 0 0015 14z" clip-rule="evenodd"/></svg>
+                    {{ diffNational }}% vs riket
+                    {% endif %}
+                </dd>
+            </div>
+            <div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 px-6 py-6">
+                <dt class="truncate text-sm font-medium text-slate-500">Skattesats</dt>
+                <dd class="mt-2 text-3xl font-bold tracking-tight text-slate-900">{{ lan.skattesats }}%</dd>
+                <dd class="mt-2 text-sm text-slate-500">Kommunalskatt + landstingsskatt</dd>
+            </div>
+            <div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 px-6 py-6">
+                <dt class="truncate text-sm font-medium text-slate-500">Nettolön</dt>
+                <dd class="mt-2 text-3xl font-bold tracking-tight text-emerald-600">{{ nettoInfo.netto|number_format(0, ',', ' ') }} kr</dd>
+                <dd class="mt-2 text-sm text-slate-500">Efter skatt ({{ nettoInfo.skatt_percent }}%)</dd>
+            </div>
+        </div>
+
+        {# Comparison Section #}
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">Jämförelse med riksgenomsnittet</h2>
+            <div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 p-8">
+                <div class="space-y-6">
+                    {# Län Bar #}
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-slate-700">{{ lan.lan_name }}</span>
+                            <span class="font-bold text-indigo-600">{{ lan.salary_estimate|number_format(0, ',', ' ') }} kr</span>
+                        </div>
+                        <div class="w-full bg-slate-100 rounded-full h-3">
+                            {% set lanWidth = (lan.salary_estimate / 50000 * 100)|round(0) %}
+                            <div class="bg-indigo-600 h-3 rounded-full" style="width: {{ lanWidth }}%"></div>
+                        </div>
+                    </div>
+                    
+                    {# National Bar #}
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-slate-700">Riksgenomsnitt</span>
+                            <span class="font-bold text-slate-600">{{ nationalAvg|number_format(0, ',', ' ') }} kr</span>
+                        </div>
+                        <div class="w-full bg-slate-100 rounded-full h-3">
+                            {% set natWidth = (nationalAvg / 50000 * 100)|round(0) %}
+                            <div class="bg-slate-400 h-3 rounded-full" style="width: {{ natWidth }}%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# Net Salary Breakdown #}
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">Så här beräknas nettolönen</h2>
+            <div class="grid grid-cols-1 gap-5 sm:grid-cols-3">
+                <div class="overflow-hidden rounded-xl bg-slate-50 shadow-sm ring-1 ring-slate-200 px-6 py-6">
+                    <dt class="truncate text-sm font-medium text-slate-600">Bruttolön</dt>
+                    <dd class="mt-2 text-3xl font-bold tracking-tight text-slate-900">{{ nettoInfo.brutto|number_format(0, ',', ' ') }} kr</dd>
+                </div>
+                <div class="overflow-hidden rounded-xl bg-red-50 shadow-sm ring-1 ring-red-200 px-6 py-6">
+                    <dt class="truncate text-sm font-medium text-red-600">Skatt ({{ nettoInfo.skatt_percent }}%)</dt>
+                    <dd class="mt-2 text-3xl font-bold tracking-tight text-red-700">-{{ nettoInfo.skatt_amount|number_format(0, ',', ' ') }} kr</dd>
+                </div>
+                <div class="overflow-hidden rounded-xl bg-emerald-50 shadow-sm ring-1 ring-emerald-200 px-6 py-6">
+                    <dt class="truncate text-sm font-medium text-emerald-600">Nettolön</dt>
+                    <dd class="mt-2 text-3xl font-bold tracking-tight text-emerald-700">{{ nettoInfo.netto|number_format(0, ',', ' ') }} kr</dd>
+                </div>
+            </div>
+        </div>
+
+        {# Top Jobs - Style from profession.twig #}
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">Högst betalda yrken (kommunal sektor)</h2>
+            <div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5">
+                <table class="w-full">
+                    <thead class="bg-slate-50 border-b border-slate-100">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider">#</th>
+                            <th class="px-6 py-4 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider">Yrke</th>
+                            <th class="px-6 py-4 text-right text-xs font-semibold text-slate-600 uppercase tracking-wider">Medellön</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        {% for item in topYrken[:8] %}
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="px-6 py-4 text-slate-400 font-medium">{{ loop.index }}</td>
+                            <td class="px-6 py-4 font-medium text-slate-900">{{ item.profession }}</td>
+                            <td class="px-6 py-4 text-right font-bold text-indigo-600">{{ item.salary_total|number_format(0, ',', ' ') }} kr</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        {# Other Län - Style from profession.twig related professions #}
+        <div class="mb-12 border-t border-slate-200 pt-10">
+            <h3 class="text-2xl font-bold text-slate-900 mb-6">Jämför med andra län</h3>
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+                {% for otherLan in allLan|slice(0, 8) %}
+                {% if otherLan.slug != lan.slug %}
+                <a href="/lon/region/{{ otherLan.slug }}" class="group block rounded-lg bg-white p-4 ring-1 ring-slate-900/5 hover:ring-indigo-600/20 hover:shadow-md transition-all">
+                    <span class="block text-sm font-semibold text-slate-900 group-hover:text-indigo-600">{{ otherLan.lan_name }}</span>
+                    <span class="mt-1 block text-xs text-slate-500">{{ otherLan.salary_estimate|number_format(0, ',', ' ') }} kr</span>
+                </a>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <div class="mt-6 text-center">
+                <a href="/kommunal-lon" class="text-sm font-medium text-indigo-600 hover:text-indigo-700">Se alla 21 län →</a>
+            </div>
+        </div>
+
+        {# Content & FAQ Combined - Style from profession.twig #}
+        <article class="prose prose-lg prose-indigo w-full max-w-none bg-white p-8 sm:p-12 rounded-2xl shadow-sm ring-1 ring-slate-900/5">
+            <h2>Om löner i {{ lan.lan_name }}</h2>
+            <p>
+                {{ lan.lan_name }} har en genomsnittlig lön på {{ lan.salary_estimate|number_format(0, ',', ' ') }} kr per månad inom kommunal sektor.
+                {% if diffNational >= 0 %}
+                Det är {{ diffNational }}% högre än riksgenomsnittet ({{ nationalAvg|number_format(0, ',', ' ') }} kr).
+                {% else %}
+                Det är {{ diffNational|abs }}% lägre än riksgenomsnittet ({{ nationalAvg|number_format(0, ',', ' ') }} kr).
+                {% endif %}
+            </p>
+            
+            <h3>Skattesats i {{ lan.lan_name }}</h3>
+            <p>
+                Skattesatsen i {{ lan.lan_name }} är {{ lan.skattesats }}%. Det innebär att med en bruttolön på 
+                {{ lan.salary_estimate|number_format(0, ',', ' ') }} kr blir nettolönen cirka {{ nettoInfo.netto|number_format(0, ',', ' ') }} kr.
+            </p>
+
+            <hr class="my-12 border-slate-200">
+            
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">Vanliga frågor om lön i {{ lan.lan_name }}</h2>
+            <div class="not-prose bg-slate-50 rounded-xl border border-slate-200 divide-y divide-slate-200">
+                {% for faq in faqs %}
+                <div class="p-6">
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">{{ faq.question }}</h4>
+                    <p class="text-slate-600 leading-relaxed">{{ faq.answer }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </article>
+
+    </div>
+</div>
+{% endblock %}

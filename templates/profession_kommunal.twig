@@ -1,0 +1,345 @@
+{% extends "home.twig" %}
+
+{% block head_extra %}
+	{# Schema.org #}
+	<script type="application/ld+json">
+		{
+		    "@context": "https://schema.org",
+		    "@type": "Occupation",
+		    "name": "{{ profession.title }}
+		(kommunal sektor)",
+		    "description": "{{ profession.description }}",
+		    "estimatedSalary": {
+		        "@type": "MonetaryAmountDistribution",
+		        "name": "Kommunal sektor",
+		        "currency": "SEK",
+		        "median":
+		{{ kommunal.salary_total }}
+		}
+		}
+	</script>
+	<script type="application/ld+json">
+		{
+		    "@context": "https://schema.org",
+		    "@type": "FAQPage",
+		    "mainEntity": [
+		{% for faq in faqs %}
+			{
+			            "@type": "Question",
+			            "name": "{{ faq.question }}",
+			            "acceptedAnswer": {
+			                "@type": "Answer",
+			                "text": "{{ faq.answer }}"
+			            }
+			        }
+			{% if not loop.last %},
+			{% endif %}
+		{% endfor %}
+		]
+		}
+	</script>
+	<script type="application/ld+json">
+		{
+		    "@context": "https://schema.org",
+		    "@type": "BreadcrumbList",
+		    "itemListElement": [
+		        {
+		            "@type": "ListItem",
+		            "position": 1,
+		            "name": "Hem",
+		            "item": "https://raknalon.se/"
+		        },
+		        {
+		            "@type": "ListItem",
+		            "position": 2,
+		            "name": "Kommunal lön",
+		            "item": "https://raknalon.se/kommunal-lon"
+		        },
+		        {
+		            "@type": "ListItem",
+		            "position": 3,
+		            "name": "{{ profession.title }}",
+		            "item": "https://raknalon.se{{ canonical }}"
+		        }
+		    ]
+		}
+	</script>
+{% endblock %}
+
+{% block content %}
+	<div class="bg-slate-50 pt-12 pb-20">
+		<div
+			class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+			{# Breadcrumb - Style from profession.twig #}
+			<nav class="flex mb-8" aria-label="Breadcrumb">
+				<ol role="list" class="flex items-center space-x-2">
+					<li>
+						<a href="/" class="text-sm font-medium text-slate-500 hover:text-indigo-600">Hem</a>
+					</li>
+					<li>
+						<span class="text-slate-300">/</span>
+					</li>
+					<li>
+						<a href="/kommunal-lon" class="text-sm font-medium text-slate-500 hover:text-indigo-600">Kommunal lön</a>
+					</li>
+					<li>
+						<span class="text-slate-300">/</span>
+					</li>
+					<li>
+						<span class="text-sm font-medium text-indigo-600" aria-current="page">{{ profession.title }}</span>
+					</li>
+				</ol>
+			</nav>
+
+			{# Header - Style from profession.twig #}
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center gap-2 mb-4">
+					<span class="inline-flex items-center rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+						Lönestatistik 2024
+					</span>
+					<span class="inline-flex items-center rounded-md bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-700/10">
+						Kommunal sektor
+					</span>
+					{% if profession.category %}
+						<span class="inline-flex items-center rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600 ring-1 ring-inset ring-slate-500/10">
+							{{ profession.category }}
+						</span>
+					{% endif %}
+				</div>
+				<h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl mb-4">
+					{{ profession.title }}
+					lön kommunal sektor
+				</h1>
+				<p class="text-lg text-slate-600 max-w-2xl mx-auto">
+					Vad tjänar en
+					{{ profession.title|lower }}
+					i kommunal sektor? Se statistik från SCB och jämför med privat sektor.
+				</p>
+			</div>
+
+			{# Stats Grid - Style from profession.twig #}
+			<div class="grid grid-cols-1 gap-5 sm:grid-cols-3 mb-12">
+				<div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 px-6 py-6">
+					<dt class="truncate text-sm font-medium text-slate-500">Kommunal sektor</dt>
+					<dd class="mt-2 text-3xl font-bold tracking-tight text-indigo-600">{{ kommunal.salary_total|number_format(0, ',', ' ') }}
+						kr</dd>
+					<dd class="mt-2 text-sm text-slate-500">Medellön (SCB 2024)</dd>
+				</div>
+				{% if privat and privat.salary_total > 0 %}
+					<div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 px-6 py-6">
+						<dt class="truncate text-sm font-medium text-slate-500">Privat sektor</dt>
+						<dd class="mt-2 text-3xl font-bold tracking-tight text-slate-900">{{ privat.salary_total|number_format(0, ',', ' ') }}
+							kr</dd>
+						<dd class="mt-2 text-sm text-slate-500">Medellön (SCB 2024)</dd>
+					</div>
+					<div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 px-6 py-6">
+						<dt class="truncate text-sm font-medium text-slate-500">Skillnad</dt>
+						<dd class="mt-2 text-3xl font-bold tracking-tight {% if diffPercent >= 0 %}text-emerald-600{% else %}text-red-600{% endif %}">
+							{{ diffPercent >= 0 ? '+' : '' }}{{ diffPercent }}%
+						</dd>
+						<dd class="mt-2 text-sm text-slate-500">Kommunal vs privat</dd>
+					</div>
+				{% else %}
+					<div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 px-6 py-6">
+						<dt class="truncate text-sm font-medium text-slate-500">Män</dt>
+						<dd class="mt-2 text-3xl font-bold tracking-tight text-slate-900">{{ kommunal.salary_men|number_format(0, ',', ' ') }}
+							kr</dd>
+					</div>
+					<div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 px-6 py-6">
+						<dt class="truncate text-sm font-medium text-slate-500">Kvinnor</dt>
+						<dd class="mt-2 text-3xl font-bold tracking-tight text-slate-900">{{ kommunal.salary_women|number_format(0, ',', ' ') }}
+							kr</dd>
+						<dd class="mt-2 text-sm text-slate-500">{{ kommunal.gender_gap_percent }}% av männens lön</dd>
+					</div>
+				{% endif %}
+			</div>
+
+			{# Sector Comparison - Visual #}
+			{% if privat and privat.salary_total > 0 %}
+				<div class="mb-12">
+					<h2 class="text-2xl font-bold text-slate-900 mb-6">Kommunal vs Privat sektor</h2>
+					<div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 p-8">
+						<div
+							class="space-y-6">
+							{# Kommunal Bar #}
+							<div>
+								<div class="flex justify-between mb-2">
+									<span class="font-medium text-slate-700">Kommunal sektor</span>
+									<span class="font-bold text-indigo-600">{{ kommunal.salary_total|number_format(0, ',', ' ') }}
+										kr</span>
+								</div>
+								<div class="w-full bg-slate-100 rounded-full h-3">
+									{% set maxSalary = max(kommunal.salary_total, privat.salary_total) %}
+									{% set komWidth = (kommunal.salary_total / maxSalary * 100)|round(0) %}
+									<div class="bg-indigo-600 h-3 rounded-full" style="width: {{ komWidth }}%"></div>
+								</div>
+							</div>
+
+							{# Privat Bar #}
+							<div>
+								<div class="flex justify-between mb-2">
+									<span class="font-medium text-slate-700">Privat sektor</span>
+									<span class="font-bold text-slate-600">{{ privat.salary_total|number_format(0, ',', ' ') }}
+										kr</span>
+								</div>
+								<div class="w-full bg-slate-100 rounded-full h-3">
+									{% set privWidth = (privat.salary_total / maxSalary * 100)|round(0) %}
+									<div class="bg-slate-400 h-3 rounded-full" style="width: {{ privWidth }}%"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mt-6 p-4 bg-slate-50 rounded-lg">
+							<p class="text-slate-600">
+								{% if diffPercent >= 0 %}
+									En
+									{{ profession.title|lower }}
+									tjänar
+									<strong>{{ diffPercent }}% mer</strong>
+									i kommunal sektor jämfört med privat.
+								{% else %}
+									En
+									{{ profession.title|lower }}
+									tjänar
+									<strong>{{ diffPercent|abs }}% mindre</strong>
+									i kommunal sektor jämfört med privat.
+								{% endif %}
+							</p>
+						</div>
+					</div>
+				</div>
+			{% endif %}
+
+			{# Gender Gap #}
+			{% if kommunal.salary_men > 0 and kommunal.salary_women > 0 %}
+				<div class="mb-12">
+					<h2 class="text-2xl font-bold text-slate-900 mb-6">Löneskillnad mellan kvinnor och män</h2>
+					<div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+						<div class="overflow-hidden rounded-xl bg-blue-50 shadow-sm ring-1 ring-blue-200 px-6 py-6">
+							<dt class="truncate text-sm font-medium text-blue-600">Män</dt>
+							<dd class="mt-2 text-3xl font-bold tracking-tight text-blue-900">{{ kommunal.salary_men|number_format(0, ',', ' ') }}
+								kr</dd>
+						</div>
+						<div class="overflow-hidden rounded-xl bg-pink-50 shadow-sm ring-1 ring-pink-200 px-6 py-6">
+							<dt class="truncate text-sm font-medium text-pink-600">Kvinnor</dt>
+							<dd class="mt-2 text-3xl font-bold tracking-tight text-pink-900">{{ kommunal.salary_women|number_format(0, ',', ' ') }}
+								kr</dd>
+							<dd class="mt-2 text-sm text-pink-600">{{ kommunal.gender_gap_percent }}% av männens lön</dd>
+						</div>
+					</div>
+				</div>
+			{% endif %}
+
+			{# Calculator Embed - Style from profession.twig #}
+			<div class="bg-indigo-900 rounded-2xl shadow-xl overflow-hidden mb-12" x-data="salaryCalculator()" x-init="salary = '{{ kommunal.salary_total }}'; age = 30;">
+				<div class="px-6 py-12 sm:px-12 lg:py-16 text-center">
+					<h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">Vad får en
+						{{ profession.title|lower }}
+						ut i lön?</h2>
+					<p class="mx-auto mt-2 max-w-xl text-lg text-indigo-200 mb-10">
+						Använd vår kalkylator för att se nettolönen baserat på din kommun. Förinställd på kommunal medellön.
+					</p>
+
+					<div class="bg-white rounded-xl shadow-lg p-6 max-w-lg mx-auto text-left">
+						<form @submit.prevent="calculate" class="space-y-4">
+							<div>
+								<label class="block text-sm font-medium text-slate-700">Månadslön (Brutto)</label>
+								<div class="relative mt-1 rounded-md shadow-sm">
+									<input type="number" x-model="salary" class="block w-full rounded-md border-slate-300 pl-3 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2.5" placeholder="{{ kommunal.salary_total }}">
+									<div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+										<span class="text-slate-500 sm:text-sm">kr</span>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<label class="block text-sm font-medium text-slate-700">Kommun</label>
+								<select x-model="selectedMunicipality" @change="updateTaxRate" class="mt-1 block w-full rounded-md border-slate-300 py-2.5 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+									<option value="">Riket (Snitt 32.37%)</option>
+								</select>
+							</div>
+
+							<button type="submit" class="w-full bg-indigo-600 text-white rounded-lg py-3 px-4 hover:bg-indigo-700 font-bold shadow-sm transition-colors cursor-pointer">
+								Beräkna Nettolön
+							</button>
+						</form>
+
+						<div x-show="result" x-transition class="mt-6 pt-6 border-t border-slate-100 text-center">
+							<p class="text-xs font-bold text-slate-500 uppercase tracking-wide">Nettolön att utbetala</p>
+							<p class="text-4xl font-extrabold text-indigo-600 mt-2" x-text="formatMoney(result?.net_salary) + ' kr'"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{# Content & FAQ Combined - Style from profession.twig #}
+			<article class="prose prose-lg prose-indigo w-full max-w-none bg-white p-8 sm:p-12 rounded-2xl shadow-sm ring-1 ring-slate-900/5 prose-p:leading-loose prose-li:leading-loose">
+				<h2>Om
+					{{ profession.title|lower }}
+					i kommunal sektor</h2>
+				<p class="text-lg text-slate-700 leading-loose mb-8">{{ profession.description }}</p>
+
+				{% if profession.description_extended %}
+					<p class="text-slate-600 leading-loose mb-8">{{ profession.description_extended }}</p>
+				{% endif %}
+
+				<h3>Utbildning och behörighet</h3>
+				<p>{{ profession.education }}</p>
+
+				<h3>Lönestatistik och faktorer</h3>
+				<p>
+					Lönen för en
+					{{ profession.title|lower }}
+					i kommunal sektor kan variera. Faktorer som påverkar lönen inkluderar:
+				</p>
+				<ul>
+					<li>
+						<strong>Erfarenhet:</strong>
+						Lönen stiger oftast med antalet år i yrket.</li>
+					<li>
+						<strong>Kommun:</strong>
+						Olika kommuner har olika lönenivåer och skattesatser.</li>
+					<li>
+						<strong>Ansvar:</strong>
+						Ledningsansvar och specialistkompetens ger högre lön.</li>
+				</ul>
+
+				<hr class="my-12 border-slate-200">
+
+				<h2 class="text-2xl font-bold text-slate-900 mb-6">Vanliga frågor om
+					{{ profession.title|lower }}
+					lön i kommun</h2>
+				<div class="not-prose bg-slate-50 rounded-xl border border-slate-200 divide-y divide-slate-200">
+					{% for faq in faqs %}
+						<div class="p-6">
+							<h4 class="text-lg font-bold text-slate-900 mb-2">{{ faq.question }}</h4>
+							<p class="text-slate-600 leading-relaxed">{{ faq.answer }}</p>
+						</div>
+					{% endfor %}
+				</div>
+			</article>
+
+			{# Related Links #}
+			<div class="mt-12 border-t border-slate-200 pt-10">
+				<h3 class="text-2xl font-bold text-slate-900 mb-6">Se även</h3>
+				<div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+					<a href="/lon/{{ profession.slug }}" class="group block rounded-lg bg-white p-4 ring-1 ring-slate-900/5 hover:ring-indigo-600/20 hover:shadow-md transition-all">
+						<span class="block text-sm font-semibold text-slate-900 group-hover:text-indigo-600">{{ profession.title }}
+							lön</span>
+						<span class="mt-1 block text-xs text-slate-500">Alla sektorer</span>
+					</a>
+					<a href="/kommunal-lon" class="group block rounded-lg bg-white p-4 ring-1 ring-slate-900/5 hover:ring-indigo-600/20 hover:shadow-md transition-all">
+						<span class="block text-sm font-semibold text-slate-900 group-hover:text-indigo-600">Kommunal lön</span>
+						<span class="mt-1 block text-xs text-slate-500">Alla yrken</span>
+					</a>
+					<a href="/yrken" class="group block rounded-lg bg-white p-4 ring-1 ring-slate-900/5 hover:ring-indigo-600/20 hover:shadow-md transition-all">
+						<span class="block text-sm font-semibold text-slate-900 group-hover:text-indigo-600">Alla yrken</span>
+						<span class="mt-1 block text-xs text-slate-500">Lönestatistik</span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+{% endblock %}

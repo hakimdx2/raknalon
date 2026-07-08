@@ -1,0 +1,12 @@
+vendor/
+cache/
+node_modules/
+18012026/
+old15012026/
+public_html/uploads/
+.DS_Store
+*.zip
+*.csv
+*.xlsx
+*.png
+*.jpg

@@ -1,0 +1,78 @@
+{% extends "home.twig" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div class="prose prose-lg prose-indigo mx-auto">
+        <span class="text-indigo-600 font-semibold tracking-wide uppercase text-sm">Skatteregler 2026</span>
+        <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Statlig inkomstskatt 2026 – Gräns och Belopp</h1>
+
+        <p class="lead text-xl text-gray-500">
+            Tjänar du över en viss gräns betalar du inte bara kommunalskatt utan även statlig skatt. Här reder vi ut vad som gäller för inkomståret 2026.
+        </p>
+
+        <h2>Vad är statlig skatt?</h2>
+        <p>I Sverige betalar de allra flesta bara kommunalskatt till den kommun och region där de bor (vanligen ca 32%). Men om din inkomst överstiger en viss nivå, den så kallade <strong>skiktgränsen</strong>, ska du även betala en statlig inkomstskatt på 20% på <em>den del</em> av lönen som överstiger gränsen.</p>
+
+        <div class="not-prose bg-indigo-50 p-4 rounded-lg border border-indigo-100 text-sm text-indigo-800 my-6">
+            <strong>Läs mer:</strong> <a href="/brutto-netto" class="underline hover:text-indigo-900">Bruttolön vs Nettolön</a> &bull; <a href="/jobbskatteavdrag" class="underline hover:text-indigo-900">Jobbskatteavdraget</a>
+        </div>
+
+        <h2>Skiktgränsen 2026</h2>
+        <p>För inkomståret 2026 (deklaration 2027) har skiktgränsen justerats uppåt. Det innebär att färre personer betalar statlig skatt jämfört med tidigare år.</p>
+        
+        <div class="my-8 bg-slate-100 p-6 rounded-xl border border-slate-200 text-center">
+            <p class="text-sm text-slate-500 uppercase font-bold tracking-widest mb-2">Skiktgräns 2026</p>
+            <p class="text-4xl font-extrabold text-slate-900">{{ threshold|number_format(0, ',', ' ') }} kr/år</p>
+            <p class="text-slate-600 mt-2">Motsvarar ca <span class="font-bold text-slate-900">{{ (threshold / 12)|round(-2)|number_format(0, ',', ' ') }} kr/månad</span></p>
+        </div>
+
+        <p>Det är viktigt att komma ihåg att du bara betalar 20% extra skatt på de kronor som ligger <em>över</em> denna gräns, inte på hela din lön (marginalskatt).</p>
+
+        <h3>Vilka yrken betalar ofta statlig skatt?</h3>
+        <p>Statlig skatt drabbar främst höginkomsttagare och specialister. Här är några yrken där lönen ofta överstiger gränsen:</p>
+        
+        <ul class="not-prose grid gap-3 sm:grid-cols-2 mt-6 mb-10">
+            <li>
+                <a href="/lon/lakare" class="flex items-center p-4 bg-white border border-slate-200 rounded-lg hover:border-indigo-300 hover:shadow-md transition-all group">
+                    <span class="font-bold text-slate-900 group-hover:text-indigo-600">Läkare</span>
+                    <span class="ml-auto text-sm text-slate-500">Hög risk för statlig skatt</span>
+                </a>
+            </li>
+            <li>
+                <a href="/lon/civilingenjor" class="flex items-center p-4 bg-white border border-slate-200 rounded-lg hover:border-indigo-300 hover:shadow-md transition-all group">
+                    <span class="font-bold text-slate-900 group-hover:text-indigo-600">Civilingenjör</span>
+                    <span class="ml-auto text-sm text-slate-500">Ofta över gränsen</span>
+                </a>
+            </li>
+            <li>
+                <a href="/lon/it-arkitekt" class="flex items-center p-4 bg-white border border-slate-200 rounded-lg hover:border-indigo-300 hover:shadow-md transition-all group">
+                    <span class="font-bold text-slate-900 group-hover:text-indigo-600">IT-Arkitekt</span>
+                    <span class="ml-auto text-sm text-slate-500">Höga specialistlöner</span>
+                </a>
+            </li>
+            <li>
+                 <a href="/lon/vd" class="flex items-center p-4 bg-white border border-slate-200 rounded-lg hover:border-indigo-300 hover:shadow-md transition-all group">
+                    <span class="font-bold text-slate-900 group-hover:text-indigo-600">VD / Chef</span>
+                    <span class="ml-auto text-sm text-slate-500">Lön + bonus</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4">
+            <p class="text-sm text-indigo-900 m-0">
+                <strong>Värnskatt?</strong> Den s.k. värnskatten (extra 5% på väldigt höga inkomster) avskaffades 2020 och gäller inte längre.
+            </p>
+        </div>
+
+        <div class="mt-12 not-prose">
+             <div class="bg-gray-900 rounded-xl p-8 text-center sm:p-12">
+                <h3 class="text-2xl font-bold text-white mb-4">Räkna ut om du betalar statlig skatt</h3>
+                <p class="text-gray-300 mb-8 mx-auto max-w-xl">Vår kalkylator visar exakt hur mycket av din lön som går till kommunalskatt, statlig skatt och vad du får kvar.</p>
+                <a href="/" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100">
+                    Till Lön efter skatt kalkylator
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

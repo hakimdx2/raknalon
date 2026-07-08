@@ -1,0 +1,199 @@
+{% extends "home.twig" %}
+
+{% block head_extra %}
+<meta name="robots" content="index, follow">
+{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 py-12 sm:py-16">
+    <article class="prose prose-slate prose-lg max-w-none">
+        
+        <!-- Header -->
+        <div class="not-prose mb-10">
+            <nav class="flex mb-4" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-2 text-sm text-slate-500">
+                    <li><a href="/" class="hover:text-indigo-600">Hem</a></li>
+                    <li><span class="mx-2">/</span></li>
+                    <li class="text-slate-900 font-medium">Cookiepolicy</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">Cookiepolicy</h1>
+            <p class="text-sm text-slate-500">Senast uppdaterad: Januari 2026</p>
+        </div>
+
+        <!-- What are Cookies -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">Vad är cookies?</h2>
+            <p>Cookies är små textfiler som lagras på din dator, mobil eller surfplatta när du besöker en webbplats. De hjälper webbplatsen att komma ihåg information om ditt besök, vilket gör nästa besök enklare och webbplatsen mer användbar för dig.</p>
+            <p>Cookies kan inte skada din enhet och innehåller ingen personlig information som namn eller bankuppgifter.</p>
+        </section>
+
+        <!-- Cookies We Use -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">Vilka cookies använder vi?</h2>
+            <p>Raknalon.se använder följande typer av cookies:</p>
+            
+            <div class="overflow-x-auto my-6 not-prose">
+                <table class="min-w-full border border-slate-200 rounded-lg overflow-hidden">
+                    <thead class="bg-slate-50">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700 border-b">Cookie</th>
+                            <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700 border-b">Leverantör</th>
+                            <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700 border-b">Syfte</th>
+                            <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700 border-b">Varaktighet</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <!-- Necessary -->
+                        <tr class="bg-green-50">
+                            <td colspan="4" class="px-4 py-3 text-sm font-semibold text-green-800">
+                                <span class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                                    Nödvändiga cookies
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm font-mono text-slate-600">PHPSESSID</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">raknalon.se</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Session-hantering för webbplatsens funktion</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Session</td>
+                        </tr>
+                        
+                        <!-- Analytics -->
+                        <tr class="bg-blue-50">
+                            <td colspan="4" class="px-4 py-3 text-sm font-semibold text-blue-800">
+                                <span class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                                    Analytiska cookies
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm font-mono text-slate-600">_ga</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Google Analytics</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Identifierar unika besökare</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">2 år</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm font-mono text-slate-600">_gid</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Google Analytics</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Identifierar unika besökare</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">24 timmar</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm font-mono text-slate-600">_gat</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Google Analytics</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Begränsar antalet förfrågningar</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">1 minut</td>
+                        </tr>
+                        
+                        <!-- Advertising -->
+                        <tr class="bg-purple-50">
+                            <td colspan="4" class="px-4 py-3 text-sm font-semibold text-purple-800">
+                                <span class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+                                    Annonscookies
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm font-mono text-slate-600">__gads</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Google AdSense</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Visar relevanta annonser</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">13 månader</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm font-mono text-slate-600">__gpi</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Google AdSense</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Annonsoptimering</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">13 månader</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Third Party Cookies -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">Tredjepartscookies</h2>
+            
+            <h3 class="text-lg font-medium text-slate-700 mt-6">Google Analytics</h3>
+            <p>Vi använder Google Analytics för att förstå hur besökare interagerar med vår webbplats. Informationen hjälper oss att förbättra användarupplevelsen. Data anonymiseras innan den skickas till Google.</p>
+            <p class="mt-2">
+                <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">Ladda ner Google Analytics opt-out-tillägg</a>
+            </p>
+            
+            <h3 class="text-lg font-medium text-slate-700 mt-8">Google AdSense</h3>
+            <p>Vi visar annonser från Google AdSense för att finansiera vår kostnadsfria tjänst. Google kan använda cookies för att visa annonser baserade på dina tidigare besök på denna och andra webbplatser.</p>
+            <p class="mt-2">Du kan välja bort personanpassade annonser:</p>
+            <ul class="list-disc pl-6 space-y-1 text-slate-600">
+                <li><a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">Googles annonsinställningar</a></li>
+                <li><a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">Digital Advertising Alliance opt-out</a></li>
+                <li><a href="https://www.youronlinechoices.eu/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">Your Online Choices (EU)</a></li>
+            </ul>
+        </section>
+
+        <!-- How to Manage Cookies -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">Hur hanterar du cookies?</h2>
+            <p>Du kan hantera eller radera cookies via din webbläsares inställningar. Här är instruktioner för de vanligaste webbläsarna:</p>
+            
+            <div class="grid gap-3 sm:grid-cols-2 mt-6 not-prose">
+                <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 hover:border-slate-300 transition-colors">
+                    <span class="text-indigo-600 font-medium hover:underline">Google Chrome</span>
+                </a>
+                <a href="https://support.mozilla.org/sv/kb/aktivera-och-inaktivera-kakor" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 hover:border-slate-300 transition-colors">
+                    <span class="text-indigo-600 font-medium hover:underline">Mozilla Firefox</span>
+                </a>
+                <a href="https://support.apple.com/sv-se/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 hover:border-slate-300 transition-colors">
+                    <span class="text-indigo-600 font-medium hover:underline">Safari</span>
+                </a>
+                <a href="https://support.microsoft.com/sv-se/microsoft-edge/ta-bort-cookies-i-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 hover:border-slate-300 transition-colors">
+                    <span class="text-indigo-600 font-medium hover:underline">Microsoft Edge</span>
+                </a>
+            </div>
+            
+            <div class="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-r-lg mt-6 not-prose">
+                <p class="text-amber-800">
+                    <strong>Observera:</strong> Om du blockerar alla cookies kan vissa funktioner på webbplatsen sluta fungera korrekt.
+                </p>
+            </div>
+        </section>
+
+        <!-- Consent -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">Samtycke</h2>
+            <p>Genom att fortsätta använda denna webbplats samtycker du till vår användning av cookies enligt denna policy.</p>
+            <p>Du kan när som helst återkalla ditt samtycke genom att radera cookies via din webbläsare och lämna webbplatsen.</p>
+        </section>
+
+        <!-- Policy Changes -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">Ändringar i denna policy</h2>
+            <p>Vi kan uppdatera denna cookiepolicy vid behov. Alla ändringar publiceras på denna sida med ett uppdaterat datum överst.</p>
+        </section>
+
+        <!-- Contact -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">Kontakt</h2>
+            <p>Om du har frågor om hur vi använder cookies, kontakta oss på <a href="mailto:info@raknalon.se" class="text-indigo-600 hover:underline">info@raknalon.se</a>.</p>
+        </section>
+
+        <!-- Related Links -->
+        <div class="not-prose bg-slate-50 rounded-xl p-6">
+            <h3 class="font-semibold text-slate-800 mb-3">Relaterade sidor</h3>
+            <ul class="space-y-2">
+                <li>
+                    <a href="/integritetspolicy" class="text-indigo-600 hover:underline">Integritetspolicy</a>
+                </li>
+                <li>
+                    <a href="/ansvarsfriskrivning" class="text-indigo-600 hover:underline">Ansvarsfriskrivning</a>
+                </li>
+            </ul>
+        </div>
+
+    </article>
+</div>
+{% endblock %}
+

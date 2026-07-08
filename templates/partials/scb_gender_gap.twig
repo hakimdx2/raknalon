@@ -1,0 +1,71 @@
+        {# ============================================== #}
+        {# BLOC SCB 1: Source Officielle + Gender Gap    #}
+        {# ============================================== #}
+        {% if profession.scb is defined and profession.scb.salary_total > 0 %}
+        <div class="mb-8">
+            <!-- Source discrète (Outside the card to save height inside) -->
+            <div class="flex items-center justify-end mb-1">
+                <a href="https://www.scb.se/hitta-statistik/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="text-[10px] text-slate-300 hover:text-indigo-600 transition-colors">
+                    Källa: SCB {{ profession.scb.year }} →
+                </a>
+            </div>
+
+            <!-- Gender Pay Gap Section (Slim Row < 100px) -->
+            {% if profession.scb.salary_men > 0 and profession.scb.salary_women > 0 %}
+            <div class="bg-white rounded-xl shadow-sm ring-1 ring-slate-900/5 px-5 py-4 flex items-center justify-between gap-4 overflow-hidden h-[80px]">
+                
+                <!-- 1. Label Section -->
+                <div class="flex items-center gap-3 min-w-fit">
+                    <div class="hidden sm:flex w-10 h-10 rounded-full bg-indigo-50 items-center justify-center text-indigo-600">
+                         <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wide">Löneskillnad</div>
+                        <div class="text-sm font-bold text-slate-900">Mellan könen</div>
+                    </div>
+                </div>
+
+                <!-- 2. Data Row (Center) -->
+                <div class="flex-1 flex items-center justify-center gap-4 sm:gap-8 border-l border-r border-slate-100 px-4">
+                    <!-- Men -->
+                    <div class="text-right">
+                         <div class="text-[10px] uppercase font-bold text-slate-400 mb-0.5 sm:hidden">Män</div>
+                         <div class="flex items-center gap-2">
+                             <span class="hidden sm:block text-xs font-semibold text-slate-500">Män</span>
+                             <span class="text-base sm:text-lg font-bold text-slate-900">{{ profession.scb.salary_men|number_format(0, ' ', ' ') }}</span>
+                         </div>
+                    </div>
+                    
+                    <!-- Mini Viz -->
+                    <div class="w-16 h-1.5 bg-slate-100 rounded-full overflow-hidden hidden md:block">
+                        <div class="flex h-full w-full">
+                            <div class="bg-blue-400 h-full w-1/2"></div>
+                            <div class="{{ profession.scb.salary_women >= profession.scb.salary_men ? 'bg-emerald-400' : 'bg-rose-400' }} h-full w-1/2"></div>
+                        </div>
+                    </div>
+
+                    <!-- Women -->
+                    <div class="text-left">
+                         <div class="text-[10px] uppercase font-bold text-slate-400 mb-0.5 sm:hidden">Kvin.</div>
+                         <div class="flex items-center gap-2">
+                             <span class="text-base sm:text-lg font-bold text-slate-900">{{ profession.scb.salary_women|number_format(0, ' ', ' ') }}</span>
+                             <span class="hidden sm:block text-xs font-semibold text-slate-500">Kvinnor</span>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- 3. Gap Badge (Right) -->
+                <div class="text-right min-w-fit pl-2">
+                     <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-0.5">Gap</div>
+                     <span class="inline-flex items-center px-2.5 py-1 rounded-md text-sm font-black {{ profession.scb.gender_gap_percent >= 98 and profession.scb.gender_gap_percent <= 102 ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-700' }}">
+                         {{ (100 - profession.scb.gender_gap_percent)|abs|round(1) }}%
+                     </span>
+                </div>
+
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}

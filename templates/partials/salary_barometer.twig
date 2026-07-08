@@ -1,0 +1,260 @@
+{# Lönebarometer - Personlig löneanalys #}
+<div class="mt-12 mb-12" id="lonebarometer">
+	<div
+		class="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-900/5" x-data="salaryBarometer()">
+
+		{# Header #}
+		<div class="bg-indigo-900 px-6 py-5">
+			<div class="flex items-center justify-between">
+				<div>
+					<h2 class="text-lg font-bold text-white">Lönebarometer</h2>
+					<p class="mt-1 text-sm text-indigo-200">Jämför din lön med marknaden</p>
+				</div>
+				<div class="rounded-full bg-white/10 p-2">
+					<svg class="h-6 w-6 text-white" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		{# Step 1: Form #}
+		<div x-show="step === 1" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="p-6">
+			<form @submit.prevent="submitForm">
+				<div
+					class="space-y-5">
+					{# Experience Slider #}
+					<div>
+						<label class="block text-sm font-medium text-slate-700 mb-2">
+							Års erfarenhet:
+							<span class="font-bold text-indigo-600" x-text="experienceYears + ' år'"></span>
+						</label>
+						<input type="range" min="0" max="40" x-model="experienceYears" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600">
+						<div class="flex justify-between text-xs text-slate-400 mt-1">
+							<span>Nyexad</span>
+							<span>10 år</span>
+							<span>20 år</span>
+							<span>30+ år</span>
+						</div>
+					</div>
+
+					{# Municipality Select #}
+					<div>
+						<label for="barometer-municipality" class="block text-sm font-medium text-slate-700 mb-2">Kommun</label>
+						<select id="barometer-municipality" x-model="municipality" class="block w-full rounded-lg border-0 py-3 px-4 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+							<option value="">Välj kommun...</option>
+							{% for m in municipalities %}
+								<option value="{{ m.name }}">{{ m.name }}</option>
+							{% endfor %}
+						</select>
+					</div>
+
+					{# Current Salary #}
+					<div>
+						<label for="barometer-salary" class="block text-sm font-medium text-slate-700 mb-2">Din nuvarande månadslön (brutto)</label>
+						<div class="relative rounded-lg shadow-sm">
+							<input type="number" id="barometer-salary" x-model="currentSalary" min="15000" max="200000" step="500" placeholder="45000" class="block w-full rounded-lg border-0 py-3 pl-4 pr-16 text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+							<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
+								<span class="text-slate-500 sm:text-sm">kr/mån</span>
+							</div>
+						</div>
+					</div>
+
+					{# Submit Button #}
+					<button type="submit" :disabled="loading || !municipality || !currentSalary" class="w-full rounded-lg bg-indigo-600 px-4 py-3 text-sm font-bold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all">
+						<span x-show="!loading">Analysera min lön</span>
+						<span x-show="loading" class="flex items-center justify-center gap-2">
+							<svg class="animate-spin h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24">
+								<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+								<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+							</svg>
+							Analyserar...
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+
+		{# Step 2: Results #}
+		<div
+			x-show="step === 2" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0" class="p-6">
+
+			{# Gauge Visualization #}
+			<div class="text-center mb-6">
+				<div
+					class="relative inline-block">
+					{# Semi-circular gauge #}
+					<svg
+						class="w-48 h-24 mx-auto" viewbox="0 0 200 100">
+						{# Background arc #}
+						<path
+						d="M 10 100 A 90 90 0 0 1 190 100" fill="none" stroke="#e2e8f0" stroke-width="12" stroke-linecap="round"/>
+						{# Colored sections #}
+						<path d="M 10 100 A 90 90 0 0 1 70 20" fill="none" stroke="#ef4444" stroke-width="12" stroke-linecap="round"/>
+						<path d="M 70 20 A 90 90 0 0 1 130 20" fill="none" stroke="#eab308" stroke-width="12" stroke-linecap="round"/>
+						<path
+						d="M 130 20 A 90 90 0 0 1 190 100" fill="none" stroke="#22c55e" stroke-width="12" stroke-linecap="round"/>
+						{# Needle #}
+						<line x1="100" y1="100" :x2="needleX" :y2="needleY" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/>
+						<circle cx="100" cy="100" r="6" fill="#1e1b4b"/>
+					</svg>
+				</div>
+				<div class="mt-2">
+					<span class="text-4xl font-extrabold" :class="{'text-red-600': result.status === 'underpaid', 'text-yellow-600': result.status === 'fair', 'text-green-600': result.status === 'overpaid'}" x-text="'Top ' + result.percentile + '%'"></span>
+					<p class="text-sm text-slate-500 mt-1" x-text="result.status_text"></p>
+				</div>
+			</div>
+
+			{# Stats Cards #}
+			<div class="grid grid-cols-3 gap-3 mb-6">
+				<div class="text-center p-3 bg-slate-50 rounded-lg">
+					<p class="text-xs text-slate-500 uppercase tracking-wide">Din lön</p>
+					<p class="text-lg font-bold text-slate-900" x-text="formatMoney(result.current_salary) + ' kr'"></p>
+				</div>
+				<div class="text-center p-3 bg-slate-50 rounded-lg">
+					<p class="text-xs text-slate-500 uppercase tracking-wide">Marknad</p>
+					<p class="text-lg font-bold text-indigo-600" x-text="formatMoney(result.market_salary) + ' kr'"></p>
+				</div>
+				<div class="text-center p-3 rounded-lg" :class="result.potential_gain > 0 ? 'bg-red-50' : 'bg-green-50'">
+					<p class="text-xs text-slate-500 uppercase tracking-wide">Potential</p>
+					<p class="text-lg font-bold" :class="result.potential_gain > 0 ? 'text-red-600' : 'text-green-600'" x-text="result.potential_gain > 0 ? '+' + formatMoney(result.potential_gain) + ' kr' : '✓ Optimal'"></p>
+				</div>
+			</div>
+
+			{# Comparison Text #}
+			<div class="bg-slate-50 rounded-lg p-4 mb-6">
+				<p class="text-sm text-slate-600 leading-relaxed" x-text="result.comparison_text"></p>
+			</div>
+
+			{# Negotiation Advice #}
+			<template x-if="result.advice && result.advice.length > 0">
+				<div class="border-t border-slate-200 pt-6">
+					<button @click="showAdvice = !showAdvice" class="flex items-center justify-between w-full text-left bg-indigo-50 p-3 rounded-lg hover:bg-indigo-100 transition-colors">
+						<h3 class="text-sm font-bold text-slate-900 uppercase tracking-wide">Förhandlingstips</h3>
+						<svg class="w-5 h-5 text-indigo-600 transform transition-transform duration-200" :class="{'rotate-180': showAdvice}" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+						</svg>
+					</button>
+					<div class="space-y-3">
+						<template x-show="showAdvice" x-transition>
+							<div class="space-y-3 mt-4">
+								<template x-for="(tip, index) in result.advice" :key="index">
+									<div class="flex items-start gap-3 p-3 bg-indigo-50/50 rounded-lg">
+										<span class="flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-indigo-100 text-indigo-600 text-xs font-bold" x-text="index + 1"></span>
+										<div>
+											<p class="text-sm font-semibold text-slate-900" x-text="tip.title"></p>
+											<p class="text-sm text-slate-600 mt-0.5" x-text="tip.text"></p>
+											<div x-show="tip.script && tip.script.length > 0" class="mt-2 p-2 bg-white rounded border border-indigo-100">
+												<p class="text-xs text-slate-500 uppercase tracking-wide mb-1">Exempelfras:</p>
+												<p class="text-sm text-indigo-700 italic" x-text="'\u0022' + tip.script + '\u0022'"></p>
+											</div>
+										</div>
+									</div>
+								</template>
+							</div>
+						</template>
+					</div>
+				</div>
+			</template>
+
+			{# Reset Button #}
+			<div class="mt-6 pt-4 border-t border-slate-200">
+				<button @click="reset()" class="w-full text-center text-sm font-medium text-indigo-600 hover:text-indigo-500">
+					← Gör en ny analys
+				</button>
+			</div>
+		</div>
+
+		{# Error State #}
+		<div x-show="error" class="p-6 text-center">
+			<div class="rounded-lg bg-red-50 p-4">
+				<p class="text-sm text-red-700" x-text="error"></p>
+				<button @click="error = null; step = 1" class="mt-3 text-sm font-medium text-red-600 hover:text-red-500">Försök igen</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	function salaryBarometer() {
+return {
+step: 1,
+loading: false,
+error: null,
+showAdvice: false,
+
+// Form fields
+experienceYears: 5,
+municipality: '',
+currentSalary: '',
+
+// Result data
+result: {},
+
+// Gauge needle position
+get needleX() { // Map percentile (0-100) to angle (-90 to 90 degrees)
+const angle = ((this.result.percentile || 0) / 100) * 180 - 90;
+const radian = angle * Math.PI / 180;
+return 100 + 70 * Math.cos(radian - Math.PI / 2);
+},
+get needleY() {
+const angle = ((this.result.percentile || 0) / 100) * 180 - 90;
+const radian = angle * Math.PI / 180;
+return 100 - 70 * Math.sin(radian - Math.PI / 2);
+},
+
+formatMoney(value) {
+return new Intl.NumberFormat('sv-SE').format(value);
+},
+
+async submitForm() {
+this.loading = true;
+this.error = null;
+
+try {
+const response = await fetch('/api/salary-position', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/json'
+},
+body: JSON.stringify(
+{
+profession_slug: '{{ profession.slug }}',
+experience_years: parseInt(this.experienceYears),
+municipality: this.municipality,
+current_salary: parseInt(this.currentSalary)
+}
+)
+});
+
+const data = await response.json();
+
+if (data.success) {
+this.result = data.data;
+this.step = 2;
+
+// Track event
+if (typeof gtag !== 'undefined') {
+gtag('event', 'salary_barometer_result', {
+'percentile': data.data.percentile,
+'status': data.data.status
+});
+}
+} else {
+this.error = data.error || 'Ett fel uppstod. Försök igen.';
+}
+} catch (e) {
+this.error = 'Kunde inte ansluta till servern. Försök igen.';
+} finally {
+this.loading = false;
+}
+},
+
+reset() {
+this.step = 1;
+this.result = {};
+this.error = null;
+}
+}
+}
+</script>

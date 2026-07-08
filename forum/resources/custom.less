@@ -1,0 +1,107 @@
+/* Custom Flarum Header to match Raknalon.se */
+@config-primary-color: #4f46e5;
+@config-secondary-color: #4338ca;
+@body-bg: #f8fafc;
+@text-color: #334155;
+@heading-color: #0f172a;
+@muted-color: #64748b;
+
+/* 1. Header Background & Border */
+.App-header {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid #e2e8f0;
+    /* Slate-200 */
+    color: #475569;
+    /* Slate-600 */
+    box-shadow: none;
+    height: 64px;
+}
+
+/* 2. Navigation Items */
+.App-header .Button {
+    color: #475569;
+    /* Slate-600 */
+    font-weight: 500;
+    transition: color 0.2s;
+    background: transparent;
+}
+
+.App-header .Button:hover,
+.App-header .Button:focus {
+    color: #4f46e5;
+    /* Indigo-600 */
+    background: #eef2ff;
+    /* Indigo-50 */
+    border-radius: 8px;
+}
+
+/* 3. Dropdown Active State */
+.App-header .ButtonGroup>.Button.active,
+.App-header .ButtonGroup>.Button:active,
+.App-header .ButtonGroup>.Button.checked,
+.App-header .ButtonGroup>.Button.active:focus,
+.App-header .ButtonGroup>.Button:active:focus,
+.App-header .ButtonGroup>.Button.checked:focus {
+    color: #4338ca;
+    /* Indigo-700 */
+    background: #e0e7ff;
+    /* Indigo-100 */
+}
+
+/* 4. Search Bar */
+.Header-controls .Search-input input {
+    background-color: #f1f5f9;
+    /* Slate-100 */
+    border: 1px solid #cbd5e1;
+    /* Slate-300 */
+    color: #334155;
+    border-radius: 8px;
+}
+
+.Header-controls .Search-input input:focus {
+    border-color: #6366f1;
+    /* Indigo-500 */
+    background-color: #fff;
+}
+
+/* 5. Logo Adjustment */
+#home-link {
+    color: transparent !important;
+    background: url('/img/logo-new.svg') no-repeat center left !important;
+    background-size: contain !important;
+    width: 160px;
+    height: 40px;
+    display: inline-block !important;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-top: 4px;
+}
+
+/* 6. Back Link Style */
+#back-to-site {
+    color: #475569;
+    font-weight: 600;
+    margin-right: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+#back-to-site:hover {
+    color: #4f46e5;
+}
+
+/* 7. Mobile Optimization */
+@media (max-width: 767px) {
+    .App-header {
+        background-color: #fff;
+    }
+
+    #back-to-site span {
+        display: none;
+        /* Icon only on mobile */
+    }
+}

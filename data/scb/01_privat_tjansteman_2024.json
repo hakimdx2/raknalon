@@ -1,0 +1,1287 @@
+[
+    {
+        "ssyk_code": "0000",
+        "profession": "Samtliga yrken",
+        "sector": "privat_tjansteman",
+        "salary_men": 55600,
+        "salary_women": 47600,
+        "salary_total": 52000,
+        "gender_gap_percent": 85.6
+    },
+    {
+        "ssyk_code": "011",
+        "profession": "Officerare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "021",
+        "profession": "Specialistofficerare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "031",
+        "profession": "Soldater m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "111",
+        "profession": "Politiker och högre ämbetsmän",
+        "sector": "privat_tjansteman",
+        "salary_men": 66400,
+        "salary_women": 53400,
+        "salary_total": 59100,
+        "gender_gap_percent": 80.4
+    },
+    {
+        "ssyk_code": "112",
+        "profession": "Verkställande direktörer m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 91400,
+        "salary_women": 95500,
+        "salary_total": 92100,
+        "gender_gap_percent": 104.5
+    },
+    {
+        "ssyk_code": "121",
+        "profession": "Ekonomi- och finanschefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 98500,
+        "salary_women": 69200,
+        "salary_total": 81100,
+        "gender_gap_percent": 70.3
+    },
+    {
+        "ssyk_code": "122",
+        "profession": "Personal- och HR-chefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 77600,
+        "salary_women": 69000,
+        "salary_total": 71100,
+        "gender_gap_percent": 88.9
+    },
+    {
+        "ssyk_code": "123",
+        "profession": "Förvaltnings- och planeringschefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 79100,
+        "salary_women": 77400,
+        "salary_total": 78600,
+        "gender_gap_percent": 97.9
+    },
+    {
+        "ssyk_code": "124",
+        "profession": "Informations-, kommunikations- och PR-chefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 74800,
+        "salary_women": 70100,
+        "salary_total": 72100,
+        "gender_gap_percent": 93.7
+    },
+    {
+        "ssyk_code": "125",
+        "profession": "Försäljnings- och marknadschefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 77200,
+        "salary_women": 71100,
+        "salary_total": 75500,
+        "gender_gap_percent": 92.1
+    },
+    {
+        "ssyk_code": "129",
+        "profession": "Övriga administrations- och servicechefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 66900,
+        "salary_women": 61000,
+        "salary_total": 64100,
+        "gender_gap_percent": 91.2
+    },
+    {
+        "ssyk_code": "131",
+        "profession": "IT-chefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 78600,
+        "salary_women": 75700,
+        "salary_total": 77900,
+        "gender_gap_percent": 96.3
+    },
+    {
+        "ssyk_code": "132",
+        "profession": "Inköps-, logistik- och transportchefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 63000,
+        "salary_women": 61600,
+        "salary_total": 62700,
+        "gender_gap_percent": 97.8
+    },
+    {
+        "ssyk_code": "133",
+        "profession": "Forsknings- och utvecklingschefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 86000,
+        "salary_women": 80600,
+        "salary_total": 84200,
+        "gender_gap_percent": 93.7
+    },
+    {
+        "ssyk_code": "134",
+        "profession": "Chefer inom arkitekt- och ingenjörsverksamhet",
+        "sector": "privat_tjansteman",
+        "salary_men": 71500,
+        "salary_women": 65900,
+        "salary_total": 69800,
+        "gender_gap_percent": 92.2
+    },
+    {
+        "ssyk_code": "135",
+        "profession": "Fastighets- och förvaltningschefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 64200,
+        "salary_women": 64200,
+        "salary_total": 64200,
+        "gender_gap_percent": 100
+    },
+    {
+        "ssyk_code": "136",
+        "profession": "Driftchefer inom bygg, anläggning och gruva",
+        "sector": "privat_tjansteman",
+        "salary_men": 62700,
+        "salary_women": 66600,
+        "salary_total": 63000,
+        "gender_gap_percent": 106.2
+    },
+    {
+        "ssyk_code": "137",
+        "profession": "Produktionschefer inom tillverkning",
+        "sector": "privat_tjansteman",
+        "salary_men": 61900,
+        "salary_women": 63100,
+        "salary_total": 62000,
+        "gender_gap_percent": 101.9
+    },
+    {
+        "ssyk_code": "138",
+        "profession": "Förvaltare inom skogsbruk och lantbruk m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 55400,
+        "salary_women": 0,
+        "salary_total": 56200
+    },
+    {
+        "ssyk_code": "141",
+        "profession": "Chefer inom grund- och gymnasieskola samt vuxenutbildning",
+        "sector": "privat_tjansteman",
+        "salary_men": 58300,
+        "salary_women": 59000,
+        "salary_total": 58700,
+        "gender_gap_percent": 101.2
+    },
+    {
+        "ssyk_code": "142",
+        "profession": "Chefer inom förskoleverksamhet",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 46800,
+        "salary_total": 46900
+    },
+    {
+        "ssyk_code": "149",
+        "profession": "Övriga chefer inom utbildning",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 52900
+    },
+    {
+        "ssyk_code": "151",
+        "profession": "Chefer inom hälso- och sjukvård",
+        "sector": "privat_tjansteman",
+        "salary_men": 64600,
+        "salary_women": 56200,
+        "salary_total": 57500,
+        "gender_gap_percent": 87
+    },
+    {
+        "ssyk_code": "152",
+        "profession": "Chefer inom socialt och kurativt arbete",
+        "sector": "privat_tjansteman",
+        "salary_men": 44600,
+        "salary_women": 46200,
+        "salary_total": 45800,
+        "gender_gap_percent": 103.6
+    },
+    {
+        "ssyk_code": "153",
+        "profession": "Chefer inom äldreomsorg",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 48100,
+        "salary_total": 48300
+    },
+    {
+        "ssyk_code": "154",
+        "profession": "Chefer och ledare inom trossamfund",
+        "sector": "privat_tjansteman",
+        "salary_men": 69100,
+        "salary_women": 65600,
+        "salary_total": 67600,
+        "gender_gap_percent": 94.9
+    },
+    {
+        "ssyk_code": "159",
+        "profession": "Övriga chefer inom samhällsservice",
+        "sector": "privat_tjansteman",
+        "salary_men": 64100,
+        "salary_women": 59400,
+        "salary_total": 61900,
+        "gender_gap_percent": 92.7
+    },
+    {
+        "ssyk_code": "161",
+        "profession": "Chefer inom bank, finans och försäkring",
+        "sector": "privat_tjansteman",
+        "salary_men": 114000,
+        "salary_women": 96000,
+        "salary_total": 106400,
+        "gender_gap_percent": 84.2
+    },
+    {
+        "ssyk_code": "171",
+        "profession": "Hotell- och konferenschefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 45700,
+        "salary_total": 50000
+    },
+    {
+        "ssyk_code": "172",
+        "profession": "Restaurang- och kökschefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 35400,
+        "salary_women": 34200,
+        "salary_total": 34900,
+        "gender_gap_percent": 96.6
+    },
+    {
+        "ssyk_code": "173",
+        "profession": "Chefer inom handel",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 51100,
+        "salary_total": 58100
+    },
+    {
+        "ssyk_code": "174",
+        "profession": "Chefer inom friskvård, sport och fritid",
+        "sector": "privat_tjansteman",
+        "salary_men": 40700,
+        "salary_women": 38800,
+        "salary_total": 39700,
+        "gender_gap_percent": 95.3
+    },
+    {
+        "ssyk_code": "179",
+        "profession": "Chefer inom övrig servicenäring",
+        "sector": "privat_tjansteman",
+        "salary_men": 50400,
+        "salary_women": 45900,
+        "salary_total": 49000,
+        "gender_gap_percent": 91.1
+    },
+    {
+        "ssyk_code": "211",
+        "profession": "Fysiker och kemister m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 53800,
+        "salary_women": 53200,
+        "salary_total": 53600,
+        "gender_gap_percent": 98.9
+    },
+    {
+        "ssyk_code": "212",
+        "profession": "Matematiker, aktuarier och statistiker",
+        "sector": "privat_tjansteman",
+        "salary_men": 67600,
+        "salary_women": 62900,
+        "salary_total": 66000,
+        "gender_gap_percent": 93
+    },
+    {
+        "ssyk_code": "213",
+        "profession": "Biologer, farmakologer och specialister inom lant- och skogsbruk m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 49200,
+        "salary_women": 51700,
+        "salary_total": 50300,
+        "gender_gap_percent": 105.1
+    },
+    {
+        "ssyk_code": "214",
+        "profession": "Civilingenjörsyrken",
+        "sector": "privat_tjansteman",
+        "salary_men": 55200,
+        "salary_women": 51800,
+        "salary_total": 54300,
+        "gender_gap_percent": 93.8
+    },
+    {
+        "ssyk_code": "216",
+        "profession": "Arkitekter och lantmätare",
+        "sector": "privat_tjansteman",
+        "salary_men": 48700,
+        "salary_women": 47800,
+        "salary_total": 48200,
+        "gender_gap_percent": 98.2
+    },
+    {
+        "ssyk_code": "217",
+        "profession": "Designer och formgivare",
+        "sector": "privat_tjansteman",
+        "salary_men": 49400,
+        "salary_women": 44300,
+        "salary_total": 47400,
+        "gender_gap_percent": 89.7
+    },
+    {
+        "ssyk_code": "218",
+        "profession": "Specialister inom miljö- och hälsoskydd",
+        "sector": "privat_tjansteman",
+        "salary_men": 52400,
+        "salary_women": 50400,
+        "salary_total": 51400,
+        "gender_gap_percent": 96.2
+    },
+    {
+        "ssyk_code": "221",
+        "profession": "Läkare",
+        "sector": "privat_tjansteman",
+        "salary_men": 78400,
+        "salary_women": 80100,
+        "salary_total": 79300,
+        "gender_gap_percent": 102.2
+    },
+    {
+        "ssyk_code": "222",
+        "profession": "Sjuksköterskor",
+        "sector": "privat_tjansteman",
+        "salary_men": 51300,
+        "salary_women": 48700,
+        "salary_total": 49000,
+        "gender_gap_percent": 94.9
+    },
+    {
+        "ssyk_code": "223",
+        "profession": "Sjuksköterskor (fortsättning)",
+        "sector": "privat_tjansteman",
+        "salary_men": 49000,
+        "salary_women": 46400,
+        "salary_total": 46600,
+        "gender_gap_percent": 94.7
+    },
+    {
+        "ssyk_code": "224",
+        "profession": "Psykologer och psykoterapeuter",
+        "sector": "privat_tjansteman",
+        "salary_men": 50200,
+        "salary_women": 49000,
+        "salary_total": 49400,
+        "gender_gap_percent": 97.6
+    },
+    {
+        "ssyk_code": "225",
+        "profession": "Veterinärer",
+        "sector": "privat_tjansteman",
+        "salary_men": 55500,
+        "salary_women": 52700,
+        "salary_total": 53200,
+        "gender_gap_percent": 95
+    },
+    {
+        "ssyk_code": "226",
+        "profession": "Tandläkare",
+        "sector": "privat_tjansteman",
+        "salary_men": 58200,
+        "salary_women": 52300,
+        "salary_total": 53500,
+        "gender_gap_percent": 89.9
+    },
+    {
+        "ssyk_code": "227",
+        "profession": "Naprapater, sjukgymnaster och arbetsterapeuter m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 40500,
+        "salary_women": 39800,
+        "salary_total": 40100,
+        "gender_gap_percent": 98.3
+    },
+    {
+        "ssyk_code": "228",
+        "profession": "Andra specialister inom hälso- och sjukvård",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 50300,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "231",
+        "profession": "Universitets- och högskollärare",
+        "sector": "privat_tjansteman",
+        "salary_men": 49900,
+        "salary_women": 48300,
+        "salary_total": 49000,
+        "gender_gap_percent": 96.8
+    },
+    {
+        "ssyk_code": "232",
+        "profession": "Lärare i yrkesämnen",
+        "sector": "privat_tjansteman",
+        "salary_men": 41100,
+        "salary_women": 39500,
+        "salary_total": 40400,
+        "gender_gap_percent": 96.1
+    },
+    {
+        "ssyk_code": "233",
+        "profession": "Gymnasielärare",
+        "sector": "privat_tjansteman",
+        "salary_men": 40200,
+        "salary_women": 39200,
+        "salary_total": 39600,
+        "gender_gap_percent": 97.5
+    },
+    {
+        "ssyk_code": "234",
+        "profession": "Grundskollärare, fritidspedagoger och förskollärare",
+        "sector": "privat_tjansteman",
+        "salary_men": 39400,
+        "salary_women": 38200,
+        "salary_total": 38500,
+        "gender_gap_percent": 97
+    },
+    {
+        "ssyk_code": "235",
+        "profession": "Andra pedagoger med teoretisk specialistkompetens",
+        "sector": "privat_tjansteman",
+        "salary_men": 42000,
+        "salary_women": 40900,
+        "salary_total": 41100,
+        "gender_gap_percent": 97.4
+    },
+    {
+        "ssyk_code": "241",
+        "profession": "Revisorer, finansanalytiker och fondförvaltare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 68800,
+        "salary_women": 55900,
+        "salary_total": 62400,
+        "gender_gap_percent": 81.3
+    },
+    {
+        "ssyk_code": "242",
+        "profession": "Organisationsutvecklare, utredare och HR-specialister m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 60700,
+        "salary_women": 53500,
+        "salary_total": 56700,
+        "gender_gap_percent": 88.1
+    },
+    {
+        "ssyk_code": "243",
+        "profession": "Marknadsförare och informatörer m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 56000,
+        "salary_women": 49400,
+        "salary_total": 51900,
+        "gender_gap_percent": 88.2
+    },
+    {
+        "ssyk_code": "251",
+        "profession": "IT-arkitekter, systemutvecklare och testledare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 56700,
+        "salary_women": 53800,
+        "salary_total": 56000,
+        "gender_gap_percent": 94.9
+    },
+    {
+        "ssyk_code": "261",
+        "profession": "Jurister",
+        "sector": "privat_tjansteman",
+        "salary_men": 70800,
+        "salary_women": 63600,
+        "salary_total": 66800,
+        "gender_gap_percent": 89.8
+    },
+    {
+        "ssyk_code": "262",
+        "profession": "Museiintendenter och bibliotekarier m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 44000,
+        "salary_women": 40200,
+        "salary_total": 41800,
+        "gender_gap_percent": 91.4
+    },
+    {
+        "ssyk_code": "264",
+        "profession": "Författare, journalister och tolkar m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 44700,
+        "salary_women": 44100,
+        "salary_total": 44400,
+        "gender_gap_percent": 98.7
+    },
+    {
+        "ssyk_code": "265",
+        "profession": "Konstnärer, musiker och skådespelare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 45600,
+        "salary_women": 43200,
+        "salary_total": 44600,
+        "gender_gap_percent": 94.7
+    },
+    {
+        "ssyk_code": "266",
+        "profession": "Socialsekreterare och kuratorer m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 41300,
+        "salary_women": 40100,
+        "salary_total": 40200,
+        "gender_gap_percent": 97.1
+    },
+    {
+        "ssyk_code": "267",
+        "profession": "Präster och diakoner",
+        "sector": "privat_tjansteman",
+        "salary_men": 50000,
+        "salary_women": 46800,
+        "salary_total": 47800,
+        "gender_gap_percent": 93.6
+    },
+    {
+        "ssyk_code": "311",
+        "profession": "Ingenjörer och tekniker",
+        "sector": "privat_tjansteman",
+        "salary_men": 48100,
+        "salary_women": 44900,
+        "salary_total": 47400,
+        "gender_gap_percent": 93.3
+    },
+    {
+        "ssyk_code": "312",
+        "profession": "Arbetsledare inom bygg och tillverkning m.m.",
+        "sector": "privat_tjansteman",
+        "salary_men": 50200,
+        "salary_women": 46200,
+        "salary_total": 49800,
+        "gender_gap_percent": 92
+    },
+    {
+        "ssyk_code": "315",
+        "profession": "Piloter, fartygs- och maskinbefäl m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 57000,
+        "salary_women": 0,
+        "salary_total": 57000
+    },
+    {
+        "ssyk_code": "321",
+        "profession": "Biomedicinska analytiker, tandtekniker och laboratorieingenjörer m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 44400,
+        "salary_women": 43400,
+        "salary_total": 43800,
+        "gender_gap_percent": 97.7
+    },
+    {
+        "ssyk_code": "323",
+        "profession": "Terapeuter inom alternativmedicin",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "324",
+        "profession": "Djursjukskötare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "325",
+        "profession": "Tandhygienister",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 42900,
+        "salary_total": 42700
+    },
+    {
+        "ssyk_code": "331",
+        "profession": "Banktjänstemän och redovisningsekonomer m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 52800,
+        "salary_women": 44200,
+        "salary_total": 47000,
+        "gender_gap_percent": 83.7
+    },
+    {
+        "ssyk_code": "332",
+        "profession": "Försäkringsrådgivare, företagssäljare och inköpare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 51900,
+        "salary_women": 45800,
+        "salary_total": 49700,
+        "gender_gap_percent": 88.2
+    },
+    {
+        "ssyk_code": "333",
+        "profession": "Förmedlare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 47100,
+        "salary_women": 42700,
+        "salary_total": 45000,
+        "gender_gap_percent": 90.7
+    },
+    {
+        "ssyk_code": "334",
+        "profession": "Juristsekreterare, chefssekreterare och institutionssekreterare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 51900,
+        "salary_women": 44200,
+        "salary_total": 46100,
+        "gender_gap_percent": 85.2
+    },
+    {
+        "ssyk_code": "335",
+        "profession": "Skatte- och socialförsäkringshandläggare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 41700,
+        "salary_women": 45600,
+        "salary_total": 43000,
+        "gender_gap_percent": 109.4
+    },
+    {
+        "ssyk_code": "336",
+        "profession": "Poliser",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "341",
+        "profession": "Behandlingsassistenter och pastorer",
+        "sector": "privat_tjansteman",
+        "salary_men": 36000,
+        "salary_women": 36400,
+        "salary_total": 36200,
+        "gender_gap_percent": 101.1
+    },
+    {
+        "ssyk_code": "342",
+        "profession": "Idrottsutövare och fritidsledare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 38600,
+        "salary_women": 34600,
+        "salary_total": 36400,
+        "gender_gap_percent": 89.6
+    },
+    {
+        "ssyk_code": "343",
+        "profession": "Fotografer, dekoratörer och underhållningsartister m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 39500,
+        "salary_women": 37800,
+        "salary_total": 38400,
+        "gender_gap_percent": 95.7
+    },
+    {
+        "ssyk_code": "344",
+        "profession": "Trafiklärare och instruktörer",
+        "sector": "privat_tjansteman",
+        "salary_men": 36800,
+        "salary_women": 38300,
+        "salary_total": 37600,
+        "gender_gap_percent": 104.1
+    },
+    {
+        "ssyk_code": "345",
+        "profession": "Köksmästare och souschefer",
+        "sector": "privat_tjansteman",
+        "salary_men": 37700,
+        "salary_women": 37300,
+        "salary_total": 37600,
+        "gender_gap_percent": 98.9
+    },
+    {
+        "ssyk_code": "351",
+        "profession": "Drift-, support- och nätverkstekniker m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 44500,
+        "salary_women": 41700,
+        "salary_total": 43900,
+        "gender_gap_percent": 93.7
+    },
+    {
+        "ssyk_code": "352",
+        "profession": "Bild-, ljud- och ljustekniker m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 40300,
+        "salary_women": 38500,
+        "salary_total": 40000,
+        "gender_gap_percent": 95.5
+    },
+    {
+        "ssyk_code": "411",
+        "profession": "Kontorsassistenter och sekreterare",
+        "sector": "privat_tjansteman",
+        "salary_men": 38100,
+        "salary_women": 37100,
+        "salary_total": 37300,
+        "gender_gap_percent": 97.4
+    },
+    {
+        "ssyk_code": "421",
+        "profession": "Croupierer och inkasserare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 34200,
+        "salary_total": 34900
+    },
+    {
+        "ssyk_code": "422",
+        "profession": "Resesäljare, kundtjänstpersonal och receptionister m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 32700,
+        "salary_women": 31600,
+        "salary_total": 32000,
+        "gender_gap_percent": 96.6
+    },
+    {
+        "ssyk_code": "432",
+        "profession": "Lagerpersonal och transportledare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 40400,
+        "salary_women": 38300,
+        "salary_total": 39900,
+        "gender_gap_percent": 94.8
+    },
+    {
+        "ssyk_code": "441",
+        "profession": "Biblioteks- och arkivassistenter m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "442",
+        "profession": "Brevbärare och postterminalarbetare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "443",
+        "profession": "Förtroendevalda",
+        "sector": "privat_tjansteman",
+        "salary_men": 40200,
+        "salary_women": 33500,
+        "salary_total": 36500,
+        "gender_gap_percent": 83.3
+    },
+    {
+        "ssyk_code": "511",
+        "profession": "Kabinpersonal, tågmästare och guider m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 31300,
+        "salary_women": 30800,
+        "salary_total": 31000,
+        "gender_gap_percent": 98.4
+    },
+    {
+        "ssyk_code": "512",
+        "profession": "Kockar och kallskänkor",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "513",
+        "profession": "Hovmästare, servitörer och bartendrar",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "514",
+        "profession": "Skönhets- och kroppsterapeuter",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "515",
+        "profession": "Städledare och fastighetsskötare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "516",
+        "profession": "Övrig servicepersonal",
+        "sector": "privat_tjansteman",
+        "salary_men": 35600,
+        "salary_women": 34600,
+        "salary_total": 35000,
+        "gender_gap_percent": 97.2
+    },
+    {
+        "ssyk_code": "522",
+        "profession": "Butikspersonal",
+        "sector": "privat_tjansteman",
+        "salary_men": 36900,
+        "salary_women": 36800,
+        "salary_total": 36800,
+        "gender_gap_percent": 99.7
+    },
+    {
+        "ssyk_code": "523",
+        "profession": "Kassapersonal m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "524",
+        "profession": "Eventsäljare och telefonförsäljare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 32400,
+        "salary_women": 34500,
+        "salary_total": 33200,
+        "gender_gap_percent": 106.5
+    },
+    {
+        "ssyk_code": "531",
+        "profession": "Barnskötare och elevassistenter m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "532",
+        "profession": "Undersköterskor",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "533",
+        "profession": "Vårdbiträden",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "534",
+        "profession": "Skötare, vårdare och personliga assistenter m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "535",
+        "profession": "Tandsköterskor",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 34800,
+        "salary_total": 34700
+    },
+    {
+        "ssyk_code": "541",
+        "profession": "Andra bevaknings- och säkerhetsyrken",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "611",
+        "profession": "Växtodlare inom jordbruk och trädgård",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "612",
+        "profession": "Djuruppfödare och djurskötare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "613",
+        "profession": "Växtodlare och djuruppfödare, blandad drift",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "621",
+        "profession": "Skogsarbetare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "622",
+        "profession": "Fiskodlare och fiskare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "711",
+        "profession": "Snickare, murare och anläggningsarbetare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "712",
+        "profession": "Takmontörer, golvläggare och VVS-montörer m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "713",
+        "profession": "Målare, lackerare och skorstensfejare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "721",
+        "profession": "Gjutare, svetsare och plåtslagare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "722",
+        "profession": "Smeder och verktygsmakare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "723",
+        "profession": "Fordonsmekaniker och reparatörer m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "731",
+        "profession": "Finmekaniker och konsthantverkare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "732",
+        "profession": "Prepresstekniker, tryckare och bokbindare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "741",
+        "profession": "Installations- och industrielektriker m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "742",
+        "profession": "Elektronikreparatörer och kommunikationselektriker m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "752",
+        "profession": "Ytbehandlare, trä och möbelsnickare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "753",
+        "profession": "Skräddare, tapetserare och läderhantverkare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "761",
+        "profession": "Slaktare, bagare och livsmedelsförädlare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "811",
+        "profession": "Malmförädlingsyrken och brunnsborrare m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "812",
+        "profession": "Process- och maskinoperatörer, vid stål- och metallverk",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "813",
+        "profession": "Maskinoperatörer, kemiska och farmaceutiska produkter m.m.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "814",
+        "profession": "Maskinoperatörer, gummi-, plast- och pappersvaruindustri",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "815",
+        "profession": "Maskinoperatörer, textil-, tvätt- och läderindustri m.m.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "816",
+        "profession": "Maskinoperatörer, livsmedelsindustri",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "817",
+        "profession": "Processoperatörer, trä- och pappersindustri",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "818",
+        "profession": "Andra process- och maskinoperatörer",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "819",
+        "profession": "Drifttekniker och processövervakare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "821",
+        "profession": "Montörer",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "831",
+        "profession": "Lokförare och bangårdspersonal",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "832",
+        "profession": "Bil-, motorcykel och cykelförare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "833",
+        "profession": "Lastbils- och bussförare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "834",
+        "profession": "Maskinförare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "835",
+        "profession": "Matroser och jungmän m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "911",
+        "profession": "Städare och hemservicepersonal m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "912",
+        "profession": "Tvättare, fönsterputsare och övriga rengöringsarbetare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "921",
+        "profession": "Bärplockare och plantörer m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "931",
+        "profession": "Grovarbetare inom bygg och anläggning",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "932",
+        "profession": "Handpaketerare och andra fabriksarbetare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "933",
+        "profession": "Hamnarbetare och ramppersonal m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "941",
+        "profession": "Snabbmatspersonal, köks- och restaurangbiträden m.fl.",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "952",
+        "profession": "Torg- och marknadsförsäljare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "961",
+        "profession": "Återvinningsarbetare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "962",
+        "profession": "Tidningsdistributörer, vaktmästare och övriga servicearbetare",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "0001",
+        "profession": "övriga yrken",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 0,
+        "salary_total": 0
+    },
+    {
+        "ssyk_code": "0002",
+        "profession": "yrke okänt",
+        "sector": "privat_tjansteman",
+        "salary_men": 0,
+        "salary_women": 42200,
+        "salary_total": 46500
+    }
+]

@@ -1,0 +1,1447 @@
+[
+    {
+        "id": "0114",
+        "name": "Upplands Väsby",
+        "tax_rate": 31.28
+    },
+    {
+        "id": "0115",
+        "name": "Vallentuna",
+        "tax_rate": 30.00
+    },
+    {
+        "id": "0117",
+        "name": "Österåker",
+        "tax_rate": 29.53
+    },
+    {
+        "id": "0120",
+        "name": "Värmdö",
+        "tax_rate": 30.33
+    },
+    {
+        "id": "0123",
+        "name": "Järfälla",
+        "tax_rate": 30.63
+    },
+    {
+        "id": "0125",
+        "name": "Ekerö",
+        "tax_rate": 30.28
+    },
+    {
+        "id": "0126",
+        "name": "Huddinge",
+        "tax_rate": 31.63
+    },
+    {
+        "id": "0127",
+        "name": "Botkyrka",
+        "tax_rate": 32.03
+    },
+    {
+        "id": "0128",
+        "name": "Salem",
+        "tax_rate": 31.23
+    },
+    {
+        "id": "0136",
+        "name": "Haninge",
+        "tax_rate": 31.28
+    },
+    {
+        "id": "0138",
+        "name": "Tyresö",
+        "tax_rate": 30.98
+    },
+    {
+        "id": "0139",
+        "name": "Upplands-Bro",
+        "tax_rate": 30.83
+    },
+    {
+        "id": "0140",
+        "name": "Nykvarn",
+        "tax_rate": 30.98
+    },
+    {
+        "id": "0160",
+        "name": "Täby",
+        "tax_rate": 29.63
+    },
+    {
+        "id": "0162",
+        "name": "Danderyd",
+        "tax_rate": 29.15
+    },
+    {
+        "id": "0163",
+        "name": "Sollentuna",
+        "tax_rate": 29.70
+    },
+    {
+        "id": "0180",
+        "name": "Stockholm",
+        "tax_rate": 29.82
+    },
+    {
+        "id": "0181",
+        "name": "Södertälje",
+        "tax_rate": 32.50
+    },
+    {
+        "id": "0182",
+        "name": "Nacka",
+        "tax_rate": 29.43
+    },
+    {
+        "id": "0183",
+        "name": "Sundbyberg",
+        "tax_rate": 30.28
+    },
+    {
+        "id": "0184",
+        "name": "Solna",
+        "tax_rate": 29.20
+    },
+    {
+        "id": "0186",
+        "name": "Lidingö",
+        "tax_rate": 29.63
+    },
+    {
+        "id": "0187",
+        "name": "Vaxholm",
+        "tax_rate": 30.43
+    },
+    {
+        "id": "0188",
+        "name": "Norrtälje",
+        "tax_rate": 31.08
+    },
+    {
+        "id": "0191",
+        "name": "Sigtuna",
+        "tax_rate": 31.13
+    },
+    {
+        "id": "0192",
+        "name": "Nynäshamn",
+        "tax_rate": 32.23
+    },
+    {
+        "id": "0305",
+        "name": "Håbo",
+        "tax_rate": 32.43
+    },
+    {
+        "id": "0319",
+        "name": "Älvkarleby",
+        "tax_rate": 33.35
+    },
+    {
+        "id": "0330",
+        "name": "Knivsta",
+        "tax_rate": 31.70
+    },
+    {
+        "id": "0331",
+        "name": "Heby",
+        "tax_rate": 33.95
+    },
+    {
+        "id": "0360",
+        "name": "Tierp",
+        "tax_rate": 32.65
+    },
+    {
+        "id": "0380",
+        "name": "Uppsala",
+        "tax_rate": 32.10
+    },
+    {
+        "id": "0381",
+        "name": "Enköping",
+        "tax_rate": 32.50
+    },
+    {
+        "id": "0382",
+        "name": "Östhammar",
+        "tax_rate": 33.05
+    },
+    {
+        "id": "0428",
+        "name": "Vingåker",
+        "tax_rate": 33.43
+    },
+    {
+        "id": "0461",
+        "name": "Gnesta",
+        "tax_rate": 32.13
+    },
+    {
+        "id": "0480",
+        "name": "Nyköping",
+        "tax_rate": 32.18
+    },
+    {
+        "id": "0481",
+        "name": "Oxelösund",
+        "tax_rate": 32.73
+    },
+    {
+        "id": "0482",
+        "name": "Flen",
+        "tax_rate": 33.68
+    },
+    {
+        "id": "0483",
+        "name": "Katrineholm",
+        "tax_rate": 32.53
+    },
+    {
+        "id": "0484",
+        "name": "Eskilstuna",
+        "tax_rate": 32.43
+    },
+    {
+        "id": "0486",
+        "name": "Strängnäs",
+        "tax_rate": 32.48
+    },
+    {
+        "id": "0488",
+        "name": "Trosa",
+        "tax_rate": 31.93
+    },
+    {
+        "id": "0509",
+        "name": "Ödeshög",
+        "tax_rate": 33.25
+    },
+    {
+        "id": "0512",
+        "name": "Ydre",
+        "tax_rate": 33.65
+    },
+    {
+        "id": "0513",
+        "name": "Kinda",
+        "tax_rate": 33.25
+    },
+    {
+        "id": "0560",
+        "name": "Boxholm",
+        "tax_rate": 32.75
+    },
+    {
+        "id": "0561",
+        "name": "Åtvidaberg",
+        "tax_rate": 33.10
+    },
+    {
+        "id": "0562",
+        "name": "Finspång",
+        "tax_rate": 32.85
+    },
+    {
+        "id": "0563",
+        "name": "Valdemarsvik",
+        "tax_rate": 33.10
+    },
+    {
+        "id": "0580",
+        "name": "Linköping",
+        "tax_rate": 31.35
+    },
+    {
+        "id": "0581",
+        "name": "Norrköping",
+        "tax_rate": 32.60
+    },
+    {
+        "id": "0582",
+        "name": "Söderköping",
+        "tax_rate": 32.65
+    },
+    {
+        "id": "0583",
+        "name": "Motala",
+        "tax_rate": 32.35
+    },
+    {
+        "id": "0584",
+        "name": "Vadstena",
+        "tax_rate": 32.85
+    },
+    {
+        "id": "0586",
+        "name": "Mjölby",
+        "tax_rate": 32.35
+    },
+    {
+        "id": "0604",
+        "name": "Aneby",
+        "tax_rate": 33.00
+    },
+    {
+        "id": "0617",
+        "name": "Gnosjö",
+        "tax_rate": 31.96
+    },
+    {
+        "id": "0642",
+        "name": "Mullsjö",
+        "tax_rate": 32.26
+    },
+    {
+        "id": "0643",
+        "name": "Habo",
+        "tax_rate": 31.61
+    },
+    {
+        "id": "0662",
+        "name": "Gislaved",
+        "tax_rate": 32.06
+    },
+    {
+        "id": "0665",
+        "name": "Vaggeryd",
+        "tax_rate": 31.86
+    },
+    {
+        "id": "0680",
+        "name": "Jönköping",
+        "tax_rate": 31.76
+    },
+    {
+        "id": "0682",
+        "name": "Nässjö",
+        "tax_rate": 32.56
+    },
+    {
+        "id": "0683",
+        "name": "Värnamo",
+        "tax_rate": 31.36
+    },
+    {
+        "id": "0684",
+        "name": "Sävsjö",
+        "tax_rate": 32.61
+    },
+    {
+        "id": "0685",
+        "name": "Vetlanda",
+        "tax_rate": 32.51
+    },
+    {
+        "id": "0686",
+        "name": "Eksjö",
+        "tax_rate": 32.16
+    },
+    {
+        "id": "0687",
+        "name": "Tranås",
+        "tax_rate": 32.46
+    },
+    {
+        "id": "0760",
+        "name": "Uppvidinge",
+        "tax_rate": 32.89
+    },
+    {
+        "id": "0761",
+        "name": "Lessebo",
+        "tax_rate": 33.04
+    },
+    {
+        "id": "0763",
+        "name": "Tingsryd",
+        "tax_rate": 33.46
+    },
+    {
+        "id": "0764",
+        "name": "Alvesta",
+        "tax_rate": 32.49
+    },
+    {
+        "id": "0765",
+        "name": "Älmhult",
+        "tax_rate": 32.54
+    },
+    {
+        "id": "0767",
+        "name": "Markaryd",
+        "tax_rate": 32.84
+    },
+    {
+        "id": "0780",
+        "name": "Växjö",
+        "tax_rate": 31.69
+    },
+    {
+        "id": "0781",
+        "name": "Ljungby",
+        "tax_rate": 32.14
+    },
+    {
+        "id": "0821",
+        "name": "Högsby",
+        "tax_rate": 33.05
+    },
+    {
+        "id": "0834",
+        "name": "Torsås",
+        "tax_rate": 32.85
+    },
+    {
+        "id": "0840",
+        "name": "Mörbylånga",
+        "tax_rate": 32.40
+    },
+    {
+        "id": "0860",
+        "name": "Hultsfred",
+        "tax_rate": 32.85
+    },
+    {
+        "id": "0861",
+        "name": "Mönsterås",
+        "tax_rate": 32.80
+    },
+    {
+        "id": "0862",
+        "name": "Emmaboda",
+        "tax_rate": 32.75
+    },
+    {
+        "id": "0880",
+        "name": "Kalmar",
+        "tax_rate": 32.40
+    },
+    {
+        "id": "0881",
+        "name": "Nybro",
+        "tax_rate": 32.95
+    },
+    {
+        "id": "0882",
+        "name": "Oskarshamn",
+        "tax_rate": 32.45
+    },
+    {
+        "id": "0883",
+        "name": "Västervik",
+        "tax_rate": 32.60
+    },
+    {
+        "id": "0884",
+        "name": "Vimmerby",
+        "tax_rate": 32.65
+    },
+    {
+        "id": "0885",
+        "name": "Borgholm",
+        "tax_rate": 32.79
+    },
+    {
+        "id": "0980",
+        "name": "Gotland",
+        "tax_rate": 33.60
+    },
+    {
+        "id": "1060",
+        "name": "Olofström",
+        "tax_rate": 33.20
+    },
+    {
+        "id": "1080",
+        "name": "Karlskrona",
+        "tax_rate": 32.30
+    },
+    {
+        "id": "1081",
+        "name": "Ronneby",
+        "tax_rate": 32.75
+    },
+    {
+        "id": "1082",
+        "name": "Karlshamn",
+        "tax_rate": 32.85
+    },
+    {
+        "id": "1083",
+        "name": "Sölvesborg",
+        "tax_rate": 32.45
+    },
+    {
+        "id": "1214",
+        "name": "Svalöv",
+        "tax_rate": 32.42
+    },
+    {
+        "id": "1230",
+        "name": "Staffanstorp",
+        "tax_rate": 30.42
+    },
+    {
+        "id": "1231",
+        "name": "Burlöv",
+        "tax_rate": 31.87
+    },
+    {
+        "id": "1233",
+        "name": "Vellinge",
+        "tax_rate": 29.22
+    },
+    {
+        "id": "1256",
+        "name": "Östra Göinge",
+        "tax_rate": 32.49
+    },
+    {
+        "id": "1257",
+        "name": "Örkelljunga",
+        "tax_rate": 32.44
+    },
+    {
+        "id": "1260",
+        "name": "Bjuv",
+        "tax_rate": 32.42
+    },
+    {
+        "id": "1261",
+        "name": "Kävlinge",
+        "tax_rate": 29.57
+    },
+    {
+        "id": "1262",
+        "name": "Lomma",
+        "tax_rate": 30.22
+    },
+    {
+        "id": "1263",
+        "name": "Svedala",
+        "tax_rate": 31.22
+    },
+    {
+        "id": "1264",
+        "name": "Skurup",
+        "tax_rate": 31.27
+    },
+    {
+        "id": "1265",
+        "name": "Sjöbo",
+        "tax_rate": 31.52
+    },
+    {
+        "id": "1266",
+        "name": "Hörby",
+        "tax_rate": 32.07
+    },
+    {
+        "id": "1267",
+        "name": "Höör",
+        "tax_rate": 31.37
+    },
+    {
+        "id": "1270",
+        "name": "Tomelilla",
+        "tax_rate": 31.82
+    },
+    {
+        "id": "1272",
+        "name": "Bromölla",
+        "tax_rate": 32.27
+    },
+    {
+        "id": "1273",
+        "name": "Osby",
+        "tax_rate": 32.62
+    },
+    {
+        "id": "1275",
+        "name": "Perstorp",
+        "tax_rate": 32.37
+    },
+    {
+        "id": "1276",
+        "name": "Klippan",
+        "tax_rate": 31.87
+    },
+    {
+        "id": "1277",
+        "name": "Åstorp",
+        "tax_rate": 31.74
+    },
+    {
+        "id": "1278",
+        "name": "Båstad",
+        "tax_rate": 31.17
+    },
+    {
+        "id": "1280",
+        "name": "Malmö",
+        "tax_rate": 32.42
+    },
+    {
+        "id": "1281",
+        "name": "Lund",
+        "tax_rate": 31.42
+    },
+    {
+        "id": "1282",
+        "name": "Landskrona",
+        "tax_rate": 32.27
+    },
+    {
+        "id": "1283",
+        "name": "Helsingborg",
+        "tax_rate": 31.89
+    },
+    {
+        "id": "1284",
+        "name": "Höganäs",
+        "tax_rate": 30.07
+    },
+    {
+        "id": "1285",
+        "name": "Eslöv",
+        "tax_rate": 31.67
+    },
+    {
+        "id": "1286",
+        "name": "Ystad",
+        "tax_rate": 31.10
+    },
+    {
+        "id": "1287",
+        "name": "Trelleborg",
+        "tax_rate": 31.47
+    },
+    {
+        "id": "1290",
+        "name": "Kristianstad",
+        "tax_rate": 32.02
+    },
+    {
+        "id": "1291",
+        "name": "Simrishamn",
+        "tax_rate": 32.17
+    },
+    {
+        "id": "1292",
+        "name": "Ängelholm",
+        "tax_rate": 30.67
+    },
+    {
+        "id": "1293",
+        "name": "Hässleholm",
+        "tax_rate": 32.12
+    },
+    {
+        "id": "1380",
+        "name": "Halmstad",
+        "tax_rate": 31.35
+    },
+    {
+        "id": "1381",
+        "name": "Laholm",
+        "tax_rate": 31.50
+    },
+    {
+        "id": "1382",
+        "name": "Falkenberg",
+        "tax_rate": 31.70
+    },
+    {
+        "id": "1383",
+        "name": "Varberg",
+        "tax_rate": 30.65
+    },
+    {
+        "id": "1384",
+        "name": "Kungsbacka",
+        "tax_rate": 31.28
+    },
+    {
+        "id": "1401",
+        "name": "Härryda",
+        "tax_rate": 31.68
+    },
+    {
+        "id": "1402",
+        "name": "Partille",
+        "tax_rate": 31.78
+    },
+    {
+        "id": "1407",
+        "name": "Öckerö",
+        "tax_rate": 31.78
+    },
+    {
+        "id": "1415",
+        "name": "Stenungsund",
+        "tax_rate": 32.18
+    },
+    {
+        "id": "1419",
+        "name": "Tjörn",
+        "tax_rate": 31.73
+    },
+    {
+        "id": "1421",
+        "name": "Orust",
+        "tax_rate": 32.98
+    },
+    {
+        "id": "1427",
+        "name": "Sotenäs",
+        "tax_rate": 33.03
+    },
+    {
+        "id": "1430",
+        "name": "Munkedal",
+        "tax_rate": 33.88
+    },
+    {
+        "id": "1435",
+        "name": "Tanum",
+        "tax_rate": 32.63
+    },
+    {
+        "id": "1438",
+        "name": "Dals-Ed",
+        "tax_rate": 34.18
+    },
+    {
+        "id": "1439",
+        "name": "Färgelanda",
+        "tax_rate": 33.18
+    },
+    {
+        "id": "1440",
+        "name": "Ale",
+        "tax_rate": 32.18
+    },
+    {
+        "id": "1441",
+        "name": "Lerum",
+        "tax_rate": 31.03
+    },
+    {
+        "id": "1442",
+        "name": "Vårgårda",
+        "tax_rate": 32.48
+    },
+    {
+        "id": "1443",
+        "name": "Bollebygd",
+        "tax_rate": 31.68
+    },
+    {
+        "id": "1444",
+        "name": "Grästorp",
+        "tax_rate": 32.68
+    },
+    {
+        "id": "1445",
+        "name": "Essunga",
+        "tax_rate": 32.58
+    },
+    {
+        "id": "1446",
+        "name": "Karlsborg",
+        "tax_rate": 32.68
+    },
+    {
+        "id": "1447",
+        "name": "Gullspång",
+        "tax_rate": 33.18
+    },
+    {
+        "id": "1452",
+        "name": "Tranemo",
+        "tax_rate": 32.13
+    },
+    {
+        "id": "1460",
+        "name": "Bengtsfors",
+        "tax_rate": 33.93
+    },
+    {
+        "id": "1461",
+        "name": "Mellerud",
+        "tax_rate": 33.73
+    },
+    {
+        "id": "1462",
+        "name": "Lilla Edet",
+        "tax_rate": 32.63
+    },
+    {
+        "id": "1463",
+        "name": "Mark",
+        "tax_rate": 31.73
+    },
+    {
+        "id": "1465",
+        "name": "Svenljunga",
+        "tax_rate": 32.58
+    },
+    {
+        "id": "1466",
+        "name": "Herrljunga",
+        "tax_rate": 32.68
+    },
+    {
+        "id": "1470",
+        "name": "Vara",
+        "tax_rate": 32.58
+    },
+    {
+        "id": "1471",
+        "name": "Götene",
+        "tax_rate": 32.28
+    },
+    {
+        "id": "1472",
+        "name": "Tibro",
+        "tax_rate": 32.48
+    },
+    {
+        "id": "1473",
+        "name": "Töreboda",
+        "tax_rate": 32.68
+    },
+    {
+        "id": "1480",
+        "name": "Göteborg",
+        "tax_rate": 32.60
+    },
+    {
+        "id": "1481",
+        "name": "Mölndal",
+        "tax_rate": 31.70
+    },
+    {
+        "id": "1482",
+        "name": "Kungälv",
+        "tax_rate": 31.73
+    },
+    {
+        "id": "1484",
+        "name": "Lysekil",
+        "tax_rate": 33.23
+    },
+    {
+        "id": "1485",
+        "name": "Uddevalla",
+        "tax_rate": 32.58
+    },
+    {
+        "id": "1486",
+        "name": "Strömstad",
+        "tax_rate": 33.13
+    },
+    {
+        "id": "1487",
+        "name": "Vänersborg",
+        "tax_rate": 32.88
+    },
+    {
+        "id": "1488",
+        "name": "Trollhättan",
+        "tax_rate": 32.38
+    },
+    {
+        "id": "1489",
+        "name": "Alingsås",
+        "tax_rate": 31.93
+    },
+    {
+        "id": "1490",
+        "name": "Borås",
+        "tax_rate": 32.89
+    },
+    {
+        "id": "1491",
+        "name": "Ulricehamn",
+        "tax_rate": 32.13
+    },
+    {
+        "id": "1492",
+        "name": "Åmål",
+        "tax_rate": 33.33
+    },
+    {
+        "id": "1493",
+        "name": "Mariestad",
+        "tax_rate": 32.08
+    },
+    {
+        "id": "1494",
+        "name": "Lidköping",
+        "tax_rate": 31.68
+    },
+    {
+        "id": "1495",
+        "name": "Skara",
+        "tax_rate": 32.48
+    },
+    {
+        "id": "1496",
+        "name": "Skövde",
+        "tax_rate": 32.08
+    },
+    {
+        "id": "1497",
+        "name": "Hjo",
+        "tax_rate": 32.28
+    },
+    {
+        "id": "1498",
+        "name": "Tidaholm",
+        "tax_rate": 32.48
+    },
+    {
+        "id": "1499",
+        "name": "Falköping",
+        "tax_rate": 32.63
+    },
+    {
+        "id": "1715",
+        "name": "Kil",
+        "tax_rate": 33.60
+    },
+    {
+        "id": "1730",
+        "name": "Eda",
+        "tax_rate": 33.75
+    },
+    {
+        "id": "1737",
+        "name": "Torsby",
+        "tax_rate": 33.90
+    },
+    {
+        "id": "1760",
+        "name": "Storfors",
+        "tax_rate": 34.43
+    },
+    {
+        "id": "1761",
+        "name": "Hammarö",
+        "tax_rate": 32.55
+    },
+    {
+        "id": "1762",
+        "name": "Munkfors",
+        "tax_rate": 34.00
+    },
+    {
+        "id": "1763",
+        "name": "Forshaga",
+        "tax_rate": 33.55
+    },
+    {
+        "id": "1764",
+        "name": "Grums",
+        "tax_rate": 33.70
+    },
+    {
+        "id": "1765",
+        "name": "Årjäng",
+        "tax_rate": 33.55
+    },
+    {
+        "id": "1766",
+        "name": "Sunne",
+        "tax_rate": 33.50
+    },
+    {
+        "id": "1780",
+        "name": "Karlstad",
+        "tax_rate": 32.45
+    },
+    {
+        "id": "1781",
+        "name": "Kristinehamn",
+        "tax_rate": 33.10
+    },
+    {
+        "id": "1782",
+        "name": "Filipstad",
+        "tax_rate": 33.60
+    },
+    {
+        "id": "1783",
+        "name": "Hagfors",
+        "tax_rate": 33.85
+    },
+    {
+        "id": "1784",
+        "name": "Arvika",
+        "tax_rate": 33.25
+    },
+    {
+        "id": "1785",
+        "name": "Säffle",
+        "tax_rate": 33.60
+    },
+    {
+        "id": "1814",
+        "name": "Lekeberg",
+        "tax_rate": 32.58
+    },
+    {
+        "id": "1860",
+        "name": "Laxå",
+        "tax_rate": 33.53
+    },
+    {
+        "id": "1861",
+        "name": "Hallsberg",
+        "tax_rate": 32.88
+    },
+    {
+        "id": "1862",
+        "name": "Degerfors",
+        "tax_rate": 33.93
+    },
+    {
+        "id": "1863",
+        "name": "Hällefors",
+        "tax_rate": 33.53
+    },
+    {
+        "id": "1864",
+        "name": "Ljusnarsberg",
+        "tax_rate": 33.53
+    },
+    {
+        "id": "1880",
+        "name": "Örebro",
+        "tax_rate": 32.43
+    },
+    {
+        "id": "1881",
+        "name": "Kumla",
+        "tax_rate": 32.38
+    },
+    {
+        "id": "1882",
+        "name": "Askersund",
+        "tax_rate": 33.18
+    },
+    {
+        "id": "1883",
+        "name": "Karlskoga",
+        "tax_rate": 32.93
+    },
+    {
+        "id": "1884",
+        "name": "Nora",
+        "tax_rate": 32.78
+    },
+    {
+        "id": "1885",
+        "name": "Lindesberg",
+        "tax_rate": 33.08
+    },
+    {
+        "id": "1904",
+        "name": "Skinnskatteberg",
+        "tax_rate": 33.18
+    },
+    {
+        "id": "1907",
+        "name": "Surahammar",
+        "tax_rate": 32.98
+    },
+    {
+        "id": "1960",
+        "name": "Kungsör",
+        "tax_rate": 32.48
+    },
+    {
+        "id": "1961",
+        "name": "Hallstahammar",
+        "tax_rate": 32.53
+    },
+    {
+        "id": "1962",
+        "name": "Norberg",
+        "tax_rate": 33.28
+    },
+    {
+        "id": "1980",
+        "name": "Västerås",
+        "tax_rate": 31.33
+    },
+    {
+        "id": "1981",
+        "name": "Sala",
+        "tax_rate": 32.73
+    },
+    {
+        "id": "1982",
+        "name": "Fagersta",
+        "tax_rate": 32.33
+    },
+    {
+        "id": "1983",
+        "name": "Köping",
+        "tax_rate": 32.53
+    },
+    {
+        "id": "1984",
+        "name": "Arboga",
+        "tax_rate": 32.93
+    },
+    {
+        "id": "2021",
+        "name": "Vansbro",
+        "tax_rate": 34.45
+    },
+    {
+        "id": "2023",
+        "name": "Malung-Sälen",
+        "tax_rate": 34.05
+    },
+    {
+        "id": "2026",
+        "name": "Gagnef",
+        "tax_rate": 33.75
+    },
+    {
+        "id": "2029",
+        "name": "Leksand",
+        "tax_rate": 33.05
+    },
+    {
+        "id": "2031",
+        "name": "Rättvik",
+        "tax_rate": 32.70
+    },
+    {
+        "id": "2034",
+        "name": "Orsa",
+        "tax_rate": 33.55
+    },
+    {
+        "id": "2039",
+        "name": "Älvdalen",
+        "tax_rate": 33.45
+    },
+    {
+        "id": "2061",
+        "name": "Smedjebacken",
+        "tax_rate": 33.80
+    },
+    {
+        "id": "2062",
+        "name": "Mora",
+        "tax_rate": 33.20
+    },
+    {
+        "id": "2080",
+        "name": "Falun",
+        "tax_rate": 32.70
+    },
+    {
+        "id": "2081",
+        "name": "Borlänge",
+        "tax_rate": 33.20
+    },
+    {
+        "id": "2082",
+        "name": "Säter",
+        "tax_rate": 32.70
+    },
+    {
+        "id": "2083",
+        "name": "Hedemora",
+        "tax_rate": 33.25
+    },
+    {
+        "id": "2084",
+        "name": "Avesta",
+        "tax_rate": 33.00
+    },
+    {
+        "id": "2085",
+        "name": "Ludvika",
+        "tax_rate": 33.45
+    },
+    {
+        "id": "2101",
+        "name": "Ockelbo",
+        "tax_rate": 33.68
+    },
+    {
+        "id": "2104",
+        "name": "Hofors",
+        "tax_rate": 33.98
+    },
+    {
+        "id": "2121",
+        "name": "Ovanåker",
+        "tax_rate": 33.28
+    },
+    {
+        "id": "2132",
+        "name": "Nordanstig",
+        "tax_rate": 33.73
+    },
+    {
+        "id": "2161",
+        "name": "Ljusdal",
+        "tax_rate": 33.78
+    },
+    {
+        "id": "2180",
+        "name": "Gävle",
+        "tax_rate": 32.78
+    },
+    {
+        "id": "2181",
+        "name": "Sandviken",
+        "tax_rate": 32.98
+    },
+    {
+        "id": "2182",
+        "name": "Söderhamn",
+        "tax_rate": 33.43
+    },
+    {
+        "id": "2183",
+        "name": "Bollnäs",
+        "tax_rate": 33.28
+    },
+    {
+        "id": "2184",
+        "name": "Hudiksvall",
+        "tax_rate": 32.68
+    },
+    {
+        "id": "2260",
+        "name": "Ånge",
+        "tax_rate": 34.63
+    },
+    {
+        "id": "2262",
+        "name": "Timrå",
+        "tax_rate": 33.83
+    },
+    {
+        "id": "2280",
+        "name": "Härnösand",
+        "tax_rate": 34.28
+    },
+    {
+        "id": "2281",
+        "name": "Sundsvall",
+        "tax_rate": 33.53
+    },
+    {
+        "id": "2282",
+        "name": "Kramfors",
+        "tax_rate": 34.13
+    },
+    {
+        "id": "2283",
+        "name": "Sollefteå",
+        "tax_rate": 34.38
+    },
+    {
+        "id": "2284",
+        "name": "Örnsköldsvik",
+        "tax_rate": 33.68
+    },
+    {
+        "id": "2303",
+        "name": "Ragunda",
+        "tax_rate": 34.88
+    },
+    {
+        "id": "2305",
+        "name": "Bräcke",
+        "tax_rate": 34.68
+    },
+    {
+        "id": "2309",
+        "name": "Krokom",
+        "tax_rate": 33.88
+    },
+    {
+        "id": "2313",
+        "name": "Strömsund",
+        "tax_rate": 34.48
+    },
+    {
+        "id": "2321",
+        "name": "Åre",
+        "tax_rate": 33.28
+    },
+    {
+        "id": "2326",
+        "name": "Berg",
+        "tax_rate": 34.38
+    },
+    {
+        "id": "2361",
+        "name": "Härjedalen",
+        "tax_rate": 34.13
+    },
+    {
+        "id": "2380",
+        "name": "Östersund",
+        "tax_rate": 33.38
+    },
+    {
+        "id": "2401",
+        "name": "Nordmaling",
+        "tax_rate": 34.18
+    },
+    {
+        "id": "2403",
+        "name": "Bjurholm",
+        "tax_rate": 34.33
+    },
+    {
+        "id": "2404",
+        "name": "Vindeln",
+        "tax_rate": 34.23
+    },
+    {
+        "id": "2409",
+        "name": "Robertsfors",
+        "tax_rate": 34.13
+    },
+    {
+        "id": "2417",
+        "name": "Norsjö",
+        "tax_rate": 34.33
+    },
+    {
+        "id": "2418",
+        "name": "Malå",
+        "tax_rate": 34.18
+    },
+    {
+        "id": "2421",
+        "name": "Storuman",
+        "tax_rate": 34.78
+    },
+    {
+        "id": "2422",
+        "name": "Sorsele",
+        "tax_rate": 34.78
+    },
+    {
+        "id": "2425",
+        "name": "Dorotea",
+        "tax_rate": 34.78
+    },
+    {
+        "id": "2460",
+        "name": "Vännäs",
+        "tax_rate": 34.03
+    },
+    {
+        "id": "2462",
+        "name": "Vilhelmina",
+        "tax_rate": 34.68
+    },
+    {
+        "id": "2463",
+        "name": "Åsele",
+        "tax_rate": 34.78
+    },
+    {
+        "id": "2480",
+        "name": "Umeå",
+        "tax_rate": 33.83
+    },
+    {
+        "id": "2481",
+        "name": "Lycksele",
+        "tax_rate": 34.48
+    },
+    {
+        "id": "2482",
+        "name": "Skellefteå",
+        "tax_rate": 33.58
+    },
+    {
+        "id": "2505",
+        "name": "Arvidsjaur",
+        "tax_rate": 33.70
+    },
+    {
+        "id": "2506",
+        "name": "Arjeplog",
+        "tax_rate": 33.80
+    },
+    {
+        "id": "2510",
+        "name": "Jokkmokk",
+        "tax_rate": 33.55
+    },
+    {
+        "id": "2513",
+        "name": "Överkalix",
+        "tax_rate": 33.40
+    },
+    {
+        "id": "2514",
+        "name": "Kalix",
+        "tax_rate": 33.35
+    },
+    {
+        "id": "2518",
+        "name": "Övertorneå",
+        "tax_rate": 32.80
+    },
+    {
+        "id": "2521",
+        "name": "Pajala",
+        "tax_rate": 33.60
+    },
+    {
+        "id": "2523",
+        "name": "Gällivare",
+        "tax_rate": 33.00
+    },
+    {
+        "id": "2560",
+        "name": "Älvsbyn",
+        "tax_rate": 33.25
+    },
+    {
+        "id": "2580",
+        "name": "Luleå",
+        "tax_rate": 33.00
+    },
+    {
+        "id": "2581",
+        "name": "Piteå",
+        "tax_rate": 33.25
+    },
+    {
+        "id": "2582",
+        "name": "Boden",
+        "tax_rate": 33.50
+    },
+    {
+        "id": "2583",
+        "name": "Haparanda",
+        "tax_rate": 33.10
+    },
+    {
+        "id": "2584",
+        "name": "Kiruna",
+        "tax_rate": 33.35
+    }
+]

@@ -1,0 +1,41 @@
+{# Widget 2: CTA Unionen - Adhésion syndicat #}
+{# Autonome - Contrôlé par widgets.unionen.enabled #}
+
+{% if widgets.unionen.enabled %}
+<div id="widget-unionen" class="affiliate-widget unionen-widget mt-12 bg-emerald-50 rounded-2xl ring-1 ring-emerald-100 p-6 sm:p-8" data-widget="unionen">
+    
+    {# Badge Annons - OBLIGATOIRE pour compliance #}
+    <span class="inline-block bg-slate-200 text-slate-600 text-xs font-medium px-2 py-0.5 rounded uppercase tracking-wide mb-4">Annons</span>
+    
+    <div class="flex items-start gap-4">
+        <div class="flex-shrink-0 bg-white rounded-xl p-3 shadow-sm">
+            <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+        </div>
+        
+        <div class="flex-1">
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Vill du ha hjälp att förhandla din lön?</h3>
+            <p class="text-slate-600 text-sm mb-4">
+                Som medlem i Unionen får du tillgång till lönestatistik, juridisk rådgivning och stöd vid löneförhandlingar. Över 700 000 medlemmar har redan gått med.
+            </p>
+            
+            <a href="{{ widgets.unionen.affiliate_url }}" 
+               rel="sponsored noopener" 
+               target="_blank"
+               data-affiliate="unionen"
+               class="inline-flex items-center gap-2 bg-emerald-600 text-white rounded-lg py-3 px-5 hover:bg-emerald-500 font-bold transition-colors shadow-sm">
+                Bli medlem idag
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    
+    {# Mention légale - OBLIGATOIRE #}
+    <p class="text-xs text-slate-500 mt-4 pt-4 border-t border-emerald-200">
+        Annons i samarbete med Unionen
+    </p>
+</div>
+{% endif %}

@@ -1,0 +1,25 @@
+{# Multiplex (Related Content Style) Ad Unit #}
+{# Usage: {% include 'partials/ads/multiplex.twig' with {'slot_name': 'multiplex_bottom'} %} #}
+
+{# ═══════════════════════════════════════════════════════════════ #}
+{# AdSense Configuration - INLINE (Twig scope workaround)         #}
+{# ═══════════════════════════════════════════════════════════════ #}
+{% set adsense_pub_id = 'ca-pub-1826806205536778' %}
+{% set is_ads_enabled = true %}
+{% set ad_slots = {
+    'multiplex_bottom': '2836136928'
+} %}
+{# ═══════════════════════════════════════════════════════════════ #}
+
+{# Resolve slot_id from slot_name #}
+{% set resolved_slot_id = ad_slots[slot_name]|default('2836136928') %}
+
+	{% if is_ads_enabled and resolved_slot_id %}
+		<div
+		class="ad-container-multiplex my-10 w-full"> <!-- Google AdSense Multiplex: {{ slot_name|default('bottom') }} -->
+		<ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="{{ adsense_pub_id }}" data-ad-slot="{{ resolved_slot_id }}"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+{% endif %}

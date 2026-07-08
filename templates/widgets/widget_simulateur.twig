@@ -1,0 +1,93 @@
+{# Widget 1: Simulateur "Tjänar du vad du är värd?" #}
+{# Autonome - Contrôlé par widgets.simulateur.enabled #}
+
+{% if widgets.simulateur.enabled %}
+<div class="affiliate-widget simulateur-widget mt-12 bg-white rounded-2xl shadow-sm ring-1 ring-slate-900/5 p-6 sm:p-8" 
+     x-data="salaryComparator{{ profession.slug|replace({'-': ''}) }}()" 
+     data-widget="simulateur">
+    
+    <h3 class="text-xl font-bold text-slate-900 mb-2">Tjänar du vad du är värd?</h3>
+    <p class="text-slate-600 text-sm mb-6">Jämför din lön med riksgenomsnittet för {{ profession.title|lower }}</p>
+    
+    <div class="space-y-4">
+        <div>
+            <label for="user-salary-{{ profession.slug }}" class="block text-sm font-medium text-slate-700 mb-1">Din nuvarande månadslön (kr)</label>
+            <div class="relative rounded-lg shadow-sm">
+                <input type="number" 
+                       id="user-salary-{{ profession.slug }}" 
+                       x-model="userSalary" 
+                       placeholder="{{ profession.median_salary }}"
+                       class="block w-full rounded-lg border-0 py-3.5 pl-4 pr-16 text-slate-900 ring-1 ring-inset ring-slate-200 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-lg font-medium">
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
+                    <span class="text-slate-500 sm:text-sm font-medium">kr/mån</span>
+                </div>
+            </div>
+        </div>
+        
+        <button @click="compare()" 
+                type="button"
+                class="w-full bg-indigo-600 text-white rounded-lg py-3.5 px-4 hover:bg-indigo-500 font-bold transition-colors cursor-pointer shadow-sm">
+            Jämför nu
+        </button>
+    </div>
+    
+    {# Résultat #}
+    <div x-show="result" x-transition class="mt-6 p-4 rounded-xl" :class="isAboveAverage ? 'bg-emerald-50 border border-emerald-100' : 'bg-amber-50 border border-amber-100'">
+        <div class="flex items-start gap-3">
+            <template x-if="isAboveAverage">
+                <svg class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </template>
+            <template x-if="!isAboveAverage">
+                <svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+            </template>
+            <div>
+                <p class="text-sm font-medium" :class="isAboveAverage ? 'text-emerald-800' : 'text-amber-800'" x-text="resultMessage"></p>
+                
+                {# CTA vers Unionen si sous la moyenne #}
+                {% if widgets.unionen.enabled %}
+                <template x-if="!isAboveAverage">
+                    <a href="#widget-unionen" class="inline-flex items-center mt-3 text-sm font-semibold text-indigo-600 hover:text-indigo-500 gap-1">
+                        Få hjälp att förhandla din lön
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </template>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function salaryComparator{{ profession.slug|replace({'-': ''}) }}() {
+    return {
+        userSalary: '',
+        result: false,
+        isAboveAverage: false,
+        resultMessage: '',
+        averageSalary: {{ profession.scb.salary_total|default(profession.median_salary) }},
+        professionTitle: '{{ profession.title|lower|e("js") }}',
+        
+        compare() {
+            if (!this.userSalary || this.userSalary <= 0) return;
+            
+            this.result = true;
+            this.isAboveAverage = parseInt(this.userSalary) >= this.averageSalary;
+            
+            if (this.isAboveAverage) {
+                const diff = parseInt(this.userSalary) - this.averageSalary;
+                this.resultMessage = 'Bra jobbat! Din lön ligger ' + diff.toLocaleString('sv-SE') + ' kr över genomsnittet för ' + this.professionTitle + '.';
+            } else {
+                const diff = this.averageSalary - parseInt(this.userSalary);
+                this.resultMessage = 'Din lön ligger ' + diff.toLocaleString('sv-SE') + ' kr under genomsnittet. En facklig rådgivare kan hjälpa dig förhandla bättre villkor.';
+            }
+        }
+    }
+}
+</script>
+{% endif %}

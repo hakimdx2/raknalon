@@ -1,0 +1,95 @@
+{% extends "home.twig" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <!-- Breadcrumb -->
+    <nav class="flex mb-8" aria-label="Breadcrumb">
+        <ol role="list" class="flex items-center space-x-2">
+            <li>
+                <a href="/" class="text-sm font-medium text-slate-500 hover:text-indigo-600">Hem</a>
+            </li>
+            <li>
+                <span class="text-slate-300">/</span>
+            </li>
+            <li>
+                <a href="/om-oss" class="text-sm font-medium text-slate-500 hover:text-indigo-600">Om oss</a>
+            </li>
+            <li>
+                <span class="text-slate-300">/</span>
+            </li>
+            <li>
+                <span class="text-sm font-medium text-indigo-600" aria-current="page">Nala</span>
+            </li>
+        </ol>
+    </nav>
+    <div class="prose prose-lg prose-indigo mx-auto">
+        <!-- Header Tag -->
+        <span class="text-indigo-600 font-semibold tracking-wide uppercase text-sm">Löneexpert & Guide · Amatörfotograf</span>
+        
+        <!-- Title -->
+        <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            Nala
+        </h1>
+
+        <!-- Intro -->
+        <p class="lead text-xl text-gray-500">
+            Hej! Jag är Nala, dataanalytiker och din personliga guide i lönedjungeln. Jag hjälper dig att förstå siffrorna som påverkar din plånbok.
+        </p>
+
+
+
+        <!-- Images Side by Side -->
+        <div class="my-10 grid grid-cols-2 gap-6 not-prose">
+            <figure class="text-center">
+                <img src="/img/team/nala-lifestyle.png" alt="Nala i köket" class="rounded-xl shadow-lg border border-slate-200 mx-auto">
+            </figure>
+            <figure class="text-center">
+                <img src="/img/team/nala-working.png" alt="Nala arbetar vid datorn" class="rounded-xl shadow-lg border border-slate-200 mx-auto">
+            </figure>
+        </div>
+
+        <!-- Body Content -->
+        <h2>Min bakgrund</h2>
+
+        <p>
+            Jag startade den här resan med en enkel vilja: att skapa en plats där man faktiskt förstår vad som händer på lönespecifikationen. Inga krångliga termer, bara klarspråk.
+        </p>
+        <p>
+            Jag har lärt mig massor under resans gång! Särskilt om hur det svenska skattesystemet fungerar på djupet – en "hobby" som snabbt blev en passion och fick mig att vilja hjälpa andra att navigera rätt i karriären. 
+        </p>
+        <p>
+            Jag lämnade en torr kontorstjänst för att satsa helhjärtat på att göra lönestatistik tillgänglig för alla. Det är numera framför mina kalkylark och databaser som jag spenderar merparten av min tid.
+        </p>
+        <p>
+            Allt för att ta fram tydliga analyser och guider som hjälper dig att löneförhandla smartare och välja rätt karriärväg.
+        </p>
+
+        <p>
+            Ett särskilt tack till <strong>Hakim</strong> som har hjälpt mig att bygga den här plattformen och förverkliga min vision.
+        </p>
+
+        <h2>Vad du hittar här</h2>
+        <p>
+            På den här sidan, och i mina guider, delar jag med mig av:
+        </p>
+        <ul>
+            <li><strong>Lönestatistik:</strong> Vad tjänar man egentligen i olika yrken?</li>
+            <li><strong>Skatteguider:</strong> Hur fungerar jobbskatteavdrag och statlig skatt?</li>
+            <li><strong>Karriärtips:</strong> Vägar till högre lön och bättre villkor.</li>
+        </ul>
+        <p>
+            Jag hoppas att du ska trivas här och att mina verktyg hjälper dig att fatta bättre ekonomiska beslut!
+        </p>
+
+        <div class="mt-10 flex gap-4 not-prose">
+            <a href="/yrken" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
+                Se alla yrken
+            </a>
+            <a href="mailto:info@raknalon.se" class="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                Kontakta mig
+            </a>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}

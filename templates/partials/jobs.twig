@@ -1,0 +1,82 @@
+{# Widget Lediga Jobb - Style based on TailwindUI Stats #}
+{% if jobs is not empty %}
+	<div class="mt-16 border-t border-slate-200 pt-10" id="jobs-section">
+		<div class="mb-8 flex items-center justify-between">
+			<div>
+				<h2 class="text-lg font-semibold text-slate-900">Lediga jobb:
+					{{ profession.title }}</h2>
+				<p class="mt-1 text-sm text-slate-500">Hitta ditt nästa jobb direkt på Platsbanken.</p>
+			</div>
+			<a href="https://arbetsformedlingen.se/platsbanken/annonser?q={{ profession.title|url_encode }}" target="_blank" rel="nofollow" class="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
+				Se alla jobb &rarr;
+			</a>
+		</div>
+
+		<!-- Job Grid -->
+		<div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+			{% for job in jobs %}
+				<div
+					class="relative overflow-hidden rounded-xl bg-white pt-5 shadow-sm ring-1 ring-slate-900/5 transition-shadow hover:shadow-md">
+					<!-- Content -->
+					<div class="px-4 pb-16 sm:px-6 pt-5">
+						<div
+							class="flex items-start gap-4">
+							<!-- Brand Icon / Logo -->
+							<div class="flex-shrink-0">
+								{% if job.logo_url %}
+									<div class="h-12 w-12 overflow-hidden rounded-lg bg-white p-1 ring-1 ring-slate-900/10">
+										<img src="{{ job.logo_url }}" alt="{{ job.employer }}" class="h-full w-full object-contain">
+									</div>
+								{% else %}
+									{# Fallback: Initials on Indigo Background #}
+									<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-500 text-sm font-bold text-white shadow-sm ring-1 ring-indigo-600/10 uppercase">
+										{{ job.employer|first }}
+									</div>
+								{% endif %}
+							</div>
+
+							<!-- Job Details -->
+							<div class="min-w-0 flex-1">
+								<p class="truncate text-sm font-medium text-slate-500">{{ job.employer }}</p>
+								<dd class="mt-1 flex items-baseline pb-1">
+									<p class="text-base font-semibold text-slate-900 line-clamp-2 min-h-[3rem]">{{ job.title }}</p>
+								</dd>
+								<div class="mt-2 flex items-center gap-2 text-xs text-slate-500">
+									<svg class="h-4 w-4 text-slate-400" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+										<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
+									</svg>
+									{{ job.location }}
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Bottom Action Bar -->
+					<div class="absolute inset-x-0 bottom-0 bg-slate-50 px-4 py-4 sm:px-6">
+						<div class="flex items-center justify-between text-sm">
+							<span class="flex items-center gap-1.5 text-xs text-slate-500">
+								<svg class="h-4 w-4 text-slate-400" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+								</svg>
+								{{ job.published }}
+							</span>
+							<a href="{{ job.url }}" target="_blank" rel="nofollow" onclick="gtag('event', 'job_click', {'job_title': '{{ job.title }}', 'employer': '{{ job.employer }}'})" class="font-semibold text-indigo-600 hover:text-indigo-500">
+								Ansök nu
+								<span class="sr-only">om
+									{{ job.title }}</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+
+		<!-- Mobile "View All" Link -->
+		<div class="mt-6 text-center sm:hidden">
+			<a href="https://arbetsformedlingen.se/platsbanken/annonser?q={{ profession.title|url_encode }}" target="_blank" rel="nofollow" class="text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+				Se alla jobb &rarr;
+			</a>
+		</div>
+	</div>
+{% endif %}

@@ -1,0 +1,205 @@
+{% extends "home.twig" %}
+
+{% block head_extra %}
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Kontakta Raknalon.se",
+    "description": "Kontakta oss för frågor om löneberäkningar och feedback",
+    "url": "https://raknalon.se/kontakt",
+    "mainEntity": {
+        "@type": "Organization",
+        "name": "Raknalon.se",
+        "email": "info@raknalon.se",
+        "url": "https://raknalon.se"
+    }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 py-12 sm:py-16">
+    <article class="prose prose-slate prose-lg max-w-none">
+        
+        <!-- Header -->
+        <div class="not-prose mb-10">
+            <nav class="flex mb-4" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-2 text-sm text-slate-500">
+                    <li><a href="/" class="hover:text-indigo-600">Hem</a></li>
+                    <li><span class="mx-2">/</span></li>
+                    <li class="text-slate-900 font-medium">Kontakt</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">Kontakta oss</h1>
+            <p class="text-lg text-slate-600">Har du frågor, feedback eller vill rapportera ett problem? Vi hjälper dig gärna!</p>
+        </div>
+
+        <!-- Contact Cards -->
+        <div class="grid gap-6 sm:grid-cols-2 not-prose mb-12">
+            <!-- Email Contact Card -->
+            <div class="bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                </div>
+                <h2 class="text-lg font-semibold text-slate-900 mb-2">E-post</h2>
+                <a href="mailto:info@raknalon.se" class="text-indigo-600 font-medium hover:underline text-lg block mb-2">
+                    info@raknalon.se
+                </a>
+                <p class="text-sm text-slate-500">Vi svarar vanligtvis inom 24 timmar.</p>
+            </div>
+
+            <!-- Response Time Card -->
+            <div class="bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <h2 class="text-lg font-semibold text-slate-900 mb-2">Svarstid</h2>
+                <p class="text-emerald-700 font-medium text-lg mb-2">Inom 24 timmar</p>
+                <p class="text-sm text-slate-500">Måndag till fredag, svensk tid.</p>
+            </div>
+
+            <!-- Nala Profile Card -->
+            <div class="bg-gradient-to-br from-purple-50 to-white border border-purple-100 rounded-xl p-6 shadow-sm sm:col-span-2">
+                <div class="flex items-center gap-4">
+                    <img src="/img/team/nala.png" alt="Nala" class="w-16 h-16 rounded-full object-cover border-2 border-white shadow-sm">
+                    <div>
+                        <h2 class="text-lg font-semibold text-slate-900">Möt vår expert</h2>
+                        <p class="text-slate-600 text-sm mb-1">Vill du veta vem som står bakom siffrorna?</p>
+                        <a href="/om-oss/nala" class="text-purple-600 font-medium hover:underline inline-flex items-center gap-1">
+                            Läs mer om Nala
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Common Topics -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800 mb-4">Vanliga ärenden</h2>
+            
+            <div class="space-y-3 not-prose">
+                <details class="border border-slate-200 rounded-lg overflow-hidden group">
+                    <summary class="px-5 py-4 bg-slate-50 cursor-pointer hover:bg-slate-100 font-medium text-slate-700 flex items-center justify-between">
+                        <span class="flex items-center gap-3">
+                            Frågor om beräkningar
+                        </span>
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="px-5 py-4 text-slate-600 border-t border-slate-200">
+                        <p class="mb-3">Om du har frågor om hur vår kalkylator fungerar eller om resultatet verkar fel, beskriv gärna:</p>
+                        <ul class="list-disc pl-5 space-y-1 text-sm">
+                            <li>Vilken lön du angav</li>
+                            <li>Vilken kommun du valde</li>
+                            <li>Vilket resultat du fick</li>
+                            <li>Vad du förväntade dig</li>
+                        </ul>
+                    </div>
+                </details>
+                
+                <details class="border border-slate-200 rounded-lg overflow-hidden group">
+                    <summary class="px-5 py-4 bg-slate-50 cursor-pointer hover:bg-slate-100 font-medium text-slate-700 flex items-center justify-between">
+                        <span class="flex items-center gap-3">
+                            Förslag på förbättringar
+                        </span>
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="px-5 py-4 text-slate-600 border-t border-slate-200">
+                        <p class="mb-3">Vi uppskattar alla förslag! Berätta gärna vad du skulle vilja se på sidan:</p>
+                        <ul class="list-disc pl-5 space-y-1 text-sm">
+                            <li>Nya funktioner eller verktyg</li>
+                            <li>Fler yrken att jämföra</li>
+                            <li>Designförbättringar</li>
+                            <li>Innehåll som saknas</li>
+                        </ul>
+                    </div>
+                </details>
+                
+                <details class="border border-slate-200 rounded-lg overflow-hidden group">
+                    <summary class="px-5 py-4 bg-slate-50 cursor-pointer hover:bg-slate-100 font-medium text-slate-700 flex items-center justify-between">
+                        <span class="flex items-center gap-3">
+                            Rapportera ett fel
+                        </span>
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="px-5 py-4 text-slate-600 border-t border-slate-200">
+                        <p class="mb-3">Har du hittat en bugg eller något som inte fungerar? Beskriv gärna:</p>
+                        <ul class="list-disc pl-5 space-y-1 text-sm">
+                            <li>Vilken sida problemet uppstod på</li>
+                            <li>Vad du försökte göra</li>
+                            <li>Vilken webbläsare du använder (Chrome, Firefox, Safari, etc.)</li>
+                            <li>En skärmbild om möjligt</li>
+                        </ul>
+                    </div>
+                </details>
+                
+                <details class="border border-slate-200 rounded-lg overflow-hidden group">
+                    <summary class="px-5 py-4 bg-slate-50 cursor-pointer hover:bg-slate-100 font-medium text-slate-700 flex items-center justify-between">
+                        <span class="flex items-center gap-3">
+                            Frågor om integritet/GDPR
+                        </span>
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="px-5 py-4 text-slate-600 border-t border-slate-200">
+                        <p class="mb-3">För frågor om hur vi hanterar personuppgifter, läs vår <a href="/integritetspolicy" class="text-indigo-600 underline hover:no-underline">integritetspolicy</a>.</p>
+                        <p class="text-sm">Om du vill utöva dina GDPR-rättigheter (t.ex. radering av data), kontakta oss via e-post med ämnesraden "GDPR-förfrågan".</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800 mb-4">Vanliga frågor (FAQ)</h2>
+            <p class="text-slate-600 mb-6">Innan du kontaktar oss, kolla om ditt svar finns här:</p>
+            
+            <div class="space-y-4 not-prose">
+                <div class="border-l-4 border-indigo-500 pl-4 py-1">
+                    <p class="font-medium text-slate-800">Hur exakt är kalkylatorn?</p>
+                    <p class="text-slate-600 text-sm mt-1">Våra beräkningar är uppskattningar baserade på officiella källor (Skatteverket, SCB). Din faktiska lön kan variera beroende på individuella faktorer som förmåner och avdrag.</p>
+                </div>
+                
+                <div class="border-l-4 border-indigo-500 pl-4 py-1">
+                    <p class="font-medium text-slate-800">Varifrån kommer lönestatistiken?</p>
+                    <p class="text-slate-600 text-sm mt-1">Statistiken kommer från SCB (Statistiska Centralbyrån), officiella kollektivavtal och branschrapporter.</p>
+                </div>
+                
+                <div class="border-l-4 border-indigo-500 pl-4 py-1">
+                    <p class="font-medium text-slate-800">Är tjänsten gratis?</p>
+                    <p class="text-slate-600 text-sm mt-1">Ja, alla våra kalkylatorer och verktyg är 100% gratis att använda. Vi finansieras genom annonser.</p>
+                </div>
+                
+                <div class="border-l-4 border-indigo-500 pl-4 py-1">
+                    <p class="font-medium text-slate-800">Sparar ni mina löneuppgifter?</p>
+                    <p class="text-slate-600 text-sm mt-1">Nej, alla beräkningar sker lokalt i din webbläsare. Vi sparar inga personliga uppgifter om dig eller din lön.</p>
+                </div>
+            </div>
+            
+            <p class="text-slate-600 mt-6">Se fler frågor på vår <a href="/#faq" class="text-indigo-600 hover:underline">huvudsida</a>.</p>
+        </section>
+
+        <!-- CTA -->
+        <div class="not-prose">
+            <div class="bg-gradient-to-r from-indigo-600 to-indigo-700 rounded-xl p-8 text-center">
+                <h2 class="text-xl font-semibold text-white mb-3">Skriv till oss</h2>
+                <p class="text-indigo-100 mb-6">Skicka ett mail så hör vi av oss inom 24 timmar.</p>
+                <a href="mailto:info@raknalon.se" class="inline-flex items-center gap-2 bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition-colors">
+                    <span>Skicka e-post</span>
+                </a>
+            </div>
+        </div>
+
+    </article>
+</div>
+{% endblock %}
+

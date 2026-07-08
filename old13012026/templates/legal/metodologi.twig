@@ -1,0 +1,259 @@
+{% extends "home.twig" %}
+
+{% block head_extra %}
+<meta name="robots" content="index, follow">
+{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 py-12 sm:py-16">
+    <article class="prose prose-slate prose-lg max-w-none">
+        
+        <!-- Header -->
+        <div class="not-prose mb-10">
+            <nav class="flex mb-4" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-2 text-sm text-slate-500">
+                    <li><a href="/" class="hover:text-indigo-600">Hem</a></li>
+                    <li><span class="mx-2">/</span></li>
+                    <li class="text-slate-900 font-medium">Så räknar vi</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">Så räknar vi</h1>
+            <p class="text-lg text-slate-600">Vi tror på transparens. Här förklarar vi exakt hur våra beräkningar fungerar.</p>
+        </div>
+
+        <!-- Formula Summary -->
+        <div class="not-prose bg-gradient-to-r from-indigo-50 to-slate-50 rounded-xl p-6 sm:p-8 mb-10">
+            <h2 class="text-xl font-semibold text-slate-900 mb-4">Grundformeln</h2>
+            <div class="bg-white rounded-lg p-4 sm:p-6 font-mono text-center border border-slate-200 shadow-sm">
+                <span class="text-emerald-600 font-bold text-lg">Nettolön</span> 
+                <span class="text-slate-400 mx-2">=</span>
+                <span class="text-slate-700">Bruttolön</span> 
+                <span class="text-red-500 mx-1">−</span>
+                <span class="text-red-500">Kommunalskatt</span> 
+                <span class="text-red-500 mx-1">−</span>
+                <span class="text-red-500">Statlig skatt</span> 
+                <span class="text-green-500 mx-1">+</span>
+                <span class="text-green-500">Jobbskatteavdrag</span>
+            </div>
+            <p class="text-sm text-slate-500 mt-4 text-center">Låt oss gå igenom varje del steg för steg.</p>
+        </div>
+
+        <!-- Step 1: Municipal Tax -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-4 not-prose">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-100 text-red-600 font-bold text-lg">1</span>
+                <h2 class="text-xl font-semibold text-slate-800">Kommunalskatt</h2>
+            </div>
+            
+            <p>Kommunalskatten är den största delen av din skatt. Den varierar beroende på var du bor – från cirka <strong>29%</strong> (Vellinge, lägst) till <strong>35%</strong> (Dorotea, högst).</p>
+            
+            <div class="bg-slate-50 rounded-lg p-5 my-6 not-prose">
+                <p class="text-sm font-semibold text-slate-700 mb-2">Formel:</p>
+                <p class="font-mono text-slate-600">Kommunalskatt = Bruttolön × Kommunal skattesats</p>
+            </div>
+            
+            <div class="bg-indigo-50 rounded-lg p-5 my-6 border-l-4 border-indigo-500 not-prose">
+                <p class="text-sm font-semibold text-indigo-800 mb-3">Exempel: Stockholm kommun</p>
+                <p class="text-indigo-700">Kommunal skattesats 2026: <strong>30,49%</strong></p>
+                <p class="text-indigo-700 mt-2">Om du tjänar 40 000 kr/mån:</p>
+                <p class="font-mono text-indigo-600 mt-2 bg-white/50 rounded p-2 inline-block">40 000 × 0,3049 = <strong>12 196 kr</strong> i kommunalskatt</p>
+            </div>
+            
+            <p class="text-sm text-slate-500">
+                <strong>Källa:</strong> 
+                <a href="https://skr.se/skr/ekonomijuridik/ekonomi/skatter.46.html" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">Sveriges Kommuner och Regioner (SKR)</a>
+            </p>
+        </section>
+
+        <!-- Step 2: State Tax -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-4 not-prose">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-100 text-red-600 font-bold text-lg">2</span>
+                <h2 class="text-xl font-semibold text-slate-800">Statlig inkomstskatt</h2>
+            </div>
+            
+            <p>Om din årsinkomst överstiger en viss nivå ("brytpunkten") betalar du även statlig inkomstskatt på <strong>20%</strong> av det överskjutande beloppet.</p>
+            
+            <div class="bg-amber-50 rounded-lg p-5 my-6 border-l-4 border-amber-500 not-prose">
+                <p class="text-amber-800 font-semibold">Brytpunkt 2026:</p>
+                <p class="text-amber-700 text-3xl font-bold my-2">615 300 kr/år</p>
+                <p class="text-amber-600 text-sm">(motsvarar ca 51 275 kr/mån)</p>
+            </div>
+            
+            <div class="bg-slate-50 rounded-lg p-5 my-6 not-prose">
+                <p class="text-sm font-semibold text-slate-700 mb-2">Formel:</p>
+                <p class="font-mono text-slate-600">Om årsinkomst > 615 300 kr:</p>
+                <p class="font-mono text-slate-600 mt-1">Statlig skatt = (Årsinkomst − 615 300) × 0,20</p>
+            </div>
+            
+            <div class="bg-indigo-50 rounded-lg p-5 my-6 border-l-4 border-indigo-500 not-prose">
+                <p class="text-sm font-semibold text-indigo-800 mb-3">Exempel: 60 000 kr/mån</p>
+                <div class="space-y-2 text-indigo-700">
+                    <p>Årsinkomst: 60 000 × 12 = <strong>720 000 kr</strong></p>
+                    <p>Överskjutande: 720 000 − 615 300 = <strong>104 700 kr</strong></p>
+                    <p>Statlig skatt per år: 104 700 × 0,20 = <strong>20 940 kr</strong></p>
+                    <p class="font-mono text-indigo-600 mt-3 bg-white/50 rounded p-2 inline-block">Per månad: 20 940 ÷ 12 = <strong>1 745 kr</strong></p>
+                </div>
+            </div>
+            
+            <p class="text-sm text-slate-500">
+                <strong>Källa:</strong> 
+                <a href="https://www.skatteverket.se/privat/skatter/arbeteochinkomst/askattsedelochskattetabeller/statliginkomstskatt.4.361dc8c15312eff6fd1283d.html" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">Skatteverket</a>
+            </p>
+        </section>
+
+        <!-- Step 3: Job Tax Deduction -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-4 not-prose">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-green-100 text-green-600 font-bold text-lg">3</span>
+                <h2 class="text-xl font-semibold text-slate-800">Jobbskatteavdrag</h2>
+            </div>
+            
+            <p>Jobbskatteavdraget är en <strong>skattereduktion</strong> som minskar din totala skatt. Det infördes för att göra det mer lönsamt att arbeta jämfört med att leva på bidrag.</p>
+            
+            <p class="mt-4">Jobbskatteavdraget beräknas enligt en progressiv formel som beror på:</p>
+            <ul class="list-disc pl-6 space-y-1 text-slate-600">
+                <li>Din inkomst</li>
+                <li>Din ålder (högre avdrag för dig som fyllt 65)</li>
+                <li>Kommunalskattesatsen</li>
+            </ul>
+            
+            <div class="overflow-x-auto my-6 not-prose">
+                <p class="text-sm font-semibold text-slate-700 mb-3">Förenklad översikt (2026):</p>
+                <table class="min-w-full border border-slate-200 rounded-lg overflow-hidden">
+                    <thead class="bg-slate-50">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700 border-b">Månadslön</th>
+                            <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700 border-b">Ungefärligt jobbskatteavdrag</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 text-slate-600">
+                        <tr><td class="px-4 py-3">20 000 kr</td><td class="px-4 py-3 text-green-600 font-medium">~2 100 kr/mån</td></tr>
+                        <tr class="bg-slate-50/50"><td class="px-4 py-3">30 000 kr</td><td class="px-4 py-3 text-green-600 font-medium">~2 700 kr/mån</td></tr>
+                        <tr><td class="px-4 py-3">40 000 kr</td><td class="px-4 py-3 text-green-600 font-medium">~3 100 kr/mån</td></tr>
+                        <tr class="bg-slate-50/50"><td class="px-4 py-3">50 000 kr</td><td class="px-4 py-3 text-green-600 font-medium">~3 200 kr/mån</td></tr>
+                        <tr><td class="px-4 py-3">60 000 kr+</td><td class="px-4 py-3 text-green-600 font-medium">~3 200 kr/mån (max)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p class="text-sm text-slate-500">
+                <strong>Källa:</strong> 
+                <a href="https://www.skatteverket.se/privat/skatter/arbeteochinkomst/askattsedelochskattetabeller/jobbskatteavdrag.4.2b543913142129910ee64a5.html" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">Skatteverket − Jobbskatteavdrag</a>
+            </p>
+        </section>
+
+        <!-- Complete Example -->
+        <section class="mb-12">
+            <h2 class="text-xl font-semibold text-slate-800 mb-4">Komplett exempel</h2>
+            
+            <div class="bg-gradient-to-br from-slate-50 to-indigo-50 rounded-xl p-6 sm:p-8 not-prose">
+                <p class="font-semibold text-slate-800 mb-6 text-lg">Person: 35 år, bor i Stockholm, bruttolön 40 000 kr/mån</p>
+                
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center py-3 border-b border-slate-200">
+                        <span class="text-slate-600">Bruttolön</span>
+                        <span class="font-mono font-semibold text-slate-900 text-lg">40 000 kr</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-slate-200">
+                        <span class="text-slate-600">− Kommunalskatt (30,49%)</span>
+                        <span class="font-mono text-red-600">−12 196 kr</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-slate-200">
+                        <span class="text-slate-600">− Statlig skatt</span>
+                        <span class="font-mono text-slate-400">0 kr <span class="text-xs">(under brytpunkten)</span></span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-slate-200">
+                        <span class="text-slate-600">+ Jobbskatteavdrag</span>
+                        <span class="font-mono text-green-600">+3 100 kr</span>
+                    </div>
+                    <div class="flex justify-between items-center py-4 bg-emerald-100 rounded-lg px-4 mt-4">
+                        <span class="font-semibold text-emerald-800">= Nettolön (utbetalas)</span>
+                        <span class="font-mono font-bold text-emerald-700 text-2xl">30 904 kr</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Don't Calculate -->
+        <section class="mb-12">
+            <h2 class="text-xl font-semibold text-slate-800 mb-4">Vad vi INTE räknar med</h2>
+            <p>För att hålla kalkylatorn enkel och snabb, tar vi <strong>inte</strong> hänsyn till:</p>
+            
+            <div class="grid gap-3 sm:grid-cols-2 mt-6 not-prose">
+                <div class="flex items-start gap-3 p-4 bg-slate-50 rounded-lg">
+                    <div>
+                        <p class="font-medium text-slate-700">Förmåner</p>
+                        <p class="text-sm text-slate-500">Tjänstebil, lunch, friskvårdsbidrag</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-slate-50 rounded-lg">
+                    <div>
+                        <p class="font-medium text-slate-700">Reseavdrag</p>
+                        <p class="text-sm text-slate-500">Avdrag för arbetsresor</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-slate-50 rounded-lg">
+                    <div>
+                        <p class="font-medium text-slate-700">Ränteavdrag</p>
+                        <p class="text-sm text-slate-500">Avdrag för bolåneräntor</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-slate-50 rounded-lg">
+                    <div>
+                        <p class="font-medium text-slate-700">ROT/RUT</p>
+                        <p class="text-sm text-slate-500">Skattereduktioner för hemtjänster</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-slate-50 rounded-lg">
+                    <div>
+                        <p class="font-medium text-slate-700">Tjänstepension</p>
+                        <p class="text-sm text-slate-500">Avsättningar från arbetsgivaren</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-slate-50 rounded-lg">
+                    <div>
+                        <p class="font-medium text-slate-700">Fackavgift</p>
+                        <p class="text-sm text-slate-500">Medlemsavgifter till fackförbund</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="mt-6 text-slate-600">Därför kan din faktiska nettolön skilja sig något från vårt resultat. För exakta beräkningar, kontakta <a href="https://www.skatteverket.se" class="text-indigo-600 hover:underline" target="_blank" rel="noopener noreferrer">Skatteverket</a> eller en revisor.</p>
+        </section>
+
+        <!-- Our Sources -->
+        <section class="mb-12">
+            <h2 class="text-xl font-semibold text-slate-800 mb-4">Våra källor</h2>
+            
+            <div class="grid gap-4 sm:grid-cols-3 not-prose">
+                <a href="https://www.skatteverket.se" target="_blank" rel="noopener noreferrer" class="block p-5 border border-slate-200 rounded-xl hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors text-center group">
+                    <p class="font-semibold text-indigo-600 group-hover:underline">Skatteverket</p>
+                    <p class="text-xs text-slate-500 mt-1">Skattesatser, jobbskatteavdrag</p>
+                </a>
+                <a href="https://www.scb.se" target="_blank" rel="noopener noreferrer" class="block p-5 border border-slate-200 rounded-xl hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors text-center group">
+                    <p class="font-semibold text-indigo-600 group-hover:underline">SCB</p>
+                    <p class="text-xs text-slate-500 mt-1">Lönestatistik per yrke</p>
+                </a>
+                <a href="https://skr.se" target="_blank" rel="noopener noreferrer" class="block p-5 border border-slate-200 rounded-xl hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors text-center group">
+                    <p class="font-semibold text-indigo-600 group-hover:underline">SKR</p>
+                    <p class="text-xs text-slate-500 mt-1">Kommunala skattesatser</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <div class="not-prose bg-gradient-to-r from-indigo-50 to-slate-50 rounded-xl p-6 sm:p-8 text-center">
+            <p class="text-slate-600 mb-4 text-lg">Redo att räkna ut din lön?</p>
+            <a href="/" class="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-indigo-700 transition-colors text-lg">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+                Till kalkylatorn
+            </a>
+        </div>
+
+    </article>
+</div>
+{% endblock %}
+

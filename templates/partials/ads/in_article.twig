@@ -1,0 +1,31 @@
+{# Native In-Article Ad Unit #}
+{# Usage: {% include 'partials/ads/in_article.twig' with {'slot_name': 'profession_in_article'} %} #}
+
+{# ═══════════════════════════════════════════════════════════════ #}
+{# AdSense Configuration - INLINE (Twig scope workaround)         #}
+{# ═══════════════════════════════════════════════════════════════ #}
+{% set adsense_pub_id = 'ca-pub-1826806205536778' %}
+{% set is_ads_enabled = true %}
+{% set ad_slots = {
+    'home_calculator_result': '8394982722',
+    'profession_top': '4727200450',
+    'profession_in_article': '6403244205',
+    'profession_mid_content': '2927033627',
+    'blog_top': '3306307571',
+    'blog_sidebar': '8066553938',
+    'blog_bottom': '7588768130'
+} %}
+{# ═══════════════════════════════════════════════════════════════ #}
+
+{# Resolve slot_id from slot_name #}
+{% set resolved_slot_id = ad_slots[slot_name]|default('') %}
+
+	{% if is_ads_enabled and resolved_slot_id and resolved_slot_id != 'REPLACE_ME' %}
+		<div
+		class="ad-container my-8 w-full text-center"> <!-- Google AdSense In-Article: {{ slot_name }} -->
+		<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="{{ adsense_pub_id }}" data-ad-slot="{{ resolved_slot_id }}"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+{% endif %}

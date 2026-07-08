@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Alpine.js cloak to prevent FOUC */
+[x-cloak] {
+    display: none !important;
+}
+
+@layer components {
+    .cursor-wait {
+        cursor: wait;
+    }
+}
+
+@keyframes wiggly {
+
+    0%,
+    100% {
+        transform: rotate(-1deg);
+    }
+
+    50% {
+        transform: rotate(1deg);
+    }
+}
+
+.animate-wiggle {
+    animation: wiggly 1s ease-in-out infinite;
+}
+
+@keyframes attention-grabber {
+
+    0%,
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(1.10) rotate(-1deg);
+    }
+}
+
+.animate-attention {
+    animation: attention-grabber 1.5s ease-in-out infinite;
+}

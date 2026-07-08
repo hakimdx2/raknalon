@@ -1,0 +1,3270 @@
+[
+    {
+        "category": "Vård & Hälsa",
+        "slug": "psykolog",
+        "title": "Psykolog",
+        "keyword": "psykolog lön",
+        "avg_salary": 44500,
+        "median_salary": 43200,
+        "ptp_salary": 35500,
+        "specialist_salary": 52000,
+        "description": "En legitimerad psykolog arbetar med bedömning, behandling och utredning av psykisk ohälsa. Arbetet kan innebära samtalsterapi, KBT, neuropsykologiska utredningar eller organisationspsykologi. Psykologer finns inom region, kommun, privat sektor, företagshälsovård och som egenföretagare.",
+        "description_extended": "Som psykolog möter du människor i svåra livssituationer och hjälper dem att förstå och förändra tanke- och beteendemönster. Vanliga arbetsplatser inkluderar BUP (barn- och ungdomspsykiatri), vårdcentraler, psykiatriska mottagningar och kriminalvården. Efterfrågan på psykologer är hög i hela Sverige, särskilt inom primärvården.",
+        "education": "5 års studier på psykologprogrammet vid universitet + 1 års PTP-tjänstgöring (Praktisk Tjänstgöring för Psykologer) innan legitimation.",
+        "specialties": [
+            {
+                "name": "Klinisk psykolog",
+                "salary": 48000
+            },
+            {
+                "name": "Specialist psykolog",
+                "salary": 52000
+            },
+            {
+                "name": "Forensisk psykolog",
+                "salary": 50000
+            },
+            {
+                "name": "Organisationspsykolog",
+                "salary": 55000
+            }
+        ],
+        "salary_by_sector": {
+            "region": 43000,
+            "privat": 48000,
+            "egenföretagare": 60000
+        },
+        "faq": [
+            {
+                "question": "Vad är PTP-lön för en psykolog?",
+                "answer": "Under PTP-tjänstgöringen (Praktisk Tjänstgöring för Psykologer) ligger lönen på ca 35 000–37 000 kr/mån. PTP-året är ett krav för att få legitimation."
+            },
+            {
+                "question": "Hur mycket tjänar en psykolog i Stockholm?",
+                "answer": "I Stockholm ligger medianlönen för psykologer något högre än rikssnittet, ofta mellan 45 000–50 000 kr/mån beroende på sektor och erfarenhet."
+            },
+            {
+                "question": "Tjänar psykologer mer i privat sektor?",
+                "answer": "Ja, psykologer inom privat sektor och företagshälsovård tjänar i snitt 10–15% mer än de som arbetar inom regionen. Egenföretagare kan tjäna betydligt mer."
+            },
+            {
+                "question": "Hur lång tid tar det att bli psykolog?",
+                "answer": "Det tar totalt 6 år: 5 års universitetsstudier på psykologprogrammet följt av 1 år PTP-tjänstgöring under handledning."
+            }
+        ],
+        "kd": 11,
+        "volume": 2900
+    },
+    {
+        "category": "Transport",
+        "slug": "lokforare",
+        "title": "Lokförare",
+        "keyword": "lokförare lön",
+        "avg_salary": 41500,
+        "median_salary": 40800,
+        "ingangslön": 32000,
+        "ob_tillagg": "3000-6000 kr/mån",
+        "description": "Som lokförare kör du tåg för persontrafik eller godstransport. Det är ett ansvarsfullt yrke med höga säkerhetskrav och varierande arbetstider. Du arbetar ofta skift med natt- och helgjobb, vilket ger OB-tillägg utöver grundlönen.",
+        "description_extended": "Lokförare kan arbeta för statliga eller privata tågoperatörer som SJ, MTR, Green Cargo, Transdev eller Arriva. Lönen varierar beroende på arbetsgivare, om du kör persontåg eller godståg, och var i landet du arbetar. Efterfrågan på lokförare är hög och utbildningsplatser fylls snabbt.",
+        "education": "Yrkeshögskoleutbildning (YH) på ca 44 veckor. Under utbildningen får du lön på ca 18 000–22 000 kr/mån hos vissa arbetsgivare.",
+        "employers": [
+            {
+                "name": "SJ",
+                "salary": 42000
+            },
+            {
+                "name": "MTR",
+                "salary": 40000
+            },
+            {
+                "name": "Green Cargo",
+                "salary": 43000
+            },
+            {
+                "name": "Transdev",
+                "salary": 39500
+            },
+            {
+                "name": "LKAB",
+                "salary": 45000
+            }
+        ],
+        "salary_by_type": {
+            "persontåg": 40000,
+            "godståg": 43000,
+            "pendeltåg": 39000
+        },
+        "faq": [
+            {
+                "question": "Vad är ingångslönen för lokförare?",
+                "answer": "Ingångslönen för nyutbildade lokförare ligger på ca 32 000–35 000 kr/mån. Med OB-tillägg för natt- och helgarbete kan den totala lönen bli högre redan från start."
+            },
+            {
+                "question": "Hur mycket tjänar en lokförare på SJ?",
+                "answer": "Lokförare på SJ tjänar i snitt ca 42 000 kr/mån. SJ är en av de största arbetsgivarna och erbjuder stabila villkor enligt kollektivavtal."
+            },
+            {
+                "question": "Får man lön under lokförarutbildningen?",
+                "answer": "Ja, vissa arbetsgivare som SJ och Green Cargo erbjuder betald utbildning med lön på ca 18 000–22 000 kr/mån. Du tecknar då ett avtal om att arbeta en viss tid efter examen."
+            },
+            {
+                "question": "Tjänar lokförare på godståg mer än persontåg?",
+                "answer": "Ja, generellt sett ligger lönen för godstågslokförare något högre (ca 43 000 kr/mån) jämfört med persontåg (ca 40 000 kr/mån). Godstågsförare har ofta längre sträckor och mer oregelbundna tider."
+            },
+            {
+                "question": "Hur mycket är OB-tilläggen för lokförare?",
+                "answer": "OB-tillägg (obekväm arbetstid) ligger på ca 3 000–6 000 kr/mån beroende på hur mycket natt- och helgarbete du har. Detta läggs ovanpå grundlönen."
+            }
+        ],
+        "kd": 14,
+        "volume": 4400
+    },
+    {
+        "category": "Vård & Hälsa",
+        "slug": "barnmorska",
+        "title": "Barnmorska",
+        "keyword": "barnmorska lön",
+        "avg_salary": 45200,
+        "median_salary": 44500,
+        "nyutexaminerad_salary": 38000,
+        "bemanning_salary": 55000,
+        "description": "Barnmorskor arbetar med graviditet, förlossning och sexuell hälsa. De stödjer kvinnor under hela graviditeten, leder förlossningar och ger eftervård. Det krävs legitimation som sjuksköterska i grunden innan barnmorskeutbildningen.",
+        "description_extended": "Som barnmorska kan du arbeta på förlossningsavdelning, mödravårdscentral (MVC), ungdomsmottagning eller inom privat sektor. Efterfrågan är hög och många regioner erbjuder lönelyft för att locka personal. Bemanningsföretag erbjuder ofta högre löner men med kortare anställningar.",
+        "education": "Sjuksköterskeexamen (3 år) + Barnmorskeprogrammet (1.5 år). Totalt 4.5 års högskolestudier krävs för legitimation.",
+        "workplaces": [
+            {
+                "name": "Förlossningsavdelning",
+                "salary": 46000
+            },
+            {
+                "name": "Mödravårdscentral (MVC)",
+                "salary": 43000
+            },
+            {
+                "name": "Ungdomsmottagning",
+                "salary": 42000
+            },
+            {
+                "name": "Privat mottagning",
+                "salary": 48000
+            }
+        ],
+        "salary_by_sector": {
+            "region": 44000,
+            "privat": 48000,
+            "bemanning": 55000
+        },
+        "faq": [
+            {
+                "question": "Vad är lönen för en nyutexaminerad barnmorska?",
+                "answer": "Nyutexaminerade barnmorskor har en ingångslön på ca 38 000–40 000 kr/mån. Lönen ökar snabbt med erfarenhet, särskilt inom förlossningsvården."
+            },
+            {
+                "question": "Tjänar barnmorskor mer i privat sektor?",
+                "answer": "Ja, barnmorskor i privat sektor tjänar i snitt 48 000 kr/mån jämfört med ca 44 000 kr/mån inom regionen. Bemanningsföretag kan erbjuda upp till 55 000 kr/mån."
+            },
+            {
+                "question": "Vad tjänar en barnmorska på bemanningsföretag?",
+                "answer": "Barnmorskor som arbetar via bemanningsföretag kan tjäna 50 000–60 000 kr/mån. Lönen är högre men anställningen är ofta på visstid och utan samma trygghet."
+            },
+            {
+                "question": "Hur mycket tjänar en barnmorska i Stockholm?",
+                "answer": "I Stockholm ligger medianlönen för barnmorskor på ca 46 000–48 000 kr/mån, något högre än rikssnittet på grund av högre levnadsomkostnader."
+            },
+            {
+                "question": "Vad är skillnaden i lön mellan MVC och förlossning?",
+                "answer": "Barnmorskor på förlossningsavdelning tjänar ofta något mer (ca 46 000 kr/mån) än de på mödravårdscentral (ca 43 000 kr/mån), delvis på grund av OB-tillägg för nattarbete."
+            }
+        ],
+        "kd": 15,
+        "volume": 2900
+    },
+    {
+        "category": "Ekonomi & Ledning",
+        "slug": "ekonomiassistent",
+        "title": "Ekonomiassistent",
+        "keyword": "ekonomiassistent lön",
+        "avg_salary": 32800,
+        "median_salary": 31500,
+        "ingangslön": 27000,
+        "senior_salary": 38000,
+        "description": "Ekonomiassistenter hanterar löpande bokföring, fakturering och leverantörsreskontra. Rollen varierar beroende på företagets storlek och kan inkludera löneadministration, momsredovisning och månadsavstämningar.",
+        "description_extended": "Som ekonomiassistent kan du arbeta inom privat näringsliv, kommun, landsting eller via bemanningsföretag. Många börjar utan erfarenhet och lär sig på jobbet, medan andra har YH-utbildning eller certifiering. Efterfrågan är stabil och det finns gott om jobb i hela Sverige.",
+        "education": "Gymnasieekonom eller YH-utbildning (1-2 år). Certifierad ekonomiassistent via Unionen eller liknande kan ge högre lön.",
+        "specialties": [
+            {
+                "name": "Junior/Utan erfarenhet",
+                "salary": 27000
+            },
+            {
+                "name": "Erfaren ekonomiassistent",
+                "salary": 33000
+            },
+            {
+                "name": "Senior ekonomiassistent",
+                "salary": 38000
+            },
+            {
+                "name": "Certifierad ekonomiassistent",
+                "salary": 36000
+            }
+        ],
+        "salary_by_sector": {
+            "privat": 33000,
+            "kommun": 30000,
+            "bemanning": 35000
+        },
+        "faq": [
+            {
+                "question": "Vad är lönen för en ekonomiassistent utan erfarenhet?",
+                "answer": "En ekonomiassistent utan erfarenhet kan förvänta sig en ingångslön på ca 27 000–29 000 kr/mån. Med ett år eller två av erfarenhet stiger lönen snabbt till rikssnittet."
+            },
+            {
+                "question": "Tjänar man mer som certifierad ekonomiassistent?",
+                "answer": "Ja, en certifiering via till exempel Unionen kan höja lönen med ca 3 000–5 000 kr/mån. Det visar arbetsgivaren att du har formella kunskaper."
+            },
+            {
+                "question": "Hur mycket tjänar en ekonomiassistent i kommun?",
+                "answer": "Inom kommun ligger lönen ofta något lägre, ca 30 000–32 000 kr/mån, men man får i gengäld ofta bättre förmåner och trygghet."
+            },
+            {
+                "question": "Vad är lönen för ekonomiassistent i Stockholm?",
+                "answer": "I Stockholm ligger medianlönen för ekonomiassistenter på ca 34 000–36 000 kr/mån, högre än rikssnittet på grund av högre levnadskostnader."
+            },
+            {
+                "question": "Kan man jobba som ekonomiassistent utan utbildning?",
+                "answer": "Ja, det går att börja utan formell utbildning. Många arbetsgivare värdesätter praktisk erfarenhet och lär upp på plats. Ingångslönen blir dock ofta lägre utan utbildning."
+            }
+        ],
+        "kd": 14,
+        "volume": 2400
+    },
+    {
+        "category": "Utbildning & Samhälle",
+        "slug": "bibliotekarie",
+        "title": "Bibliotekarie",
+        "keyword": "bibliotekarie lön",
+        "avg_salary": 35400,
+        "median_salary": 34900,
+        "nyutexaminerad_salary": 31000,
+        "forste_bibliotekarie_salary": 42000,
+        "description": "Bibliotekarier arbetar med att organisera information, främja läsning och hjälpa besökare att hitta litteratur och källor. De kan arbeta på folkbibliotek, skolbibliotek, universitetsbibliotek eller inom företag.",
+        "description_extended": "Som bibliotekarie kan du specialisera dig inom olika områden: barn- och ungdomslitteratur, medicinska bibliotek, forskningsbibliotek eller IT-stöd. Facket DIK (Dokumentation, Information, Kultur) förhandlar löner och villkor. Efterfrågan finns främst inom kommuner och regioner.",
+        "education": "Kandidatexamen i biblioteks- och informationsvetenskap (3 år). Utbildningen finns på ett fåtal lärosäten i Sverige.",
+        "workplaces": [
+            {
+                "name": "Folkbibliotek",
+                "salary": 34000
+            },
+            {
+                "name": "Universitetsbibliotek",
+                "salary": 37000
+            },
+            {
+                "name": "Skolbibliotek",
+                "salary": 33000
+            },
+            {
+                "name": "Företagsbibliotek",
+                "salary": 40000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Nyutexaminerad",
+                "salary": 31000
+            },
+            {
+                "name": "Bibliotekarie",
+                "salary": 35000
+            },
+            {
+                "name": "Förste bibliotekarie",
+                "salary": 42000
+            },
+            {
+                "name": "IT-bibliotekarie",
+                "salary": 38000
+            }
+        ],
+        "faq": [
+            {
+                "question": "Vad är lönen för en nyutexaminerad bibliotekarie?",
+                "answer": "Nyutexaminerade bibliotekarier har en ingångslön på ca 31 000–33 000 kr/mån. Lönen ökar med erfarenhet och specialisering."
+            },
+            {
+                "question": "Vad tjänar en förste bibliotekarie?",
+                "answer": "En förste bibliotekarie (chef) tjänar i snitt ca 40 000–44 000 kr/mån beroende på ansvar och arbetsgivare."
+            },
+            {
+                "question": "Är det skillnad i lön mellan folkbibliotek och universitet?",
+                "answer": "Ja, universitetsbibliotekarier tjänar ofta ca 37 000 kr/mån jämfört med ca 34 000 kr/mån på folkbibliotek."
+            },
+            {
+                "question": "Vad säger DIK om bibliotekaries lön?",
+                "answer": "Facket DIK (Dokumentation, Information, Kultur) förhandlar kollektivavtal för bibliotekarier. De rekommenderar en ingångslön på minst 31 000 kr/mån för nyutbildade."
+            },
+            {
+                "question": "Kan man tjäna mer som bibliotekarie i Norge?",
+                "answer": "Ja, norska bibliotekarier tjänar generellt mer, ca 40 000–45 000 NOK/mån, men levnadskostnaderna är också högre."
+            }
+        ],
+        "kd": 13,
+        "volume": 1900
+    },
+    {
+        "category": "Vård & Hälsa",
+        "slug": "sjukskoterska",
+        "title": "Sjuksköterska",
+        "keyword": "sjuksköterska lön",
+        "avg_salary": 38500,
+        "median_salary": 37800,
+        "nyexaminerad_salary": 32000,
+        "specialist_salary": 42000,
+        "bemanning_salary": 55000,
+        "description": "Sjuksköterskor arbetar med omvårdnad inom sjukhus, primärvård och äldrevård. De är ansvariga för medicinering, provtagning och patientkontakt. Det är ett eftertraktat yrke med stor brist på personal i hela Sverige.",
+        "description_extended": "Som sjuksköterska kan du arbeta inom många olika områden: akutmottagning, vårdcentral, äldreboende, hemsjukvård, IVA, psykiatri eller som konsult via bemanningsföretag. Specialistutbildning inom exempelvis intensivvård eller anestesi ger högre lön. Efterfrågan är så hög att många regioner erbjuder extra förmåner och bonusar.",
+        "education": "Sjuksköterskeprogrammet (3 år) på universitet/högskola + legitimation från Socialstyrelsen. Specialistutbildning tar ytterligare 1–2 år.",
+        "workplaces": [
+            {
+                "name": "Sjukhus (akutmottagning)",
+                "salary": 39000
+            },
+            {
+                "name": "Vårdcentral",
+                "salary": 37000
+            },
+            {
+                "name": "Äldreboende (kommun)",
+                "salary": 36000
+            },
+            {
+                "name": "Hemsjukvård",
+                "salary": 35500
+            },
+            {
+                "name": "IVA (intensivvård)",
+                "salary": 43000
+            },
+            {
+                "name": "Oljeplattform (Norge)",
+                "salary": 75000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Nyexaminerad",
+                "salary": 32000
+            },
+            {
+                "name": "Grundutbildad",
+                "salary": 38000
+            },
+            {
+                "name": "Specialist (IVA/Anestesi)",
+                "salary": 43000
+            },
+            {
+                "name": "Konsult/Bemanning",
+                "salary": 55000
+            }
+        ],
+        "salary_by_sector": {
+            "region": 38000,
+            "kommun": 36000,
+            "privat": 40000,
+            "bemanning": 55000
+        },
+        "international": {
+            "norge": 52000,
+            "danmark": 42000
+        },
+        "faq": [
+            {
+                "question": "Vad är lönen för en nyexaminerad sjuksköterska?",
+                "answer": "Nyexaminerade sjuksköterskor har en ingångslön på ca 32 000–34 000 kr/mån. I Stockholm och andra storstäder kan den vara något högre."
+            },
+            {
+                "question": "Hur mycket tjänar en sjuksköterska via bemanningsföretag?",
+                "answer": "Sjuksköterskor som arbetar via bemanningsföretag kan tjäna 50 000–60 000 kr/mån. Lönen är betydligt högre men anställningen är ofta på visstid."
+            },
+            {
+                "question": "Vad tjänar en sjuksköterska i Norge?",
+                "answer": "Sjuksköterskor i Norge tjänar i snitt ca 50 000–55 000 NOK/mån (motsvarar ca 50 000–55 000 SEK). Lönen är högre men levnadskostnaderna också."
+            },
+            {
+                "question": "Hur mycket tjänar en sjuksköterska på äldreboende?",
+                "answer": "Sjuksköterskor på kommunala äldreboenden tjänar i snitt ca 35 000–37 000 kr/mån, något lägre än inom regionen men med ofta bättre arbetstider."
+            },
+            {
+                "question": "Vad tjänar en IVA-sjuksköterska?",
+                "answer": "Intensivvårdssjuksköterskor (IVA) med specialistutbildning tjänar i snitt ca 42 000–45 000 kr/mån. Det är en av de högst betalda specialiseringarna."
+            },
+            {
+                "question": "Kan man tjäna 75 000 kr som sjuksköterska på oljeplattform?",
+                "answer": "Ja, sjuksköterskor på norska oljeplattformar kan tjäna upp till 70 000–80 000 NOK/mån. Det krävs dock speciell certifiering och man arbetar i skift offshore."
+            }
+        ],
+        "kd": 22,
+        "volume": 9900
+    },
+    {
+        "category": "Vård & Hälsa",
+        "slug": "underskoterska",
+        "title": "Undersköterska",
+        "keyword": "undersköterska lön",
+        "avg_salary": 29500,
+        "median_salary": 28900,
+        "nyexaminerad_salary": 26000,
+        "natt_salary": 32000,
+        "bemanning_salary": 38000,
+        "timlön": 165,
+        "description": "Undersköterskor utför grundläggande omvårdnad och stöd till patienter och brukare inom vård och omsorg. De arbetar på äldreboenden, inom hemtjänst, på sjukhus och inom psykiatri.",
+        "description_extended": "Som undersköterska kan du arbeta inom kommun eller region. Vanliga arbetsplatser är äldreboenden, hemtjänst, vårdcentraler och sjukhusavdelningar. Nattarbete ger oftast OB-tillägg på 100–250 kr/timme. Facket Kommunal förhandlar löner och villkor. Det finns också möjlighet att arbeta via bemanningsföretag med betydligt högre lön.",
+        "education": "Vård- och omsorgsprogrammet (3 år gymnasium) eller komvux. Det finns också YH-utbildningar för specialisering.",
+        "workplaces": [
+            {
+                "name": "Äldreboende",
+                "salary": 28000
+            },
+            {
+                "name": "Hemtjänst",
+                "salary": 27500
+            },
+            {
+                "name": "Sjukhus",
+                "salary": 30000
+            },
+            {
+                "name": "Vårdcentral",
+                "salary": 29000
+            },
+            {
+                "name": "Psykiatri",
+                "salary": 30500
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Nyexaminerad",
+                "salary": 26000
+            },
+            {
+                "name": "Erfaren",
+                "salary": 29500
+            },
+            {
+                "name": "Nattarbete (med OB)",
+                "salary": 32000
+            },
+            {
+                "name": "Specialiserad (psykiatri/demens)",
+                "salary": 31000
+            }
+        ],
+        "salary_by_sector": {
+            "kommun": 28000,
+            "region": 30000,
+            "privat": 29000,
+            "bemanning": 38000
+        },
+        "international": {
+            "norge": 34000,
+            "danmark": 30000
+        },
+        "faq": [
+            {
+                "question": "Vad är lönen för en undersköterska på äldreboende?",
+                "answer": "Undersköterskor på äldreboenden tjänar i snitt ca 27 000–29 000 kr/mån. Lönen varierar beroende på kommun och erfarenhet."
+            },
+            {
+                "question": "Hur mycket tjänar en undersköterska som jobbar natt?",
+                "answer": "Med OB-tillägg (obekväm arbetstid) kan en undersköterska tjäna ca 30 000–34 000 kr/mån vid nattarbete. OB-tillägget är ofta 100–250 kr extra per timme."
+            },
+            {
+                "question": "Vad tjänar en undersköterska i Norge?",
+                "answer": "I Norge ligger lönen för undersköterskor på ca 32 000–38 000 NOK/mån, vilket är högre än i Sverige men levnadskostnaderna är också högre."
+            },
+            {
+                "question": "Hur mycket tjänar en undersköterska i hemtjänsten?",
+                "answer": "Undersköterskor i hemtjänsten tjänar i snitt ca 26 500–28 500 kr/mån. Lönen kan vara något lägre än på sjukhus men arbetstiderna är ofta mer flexibla."
+            },
+            {
+                "question": "Vad är ingångslönen för en nyexaminerad undersköterska?",
+                "answer": "Nyexaminerade undersköterskor har en ingångslön på ca 25 000–27 000 kr/mån beroende på arbetsgivare och kommun."
+            },
+            {
+                "question": "Kan man tjäna mer som undersköterska via bemanningsföretag?",
+                "answer": "Ja, undersköterskor via bemanningsföretag kan tjäna 35 000–40 000 kr/mån. Lönen är högre men anställningen är ofta på visstid."
+            }
+        ],
+        "kd": 20,
+        "volume": 8100
+    },
+    {
+        "category": "Teknik & Industri",
+        "slug": "elektriker",
+        "title": "Elektriker",
+        "keyword": "elektriker lön",
+        "avg_salary": 36200,
+        "median_salary": 35500,
+        "nyexaminerad_salary": 22000,
+        "fullbetald_salary": 40500,
+        "larling_salary": 19500,
+        "description": "Elektriker installerar, reparerar och underhåller elektriska system i byggnader och industrier. Det krävs certifiering och yrket har goda framtidsutsikter.",
+        "description_extended": "Som elektriker kan du arbeta inom installation (nybyggnation/renovering), service (felsökning/reparation) eller industri. Lönen följer ofta en trappa: lärling, 1:a års montör, 2:a års montör, 3:e års montör och slutligen fullbetald. Många arbetar på ackord vilket kan ge betydligt högre lön. I Norge är lönerna generellt högre.",
+        "education": "El- och omsorgsprogrammet (gymnasium) + lärlingstid (ECY-certifikat).",
+        "workplaces": [
+            {
+                "name": "Installation (Bravida)",
+                "salary": 38000
+            },
+            {
+                "name": "Serviceelektriker",
+                "salary": 39500
+            },
+            {
+                "name": "Industrielektriker",
+                "salary": 41000
+            },
+            {
+                "name": "Högspänning (Linjemontör)",
+                "salary": 42000
+            },
+            {
+                "name": "Oljeplattform (Norge)",
+                "salary": 65000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Lärling (år 1)",
+                "salary": 19500
+            },
+            {
+                "name": "1:a års montör",
+                "salary": 28000
+            },
+            {
+                "name": "2:a års montör",
+                "salary": 32000
+            },
+            {
+                "name": "Fullbetald",
+                "salary": 40500
+            },
+            {
+                "name": "Ledande montör",
+                "salary": 44000
+            }
+        ],
+        "salary_by_sector": {
+            "installation": 38000,
+            "service": 39000,
+            "industri": 41000,
+            "norge": 50000
+        },
+        "international": {
+            "norge": 50000,
+            "danmark": 45000
+        },
+        "faq": [
+            {
+                "question": "Vad är lönen för en elektrikerlärling?",
+                "answer": "Lönen för en elektrikerlärling börjar ofta runt 17 000–20 000 kr/mån och stiger successivt under lärlingstiden tills man blir 1:a års montör."
+            },
+            {
+                "question": "När blir man fullbetald elektriker och vad är lönen?",
+                "answer": "Man räknas ofta som fullbetald efter ca 3–4 år (inklusive lärlingstid). En fullbetald elektriker tjänar i snitt ca 38 000–42 000 kr/mån, ofta mer med ackord."
+            },
+            {
+                "question": "Vad tjänar en 1:a och 2:a års montör?",
+                "answer": "En 1:a års montör tjänar ca 27 000–29 000 kr/mån, medan en 2:a års montör ligger på ca 31 000–33 000 kr/mån. Lönen följer kollektivavtalet (Installationsavtalet)."
+            },
+            {
+                "question": "Hur mycket tjänar en elektriker i Stockholm?",
+                "answer": "I Stockholm är lönen generellt högre, ofta runt 40 000–45 000 kr/mån för en fullbetald elektriker, på grund av högre konkurrens och levnadskostnader."
+            },
+            {
+                "question": "Vad tjänar man som elektriker i Norge?",
+                "answer": "Elektriker i Norge tjänar betydligt mer, ofta ca 45 000–55 000 NOK/mån. Traktamente och andra tillägg kan tillkomma vid arbete för bemanningsföretag."
+            },
+            {
+                "question": "Ger allmän behörighet högre lön?",
+                "answer": "Ja, elektriker med allmän behörighet (Auktoriserad Elinstallatör) har oftast högre ansvar och lön, ofta över 45 000 kr/mån, särskilt i ledande roller."
+            }
+        ],
+        "kd": 21,
+        "volume": 4400
+    },
+    {
+        "category": "Utbildning & Samhälle",
+        "slug": "polis",
+        "title": "Polis",
+        "keyword": "polis lön",
+        "avg_salary": 38900,
+        "median_salary": 37500,
+        "nyexaminerad_salary": 31000,
+        "aspirant_salary": 15000,
+        "specialist_salary": 44000,
+        "description": "Poliser upprätthåller lag och ordning, utreder brott och arbetar förebyggande. Det är ett fysiskt och psykiskt krävande yrke med många specialiseringar.",
+        "description_extended": "Som polis kan du arbeta i yttre tjänst (ingripandepolis), som utredare eller inom underrättelse. Karriären börjar ofta som aspirant med lägre lön, för att sedan stiga som polisassistent och inspektör. Det finns många tillägg för OB och risktillägg. Specialroller som hundförare, MC-polis eller insatsstyrkan ger ofta högre lön.",
+        "education": "Polisutbildningen (2,5 år) på högskola inkl. 6 månaders betald aspiranttjänstgöring.",
+        "workplaces": [
+            {
+                "name": "Ingripandepolis (Yttre tjänst)",
+                "salary": 36000
+            },
+            {
+                "name": "Utredare (Brott)",
+                "salary": 39000
+            },
+            {
+                "name": "Hundförare",
+                "salary": 41000
+            },
+            {
+                "name": "Insatsstyrkan (NI)",
+                "salary": 45000
+            },
+            {
+                "name": "SÄPO (Säkerhetspolis)",
+                "salary": 46000
+            },
+            {
+                "name": "Polis i Stockholm",
+                "salary": 42000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Polisaspirant",
+                "salary": 15000
+            },
+            {
+                "name": "Polisassistent (Nyexaminerad)",
+                "salary": 31000
+            },
+            {
+                "name": "Polisinspektör",
+                "salary": 42000
+            },
+            {
+                "name": "Poliskommissarie",
+                "salary": 52000
+            },
+            {
+                "name": "Brottsutredare (Civil)",
+                "salary": 40000
+            }
+        ],
+        "salary_by_sector": {
+            "statlig": 38900,
+            "säpo": 46000,
+            "internationell (FN/EU)": 60000
+        },
+        "international": {
+            "norge": 55000,
+            "usa": 50000
+        },
+        "faq": [
+            {
+                "question": "Vad är ingångslönen för en nyexaminerad polis?",
+                "answer": "Ingångslönen för en nyexaminerad polis ligger oftast på ca 30 000–32 000 kr/mån. I storstadsregioner som Stockholm kan den vara något högre."
+            },
+            {
+                "question": "Vad tjänar man som polisaspirant?",
+                "answer": "Under aspiranttiden (6 månader) har man en lägre lön, oftast runt 15 000 kr/mån. Utbildningen är studiemedelsberättigad under de första fyra terminerna."
+            },
+            {
+                "question": "Hur mycket tjänar en polis i Stockholm?",
+                "answer": "Poliser i Stockholm har generellt högre lön än i övriga landet, ofta med ett snitt på ca 40 000–44 000 kr/mån för erfarna poliser, plus storstadstillägg."
+            },
+            {
+                "question": "Vad tjänar en hundförare eller MC-polis?",
+                "answer": "Specialiserade roller som hundförare och MC-polis har ofta högre lön, ca 40 000–43 000 kr/mån, på grund av utökad utbildning och ansvar."
+            },
+            {
+                "question": "Vad är lönen hos SÄPO?",
+                "answer": "Säkerhetspolisen (SÄPO) har ofta högre löner, med ett snitt på ca 44 000–48 000 kr/mån beroende på roll (t.ex. livvakt, analytiker eller spanare)."
+            },
+            {
+                "question": "Tjänar poliser bra i Norge?",
+                "answer": "Ja, polislönerna i Norge är betydligt högre, ofta motsvarande ca 50 000–60 000 SEK/mån, men levnadskostnaderna är också högre."
+            }
+        ],
+        "kd": 18,
+        "volume": 6600
+    },
+    {
+        "category": "Vård & Hälsa",
+        "slug": "lakare",
+        "title": "Läkare",
+        "keyword": "läkare lön",
+        "avg_salary": 84500,
+        "median_salary": 81000,
+        "nyexaminerad_salary": 36000,
+        "specialist_salary": 82000,
+        "overlakare_salary": 95000,
+        "description": "Läkare diagnosticerar och behandlar sjukdomar. Lönen ökar kraftigt med erfarenhet: från AT-läkare till specialist och överläkare.",
+        "description_extended": "Läkaryrket har en tydlig lönestege. Efter examen arbetar man ofta som underläkare innan AT (Allmäntjänstgöring). Därefter följer ST (Specialisttjänstgöring) i ca 5 år. Som specialistläkare och senare överläkare stiger lönen markant. Många väljer också att arbeta som hyrläkare eller stafettläkare för högre ersättning.",
+        "education": "Läkarprogrammet (5,5–6 år) + AT el. BT + ST-tjänstgöring.",
+        "workplaces": [
+            {
+                "name": "Vårdcentral",
+                "salary": 80000
+            },
+            {
+                "name": "Sjukhus (Landsting)",
+                "salary": 78000
+            },
+            {
+                "name": "Privat mottagning",
+                "salary": 85000
+            },
+            {
+                "name": "Bemanning (Hyrläkare)",
+                "salary": 110000
+            },
+            {
+                "name": "Läkare Utan Gränser",
+                "salary": 15000
+            },
+            {
+                "name": "Företagshälsovård",
+                "salary": 88000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "AT-läkare",
+                "salary": 36500
+            },
+            {
+                "name": "ST-läkare",
+                "salary": 52000
+            },
+            {
+                "name": "Specialistläkare",
+                "salary": 82000
+            },
+            {
+                "name": "Överläkare",
+                "salary": 95000
+            },
+            {
+                "name": "Distriktsläkare",
+                "salary": 85000
+            }
+        ],
+        "salary_by_sector": {
+            "offentlig": 83000,
+            "privat": 90000,
+            "bemanning": 120000
+        },
+        "international": {
+            "norge": 110000,
+            "danmark": 95000,
+            "usa": 150000
+        },
+        "faq": [
+            {
+                "question": "Vad är lönen för en AT-läkare?",
+                "answer": "En AT-läkare tjänar i snitt ca 35 000–38 000 kr/mån. Lönen är lägst under utbildningstiden men stiger snabbt efter legitimation."
+            },
+            {
+                "question": "Hur mycket tjänar en ST-läkare?",
+                "answer": "ST-läkare (under specialisering) har en snittlön på ca 50 000–55 000 kr/mån. Lönen ökar ofta årligen under den 5-åriga utbildningen."
+            },
+            {
+                "question": "Vad tjänar en färdig specialist och överläkare?",
+                "answer": "En specialistläkare tjänar oftast mellan 75 000 och 85 000 kr/mån. En överläkare med ledningsansvar ligger ofta på 90 000–100 000 kr/mån eller mer."
+            },
+            {
+                "question": "Tjänar man mer som hyrläkare eller stafettläkare?",
+                "answer": "Ja, hyrläkare via bemanningsföretag kan tjäna betydligt mer, ofta 100 000–140 000 kr/mån, men anställningstryggheten kan vara lägre."
+            },
+            {
+                "question": "Vad är lönen för Läkare Utan Gränser?",
+                "answer": "Arbete för Läkare Utan Gränser är biståndsarbete och ger en lägre ersättning, ofta runt 13 000–16 000 kr/mån (traktamente), då drivkraften är humanitär."
+            },
+            {
+                "question": "Vad tjänar en läkare i Norge?",
+                "answer": "Läkare i Norge har generellt mycket höga löner, ofta över 100 000 NOK/mån för specialister, särskilt i glesbygd."
+            }
+        ],
+        "kd": 26,
+        "volume": 6600
+    },
+    {
+        "category": "Vård & Hälsa",
+        "slug": "apotekstekniker",
+        "title": "Apotekstekniker",
+        "keyword": "apotekstekniker lön",
+        "avg_salary": 31200,
+        "median_salary": 30500,
+        "nyexaminerad_salary": 27000,
+        "description": "Apotekstekniker arbetar med receptexpedition, rådgivning kring läkemedel och lagerhantering på apotek. Yrket kräver noggrannhet och servicekänsla.",
+        "description_extended": "Som apotekstekniker arbetar du ofta på öppenvårdsapotek eller sjukhusapotek. Arbetsuppgifterna varierar från att expediera recept (med receptbehörighet) till egenvårdsrådgivning och varuhantering. Det finns goda möjligheter till utveckling, till exempel som säljansvarig eller genom specialisering inom läkemedelshantering.",
+        "education": "Yrkeshögskoleutbildning (ca 1,5 år) till apotekstekniker.",
+        "workplaces": [
+            {
+                "name": "Öppenvårdsapotek",
+                "salary": 31000
+            },
+            {
+                "name": "Sjukhusapotek",
+                "salary": 32500
+            },
+            {
+                "name": "E-handelsapotek",
+                "salary": 30500
+            },
+            {
+                "name": "Läkemedelsindustri",
+                "salary": 36000
+            },
+            {
+                "name": "Apotek i Norge",
+                "salary": 45000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Nyexaminerad",
+                "salary": 27000
+            },
+            {
+                "name": "Med receptbehörighet",
+                "salary": 33000
+            },
+            {
+                "name": "Säljansvarig",
+                "salary": 34500
+            },
+            {
+                "name": "Läkemedelsansvarig",
+                "salary": 35000
+            }
+        ],
+        "salary_by_sector": {
+            "privat": 31500,
+            "offentlig": 32000,
+            "norge": 45000
+        },
+        "international": {
+            "norge": 45000,
+            "danmark": 38000
+        },
+        "faq": [
+            {
+                "question": "Vad tjänar en nyexaminerad apotekstekniker?",
+                "answer": "En nyexaminerad apotekstekniker har vanligtvis en ingångslön på ca 26 000–28 000 kr/mån beroende på arbetsgivare och ort."
+            },
+            {
+                "question": "Ger receptbehörighet högre lön?",
+                "answer": "Ja, receptbehörighet är ofta ett krav för högre lönesteg och mer kvalificerade arbetsuppgifter. Det kan öka lönen med några tusenlappar i månaden."
+            },
+            {
+                "question": "Vad tjänar man som apotekstekniker i Norge?",
+                "answer": "I Norge är lönen för apotekstekniker betydligt högre, ofta motsvarande ca 40 000–50 000 SEK/mån, men levnadskostnaderna är också högre."
+            },
+            {
+                "question": "Vad är skillnaden i lön mellan apotekstekniker och receptarie?",
+                "answer": "En receptarie har en 3-årig universitetsutbildning och därmed högre lön, ofta ca 35 000–40 000 kr/mån som nyexaminerad, jämfört med apoteksteknikerns ca 27 000 kr/mån."
+            },
+            {
+                "question": "Hur ser löneutvecklingen ut?",
+                "answer": "Löneutvecklingen är ofta stabil men måttlig. Genom att ta ansvar som t.ex. säljansvarig, läkemedelsansvarig eller varuförsörjningsansvarig kan man höja sin lön."
+            }
+        ],
+        "kd": 13,
+        "volume": 1900
+    },
+    {
+        "category": "Transport",
+        "slug": "busschauffor",
+        "title": "Busschaufför",
+        "keyword": "busschaufför lön",
+        "avg_salary": 30800,
+        "median_salary": 30200,
+        "nyexaminerad_salary": 27000,
+        "ob_salary": 34000,
+        "timlön": 175,
+        "description": "Busschaufförer kör lokaltrafik, regionbussar eller turistbussar. Yrket kräver D-körkort och yrkeskompetensbevis.",
+        "description_extended": "Som busschaufför arbetar du ofta hos stora trafikoperatörer som Nobina, Keolis eller SL. Lönen påverkas av OB-tillägg vid obekväm arbetstid (kvällar, nätter, helger). Fackförbundet Kommunal förhandlar löner och villkor. Det finns också möjlighet att jobba i Norge med betydligt högre lön.",
+        "education": "D-körkort + YKB (Yrkeskompetensbevis för persontransporter).",
+        "workplaces": [
+            {
+                "name": "Nobina (Lokaltrafik)",
+                "salary": 31000
+            },
+            {
+                "name": "Keolis",
+                "salary": 30500
+            },
+            {
+                "name": "SL (Stockholm)",
+                "salary": 32000
+            },
+            {
+                "name": "Västtrafik",
+                "salary": 30500
+            },
+            {
+                "name": "Turistbuss",
+                "salary": 29500
+            },
+            {
+                "name": "Norge (VY/Norgesbuss)",
+                "salary": 42000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Nyutbildad",
+                "salary": 27000
+            },
+            {
+                "name": "Lokaltrafik",
+                "salary": 30000
+            },
+            {
+                "name": "Regionbuss",
+                "salary": 31500
+            },
+            {
+                "name": "Med OB-tillägg",
+                "salary": 34000
+            },
+            {
+                "name": "Turistbuss",
+                "salary": 29000
+            }
+        ],
+        "salary_by_sector": {
+            "kommunal": 30500,
+            "privat": 30800,
+            "norge": 42000
+        },
+        "international": {
+            "norge": 42000,
+            "danmark": 37000,
+            "schweiz": 55000
+        },
+        "faq": [
+            {
+                "question": "Hur mycket höjer OB lönen för en busschaufför?",
+                "answer": "Med OB-tillägg (obekväm arbetstid) kan lönen öka med 2 000–5 000 kr/mån. OB-ersättningen varierar men kan vara 50–150 kr/timme extra vid kvälls- och nattarbete."
+            },
+            {
+                "question": "Vad säger Kommunal om busschaufförslönerna?",
+                "answer": "Kommunal förhandlar löner och arbetar för att höja minimilönen. Enligt avtalet ligger grundlönen på ca 28 000–31 000 kr/mån beroende på region och erfarenhet."
+            },
+            {
+                "question": "Vad tjänar man som busschaufför hos Keolis eller Nobina?",
+                "answer": "Hos stora operatörer som Keolis och Nobina ligger snittlönen på ca 29 500–31 500 kr/mån. Det kan vara något högre i storstadsregioner."
+            },
+            {
+                "question": "Hur mycket tjänar en busschaufför i Stockholm (SL)?",
+                "answer": "Busschaufförer som kör för SL i Stockholm har ofta något högre lön, ca 31 000–33 000 kr/mån på grund av de högre levnadskostnaderna i regionen."
+            },
+            {
+                "question": "Vad tjänar en busschaufför i Norge?",
+                "answer": "I Norge är lönerna betydligt högre, ofta runt 40 000–45 000 NOK/mån. Många svenska bussförare väljer att arbeta i Norge för den högre lönen."
+            },
+            {
+                "question": "Vad är timlönen för en busschaufför?",
+                "answer": "Timlönen varierar men ligger oftast på ca 160–190 kr/timme beroende på avtal och arbetsgivare, exklusive OB-tillägg."
+            }
+        ],
+        "kd": 13,
+        "volume": 1900
+    },
+    {
+        "category": "Teknik & Industri",
+        "slug": "cnc-operator",
+        "title": "CNC-operatör",
+        "keyword": "cnc operatör lön",
+        "avg_salary": 34500,
+        "median_salary": 33800,
+        "nyexaminerad_salary": 28000,
+        "erfaren_salary": 38000,
+        "description": "CNC-operatörer styr datoriserade maskiner för bearbetning av metall och plast. Det är ett tekniskt yrke inom industrin med god efterfrågan.",
+        "description_extended": "Som CNC-operatör arbetar du ofta inom tillverkningsindustrin, exempelvis hos stora arbetsgivare som Volvo och Scania. Fackförbundet IF Metall förhandlar löner och villkor. Det finns möjlighet att specialisera sig inom olika material (metall, plast, trä) och maskintyper (fräs, svarv). Skiftarbete med OB-tillägg kan höja lönen avsevärt.",
+        "education": "Industritekniskt program (gymnasium) eller YH-utbildning till CNC-operatör.",
+        "workplaces": [
+            {
+                "name": "Volvo (Fordon)",
+                "salary": 37000
+            },
+            {
+                "name": "Scania (Lastbilar)",
+                "salary": 38000
+            },
+            {
+                "name": "Mindre verkstad",
+                "salary": 32000
+            },
+            {
+                "name": "Plastindustri",
+                "salary": 33500
+            },
+            {
+                "name": "Industriföretag (Allmänt)",
+                "salary": 34500
+            },
+            {
+                "name": "Norge",
+                "salary": 45000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Nybörjare/Under utbildning",
+                "salary": 28000
+            },
+            {
+                "name": "Erfaren operatör",
+                "salary": 35000
+            },
+            {
+                "name": "Ställare/Programmerare",
+                "salary": 39000
+            },
+            {
+                "name": "Med skifttillägg",
+                "salary": 38500
+            }
+        ],
+        "salary_by_sector": {
+            "fordonsindustri": 37000,
+            "plastindustri": 33500,
+            "metallbearbetning": 34000,
+            "norge": 45000
+        },
+        "international": {
+            "norge": 45000,
+            "danmark": 40000
+        },
+        "faq": [
+            {
+                "question": "Vad tjänar en CNC-operatör hos Volvo?",
+                "answer": "Hos Volvo ligger lönen för CNC-operatörer ofta på ca 35 000–40 000 kr/mån beroende på erfarenhet och avdelning. Skiftarbete kan ge extra tillägg."
+            },
+            {
+                "question": "Vad tjänar man hos Scania?",
+                "answer": "Scania är kända för goda löner inom industrin. En CNC-operatör kan förvänta sig ca 36 000–40 000 kr/mån, med möjlighet till bonusar och förmåner."
+            },
+            {
+                "question": "Vad säger IF Metall om CNC-löner?",
+                "answer": "IF Metall förhandlar fram avtalsenliga minimilöner. Ingångslönen enligt avtal ligger ofta på ca 27 000–29 000 kr/mån för nybörjare och stiger med erfarenhet."
+            },
+            {
+                "question": "Vad är ingångslönen för en nybörjare?",
+                "answer": "Som nybörjare eller nyutbildad CNC-operatör ligger ingångslönen vanligtvis på ca 26 000–29 000 kr/mån, beroende på arbetsgivare och region."
+            },
+            {
+                "question": "Tjänar man mer i Norge?",
+                "answer": "Ja, i Norge är lönerna för CNC-operatörer betydligt högre, ofta runt 42 000–48 000 NOK/mån. Levnadskostnaderna är dock också högre."
+            },
+            {
+                "question": "Vad kan en erfaren CNC-operatör tjäna?",
+                "answer": "En erfaren CNC-operatör med flerårig erfarenhet och specialkompetens (t.ex. programmering) kan tjäna uppemot 38 000–42 000 kr/mån."
+            }
+        ],
+        "kd": 12,
+        "volume": 1900
+    },
+    {
+        "category": "Utbildning & Samhälle",
+        "slug": "elevassistent",
+        "title": "Elevassistent",
+        "keyword": "elevassistent lön",
+        "avg_salary": 28500,
+        "median_salary": 27800,
+        "utan_utbildning_salary": 25500,
+        "med_utbildning_salary": 30000,
+        "timlön": 150,
+        "description": "Elevassistenter stödjer elever med särskilda behov i skolan. Arbetet är ofta i nära samarbete med lärare och specialpedagoger.",
+        "description_extended": "Som elevassistent arbetar du ofta med elever som har funktionsnedsättning, autism, ADHD eller andra särskilda behov. Du kan arbeta i grundskolan, särskolan eller på gymnasiet. Lönen varierar beroende på om du har utbildning eller inte. Under uppehållstjänst (sommarlov) kan anställningen påverkas.",
+        "education": "Ingen formell utbildning krävs. Barnskötarutbildning eller liknande värderas.",
+        "workplaces": [
+            {
+                "name": "Grundskola",
+                "salary": 28000
+            },
+            {
+                "name": "Särskola",
+                "salary": 29500
+            },
+            {
+                "name": "Gymnasiet",
+                "salary": 28500
+            },
+            {
+                "name": "Friskola",
+                "salary": 27500
+            },
+            {
+                "name": "Stockholm",
+                "salary": 30500
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Utan utbildning",
+                "salary": 25500
+            },
+            {
+                "name": "Med barnskötarutbildning",
+                "salary": 29000
+            },
+            {
+                "name": "Inom särskola",
+                "salary": 30000
+            },
+            {
+                "name": "Elever med autism",
+                "salary": 29500
+            }
+        ],
+        "salary_by_sector": {
+            "kommunal": 28500,
+            "friskola": 27000
+        },
+        "faq": [
+            {
+                "question": "Vad tjänar en elevassistent utan utbildning?",
+                "answer": "Som elevassistent utan formell utbildning ligger lönen ofta på ca 24 000–26 500 kr/mån beroende på kommun. Erfarenhet kan höja lönen över tid."
+            },
+            {
+                "question": "Vad kan jag begära i lön som elevassistent?",
+                "answer": "Lönen är ofta avtalsmässig (enligt Kommunals avtal), men du kan ofta förhandla uppåt med 1 000–2 000 kr om du har relevant utbildning eller erfarenhet. Snittlönen ligger på ca 28 000 kr/mån."
+            },
+            {
+                "question": "Vad är lönen för en elevassistent i särskolan?",
+                "answer": "Elevassistenter i särskolan har ofta något högre lön på grund av de mer krävande arbetsuppgifterna, ofta ca 29 000–31 000 kr/mån."
+            },
+            {
+                "question": "Vad tjänar man som elevassistent med utbildning?",
+                "answer": "Med relevant utbildning (t.ex. barnskötare eller stödpedagog) kan lönen vara ca 28 000–31 000 kr/mån beroende på kommun och erfarenhet."
+            },
+            {
+                "question": "Får man lön under uppehållstjänst och lov?",
+                "answer": "Uppehållstjänst innebär att man har uppehåll utan lön under sommaren. Vissa arbetsgivare erbjuder dock ferietjänst med lön hela året."
+            },
+            {
+                "question": "Vad tjänar en elevassistent som arbetar med elever med autism?",
+                "answer": "Arbete med elever med autism eller andra diagnoser kräver ofta specialkompetens. Lönen kan vara något högre, ca 28 500–30 500 kr/mån."
+            }
+        ],
+        "kd": 13,
+        "volume": 1900
+    },
+    {
+        "category": "Teknik & Industri",
+        "slug": "fastighetsskotare",
+        "title": "Fastighetsskötare",
+        "keyword": "fastighetsskötare lön",
+        "avg_salary": 31500,
+        "median_salary": 30800,
+        "nyexaminerad_salary": 26500,
+        "arbetsledare_salary": 38000,
+        "description": "Fastighetsskötare ansvarar för underhåll och skötsel av fastigheter, inklusive yttre och inre miljö. Ett varierande och serviceinriktat yrke.",
+        "description_extended": "Som fastighetsskötare (eller fastighetsvärd) arbetar du med allt från tekniskt underhåll till trädgårdsskötsel och kontakt med hyresgäster. Arbetsgivare är ofta bostadsbolag som HSB, Riksbyggen eller kommunala fastighetsbolag. Det finns möjligheter att avancera till fastighetstekniker eller arbetsledare.",
+        "education": "Fastighetsprogrammet (gymnasium), YH-utbildning eller lärling.",
+        "workplaces": [
+            {
+                "name": "Kommunalt bostadsbolag",
+                "salary": 31000
+            },
+            {
+                "name": "HSB / Riksbyggen",
+                "salary": 32000
+            },
+            {
+                "name": "Privat fastighetsbolag",
+                "salary": 32500
+            },
+            {
+                "name": "Bemanningsföretag",
+                "salary": 30000
+            },
+            {
+                "name": "Fastighetsservice",
+                "salary": 29500
+            },
+            {
+                "name": "Norge",
+                "salary": 42000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Fastighetsvärd",
+                "salary": 33000
+            },
+            {
+                "name": "Yttre skötsel",
+                "salary": 28000
+            },
+            {
+                "name": "Inre skötsel",
+                "salary": 29500
+            },
+            {
+                "name": "Arbetsledare",
+                "salary": 38000
+            },
+            {
+                "name": "Fastighetstekniker",
+                "salary": 36000
+            }
+        ],
+        "salary_by_sector": {
+            "kommunal": 31000,
+            "privat": 32500,
+            "norge": 42000
+        },
+        "international": {
+            "norge": 42000,
+            "finland": 34000
+        },
+        "faq": [
+            {
+                "question": "Vad är lönen för en fastighetsskötare enligt Kommunal?",
+                "answer": "Enligt Kommunals avtal ligger lägsta lönen ofta runt 24 500 kr/mån för nyanställda utan erfarenhet, men snittlönen är högre, runt 29 000–31 000 kr/mån."
+            },
+            {
+                "question": "Vad tjänar man hos HSB eller Riksbyggen?",
+                "answer": "Hos stora privata eller kooperativa bolag som HSB och Riksbyggen ligger lönen ofta i spannet 30 000–34 000 kr/mån beroende på erfarenhet och ansvarsområde."
+            },
+            {
+                "question": "Hur mycket tjänar en arbetsledare inom fastighetsskötsel?",
+                "answer": "Som arbetsledare har du personalansvar och tjänar oftast mer, ca 35 000–40 000 kr/mån."
+            },
+            {
+                "question": "Vad är ingångslönen för en nyexaminerad fastighetsskötare?",
+                "answer": "Ingångslönen för en nyutbildad fastighetsskötare ligger oftast på ca 25 000–27 000 kr/mån."
+            },
+            {
+                "question": "Vad tjänar man som fastighetsskötare i Stockholm?",
+                "answer": "I Stockholm är lönen generellt högre på grund av levnadskostnader och konkurrens, ofta ca 32 000–35 000 kr/mån för en erfaren fastighetsskötare."
+            },
+            {
+                "question": "Kan man jobba som fastighetsskötare i Norge?",
+                "answer": "Ja, det finns goda möjligheter i Norge (ofta kallat 'vaktmester'). Lönen är högre, ofta runt 35 000–45 000 NOK/mån."
+            }
+        ],
+        "kd": 13,
+        "volume": 1900
+    },
+    {
+        "category": "Teknik & Industri",
+        "slug": "rormokare",
+        "title": "Rörmokare",
+        "keyword": "rörmokare lön",
+        "avg_salary": 36500,
+        "median_salary": 35800,
+        "nyexaminerad_salary": 33000,
+        "larling_salary": 22000,
+        "description": "Rörmokare (VVS-montör) installerar och reparerar rör för vatten, avlopp och värme. Ett fritt yrke med stora möjligheter till eget företagande.",
+        "description_extended": "Som rörmokare kan du arbeta med allt från service i privatbostäder till stora installationer på byggarbetsplatser (entreprenad). Yrket kräver certifikat (branschprov) för full lön. Många väljer att starta eget företag eller specialisera sig inom t.ex. kyla eller industri. Lärlingstiden är betald med en trappa upp till fullbetald montör.",
+        "education": "VVS- och fastighetsprogrammet (gymnasium) + ca 2 år som lärling.",
+        "workplaces": [
+            {
+                "name": "Servicefirma (Liten)",
+                "salary": 35000
+            },
+            {
+                "name": "Entreprenadbolag (Stor)",
+                "salary": 37500
+            },
+            {
+                "name": "Industri (Dygnet runt)",
+                "salary": 41000
+            },
+            {
+                "name": "Eget företag (Vinst)",
+                "salary": 45000
+            },
+            {
+                "name": "Norge (Rotasjon)",
+                "salary": 48000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Lärling (Nivå 10)",
+                "salary": 24000
+            },
+            {
+                "name": "Certifierad montör",
+                "salary": 36500
+            },
+            {
+                "name": "Service-rörmokare",
+                "salary": 35500
+            },
+            {
+                "name": "Entreprenad-rörmokare",
+                "salary": 37000
+            },
+            {
+                "name": "Industrirörmokare",
+                "salary": 39500
+            }
+        ],
+        "salary_by_sector": {
+            "privat": 36500,
+            "eget_foretag": 45000,
+            "norge": 48000
+        },
+        "international": {
+            "norge": 48000,
+            "danmark": 42000
+        },
+        "faq": [
+            {
+                "question": "Vad tjänar en lärling som rörmokare?",
+                "answer": "Lärlingslönen följer en trappa. I början är lönen lägre (ca 17 000–20 000 kr), men den stiger successivt under lärlingstiden (ca 2 år) tills du blir fullbetald montör."
+            },
+            {
+                "question": "Hur mycket tjänar man som fullbetald (certifierad) rörmokare?",
+                "answer": "När du har klarat branschprovet och är certifierad ligger snittlönen ofta på ca 36 000–39 000 kr/mån. Ackordslön på stora byggen kan ge betydligt mer."
+            },
+            {
+                "question": "Är det lönsamt att starta eget som rörmokare?",
+                "answer": "Ja, många rörmokare startar eget. Då kan inkomsten variera kraftigt men ofta möjlighet till högre inkomst (45 000+ kr/mån) genom vinstutdelning och debitering per timme."
+            },
+            {
+                "question": "Vad är lönen för rörmokare i Stockholm?",
+                "answer": "I Stockholm är efterfrågan hög och lönerna ligger ofta något högre än snittet, ca 37 000–41 000 kr/mån för erfarna montörer."
+            },
+            {
+                "question": "Vad tjänar man som rörmokare i Norge?",
+                "answer": "I Norge är det vanligt med 'rotationsjobb' där man jobbar intensivt och är ledig längre perioder. Lönen kan vara mycket hög, ofta 45 000–55 000 NOK/mån."
+            },
+            {
+                "question": "Får man betalt under utbildningen?",
+                "answer": "Gymnasieutbildningen är obetald (CSN). Lärlingstiden efter gymnasiet är dock en anställning med lön enligt kollektivavtal."
+            }
+        ],
+        "kd": 13,
+        "volume": 1900
+    },
+    {
+        "category": "Ekonomi & Ledning",
+        "slug": "controller",
+        "title": "Controller",
+        "keyword": "controller lön",
+        "avg_salary": 52000,
+        "median_salary": 50500,
+        "nyexaminerad_salary": 38000,
+        "senior_salary": 65000,
+        "description": "Controllers analyserar ekonomisk data, skapar budgetar och rapporter för att stödja företagsledningens beslut. En nyckelroll för ekonomisk styrning.",
+        "description_extended": "Som controller fungerar du som spindeln i nätet mellan ekonomi och verksamhet. Rollen delas ofta upp i 'Business Controller' (fokus på verksamhetsstyrning och framtid) och 'Financial Controller' (fokus på redovisning och dåtid). Lönen är generellt hög, särskilt inom privat sektor och för seniora roller.",
+        "education": "Civilekonom eller motsvarande högskoleexamen (3-5 år).",
+        "workplaces": [
+            {
+                "name": "Storföretag (Privat)",
+                "salary": 56000
+            },
+            {
+                "name": "Kommun/Region",
+                "salary": 48000
+            },
+            {
+                "name": "Statlig myndighet",
+                "salary": 49500
+            },
+            {
+                "name": "Konsultbolag",
+                "salary": 54000
+            },
+            {
+                "name": "Bank & Finans",
+                "salary": 58000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Business Controller",
+                "salary": 55000
+            },
+            {
+                "name": "Financial Controller",
+                "salary": 49000
+            },
+            {
+                "name": "Junior Controller",
+                "salary": 38500
+            },
+            {
+                "name": "Senior Controller",
+                "salary": 68000
+            },
+            {
+                "name": "Project Controller",
+                "salary": 51000
+            }
+        ],
+        "salary_by_sector": {
+            "privat": 54000,
+            "offentlig": 48500,
+            "konsult": 54000
+        },
+        "faq": [
+            {
+                "question": "Vad är skillnaden mellan Business Controller och Financial Controller?",
+                "answer": "En Financial Controller fokuserar ofta på bokslut, rapportering och att siffrorna stämmer (redovisning). En Business Controller arbetar mer framåtblickande med analyser, prognoser och att stötta chefer i affärsbeslut."
+            },
+            {
+                "question": "Vad tjänar en Junior Controller?",
+                "answer": "Som nyexaminerad eller junior controller ligger ingångslönen ofta på ca 35 000–40 000 kr/mån. Lneutvecklingen är därefter ofta brant de första åren."
+            },
+            {
+                "question": "Vad tjänar en Controller i Stockholm?",
+                "answer": "I Stockholm är lönenivån högst i landet. En erfaren controller tjänar ofta mellan 55 000 och 70 000 kr/mån beroende på bransch och ansvar."
+            },
+            {
+                "question": "Hur mycket tjänar en Business Controller?",
+                "answer": "Snittlönen för en Business Controller ligger på ca 55 000 kr/mån, men senioraBusiness Controllers på stora bolag kan tjäna betydligt mer, ofta över 70 000 kr."
+            },
+            {
+                "question": "Krävs det en civilekonomexamen?",
+                "answer": "Vanligtvis ja. De flesta arbetsgivare efterfrågar en högskoleexamen inom ekonomi (t.ex. civilekonom eller kandidat), men lång erfarenhet av redovisning kan ibland väga upp."
+            }
+        ],
+        "kd": 12,
+        "volume": 1300
+    },
+    {
+        "category": "Vård & Hälsa",
+        "slug": "ambulansforare",
+        "title": "Ambulansförare",
+        "keyword": "ambulansförare lön",
+        "avg_salary": 33500,
+        "median_salary": 32800,
+        "nyexaminerad_salary": 28000,
+        "specialist_salary": 44000,
+        "description": "Ambulansförare (ofta ambulanssjukvårdare) ansvarar för säker transport och vård av sjuka. Arbetet sker i team, ofta med en sjuksköterska.",
+        "description_extended": "Titeln 'ambulansförare' används sällan formellt idag. Istället arbetar man som ambulanssjukvårdare (undersköterska med påbyggnad) eller ambulanssjuksköterska (leg. sjuksköterska med specialistutbildning). Sjuksköterskan har det medicinska ansvaret och tjänar betydligt mer. Arbetet innebär skifttjänstgöring med OB-tillägg.",
+        "education": "Ambulanssjukvårdare (YH) eller Ambulanssjuksköterska (Universitet).",
+        "workplaces": [
+            {
+                "name": "Region (Landsbygd)",
+                "salary": 34000
+            },
+            {
+                "name": "Region (Storstad)",
+                "salary": 36000
+            },
+            {
+                "name": "Privat ambulansbolag",
+                "salary": 33500
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Ambulanssjukvårdare",
+                "salary": 31000
+            },
+            {
+                "name": "Grundutbildad Sjuksköterska",
+                "salary": 35000
+            },
+            {
+                "name": "Ambulanssjuksköterska (Spec.)",
+                "salary": 44500
+            },
+            {
+                "name": "Helikopter (Flight Nurse)",
+                "salary": 50000
+            }
+        ],
+        "salary_by_sector": {
+            "offentlig": 35000,
+            "privat": 34500
+        },
+        "faq": [
+            {
+                "question": "Vad är skillnaden mellan ambulansförare och ambulanssjuksköterska?",
+                "answer": "En 'ambulansförare' är oftast en ambulanssjukvårdare (undersköterska) som kör och assisterar. En ambulanssjuksköterska har en högskoleutbildning och det medicinska ansvaret för patienten (lääkemedel, behandling)."
+            },
+            {
+                "question": "Vad tjänar en ambulanssjukvårdare?",
+                "answer": "En ambulanssjukvårdare tjänar oftast mellan 28 000 och 33 000 kr/mån, plus OB-tillägg för skiftarbete."
+            },
+            {
+                "question": "Vad tjänar en specialistsjuksköterska inom ambulans?",
+                "answer": "En specialistsjuksköterska inom ambulanssjukvård har betydligt högre lön, ofta ca 40 000–46 000 kr/mån beroende på erfarenhet och region."
+            },
+            {
+                "question": "Vilka krav ställs för att köra ambulans?",
+                "answer": "Förutom medicinsk utbildning krävs B-körkort (ibland C1 för tyngre fordon), god fysik, simkunnighet och körvana. Man genomgår ofta körprov och medicinska tester."
+            },
+            {
+                "question": "Hur mycket extra ger OB-tillägget?",
+                "answer": "Eftersom ambulansen rullar dygnet runt blir OB-ersättningen en viktig del av lönen, ofta 3 000–6 000 kr extra per månad beroende på schema."
+            }
+        ],
+        "kd": 14,
+        "volume": 1000
+    },
+    {
+        "category": "Teknik & Industri",
+        "slug": "automationsingenjor",
+        "title": "Automationsingenjör",
+        "keyword": "automationsingenjör lön",
+        "avg_salary": 48500,
+        "median_salary": 47000,
+        "nyexaminerad_salary": 36000,
+        "senior_salary": 58000,
+        "description": "Automationsingenjörer utvecklar och underhåller automatiserade system och robotar inom industrin. Ett framtidsyrke med hög efterfrågan.",
+        "description_extended": "Som automationsingenjör arbetar du med att effektivisera industriella processer genom PLC-programmering, SCADA-system och robotteknik. Du kan arbeta som konsult eller anställd på industriföretag. Både YH-utbildningar och högskoleingenjörsexamina leder till jobb, men lönen kan variera beroende på utbildningsnivå och bransch.",
+        "education": "Civilingenjör (5 år), Högskoleingenjör (3 år) eller YH-utbildning (2 år).",
+        "workplaces": [
+            {
+                "name": "Tillverkningsindustri",
+                "salary": 47000
+            },
+            {
+                "name": "Teknikkonsultbolag",
+                "salary": 49000
+            },
+            {
+                "name": "Processindustri",
+                "salary": 51000
+            },
+            {
+                "name": "Energibolag",
+                "salary": 48500
+            },
+            {
+                "name": "Norge",
+                "salary": 65000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "PLC-programmerare",
+                "salary": 48000
+            },
+            {
+                "name": "Robotingenjör",
+                "salary": 50000
+            },
+            {
+                "name": "SCADA/HMI-utvecklare",
+                "salary": 49000
+            },
+            {
+                "name": "Junior Automationsingenjör",
+                "salary": 36500
+            },
+            {
+                "name": "Senior Automationsingenjör",
+                "salary": 60000
+            }
+        ],
+        "salary_by_sector": {
+            "privat": 49000,
+            "offentlig": 44000,
+            "konsult": 49500
+        },
+        "faq": [
+            {
+                "question": "Vad gör en automationsingenjör?",
+                "answer": "En automationsingenjör programmerar och underhåller styrsystem (som PLC) och robotar för att automatisera produktion och processer inom industrin."
+            },
+            {
+                "question": "Vad tjänar en nyexaminerad automationsingenjör?",
+                "answer": "Ingångslönen för en nyexaminerad ligger ofta på ca 34 000–37 000 kr/mån beroende på utbildningsnivå (YH eller Högskola) och ort."
+            },
+            {
+                "question": "Vad är skillnaden i lön mellan YH och Högskoleingenjör?",
+                "answer": "En högskole- eller civilingenjör har ofta en något högre ingångslön och brantare löneutveckling på sikt, men en YH-utbildad med rätt kompetens är också mycket eftertraktad och välbetald."
+            },
+            {
+                "question": "Vad tjänar man inom robotik?",
+                "answer": "Specialisering inom robotik och avancerad automation ger ofta högre lön, inte sällan över 50 000 kr/mån för erfarna ingenjörer."
+            },
+            {
+                "question": "Tjänar man bra som automationsingenjör i Norge?",
+                "answer": "Ja, Norge har en stor olje- och processindustri där lönerna för automationsingenjörer är mycket höga, ofta 60 000–80 000 NOK/mån."
+            }
+        ],
+        "kd": 13,
+        "volume": 1000
+    },
+    {
+        "category": "Ekonomi & Ledning",
+        "slug": "enhetschef",
+        "title": "Enhetschef",
+        "keyword": "enhetschef lön",
+        "avg_salary": 48000,
+        "median_salary": 46500,
+        "nyexaminerad_salary": 42000,
+        "senior_salary": 55000,
+        "description": "Enhetschefer leder en verksamhet inom t.ex. vård, omsorg eller socialtjänst. De har ofta budget-, personal- och arbetsmiljöansvar.",
+        "description_extended": "Som enhetschef inom kommunal sektor (t.ex. vård och omsorg, LSS, äldreomsorg) har du en nyckelroll. Du ansvarar för att verksamheten följer lagar och budget, samtidigt som du leder din personalgrupp. Lönen varierar beroende på ansvarsområdets storlek och om du arbetar i en storstadskommun eller mindre kommun.",
+        "education": "Högskoleutbildning (t.ex. Socionom, Sjuksköterska eller Beteendevetare) + ledarskapserfarenhet.",
+        "workplaces": [
+            {
+                "name": "Vård och Omsorg (Kommun)",
+                "salary": 47500
+            },
+            {
+                "name": "LSS-verksamhet",
+                "salary": 46000
+            },
+            {
+                "name": "Äldreomsorg",
+                "salary": 47000
+            },
+            {
+                "name": "Individ- och familjeomsorg",
+                "salary": 49000
+            },
+            {
+                "name": "Privat vårdbolag",
+                "salary": 51000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Biträdande enhetschef",
+                "salary": 41000
+            },
+            {
+                "name": "Enhetschef Äldreomsorg",
+                "salary": 47500
+            },
+            {
+                "name": "Enhetschef LSS",
+                "salary": 46500
+            },
+            {
+                "name": "Enhetschef Socialtjänst",
+                "salary": 50000
+            },
+            {
+                "name": "Verksamhetschef (Nivå över)",
+                "salary": 62000
+            }
+        ],
+        "salary_by_sector": {
+            "kommunal": 47500,
+            "privat": 51000,
+            "offentlig": 48000
+        },
+        "faq": [
+            {
+                "question": "Vad tjänar en enhetschef inom vård och omsorg?",
+                "answer": "Snittlönen ligger på ca 46 000–49 000 kr/mån. Det varierar dock beroende på om det är hemtjänst, särskilt boende eller LSS, samt kommunens storlek."
+            },
+            {
+                "question": "Vad är lönen för en biträdande enhetschef?",
+                "answer": "Som biträdande enhetschef har du oftast något lägre lön och ansvar, vanligen mellan 38 000 och 43 000 kr/mån."
+            },
+            {
+                "question": "Vad krävs för att bli enhetschef inom kommunen?",
+                "answer": "Ofta krävs en relevant högskoleutbildning (t.ex. socionomprogrammet eller sjuksköterskeprogrammet) samt erfarenhet av ledarskap eller samordning."
+            },
+            {
+                "question": "Skiljer sig lönen mellan äldreomsorg och LSS?",
+                "answer": "Generellt ligger lönerna ganska lika, men enhetschefer inom myndighetsutövning (socialtjänst/IFO) har ofta något högre lön än de inom utförarverksamhet (äldreomsorg/LSS)."
+            },
+            {
+                "question": "Tjänar man mer som enhetschef i privat sektor?",
+                "answer": "Ja, generellt ligger lönerna något högre hos privata vård- och omsorgsgivare jämfört med kommunerna, ofta ca 2 000–4 000 kr mer i månaden."
+            }
+        ],
+        "kd": 12,
+        "volume": 1000
+    },
+    {
+        "category": "Teknik & Industri",
+        "slug": "vvs-ingenjor",
+        "title": "VVS-ingenjör",
+        "keyword": "vvs ingenjör lön",
+        "avg_salary": 46000,
+        "median_salary": 44500,
+        "nyexaminerad_salary": 34000,
+        "senior_salary": 58000,
+        "description": "VVS-ingenjörer projekterar och beräknar värme-, ventilations- och sanitetssystem i byggnader. En nyckelroll för energieffektiva hus.",
+        "description_extended": "Som VVS-ingenjör arbetar du med att designa tekniska system för inomhusklimat och vatten. Du kan arbeta som konsult (projektering), entreprenad (projektledning) eller inom förvaltning. Specialiseringar som sprinkler eller energiberäkningar efterfrågas ofta. Ingenjörers lön stiger snabbt med erfarenhet.",
+        "education": "Högskoleingenjör (3 år) eller YH-utbildning inom VVS/Installationsteknik.",
+        "workplaces": [
+            {
+                "name": "Teknikkonsultbolag",
+                "salary": 46000
+            },
+            {
+                "name": "Entreprenadbolag",
+                "salary": 48000
+            },
+            {
+                "name": "Fastighetsbolag",
+                "salary": 47000
+            },
+            {
+                "name": "Norge",
+                "salary": 58000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "VVS-konstruktör",
+                "salary": 45000
+            },
+            {
+                "name": "Sprinkler-ingenjör",
+                "salary": 48000
+            },
+            {
+                "name": "Energispecialist",
+                "salary": 50000
+            },
+            {
+                "name": "Projektledare VVS",
+                "salary": 55000
+            }
+        ],
+        "salary_by_sector": {
+            "privat": 47000,
+            "offentlig": 44000,
+            "konsult": 46500
+        },
+        "faq": [
+            {
+                "question": "Vad gör en VVS-ingenjör?",
+                "answer": "En VVS-ingenjör ritar och beräknar system för värme, ventilation och sanitet (VVS). Målet är ofta att skapa ett bra inomhusklimat med så låg energianvändning som möjligt."
+            },
+            {
+                "question": "Vad är ingångslönen för en VVS-ingenjör?",
+                "answer": "Ingångslönen ligger vanligtvis mellan 32 000 och 35 000 kr/mån för nyexaminerade högskoleingenjörer."
+            },
+            {
+                "question": "Kan man tjäna bra som VVS-ingenjör i Norge?",
+                "answer": "Ja, efterfrågan är stor i Norge. Lönen ligger ofta på 55 000–65 000 NOK/mån, och det är vanligt att svenska ingenjörer pendlar eller flyttar dit."
+            },
+            {
+                "question": "Vad är en Sprinkler-ingenjör?",
+                "answer": "En sprinkler-ingenjör är en specialist inom brandskydd och vattensprinklersystem. Det är en nischad roll som ofta ger goda lönevillkor."
+            },
+            {
+                "question": "Vad tjänar en erfaren VVS-ingenjör?",
+                "answer": "Efter 10 års erfarenhet eller som senior handläggare/uppdragsledare ligger lönen ofta på 50 000–60 000 kr/mån."
+            }
+        ],
+        "kd": 12,
+        "volume": 1000
+    },
+    {
+        "category": "Teknik & Industri",
+        "slug": "vvs-montor",
+        "title": "VVS-montör",
+        "keyword": "vvs montör lön",
+        "avg_salary": 36500,
+        "median_salary": 35800,
+        "nyexaminerad_salary": 33000,
+        "larling_salary": 22000,
+        "description": "VVS-montörer (rörmokare) installerar och servar värmesystem, ventilation och vattenledningar. Ett hantverksyrke med goda framtidsutsikter.",
+        "description_extended": "Som VVS-montör arbetar du med installationer i nybyggen (entreprenad) eller service hemma hos privatpersoner och företag. Yrket kräver certifikat som du får efter gymnasiet och en lärlingstid. Många väljer att starta eget företag efter några år i branschen, vilket kan ge en mycket god inkomstutveckling.",
+        "education": "VVS- och fastighetsprogrammet (gymnasium) + ca 2 år som lärling.",
+        "workplaces": [
+            {
+                "name": "Servicefirma (Små)",
+                "salary": 35500
+            },
+            {
+                "name": "Entreprenadbolag (Stor)",
+                "salary": 37500
+            },
+            {
+                "name": "Industri-VVS",
+                "salary": 39000
+            },
+            {
+                "name": "Eget företag",
+                "salary": 45000
+            },
+            {
+                "name": "Norge",
+                "salary": 48000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Lärling (Nivå 1-10)",
+                "salary": 23000
+            },
+            {
+                "name": "Certifierad montör",
+                "salary": 36500
+            },
+            {
+                "name": "Service-montör",
+                "salary": 36000
+            },
+            {
+                "name": "Entreprenad-montör",
+                "salary": 37500
+            },
+            {
+                "name": "Industrirörmokare",
+                "salary": 40000
+            }
+        ],
+        "salary_by_sector": {
+            "privat": 36500,
+            "eget_foretag": 45000,
+            "norge": 48000
+        },
+        "faq": [
+            {
+                "question": "Vad tjänar en VVS-montör som lärling?",
+                "answer": "Som lärling är lönen trappstegsbaserad enligt kollektivavtal. Den börjar ofta lågt (ca 17 000 kr) och stiger succesivt upp mot ca 28 000 kr i slutet av lärlingstiden."
+            },
+            {
+                "question": "Vad är snittlönen för en certifierad VVS-montör?",
+                "answer": "När du har ditt branschcertifikat ligger snittlönen på ca 36 000–39 000 kr/mån. På större byggen med ackordslön kan du tjäna betydligt mer."
+            },
+            {
+                "question": "Hur mycket tjänar man som VVS-montör i Stockholm?",
+                "answer": "I Stockholm är lönerna generellt högre på grund av hög efterfrågan och konkurrens. En erfaren montör kan ofta räkna med 38 000–42 000 kr/mån."
+            },
+            {
+                "question": "Är det bra lön för VVS-montörer i Norge?",
+                "answer": "Ja, många svenska montörer jobbar i Norge ('Rørlegger'). Lönen är ofta mycket konkurrenskraftig, runt 45 000–55 000 NOK/mån, ofta med rotationsschema."
+            },
+            {
+                "question": "Kan man tjäna mer som egenföretagare?",
+                "answer": "Absolut. Många VVS-montörer startar eget och kan då ta ut både lön och utdelning, vilket ofta ger en total inkomst på över 45 000 kr/mån."
+            }
+        ],
+        "kd": 13,
+        "volume": 1000
+    },
+    {
+        "category": "Service",
+        "slug": "frisor",
+        "title": "Frisör",
+        "keyword": "frisör lön",
+        "avg_salary": 28500,
+        "median_salary": 27200,
+        "nyexaminerad_salary": 23000,
+        "senior_salary": 38000,
+        "description": "Frisörer klipper, färgar och stylar hår. Många är egenföretagare och hyr stol, vilket påverkar inkomsten stort.",
+        "description_extended": "Som frisör är du en kreativ hantverkare. En stor del av branschen består av egenföretagare som hyr stol på salong, vilket gör att inkomsten kan variera kraftigt beroende på kundunderlag, prissättning och arbetstimmar. Anställda frisörer går ofta under Handels kollektivavtal med olika lönenivåer baserade på behörighet (Trainee, Behörig frisör).",
+        "education": "Hantverksprogrammet (gymnasium) + färdigutbildning (trainee) för gesällbrev.",
+        "workplaces": [
+            {
+                "name": "Anställd på salong",
+                "salary": 28000
+            },
+            {
+                "name": "Egen företagare (Hyrstol)",
+                "salary": 34000
+            },
+            {
+                "name": "Salongskedja",
+                "salary": 26500
+            },
+            {
+                "name": "Frilans/Stylist",
+                "salary": 30000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Trainee / Elev (Nivå 1-4)",
+                "salary": 16500
+            },
+            {
+                "name": "Behörig frisör (Gesäll)",
+                "salary": 29500
+            },
+            {
+                "name": "Färgtekniker",
+                "salary": 31000
+            },
+            {
+                "name": "Salongschef",
+                "salary": 35000
+            },
+            {
+                "name": "Barberare",
+                "salary": 29000
+            }
+        ],
+        "salary_by_sector": {
+            "privat_anstalld": 28500,
+            "eget_foretag": 34000
+        },
+        "faq": [
+            {
+                "question": "Vad tjänar en frisör som egenföretagare?",
+                "answer": "Som egenföretagare (hyrstol) påverkar du din lön direkt. Många tar ut en lön på ca 30 000–40 000 kr/mån, men det kräver en upparbetad kundkrets."
+            },
+            {
+                "question": "Vad är lönen för en trainee/frisörelev?",
+                "answer": "Lönen för traineer stiger i nivåer (Nivå 1-4) allt eftersom du klarar delprov och får timmar. Den börjar ofta lågt (ca 11 000–14 000 kr) och stiger mot ca 22 000 kr innan gesällprovet."
+            },
+            {
+                "question": "Vad innebär lön enligt Handels kollektivavtal?",
+                "answer": "Handels avtal garanterar en minimilön för anställda frisörer. För en behörig frisör ligger garantilönen ofta runt 26 000–28 000 kr/mån heltid, plus eventuell provision."
+            },
+            {
+                "question": "Hur mycket tjänar man på provision?",
+                "answer": "Många anställda har en fast del och en rörlig del baserad på hur mycket de säljer (klippningar + produkter). Provisionen kan ge flera tusenlappar extra i månaden."
+            },
+            {
+                "question": "Vad tjänar en frisör i Norge?",
+                "answer": "I Norge ligger lönen generellt högre, ofta runt 35 000–40 000 NOK/mån, och drickskulturen kan vara något starkare än i Sverige."
+            }
+        ],
+        "kd": 15,
+        "volume": 880
+    },
+    {
+        "category": "Teknik & Industri",
+        "slug": "elkraftsingenjor",
+        "title": "Elkraftsingenjör",
+        "keyword": "elkraftsingenjör lön",
+        "avg_salary": 49000,
+        "median_salary": 47500,
+        "nyexaminerad_salary": 38000,
+        "senior_salary": 62000,
+        "description": "Elkraftsingenjörer arbetar med elproduktion, eldistribution och kraftsystem. Ett framtidsyrke i och med energiomställningen.",
+        "description_extended": "Som elkraftsingenjör designar, driver och underhåller du elnät och kraftanläggningar. Rollen är kritisk för samhällets infrastruktur. Du kan arbeta hos nätägare (Vattenfall, E.ON), konsultbolag, industrier eller myndigheter. Efterfrågan är enorm på grund av elektrifiering och utbyggnad av förnybar energi.",
+        "education": "Högskoleingenjör (3 år) eller Civilingenjör (5 år) inom Elektroteknik/Energiteknik.",
+        "workplaces": [
+            {
+                "name": "Energibolag/Nätägare",
+                "salary": 48500
+            },
+            {
+                "name": "Teknikkonsult",
+                "salary": 49000
+            },
+            {
+                "name": "Industri (Process)",
+                "salary": 51000
+            },
+            {
+                "name": "Myndighet (SvK)",
+                "salary": 47000
+            },
+            {
+                "name": "Norge",
+                "salary": 65000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Junior Elkraftsingenjör",
+                "salary": 39000
+            },
+            {
+                "name": "Senior Elkraftsingenjör",
+                "salary": 62000
+            },
+            {
+                "name": "Beräkningsingenjör",
+                "salary": 53000
+            },
+            {
+                "name": "Projektledare Elkraft",
+                "salary": 58000
+            },
+            {
+                "name": "Reläskyddsspecialist",
+                "salary": 56000
+            }
+        ],
+        "salary_by_sector": {
+            "privat": 49500,
+            "offentlig": 47000,
+            "norge": 65000
+        },
+        "faq": [
+            {
+                "question": "Vad är lönen för en nyexaminerad elkraftsingenjör?",
+                "answer": "Ingångslönen är god, ofta mellan 37 000 och 40 000 kr/mån. Civilingenjörer ligger generellt något högre än högskoleingenjörer."
+            },
+            {
+                "question": "Kan man jobba som elkraftsingenjör i Norge?",
+                "answer": "Ja, det är mycket populärt. Efterfrågan är stor och lönerna ligger ofta på 55 000–70 000 NOK/mån."
+            },
+            {
+                "question": "Vad gör en beräkningsingenjör inom elkraft?",
+                "answer": "En beräkningsingenjör utför avancerade simuleringar av elnätet för att säkerställa stabilitet och kapacitet. Det är en specialistroll med hög lön."
+            },
+            {
+                "question": "Hur påverkar energiomställningen lönen?",
+                "answer": "Positivt. Det råder stor brist på kompetens för att bygga ut elnätet och ansluta vind/solkraft, vilket driver upp lönerna."
+            },
+            {
+                "question": "Är det stor löneskillnad mellan konsult och anställd?",
+                "answer": "Inte nödvändigtvis i grundlön, men konsulter kan ha rörliga delar. Anställda på energibolag har ofta mycket goda förmåner och trygghet."
+            }
+        ],
+        "kd": 13,
+        "volume": 720
+    },
+    {
+        "category": "Teknik & Industri",
+        "slug": "maskinoperator",
+        "title": "Maskinoperatör",
+        "keyword": "maskinoperatör lön",
+        "avg_salary": 33500,
+        "median_salary": 32800,
+        "nyexaminerad_salary": 28000,
+        "senior_salary": 41000,
+        "description": "Maskinoperatörer sköter och övervakar produktionsmaskiner inom industrin. Skiftarbete är vanligt, vilket ger höga tillägg.",
+        "description_extended": "Som maskinoperatör ansvarar du för att produktionen rullar. Det kan handla om att övervaka robotar i fordonsindustrin (t.ex. Scania, Volvo), styra processer inom läkemedel (AstraZeneca) eller övervaka pappersmaskiner. Arbetet är ofta skiftlagt (2-skift, 3-skift eller 5-skift), vilket ger betydande OB-tillägg på lönen.",
+        "education": "Industritekniska programmet (gymnasium) eller internutbildning på företaget.",
+        "workplaces": [
+            {
+                "name": "Läkemedelsindustri",
+                "salary": 38000
+            },
+            {
+                "name": "Fordonsindustri",
+                "salary": 36500
+            },
+            {
+                "name": "Livsmedelsindustri",
+                "salary": 31000
+            },
+            {
+                "name": "Plast & Gummi",
+                "salary": 30500
+            },
+            {
+                "name": "Pappersbruk",
+                "salary": 37000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "CNC-operatör",
+                "salary": 35000
+            },
+            {
+                "name": "Processoperatör",
+                "salary": 37500
+            },
+            {
+                "name": "Montör",
+                "salary": 32000
+            },
+            {
+                "name": "Tryckare",
+                "salary": 33000
+            },
+            {
+                "name": "Lager/Truck",
+                "salary": 30000
+            }
+        ],
+        "salary_by_sector": {
+            "privat": 33500,
+            "bemanning": 31000
+        },
+        "faq": [
+            {
+                "question": "Vad tjänar man som maskinoperatör inom läkemedel?",
+                "answer": "Läkemedelsindustrin (t.ex. AstraZeneca) har generellt högre löner. Snittlönen ligger ofta runt 36 000–40 000 kr/mån, plus skifttillägg."
+            },
+            {
+                "question": "Hur mycket tjänar man på att jobba skift?",
+                "answer": "Skifttilläggen varierar, men 2-skift ger ofta ca 2 000–3 000 kr extra, medan natt eller kontinuerligt 3-skift kan ge 5 000–8 000 kr extra i månaden."
+            },
+            {
+                "question": "Krävs det utbildning för att bli maskinoperatör?",
+                "answer": "Ofta krävs gymnasiekompetens, gärna teknisk. Många företag, särskilt inom industrin, internutbildar dock sin personal."
+            },
+            {
+                "question": "Vad är lönen på Scania eller Volvo?",
+                "answer": "Inom fordonsindustrin är ingångslönerna ofta bra, runt 29 000–32 000 kr/mån. Med erfarenhet och skifttillägg kommer många upp i över 38 000 kr/mån."
+            },
+            {
+                "question": "Vad gör en CNC-operatör?",
+                "answer": "En CNC-operatör programmerar och sköter datorstyrda maskiner som svarvar eller fräser metall. Det är ett yrke med stor brist på kompetens och goda löner."
+            }
+        ],
+        "kd": 14,
+        "volume": 720
+    },
+    {
+        "category": "Vård & Hälsa",
+        "slug": "hemtjanst",
+        "title": "Hemtjänstpersonal",
+        "keyword": "hemtjänst lön",
+        "avg_salary": 27500,
+        "median_salary": 26800,
+        "nyexaminerad_salary": 22500,
+        "senior_salary": 31000,
+        "description": "Hemtjänstpersonal ger vård och omsorg till äldre och sjuka i deras eget hem. Arbetet är fritt och rörligt men kräver stort ansvar.",
+        "description_extended": "Att arbeta inom hemtjänsten innebär att du besöker brukare i deras hem för att hjälpa till med vardagssysslor, hygien, medicinutdelning och social samvaro. Du kan arbeta som vårdbiträde (ofta utan formell utbildning) eller undersköterska (med utbildning). Körkort är ofta ett krav. Arbetstiderna varierar med dag, kväll och helg, vilket ger OB-tillägg.",
+        "education": "Ingen formell utbildning krävs för att börja (vårdbiträde), men Vård- och omsorgsprogrammet (undersköterska) ger högre lön och fast anställning.",
+        "workplaces": [
+            {
+                "name": "Kommunal hemtjänst",
+                "salary": 27000
+            },
+            {
+                "name": "Privat hemtjänst",
+                "salary": 26500
+            },
+            {
+                "name": "Nattpatrull",
+                "salary": 29000
+            },
+            {
+                "name": "Sommarjobb/Vikarie",
+                "salary": 22000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Vårdbiträde (Outbildad)",
+                "salary": 23500
+            },
+            {
+                "name": "Undersköterska",
+                "salary": 28500
+            },
+            {
+                "name": "Samordnare/Planerare",
+                "salary": 33000
+            },
+            {
+                "name": "Nattpersonal",
+                "salary": 30500
+            }
+        ],
+        "salary_by_sector": {
+            "kommunal": 27500,
+            "privat": 27000
+        },
+        "faq": [
+            {
+                "question": "Vad är lönen inom hemtjänsten utan utbildning?",
+                "answer": "Som outbildad (vårdbiträde) ligger lönen oftast mellan 21 000 och 24 000 kr/mån, beroende på ålder och erfarenhet."
+            },
+            {
+                "question": "Hur mycket tjänar man på att jobba natt i hemtjänsten?",
+                "answer": "Nattarbete ger ett betydande OB-tillägg. Grundlönen är ofta densamma, men med OB kan du få ut 3 000–5 000 kr mer i månaden."
+            },
+            {
+                "question": "Vad tjänar man som sommarjobbare (18 år)?",
+                "answer": "För sommarjobb ligger timlönen ofta på ca 125–140 kr/timme plus semesterersättning (12%), vilket motsvarar en månadslön på ca 21 000–23 000 kr."
+            },
+            {
+                "question": "Är lönen högre för undersköterskor i hemtjänsten?",
+                "answer": "Ja, en utbildad undersköterska tjänar i snitt 4 000–5 000 kr mer i månaden än ett outbildat vårdbiträde och har oftare fast anställning."
+            },
+            {
+                "question": "Hur fungerar OB-tillägg?",
+                "answer": "OB (Obekväm arbetstid) betalas ut när du jobbar kvällar, nätter och helger. Storhelger ger extra högt OB-tillägg."
+            }
+        ],
+        "kd": 13,
+        "volume": 880
+    },
+    {
+        "category": "Vård & Hälsa",
+        "slug": "audionom",
+        "title": "Audionom",
+        "keyword": "audionom lön",
+        "avg_salary": 36500,
+        "median_salary": 35800,
+        "nyexaminerad_salary": 31000,
+        "senior_salary": 44000,
+        "description": "En audionom arbetar med hörseldiagnostik och rehabilitering. De provar ut hörapparater och hjälper människor att höra bättre.",
+        "description_extended": "Som audionom möter du patienter i alla åldrar, från nyfödda till äldre. Arbetet kombinerar teknik med psykologi och omvårdnad. Du kan arbeta på hörselvårdsavdelningar på sjukhus (region), privata hörselmottagningar som ägs av riskkapitalbolag eller som leverantörsoberoende aktör. I privat sektor kan försäljning/provision vara en del av lönen.",
+        "education": "Audionomprogrammet (3 år, 180 hp), leder till legitimation.",
+        "workplaces": [
+            {
+                "name": "Region/Sjukhus",
+                "salary": 35500
+            },
+            {
+                "name": "Privat mottagning",
+                "salary": 38000
+            },
+            {
+                "name": "Hörapparatstillverkare",
+                "salary": 42000
+            },
+            {
+                "name": "Företagshälsovård",
+                "salary": 39000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Legitimerad Audionom",
+                "salary": 36500
+            },
+            {
+                "name": "Barn-audionom",
+                "salary": 37000
+            },
+            {
+                "name": "Produkt-specialist",
+                "salary": 45000
+            },
+            {
+                "name": "Verksamhetschef",
+                "salary": 52000
+            }
+        ],
+        "salary_by_sector": {
+            "offentlig": 35500,
+            "privat": 38500
+        },
+        "faq": [
+            {
+                "question": "Vad är ingångslönen för en nyexaminerad audionom?",
+                "answer": "Som nyexaminerad audionom ligger ingångslönen oftast på ca 29 000–32 000 kr/mån beroende på om du arbetar i regionen eller privat."
+            },
+            {
+                "question": "Tjänar man mer som audionom i privat sektor?",
+                "answer": "Ja, privata mottagningar (särskilt i Stockholm och Skåne) erbjuder ofta något högre löner, ibland med inslag av bonus eller provision baserad på utprovningar."
+            },
+            {
+                "question": "Vad krävs för att bli audionom?",
+                "answer": "Du måste gå Audionomprogrammet (3 år) vid universitetet och sedan ansöka om legitimation hos Socialstyrelsen."
+            },
+            {
+                "question": "Hur ser lönen ut för audionomer i Norge?",
+                "answer": "Många svenska audionomer väljer att jobba i Norge. Lönen där ligger ofta avsevärt högre, omkring 45 000–55 000 NOK/mån."
+            },
+            {
+                "question": "Är det brist på audionomer?",
+                "answer": "Ja, det råder generellt brist på legitimerade audionomer i Sverige, vilket ger goda chanser till jobb direkt efter examen."
+            }
+        ],
+        "kd": 12,
+        "volume": 720
+    },
+    {
+        "category": "Vård & Hälsa",
+        "slug": "dietist",
+        "title": "Dietist",
+        "keyword": "dietist lön",
+        "avg_salary": 35500,
+        "median_salary": 34800,
+        "nyexaminerad_salary": 31000,
+        "senior_salary": 43000,
+        "description": "Dietister utreder och behandlar sjukdomar kopplade till kost och nutrition. De arbetar inom vården, livsmedelsindustrin eller med folkhälsa.",
+        "description_extended": "Som legitimerad dietist är du expert på kopplingar mellan mat, näring och hälsa. Du kan arbeta kliniskt på sjukhus eller vårdcentral med patienter som har exempelvis diabetes, allergi eller undernäring. Andra karriärvägar finns inom livsmedelsindustrin, idrottsnutrition eller som kostchef inom kommunen. Egenföretagande som kostrådgivare/PT kombinerat med dietistkompetens blir allt vanligare.",
+        "education": "Dietistprogrammet (3 år, 180 hp), leder till legitimation.",
+        "workplaces": [
+            {
+                "name": "Region (Sjukhus)",
+                "salary": 34500
+            },
+            {
+                "name": "Primärvård (Vårdcentral)",
+                "salary": 35000
+            },
+            {
+                "name": "Kommun (Äldreomsorg)",
+                "salary": 36000
+            },
+            {
+                "name": "Livsmedelsföretag",
+                "salary": 41000
+            },
+            {
+                "name": "Eget företag/Konsult",
+                "salary": 39000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Klinisk Dietist",
+                "salary": 35000
+            },
+            {
+                "name": "Barndietist",
+                "salary": 36500
+            },
+            {
+                "name": "Idrottsnutritionist",
+                "salary": 38000
+            },
+            {
+                "name": "Kostchef/Enhetschef",
+                "salary": 46000
+            },
+            {
+                "name": "Produktspecialist (Industri)",
+                "salary": 42000
+            }
+        ],
+        "salary_by_sector": {
+            "offentlig": 35000,
+            "privat": 39500
+        },
+        "faq": [
+            {
+                "question": "Vad är ingångslönen för en dietist?",
+                "answer": "Ingångslönen för en nyexaminerad dietist ligger oftast mellan 30 000 och 32 000 kr/mån. I regionen är den generellt lite lägre än inom kommunerna."
+            },
+            {
+                "question": "Tjänar man mer som dietist i privat sektor?",
+                "answer": "Ja, lönerna inom livsmedelsindustrin eller privata vårdgivare (t.ex. specialistkliniker som Mando) ligger ofta högre, runt 38 000–42 000 kr/mån."
+            },
+            {
+                "question": "Kan man kombinera jobb som dietist och PT?",
+                "answer": "Många väljer att starta eget och kombinera dietistkompetensen med personlig träning. Det ger möjlighet att ta högre timpriser för helhetslösningar."
+            },
+            {
+                "question": "Är det svårt att få jobb som dietist?",
+                "answer": "Arbetsmarknaden är generellt i balans. Det finns jobb, men konkurrensen kan vara högre om populära tjänster på universitetssjukhusen."
+            },
+            {
+                "question": "Vad gör en dietist inom kommunen?",
+                "answer": "Inom kommunen arbetar du ofta övergripande med kost för äldreomsorgen, skolor eller LSS. Lönen är ofta något högre än i regionen."
+            }
+        ],
+        "kd": 13,
+        "volume": 720
+    },
+    {
+        "category": "Vård & Hälsa",
+        "slug": "arbetsterapeut",
+        "title": "Arbetsterapeut",
+        "keyword": "arbetsterapeut lön",
+        "avg_salary": 37200,
+        "median_salary": 36500,
+        "nyexaminerad_salary": 31000,
+        "senior_salary": 45000,
+        "description": "Arbetsterapeuter hjälper människor att klara av sin vardag genom rehabilitering och hjälpmedel. De arbetar inom sjukvård, äldreomsorg och habilitering.",
+        "description_extended": "Som arbetsterapeut utgår du från personens förmåga och aktiviteter för att möjliggöra en fungerande vardag. Det kan handla om att prova ut hjälpmedel (rullstolar, bostadsanpassning) eller träning efter sjukdom/skada. Arbetsmarknaden är god och du kan arbeta inom region, kommun, stat eller privat sektor. Möjligheter finns även som konsult eller inom företagshälsovård.",
+        "education": "Arbetsterapeutprogrammet (3 år, 180 hp), leder till legitimation.",
+        "workplaces": [
+            {
+                "name": "Kommun (Rehab)",
+                "salary": 37500
+            },
+            {
+                "name": "Region (Sjukhus)",
+                "salary": 36000
+            },
+            {
+                "name": "Habilitering",
+                "salary": 36500
+            },
+            {
+                "name": "Hjälpmedelscentral",
+                "salary": 38000
+            },
+            {
+                "name": "Privat mottagning",
+                "salary": 39000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Nyexaminerad",
+                "salary": 31000
+            },
+            {
+                "name": "Leg. Arbetsterapeut",
+                "salary": 36500
+            },
+            {
+                "name": "Handtherapeut",
+                "salary": 40000
+            },
+            {
+                "name": "Hjälpmedelskonsulent",
+                "salary": 39500
+            },
+            {
+                "name": "Verksamhetschef",
+                "salary": 52000
+            }
+        ],
+        "salary_by_sector": {
+            "kommunal": 37500,
+            "region": 36000,
+            "privat": 39000
+        },
+        "faq": [
+            {
+                "question": "Vad är ingångslönen för en arbetsterapeut?",
+                "answer": "Ingångslönen för en nyexaminerad arbetsterapeut ligger oftast på ca 30 000–32 000 kr/mån. Kommuner erbjuder ofta något högre ingångslön än regionerna."
+            },
+            {
+                "question": "Vad tjänar en arbetsterapeut i kommunen?",
+                "answer": "Inom kommunal äldreomsorg och hemsjukvård ligger snittlönen ofta på ca 37 000–39 000 kr/mån. Arbetet är självständigt och innebär ofta hembesök."
+            },
+            {
+                "question": "Krävs legitimation?",
+                "answer": "Ja, arbetsterapeut är ett legitimationsyrke. Du ansöker om legitimation hos Socialstyrelsen efter examen."
+            },
+            {
+                "question": "Vad tjänar man som arbetsterapeut i Norge?",
+                "answer": "I Norge (Ergoterapeut) är lönen högre, ofta runt 45 000–55 000 NOK/mån. Många svenskar väljer att pendla eller flytta dit för bättre villkor."
+            },
+            {
+                "question": "Vad gör en hjälpmedelskonsulent?",
+                "answer": "En hjälpmedelskonsulent är ofta en erfaren arbetsterapeut som utbildar och ger stöd kring avancerade hjälpmedel. Lönen ligger ofta högre, runt 39 000–42 000 kr/mån."
+            }
+        ],
+        "kd": 12,
+        "volume": 2400
+    },
+    {
+        "category": "Utbildning & Samhälle",
+        "slug": "barnskotare",
+        "title": "Barnskötare",
+        "keyword": "barnskötare lön",
+        "avg_salary": 27500,
+        "median_salary": 26800,
+        "nyexaminerad_salary": 24000,
+        "senior_salary": 31000,
+        "description": "Barnskötare arbetar med barn på förskolor och fritidshem. De ansvarar för omsorg, lek och pedagogisk verksamhet tillsammans med förskollärare.",
+        "description_extended": "Som barnskötare är du en viktig del av barnens vardag och trygghet. Arbetet sker främst inom kommunal eller privat förskola. Du arbetar i arbetslag och deltar i planeringen av den pedagogiska verksamheten. Många barnskötare väljer att vidareutbilda sig till förskollärare för högre lön och ansvar, men erfarna barnskötare är mycket eftertraktade.",
+        "education": "Barn- och fritidsprogrammet (gymnasium) eller Komvux utbildning till barnskötare.",
+        "workplaces": [
+            {
+                "name": "Kommunal förskola",
+                "salary": 27000
+            },
+            {
+                "name": "Privat förskola",
+                "salary": 26500
+            },
+            {
+                "name": "Fritidshem",
+                "salary": 27500
+            },
+            {
+                "name": "Personalkooperativ",
+                "salary": 28000
+            },
+            {
+                "name": "Stockholm Stad",
+                "salary": 29000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Outbildad/Vikarie",
+                "salary": 22500
+            },
+            {
+                "name": "Utbildad Barnskötare",
+                "salary": 27500
+            },
+            {
+                "name": "Erfaren Barnskötare",
+                "salary": 30500
+            },
+            {
+                "name": "Specialkompetens",
+                "salary": 31000
+            },
+            {
+                "name": "Barnskötare i Stockholm",
+                "salary": 29500
+            }
+        ],
+        "salary_by_sector": {
+            "kommunal": 27500,
+            "privat": 26500,
+            "bemanningsforetag": 29000
+        },
+        "faq": [
+            {
+                "question": "Vad är lönen för en barnskötare utan utbildning?",
+                "answer": "En outbildad barnskötare (eller barnskötarvikarie) tjänar oftast mellan 21 000 och 23 000 kr/mån. Lönen är lägst i början men stiger om du skaffar utbildning."
+            },
+            {
+                "question": "Vad tjänar en barnskötare i Stockholm?",
+                "answer": "I Stockholm är lönerna högre än i övriga landet. Snittlönen ligger ofta på 28 000–30 000 kr/mån för utbildade barnskötare, jämfört med ca 26 000 i mindre kommuner."
+            },
+            {
+                "question": "Hur mycket skiljer lönen mellan barnskötare och förskollärare?",
+                "answer": "Skillnaden är stor. En förskollärare (3,5 års högskoleutbildning) tjänar i snitt ca 35 000–39 000 kr/mån, alltså runt 10 000 kr mer än en barnskötare."
+            },
+            {
+                "question": "Vad är ingångslönen för en utbildad barnskötare?",
+                "answer": "Nyutbildade barnskötare har ofta en ingångslön på ca 24 500–26 000 kr/mån, beroende på kommun och arbetsgivare."
+            },
+            {
+                "question": "Tjänar man mer på privat förskola?",
+                "answer": "Det varierar, men generellt är lönerna ganska likvärdiga. Privata förskolor kan ibland erbjuda andra förmåner, men kommunen har ofta bättre kollektivavtalade pensioner."
+            }
+        ],
+        "kd": 23,
+        "volume": 2900
+    },
+    {
+        "category": "Teknik & Industri",
+        "slug": "civilingenjor",
+        "title": "Civilingenjör",
+        "keyword": "civilingenjör lön",
+        "avg_salary": 56000,
+        "median_salary": 54500,
+        "nyexaminerad_salary": 38000,
+        "senior_salary": 75000,
+        "description": "Civilingenjörer arbetar med teknisk utveckling, forskning och ledarskap. Det är en bred yrkesroll med hög status och mycket goda löneutsikter.",
+        "description_extended": "Som civilingenjör har du en djup teknisk kompetens och arbetar ofta med att lösa komplexa problem. Yrket spänner över många branscher såsom IT, bygg, bioteknik, energi och industriell ekonomi. Lönen ökar ofta kraftigt med erfarenhet och ansvar. Många civilingenjörer har ledande befattningar eller arbetar som specialister.",
+        "education": "Civilingenjörsexamen (5 år, 300 hp) från teknisk högskola/universitet (t.ex. KTH, Chalmers, LTH).",
+        "workplaces": [
+            {
+                "name": "IT-konsultbolag",
+                "salary": 55000
+            },
+            {
+                "name": "Industribolag (Ericsson/Volvo)",
+                "salary": 58000
+            },
+            {
+                "name": "Bank & Finans",
+                "salary": 65000
+            },
+            {
+                "name": "Startups",
+                "salary": 52000
+            },
+            {
+                "name": "Offentlig sektor",
+                "salary": 49000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Datateknik/IT",
+                "salary": 58000
+            },
+            {
+                "name": "Industriell Ekonomi",
+                "salary": 62000
+            },
+            {
+                "name": "Samhällsbyggnad/Väg & Vatten",
+                "salary": 54000
+            },
+            {
+                "name": "Teknisk Fysik",
+                "salary": 59000
+            },
+            {
+                "name": "Maskinteknik",
+                "salary": 55000
+            }
+        ],
+        "salary_by_sector": {
+            "privat": 58000,
+            "offentlig": 49000,
+            "konsult": 57000
+        },
+        "faq": [
+            {
+                "question": "Vad är ingångslönen för en civilingenjör?",
+                "answer": "Sveriges Ingenjörer rekommenderar en ingångslön på ca 39 000–41 000 kr/mån. I praktiken ligger den ofta mellan 36 000 och 40 000 kr/mån beroende på bransch."
+            },
+            {
+                "question": "Vilken civilingenjörsutbildning ger högst lön?",
+                "answer": "Generellt ligger Industriell Ekonomi och Datateknik i topp lönemässigt, ofta följt av Teknisk Fysik. Finanssektorn och IT-branschen betalar bäst."
+            },
+            {
+                "question": "Vad tjänar man som civilingenjör efter 10 år?",
+                "answer": "Löneutvecklingen är brant. Efter 10 år tjänar många civilingenjörer mellan 55 000 och 75 000 kr/mån, beroende på karriärval och om de har personalansvar."
+            },
+            {
+                "question": "Vad är skillnaden i lön mot en högskoleingenjör?",
+                "answer": "En civilingenjör (5 år) har ofta ca 3 000–5 000 kr högre ingångslön än en högskoleingenjör (3 år) och ofta en brantare lönekurva senare i karriären."
+            },
+            {
+                "question": "Tjänar civilingenjörer bra utomlands?",
+                "answer": "Ja, en svensk civilingenjörsexamen är gångbar internationellt. I länder som USA, Schweiz och Tyskland är lönerna ofta betydligt högre än i Sverige."
+            }
+        ],
+        "kd": 25,
+        "volume": 2900
+    },
+    {
+        "category": "Utbildning & Samhälle",
+        "slug": "forskollarare",
+        "title": "Förskollärare",
+        "keyword": "förskollärare lön",
+        "avg_salary": 38500,
+        "median_salary": 37200,
+        "nyexaminerad_salary": 34000,
+        "senior_salary": 45000,
+        "description": "Förskollärare leder den pedagogiska verksamheten i förskolan och ansvarar för barnens undervisning och utveckling.",
+        "description_extended": "Som förskollärare har du huvudansvaret för undervisningen i förskolan. Du planerar, genomför och utvärderar aktiviteter utifrån läroplanen (Lpfö 18). Bristen på legitimerade förskollärare är stor i hela landet, vilket har drivit upp lönerna de senaste åren. Det finns goda karriärmöjligheter, exempelvis som förste förskollärare eller biträdande rektor.",
+        "education": "Förskollärarexamen (3,5 år, 210 hp) som leder till legitimation.",
+        "workplaces": [
+            {
+                "name": "Kommunal förskola",
+                "salary": 38000
+            },
+            {
+                "name": "Privat förskola",
+                "salary": 37500
+            },
+            {
+                "name": "Föräldrakooperativ",
+                "salary": 36500
+            },
+            {
+                "name": "Stockholm Stad",
+                "salary": 41500
+            },
+            {
+                "name": "Bemanningsföretag",
+                "salary": 44000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Nyexaminerad",
+                "salary": 34500
+            },
+            {
+                "name": "Leg. Förskollärare",
+                "salary": 38500
+            },
+            {
+                "name": "Förste förskollärare",
+                "salary": 43000
+            },
+            {
+                "name": "Specialpedagog",
+                "salary": 46000
+            },
+            {
+                "name": "Biträdande Rektor",
+                "salary": 48000
+            }
+        ],
+        "salary_by_sector": {
+            "kommunal": 38500,
+            "privat": 37500,
+            "bemanning": 44000
+        },
+        "faq": [
+            {
+                "question": "Vad är ingångslönen för en nyexaminerad förskollärare?",
+                "answer": "Ingångslönen ligger idag högt på grund av bristen på personal, ofta mellan 33 000 och 36 000 kr/mån beroende på kommun."
+            },
+            {
+                "question": "Lönar det sig att utbilda sig från barnskötare till förskollärare?",
+                "answer": "Ja, absolut. Löneskillnaden är ofta över 10 000 kr/mån. Som förskollärare har du dessutom ett större pedagogiskt ansvar och en tydligare karriärväg."
+            },
+            {
+                "question": "Var tjänar man bäst som förskollärare?",
+                "answer": "Högst lön finns ofta i storstadsregionerna (Stockholm, Göteborg) samt i vissa kommuner som aktivt satsar på att locka personal, ibland med 'karriärtjänster'."
+            },
+            {
+                "question": "Vad gör en förste förskollärare?",
+                "answer": "En förste förskollärare är en speciellt skicklig lärare som har ansvar för att utveckla undervisningen på förskolan. Detta uppdrag ger ofta 3 000–5 000 kr extra i lönekuvertet."
+            },
+            {
+                "question": "Tjänar man mer som konsult/bemanning?",
+                "answer": "Ja, att arbeta som bemanningsförskollärare kan ge en lön på 42 000–50 000 kr/mån, men det innebär ofta mindre anställningstrygghet och att man byter arbetsplats ofta."
+            }
+        ],
+        "kd": 23,
+        "volume": 4400
+    },
+    {
+        "category": "Ekonomi & Ledning",
+        "slug": "redovisningsekonom",
+        "title": "Redovisningsekonom",
+        "keyword": "redovisningsekonom lön",
+        "avg_salary": 44500,
+        "median_salary": 43200,
+        "nyexaminerad_salary": 32000,
+        "senior_salary": 55000,
+        "description": "Redovisningsekonomer sköter bokföring, bokslut och rapportering. En nyckelroll för företags ekonomi och beslutsfattande.",
+        "description_extended": "Som redovisningsekonom ansvarar du för att företagets siffror stämmer. Arbetsuppgifterna varierar från löpande bokföring till kvalificerat bokslutsarbete och skattedeklarationer. Du kan arbeta in-house på ekonomiavdelningen hos ett företag eller som konsult på en redovisningsbyrå. Efterfrågan är stor, särskilt på auktoriserade redovisningskonsulter.",
+        "education": "Högskoleexamen i företagsekonomi (3 år) eller YH-utbildning till Redovisningsekonom (2 år).",
+        "workplaces": [
+            {
+                "name": "Redovisningsbyrå",
+                "salary": 42000
+            },
+            {
+                "name": "Storföretag (In-house)",
+                "salary": 46000
+            },
+            {
+                "name": "Bank & Finans",
+                "salary": 48000
+            },
+            {
+                "name": "Offentlig sektor",
+                "salary": 41000
+            },
+            {
+                "name": "Eget företag",
+                "salary": 50000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Junior Redovisningsekonom",
+                "salary": 34000
+            },
+            {
+                "name": "Senior Redovisningsekonom",
+                "salary": 52000
+            },
+            {
+                "name": "Redovisningschef",
+                "salary": 65000
+            },
+            {
+                "name": "Löneadministratör",
+                "salary": 38000
+            },
+            {
+                "name": "Auktoriserad konsult",
+                "salary": 54000
+            }
+        ],
+        "salary_by_sector": {
+            "privat": 45000,
+            "offentlig": 41000,
+            "konsult": 44000
+        },
+        "faq": [
+            {
+                "question": "Vad är ingångslönen för en redovisningsekonom?",
+                "answer": "Ingångslönen ligger oftast mellan 30 000 och 34 000 kr/mån. Den kan vara något högre om du har en kandidatexamen jämfört med YH-utbildning, men erfarenhet väger ofta tyngre snabbt."
+            },
+            {
+                "question": "Vad tjänar man som auktoriserad redovisningskonsult?",
+                "answer": "En auktorisation höjer statusen och lönen. En auktoriserad redovisningskonsult tjänar ofta mellan 48 000 och 58 000 kr/mån beroende på byrå och kundportfölj."
+            },
+            {
+                "question": "Är det bättre att jobba på byrå eller in-house?",
+                "answer": "På byrå lär du dig ofta snabbare då du hanterar många olika kunder, men tempot kan vara högt. In-house på ett företag ger ofta djupare kunskap om en verksamhet och ibland något högre lön och bättre förmåner."
+            },
+            {
+                "question": "Kan man bli redovisningsekonom via YH?",
+                "answer": "Ja, Yrkeshögskolan (YH) är en mycket populär väg. Utbildningen är ofta 2 år och inkluderar praktik (LIA), vilket ofta leder direkt till jobb."
+            },
+            {
+                "question": "Vad är skillnaden på en ekonomiassistent och en redovisningsekonom?",
+                "answer": "En ekonomiassistent hanterar ofta enklare löpande uppgifter som leverantörsreskontra. En redovisningsekonom har ett helhetsansvar för bokföringen, gör bokslut och analyserar resultatet."
+            }
+        ],
+        "kd": 23,
+        "volume": 2900
+    },
+    {
+        "category": "Vård & Hälsa",
+        "slug": "tandlakare",
+        "title": "Tandläkare",
+        "keyword": "tandläkare lön",
+        "avg_salary": 52000,
+        "median_salary": 49500,
+        "nyexaminerad_salary": 36000,
+        "senior_salary": 65000,
+        "description": "Tandläkare förebygger, utreder och behandlar sjukdomar och skador i munnen. Ett legitimationsyrke med goda framtidsutsikter och karriärvägar.",
+        "description_extended": "Som tandläkare ansvarar du för patientens orala hälsa. Arbetet är tekniskt och kräver precision, samtidigt som det är ett utpräglat serviceyrke. Du kan arbeta inom Folktandvården, privat sektor eller som egenföretagare. Möjligheten att specialisera sig (t.ex. inom kirurgi eller ortodonti) ger ytterligare karriärvägar och löneutveckling.",
+        "education": "Tandläkarprogrammet (5 år, 300 hp) som leder till legitimation.",
+        "workplaces": [
+            {
+                "name": "Folktandvården",
+                "salary": 44000
+            },
+            {
+                "name": "Privat klinik",
+                "salary": 54000
+            },
+            {
+                "name": "Egen klinik (Ägare)",
+                "salary": 65000
+            },
+            {
+                "name": "Specialistklinik",
+                "salary": 62000
+            },
+            {
+                "name": "Bemanningsföretag",
+                "salary": 60000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Nyexaminerad (Folktandvården)",
+                "salary": 36500
+            },
+            {
+                "name": "Allmäntandläkare",
+                "salary": 52000
+            },
+            {
+                "name": "Klinikchef",
+                "salary": 68000
+            },
+            {
+                "name": "Specialisttandläkare",
+                "salary": 75000
+            },
+            {
+                "name": "Konsult/Stafett",
+                "salary": 70000
+            }
+        ],
+        "salary_by_sector": {
+            "offentlig": 45000,
+            "privat": 54000,
+            "konsult": 65000
+        },
+        "faq": [
+            {
+                "question": "Vad är ingångslönen för en tandläkare?",
+                "answer": "En nyexaminerad tandläkare inom Folktandvården har ofta en ingångslön på ca 35 000–38 000 kr/mån. Privata arbetsgivare kan ibland erbjuda mer."
+            },
+            {
+                "question": "Tjänar man mer som privat tandläkare?",
+                "answer": "Ja, generellt ligger lönerna högre inom den privata sektorn. Många privata tandläkare har också provisionsbaserad lön eller driver eget företag."
+            },
+            {
+                "question": "Vad tjänar en specialisttandläkare?",
+                "answer": "Att specialisera sig (t.ex. till ortodontist eller käkkirurg) lönar sig väl. En specialist har ofta en lön på över 70 000 kr/mån."
+            },
+            {
+                "question": "Kan man jobba som tandläkare i Norge?",
+                "answer": "Ja, många svenska tandläkare arbetar i Norge periodvis. Lönerna är betydligt högre, ofta mellan 60 000 och 90 000 NOK/mån."
+            },
+            {
+                "question": "Hur ser arbetsmarknaden ut?",
+                "answer": "Den är mycket god. Det råder brist på tandläkare i stora delar av landet, särskilt utanför storstäderna, vilket driver upp lönerna."
+            }
+        ],
+        "kd": 16,
+        "volume": 2900
+    },
+    {
+        "category": "Vård & Hälsa",
+        "slug": "tandskoterska",
+        "title": "Tandsköterska",
+        "keyword": "tandsköterska lön",
+        "avg_salary": 29500,
+        "median_salary": 28800,
+        "nyexaminerad_salary": 25500,
+        "senior_salary": 34000,
+        "description": "Tandsköterskor assisterar tandläkare, sköter hygien och administration. Ett serviceinriktat yrke med mycket patientkontakt.",
+        "description_extended": "Som tandsköterska är du spindeln i nätet på tandvårdskliniken. Du assisterar tandläkaren vid behandlingar, steriliserar instrument, tar röntgenbilder och sköter reception och tidbokning. Du kan arbeta inom Folktandvården, på privata kliniker eller på specialistkliniker. Vissa tandsköterskor vidareutbildar sig för att få utföra egna enklare behandlingar.",
+        "education": "Yrkeshögskoleutbildning (YH) till Tandsköterska (1,5 år).",
+        "workplaces": [
+            {
+                "name": "Folktandvården",
+                "salary": 29000
+            },
+            {
+                "name": "Privat klinik",
+                "salary": 30500
+            },
+            {
+                "name": "Specialisttandvård",
+                "salary": 31000
+            },
+            {
+                "name": "Sjukhustandvård",
+                "salary": 29500
+            },
+            {
+                "name": "Bemanningsföretag",
+                "salary": 33000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Nyexaminerad",
+                "salary": 26000
+            },
+            {
+                "name": "Erfaren Tandsköterska",
+                "salary": 31500
+            },
+            {
+                "name": "Ortodontiassistent",
+                "salary": 32000
+            },
+            {
+                "name": "Kliniksamordnare",
+                "salary": 34000
+            },
+            {
+                "name": "Operationssköterska (Käkkirurgi)",
+                "salary": 32500
+            }
+        ],
+        "salary_by_sector": {
+            "offentlig": 29000,
+            "privat": 30500,
+            "bemanning": 33000
+        },
+        "faq": [
+            {
+                "question": "Vad är ingångslönen för en tandsköterska?",
+                "answer": "Ingångslönen ligger oftast mellan 25 000 och 27 000 kr/mån. I storstadsregionerna är den generellt något högre."
+            },
+            {
+                "question": "Tjänar man mer privat än på Folktandvården?",
+                "answer": "Ja, privata kliniker betalar ofta ca 1 000–2 000 kr mer i månaden än Folktandvården, men det kan variera beroende på förmåner som friskvård och tjänstepension."
+            },
+            {
+                "question": "är det svårt att få jobb som tandsköterska?",
+                "answer": "Nej, arbetsmarknaden är mycket god i hela Sverige. Det utbildas för få tandsköterskor i förhållande till pensionsavgångarna."
+            },
+            {
+                "question": "Kan man specialisera sig?",
+                "answer": "Ja, du kan t.ex. vidareutbilda dig inom ortodonti (tandreglering) eller operation, vilket ofta ger högre lön och mer självständiga arbetsuppgifter."
+            },
+            {
+                "question": "Vad krävs för att bli tandsköterska?",
+                "answer": "Du behöver gå en YH-utbildning på 3 terminer (1,5 år), som varvar teori med praktik (LIA)."
+            }
+        ],
+        "kd": 21,
+        "volume": 3600
+    },
+    {
+        "category": "Transport & Logistik",
+        "slug": "lastbilschauffor",
+        "title": "Lastbilschaufför",
+        "keyword": "lastbilschaufför lön",
+        "avg_salary": 35500,
+        "median_salary": 34200,
+        "ingangslön": 28000,
+        "senior_salary": 42000,
+        "konsult_salary": 48000,
+        "ob_tillagg": "3000-8000 kr/mån för natt/helg",
+        "description": "Lastbilschaufförer transporterar gods och varor i Sverige och Europa. Lönen varierar beroende på typ av körning (fjärr, distribution, tank) och OB-tillägg.",
+        "description_extended": "Som lastbilschaufför kan du arbeta med fjärrtrafik (långväga transporter), distributionstrafik (lokala leveranser), eller specialtransporter (tank, farligt gods). De som kör natt och helg får ofta betydande OB-tillägg. Efterfrågan på förare är mycket hög i Sverige.",
+        "education": "C-körkort krävs. Yrkesförarbevis (YKB) krävs för yrkesmässig körning. Utbildning finns via YH eller privata trafikskolor.",
+        "workplaces": [
+            {
+                "name": "Distributionsföretag",
+                "salary": 33000
+            },
+            {
+                "name": "Fjärrtrafik",
+                "salary": 38000
+            },
+            {
+                "name": "Tankbilar",
+                "salary": 40000
+            },
+            {
+                "name": "Bygg & Anläggning",
+                "salary": 36000
+            },
+            {
+                "name": "Postföretag",
+                "salary": 32000
+            },
+            {
+                "name": "Bemanningsföretag",
+                "salary": 35000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Distribution/Lokalt",
+                "salary": 32000
+            },
+            {
+                "name": "Fjärrtrafik",
+                "salary": 38000
+            },
+            {
+                "name": "Tanktransport",
+                "salary": 40000
+            },
+            {
+                "name": "ADR (farligt gods)",
+                "salary": 42000
+            },
+            {
+                "name": "Timmertransport",
+                "salary": 38000
+            },
+            {
+                "name": "Anläggning",
+                "salary": 36000
+            }
+        ],
+        "salary_by_shift": {
+            "dag": 34000,
+            "natt": 40000,
+            "helg": 42000
+        },
+        "international": {
+            "inrikes": 35000,
+            "europa": 42000
+        },
+        "faq": [
+            {
+                "question": "Hur mycket tjänar en lastbilschaufför i lön 2025?",
+                "answer": "En lastbilschaufför i Sverige tjänar i snitt ca 34 000-36 000 kr/mån i grundlön. Med OB-tillägg för natt- och helgarbete kan den totala lönen bli 40 000-45 000 kr/mån."
+            },
+            {
+                "question": "Vad är ingångslönen för lastbilschaufför?",
+                "answer": "Nyexaminerade lastbilschaufförer har en ingångslön på ca 27 000-30 000 kr/mån beroende på arbetsgivare och typ av körning."
+            },
+            {
+                "question": "Tjänar man mer som fjärrlastbilschaufför?",
+                "answer": "Ja, fjärrlastbilschaufförer tjänar ofta 3 000-5 000 kr mer per månad än distributionsförare, plus traktamenten vid övernattningar."
+            },
+            {
+                "question": "Vad tjänar en lastbilschaufför med ADR?",
+                "answer": "Chaufförer med ADR-behörighet (farligt gods) tjänar vanligtvis 2 000-4 000 kr mer per månad, alltså ca 38 000-42 000 kr/mån."
+            },
+            {
+                "question": "Hur mycket OB-tillägg får lastbilschaufförer?",
+                "answer": "OB-tillägg för lastbilschaufförer är ca 50-150 kr/timme beroende på tid (kväll, natt, helg). Det kan ge 3 000-8 000 kr extra per månad."
+            },
+            {
+                "question": "Vad tjänar en lastbilschaufför efter skatt?",
+                "answer": "Med en bruttolön på 35 000 kr får en lastbilschaufför ca 27 000-28 000 kr netto efter skatt, beroende på kommun."
+            },
+            {
+                "question": "Är det brist på lastbilschaufförer?",
+                "answer": "Ja, det råder stor brist på lastbilschaufförer i Sverige. Detta driver upp lönerna, särskilt för erfarna förare med specialkompetens."
+            },
+            {
+                "question": "Vad kostar ett C-körkort?",
+                "answer": "Ett C-körkort kostar ca 30 000-50 000 kr inklusive YKB. Arbetsförmedlingen kan bevilja stöd. Vissa åkerier betalar utbildningen mot anställningsavtal."
+            },
+            {
+                "question": "Hur mycket tjänar en tankbilschaufför?",
+                "answer": "Tankbilschaufförer tjänar i snitt ca 38 000-42 000 kr/mån, ofta mer än vanliga lastbilschaufförer pga specialkompetens och ADR."
+            },
+            {
+                "question": "Vad tjänar man som lastbilschaufför i Stockholm?",
+                "answer": "I Stockholm ligger lönen ofta 2 000-4 000 kr högre än rikssnittet, alltså ca 36 000-40 000 kr/mån för erfarna förare."
+            }
+        ],
+        "kd": 23,
+        "volume": 4400
+    },
+    {
+        "category": "Utbildning & Samhälle",
+        "slug": "socionom",
+        "title": "Socionom",
+        "keyword": "socionom lön",
+        "avg_salary": 38500,
+        "median_salary": 37200,
+        "ingangslön": 32000,
+        "senior_salary": 45000,
+        "konsult_salary": 55000,
+        "description": "Socionomer arbetar med människor i utsatta situationer inom socialtjänst, vård, skola och privat sektor. De kan arbeta som socialsekreterare, kurator, biståndshandläggare eller familjebehandlare.",
+        "description_extended": "Som socionom kan du arbeta inom kommun (socialtjänst), region (vården), skola (kurator), kriminalvård, eller privat sektor. Lönen varierar beroende på arbetsuppgifter och arbetsgivare. Socialsekreterare och kuratorer är bland de vanligaste rollerna. Efterfrågan är hög och det råder stor brist på socionomer i hela Sverige, särskilt inom socialtjänsten.",
+        "education": "Socionomprogrammet (3,5 år) på universitet. Utbildningen innehåller praktik (VFU) och ger socionomexamen.",
+        "workplaces": [
+            {
+                "name": "Socialtjänst (kommun)",
+                "salary": 37000
+            },
+            {
+                "name": "Skola (kurator)",
+                "salary": 38000
+            },
+            {
+                "name": "Region (vården)",
+                "salary": 39000
+            },
+            {
+                "name": "Kriminalvård",
+                "salary": 40000
+            },
+            {
+                "name": "Privat sektor",
+                "salary": 42000
+            },
+            {
+                "name": "Bemanningsföretag",
+                "salary": 55000
+            }
+        ],
+        "specialties": [
+            {
+                "name": "Nyexaminerad",
+                "salary": 32000
+            },
+            {
+                "name": "Socialsekreterare",
+                "salary": 38000
+            },
+            {
+                "name": "Kurator",
+                "salary": 39000
+            },
+            {
+                "name": "Biståndshandläggare",
+                "salary": 36000
+            },
+            {
+                "name": "Familjebehandlare",
+                "salary": 37000
+            },
+            {
+                "name": "Socionomkonsult",
+                "salary": 55000
+            }
+        ],
+        "salary_by_sector": {
+            "kommun": 37000,
+            "region": 39000,
+            "privat": 42000,
+            "bemanning": 55000
+        },
+        "faq": [
+            {
+                "question": "Hur mycket tjänar en socionom i lön 2025?",
+                "answer": "En socionom tjänar i snitt ca 36 000-40 000 kr/mån. Lönen varierar beroende på roll: socialsekreterare ca 38 000 kr, kuratorer ca 39 000 kr, och socionomkonsulter kan tjäna upp till 55 000 kr/mån."
+            },
+            {
+                "question": "Vad är ingångslönen för en nyexaminerad socionom?",
+                "answer": "Nyexaminerade socionomer har en ingångslön på ca 31 000-34 000 kr/mån beroende på kommun och arbetsgivare. I storstäder kan ingångslönen vara något högre."
+            },
+            {
+                "question": "Är socionom bra betalt?",
+                "answer": "Socionomer har en medellön på ca 37 000 kr/mån, vilket är något under genomsnittet för högskoleutbildade. Erfarna socionomer och konsulter kan dock tjäna betydligt mer (45 000-55 000 kr/mån)."
+            },
+            {
+                "question": "Vilken typ av socionom tjänar mest?",
+                "answer": "Socionomkonsulter via bemanningsföretag tjänar mest (50 000-60 000 kr/mån). Inom fast anställning tjänar socionomer i privat sektor och kriminalvården mest (40 000-45 000 kr/mån)."
+            },
+            {
+                "question": "Vad tjänar en socialsekreterare?",
+                "answer": "Socialsekreterare inom socialtjänsten tjänar i snitt ca 36 000-40 000 kr/mån. Lönen beror på kommun, erfarenhet och ansvar. Erfarna socialsekreterare kan tjäna över 42 000 kr/mån."
+            },
+            {
+                "question": "Hur mycket tjänar en kurator?",
+                "answer": "Kuratorer inom skola eller vård tjänar i snitt ca 37 000-41 000 kr/mån. Skolkuratorer ligger ofta på ca 38 000-40 000 kr/mån."
+            },
+            {
+                "question": "Vad tjänar en biståndshandläggare?",
+                "answer": "Biståndshandläggare inom äldreomsorg tjänar i snitt ca 34 000-38 000 kr/mån. Lönen kan vara högre i storstäder."
+            },
+            {
+                "question": "Varför tjänar socionomer så lite?",
+                "answer": "Socionomer arbetar ofta inom offentlig sektor (kommun/region) där lönerna traditionellt är lägre än i privat sektor. Efterfrågan är dock hög vilket driver upp lönerna, särskilt för konsulter."
+            },
+            {
+                "question": "Hur lång tid tar socionomutbildningen?",
+                "answer": "Socionomprogrammet är 3,5 år (7 terminer) på universitet. Utbildningen inkluderar VFU (verksamhetsförlagd utbildning) och ger en yrkesexamen."
+            },
+            {
+                "question": "Vilka jobb kan man få som socionom?",
+                "answer": "Socionomer kan arbeta som socialsekreterare, kurator, biståndshandläggare, familjebehandlare, frivårdsinspektör, enhetschef, eller konsult. Möjligheterna finns inom kommun, region, skola, kriminalvård och privat sektor."
+            }
+        ],
+        "kd": 18,
+        "volume": 4400
+    },
+    {
+        "category": "Utbildning & Samhälle",
+        "slug": "socialpedagog",
+        "title": "Socialpedagog",
+        "keyword": "socialpedagog lön",
+        "avg_salary": 34500,
+        "median_salary": 33800,
+        "ingangslön": 28000,
+        "senior_salary": 40000,
+        "description": "Socialpedagoger arbetar med människor i olika livssituationer, ofta barn, ungdomar eller personer med funktionsnedsättning. De finns inom skola, HVB-hem, LSS-boenden och socialtjänst.",
+        "description_extended": "Som socialpedagog möter du människor i behov av stöd och arbetar med att utveckla deras sociala färdigheter och självständighet. Arbetsplatserna inkluderar skolor (elevhälsa), HVB-hem (hem för vård och boende), LSS-boenden, behandlingshem och socialtjänst. Efterfrågan på socialpedagoger är hög och yrket växer.",
+        "education": "Socialpedagogexamen (3 år på högskola) eller kandidatexamen i socialpedagogik. Alternativt YH-utbildning inom behandlingspedagogik.",
+        "workplaces": [
+            {
+                "name": "Skola",
+                "salary": 33000
+            },
+            {
+                "name": "HVB-hem",
+                "salary": 35000
+            },
+            {
+                "name": "LSS-boende",
+                "salary": 34000
+            },
+            {
+                "name": "Behandlingshem",
+                "salary": 36000
+            },
+            {
+                "name": "Kommun (socialtjänst)",
+                "salary": 34500
+            },
+            {
+                "name": "Privat sektor",
+                "salary": 38000
+            }
+        ],
+        "salary_by_region": {
+            "stockholm": 36000,
+            "göteborg": 34500,
+            "malmö": 34000,
+            "övriga_sverige": 33000
+        },
+        "faq": [
+            {
+                "question": "Hur mycket tjänar en socialpedagog?",
+                "answer": "En socialpedagog tjänar i snitt ca 33 000-36 000 kr/mån. Lönen varierar beroende på arbetsplats och erfarenhet. I Stockholm kan lönen vara något högre."
+            },
+            {
+                "question": "Vad är ingångslönen för socialpedagog?",
+                "answer": "Nyexaminerade socialpedagoger har en ingångslön på ca 27 000-30 000 kr/mån beroende på arbetsgivare och region."
+            },
+            {
+                "question": "Vad gör en socialpedagog?",
+                "answer": "Socialpedagoger arbetar med att stödja och utveckla människors sociala förmågor. De hjälper barn, ungdomar och vuxna i utsatta situationer att klara vardagen och utvecklas."
+            },
+            {
+                "question": "Vad gör en socialpedagog i skolan?",
+                "answer": "I skolan arbetar socialpedagogen med elevhälsa, konflikthantering, stöd till elever med social problematik och samarbete med lärare och föräldrar."
+            },
+            {
+                "question": "Vad kan man jobba med som socialpedagog?",
+                "answer": "Socialpedagoger kan arbeta på HVB-hem, LSS-boenden, skolor, behandlingshem, inom socialtjänsten, familjehem eller som konsult. Möjligheterna är många."
+            },
+            {
+                "question": "Vad är skillnaden mellan socionom och socialpedagog?",
+                "answer": "Socionomer har oftast myndighetsutövande roller (socialsekreterare, handläggare) medan socialpedagoger arbetar mer praktiskt med behandling och stöd i vardagen."
+            },
+            {
+                "question": "Hur lång tid tar socialpedagogutbildningen?",
+                "answer": "Högskoleutbildningen till socialpedagog är 3 år. Det finns även YH-utbildningar inom behandlingspedagogik på 1-2 år."
+            },
+            {
+                "question": "Tjänar man mer som socialpedagog i Stockholm?",
+                "answer": "Ja, socialpedagoger i Stockholm tjänar i snitt ca 2 000-3 000 kr mer per månad jämfört med övriga Sverige, ofta ca 35 000-37 000 kr/mån."
+            },
+            {
+                "question": "Är socialpedagog ett bra yrke?",
+                "answer": "Ja, efterfrågan är hög och yrket växer. Det är ett meningsfullt arbete med goda möjligheter att påverka människors liv. Lönen är dock något lägre än för socionomer."
+            },
+            {
+                "question": "Vilka arbetsplatser har högst lön för socialpedagoger?",
+                "answer": "Behandlingshem och privat sektor har ofta högst löner (36 000-40 000 kr/mån). HVB-hem betalar också bra pga obekväma arbetstider."
+            }
+        ],
+        "kd": 12,
+        "volume": 3600
+    }
+]

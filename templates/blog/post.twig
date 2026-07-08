@@ -1,0 +1,358 @@
+{% extends "home.twig" %}
+
+
+{% block content %}
+	{% include 'partials/ads/config.twig' %}
+	<div class="bg-slate-50 pt-12 pb-20">
+		<div
+			class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+			{# Schema.org Article #}
+			<script type="application/ld+json">
+				{
+																																				            "@context": "https://schema.org",
+																																				            "@type": "Article",
+																																				            "headline": "{{ post.title | e('js') }}",
+																																				            "description": "{{ post.excerpt | default(post.description | default('')) | e('js') }}",
+																																				            "datePublished": "{{ post.date | default('2026-01-01') }}",
+																																				            "dateModified": "{{ post.updated | default(post.date | default('2026-01-01')) }}",
+																																				            "author": {
+																																				                "@type": "Organization",
+																																				                "name": "Räkna Lön"
+																																				            },
+																																				            "publisher": {
+																																				                "@type": "Organization",
+																																				                "name": "Räkna Lön",
+																																				                "url": "https://raknalon.se"
+																																				            },
+																																				            "mainEntityOfPage": {
+																																				                "@type": "WebPage",
+																																				                "@id": "https://raknalon.se/blogg/{{ post.slug }}"
+																																				            }
+																																				        }
+			</script>
+
+			{# Breadcrumb Schema #}
+			<script type="application/ld+json">
+				{
+																																				            "@context": "https://schema.org",
+																																				            "@type": "BreadcrumbList",
+																																				            "itemListElement": [
+																																				                {"@type": "ListItem", "position": 1, "name": "Hem", "item": "https://raknalon.se/"},
+																																				                {"@type": "ListItem", "position": 2, "name": "Blogg", "item": "https://raknalon.se/blogg"},
+																																				                {"@type": "ListItem", "position": 3, "name": "{{ post.title | e('js') }}"}
+																																				            ]
+																																				        }
+			</script>
+
+			{% if post.faq is defined %}
+				{# FAQ Schema #}
+				<script type="application/ld+json">
+					{
+																																													            "@context": "https://schema.org",
+																																													            "@type": "FAQPage",
+																																													            "mainEntity": [
+					{% for item in post.faq %}
+						{
+																																																						                    "@type": "Question",
+																																																						                    "name": "{{ item.question | e('js') }}",
+																																																						                    "acceptedAnswer": {
+																																																						                        "@type": "Answer",
+																																																						                        "text": "{{ item.answer | e('js') }}"
+																																																						                    }
+																																																						                }
+						{% if not loop.last %},
+						{% endif %}
+					{% endfor %}
+					]
+																																													        }
+				</script>
+			{% endif %}
+
+			{# Breadcrumb #}
+			<nav class="flex mb-8" aria-label="Breadcrumb">
+				<ol role="list" class="flex items-center space-x-2">
+					<li>
+						<a href="/" class="text-sm font-medium text-slate-500 hover:text-indigo-600">Hem</a>
+					</li>
+					<li>
+						<span class="text-slate-300">/</span>
+					</li>
+					<li>
+						<a href="/blogg" class="text-sm font-medium text-slate-500 hover:text-indigo-600">Blogg</a>
+					</li>
+					{% if post.category is defined %}
+						<li>
+							<span class="text-slate-300">/</span>
+						</li>
+						<li>
+							<a href="/blogg/kategori/{{ post.category | url_encode }}" class="text-sm font-medium text-slate-500 hover:text-indigo-600">{{ post.category }}</a>
+						</li>
+					{% endif %}
+					<li>
+						<span class="text-slate-300">/</span>
+					</li>
+					<li>
+						<span class="text-sm font-medium text-indigo-600" aria-current="page">{{ post.title }}</span>
+					</li>
+				</ol>
+			</nav>
+
+			{# Header #}
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center gap-2 mb-4">
+					{% if post.date is defined %}
+						<span class="inline-flex items-center rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+							{{ post.formatted_date }}
+						</span>
+					{% endif %}
+					{% if post.category is defined %}
+						<span class="inline-flex items-center rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600 ring-1 ring-inset ring-slate-500/10">
+							{{ post.category }}
+						</span>
+					{% endif %}
+					{% if post.reading_time is defined %}
+						<span class="inline-flex items-center rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-500 ring-1 ring-inset ring-slate-500/10">
+							{{ post.reading_time }}
+							min läsning
+						</span>
+					{% endif %}
+				</div>
+				<h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl mb-4">
+					{{ post.title }}
+				</h1>
+				{% if post.description is defined %}
+					<p class="text-lg text-slate-600 max-w-2xl mx-auto">
+						{{ post.description }}
+					</p>
+				{% elseif post.excerpt is defined %}
+					<p class="text-lg text-slate-600 max-w-2xl mx-auto">
+						{{ post.excerpt }}
+					</p>
+				{% endif %}
+			</div>
+
+
+			{# Fallback CSS if Tailwind compilation is lagging #}
+			<style>
+				@media(min-width: 1024px) {
+					#toc-grid {
+						display: grid !important;
+						grid-template-columns: minmax(0, 1fr) 280px !important;
+						gap: 3rem !important;
+					}
+					#toc-sidebar {
+						display: block !important;
+					}
+				}
+
+				/* Adjust negative margins for mobile to match p-8 (32px) instead of 48px */
+				@media(max-width: 639px) {
+					article p[style*="-48px"] {
+						margin-left: -2rem !important;
+						margin-right: -2rem !important;
+					}
+				}
+			</style>
+
+			<div
+				id="toc-grid" class="lg:grid lg:grid-cols-[1fr_280px] lg:gap-12 relative">
+
+				{# Article Content #}
+				<div class="min-w-0">
+					{# Added min-w-0 to prevent grid blowout #}
+					{# Compricer Widget Top #}
+						<div class="mb-8 p-4 bg-indigo-50 rounded-xl border border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-4"> <div>
+							<p class="font-bold text-indigo-900">Jämför lån och spara pengar</p>
+							<p class="text-sm text-indigo-700">Hitta bästa räntan med Compricer</p>
+						</div>
+						<a href="https://www.compricer.se/lan" target="_blank" rel="nofollow noopener" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-sm hover:bg-indigo-500 transition-colors whitespace-nowrap">
+							Jämför nu
+						</a>
+					</div>
+
+					<article
+						class="prose prose-lg prose-indigo w-full max-w-none bg-white p-8 sm:p-12 rounded-2xl shadow-sm ring-1 ring-slate-900/5
+																																																															                                        prose-headings:font-bold prose-headings:text-slate-900 prose-headings:scroll-mt-24
+																																																															                                        prose-p:text-slate-700 prose-p:leading-relaxed
+																																																															                                        prose-a:text-indigo-600 prose-a:no-underline hover:prose-a:underline
+																																																															                                        prose-strong:text-slate-900
+																																																															                                        prose-ul:text-slate-700 prose-ol:text-slate-700
+																																																															                                        prose-blockquote:border-indigo-500 prose-blockquote:text-slate-600
+																																																															                                        prose-code:bg-slate-100 prose-code:px-1 prose-code:rounded
+																																																															                                        prose-pre:bg-slate-900 prose-pre:text-slate-100
+																																																															                                        prose-img:rounded-xl">
+						{# Featured Image #}
+						{% if post.image is defined %}
+							<figure class="mb-10 max-w-5xl mx-auto">
+								<img src="{{ post.image }}" alt="{{ post.title }}" class="w-full rounded-2xl shadow-lg ring-1 ring-slate-900/5">
+								{% if post.image_caption is defined %}
+									<figcaption class="mt-2 text-sm text-slate-500 text-center">{{ post.image_caption }}</figcaption>
+								{% endif %}
+							</figure>
+						{% endif %}
+
+						<!-- AdSense: Blog Top -->
+						{% include 'partials/ads/display.twig' with {'slot_name': 'blog_top'} %}
+
+						{{ post.content | raw }}
+
+						{# Author & Share #}
+						<div class="mt-12 pt-8 border-t border-slate-200 not-prose">
+							<div class="flex flex-wrap items-center justify-between gap-4">
+								<div class="flex items-center gap-3">
+									<div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
+										<svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+										</svg>
+									</div>
+									<div>
+										<p class="font-medium text-slate-900">{{ post.author | default('Redaktionen') }}</p>
+										<p class="text-sm text-slate-500">Räkna Lön</p>
+									</div>
+								</div>
+
+								<div class="flex items-center gap-2">
+									<span class="text-sm text-slate-500">Dela:</span>
+									<a href="https://twitter.com/intent/tweet?url=https://raknalon.se/blogg/{{ post.slug }}&text={{ post.title | url_encode }}" target="_blank" rel="noopener" class="p-2 text-slate-400 hover:text-blue-500 transition-colors">
+										<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+									</a>
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://raknalon.se/blogg/{{ post.slug }}&title={{ post.title | url_encode }}" target="_blank" rel="noopener" class="p-2 text-slate-400 hover:text-blue-700 transition-colors">
+										<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+									</a>
+									<a href="https://www.facebook.com/sharer/sharer.php?u=https://raknalon.se/blogg/{{ post.slug }}" target="_blank" rel="noopener" class="p-2 text-slate-400 hover:text-blue-600 transition-colors">
+										<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<!-- AdSense: Blog Multiplex (High CTR) -->
+					{% include 'partials/ads/multiplex.twig' with {'slot_name': 'multiplex_bottom'} %}
+				</div>
+
+				{# Sidebar ToC #}
+				<aside
+					id="toc-sidebar" class="hidden lg:block relative text-right">
+					{# Added relative just in case, though not strictly needed for grid child #}
+					<nav class="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
+						<p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 pl-4 text-left">Innehåll</p>
+						<div
+							id="toc-links" class="space-y-1 text-left"><!-- Links generated by JS -->
+						</div>
+
+						{# Sidebar CTA #}
+						<div class="mt-8 ml-4 p-4 bg-indigo-50 rounded-xl border border-indigo-100 text-left">
+							<p class="font-bold text-indigo-900 text-sm mb-1">Vill du veta din nettolön?</p>
+							<a href="/" class="text-xs text-indigo-600 font-medium hover:underline inline-flex items-center">
+								Gå till lönekalkylatorn
+								<svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+								</a>
+							</div>
+						</nav>
+					</aside>
+				</div>
+
+				{# Related Posts #}
+				{% if related_posts is not empty %}
+					<div class="mt-16 border-t border-slate-200 pt-10">
+						<h3 class="text-2xl font-bold text-slate-900 mb-6">Relaterade artiklar</h3>
+						<div class="grid sm:grid-cols-3 gap-6">
+							{% for related in related_posts %}
+								<a href="/blogg/{{ related.slug }}" class="group block bg-white rounded-xl shadow-sm ring-1 ring-slate-900/5 overflow-hidden hover:shadow-md transition-shadow">
+									{% if related.image is defined %}
+										<img src="{{ related.image }}" alt="{{ related.title }}" class="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-105">
+									{% else %}
+										<div class="w-full h-32 bg-gradient-to-br from-indigo-500 to-purple-600"></div>
+									{% endif %}
+									<div class="p-4">
+										<h3 class="font-semibold text-slate-900 group-hover:text-indigo-600 line-clamp-2">
+											{{ related.title }}
+										</h3>
+										{% if related.date is defined %}
+											<time class="text-xs text-slate-500 mt-1 block">{{ related.formatted_date }}</time>
+										{% endif %}
+									</div>
+								</a>
+							{% endfor %}
+						</div>
+					</div>
+				{% endif %}
+
+				{# Back to blog #}
+				<div class="mt-12 text-center">
+					<a href="/blogg" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
+						<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
+						</svg>
+						Tillbaka till bloggen
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+const article = document.querySelector('article');
+const tocContainer = document.getElementById('toc-links');
+
+if (article && tocContainer) {
+const headings = article.querySelectorAll('h2');
+
+if (headings.length > 0) {
+headings.forEach(heading => { // Generate ID if missing
+if (!heading.id) {
+heading.id = heading.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
+const link = document.createElement('a');
+link.href = '#' + heading.id;
+link.textContent = heading.textContent;
+
+// Base classes - always flat H2 style
+const baseClasses = 'block text-sm py-1.5 border-l-2 border-transparent transition-colors duration-200 pl-4 text-slate-600 hover:text-slate-900 hover:border-slate-300';
+
+link.className = baseClasses;
+link.setAttribute('data-target', heading.id);
+
+tocContainer.appendChild(link);
+});
+
+// Intersection Observer for Active State
+const observerOptions = {
+root: null,
+rootMargin: '-10% 0px -70% 0px',
+threshold: 0
+};
+
+const observerCallback = (entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+const activeId = entry.target.id;
+document.querySelectorAll('#toc-links a').forEach(link => { // Reset to inactive state
+link.classList.remove('border-indigo-600', 'text-indigo-600', 'font-medium', 'bg-indigo-50/50');
+link.classList.add('border-transparent');
+link.classList.add('text-slate-600');
+
+// Set active state
+if (link.getAttribute('data-target') === activeId) {
+link.classList.remove('border-transparent', 'text-slate-600');
+link.classList.add('border-indigo-600', 'text-indigo-600', 'font-medium');
+}
+});
+}
+});
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+headings.forEach(h => observer.observe(h));
+} else { // Hide sidebar if no headings
+document.getElementById('toc-sidebar').style.display = 'none';
+}
+}
+});
+		</script>
+	{% endblock %}

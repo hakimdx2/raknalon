@@ -1,0 +1,50 @@
+[
+    {
+        "nuts_code": "SE11",
+        "nuts_name": "Stockholms län",
+        "salary_total": 39000,
+        "year": 2024
+    },
+    {
+        "nuts_code": "SE12",
+        "nuts_name": "Östra Mellansverige (Uppsala, Södermanland, Östergötland, Örebro, Västmanland)",
+        "salary_total": 35100,
+        "year": 2024
+    },
+    {
+        "nuts_code": "SE21",
+        "nuts_name": "Småland med öarna (Jönköping, Kronoberg, Kalmar, Gotland)",
+        "salary_total": 35600,
+        "year": 2024
+    },
+    {
+        "nuts_code": "SE22",
+        "nuts_name": "Sydsverige (Blekinge, Skåne)",
+        "salary_total": 36400,
+        "year": 2024
+    },
+    {
+        "nuts_code": "SE23",
+        "nuts_name": "Västsverige (Halland, Västra Götaland)",
+        "salary_total": 36400,
+        "year": 2024
+    },
+    {
+        "nuts_code": "SE31",
+        "nuts_name": "Norra Mellansverige (Värmland, Dalarna, Gävleborg)",
+        "salary_total": 34500,
+        "year": 2024
+    },
+    {
+        "nuts_code": "SE32",
+        "nuts_name": "Mellersta Norrland (Västernorrland, Jämtland)",
+        "salary_total": 34500,
+        "year": 2024
+    },
+    {
+        "nuts_code": "SE33",
+        "nuts_name": "Övre Norrland (Västerbotten, Norrbotten)",
+        "salary_total": 34900,
+        "year": 2024
+    }
+]

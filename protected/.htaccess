@@ -1,0 +1,2 @@
+# Empêcher l'accès direct au fichier JSON depuis le web
+Deny from all

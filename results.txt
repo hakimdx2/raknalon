@@ -1,0 +1,3 @@
+FOUND BROKEN SLUG: st-lakare
+FOUND BROKEN SLUG: specialistsjukskoterska
+No duplicate slugs found.

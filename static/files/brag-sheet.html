@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loneforhandling: Den Kompletta Guiden 2026</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+        :root {
+            --primary: #0f172a;
+            --accent: #1e40af;
+            --secondary: #475569;
+            --bg: #f8fafc;
+            --border: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            color: var(--secondary);
+            background: #e2e8f0;
+            margin: 0;
+            font-size: 11pt;
+            line-height: 1.75;
+        }
+
+        .page {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 22mm 20mm;
+            margin: 15mm auto;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            page-break-after: always;
+        }
+
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+            }
+
+            .page {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                padding: 18mm;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Inter', sans-serif;
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 24pt;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+            margin-bottom: 6mm;
+        }
+
+        h2 {
+            font-size: 14pt;
+            font-weight: 700;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2mm;
+            margin-top: 8mm;
+            margin-bottom: 4mm;
+        }
+
+        h3 {
+            font-size: 12pt;
+            font-weight: 700;
+            margin-top: 5mm;
+            margin-bottom: 2mm;
+        }
+
+        h4 {
+            font-size: 10pt;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 2mm;
+            margin-top: 4mm;
+        }
+
+        p {
+            margin-bottom: 3mm;
+            text-align: justify;
+        }
+
+        ul,
+        ol {
+            margin: 3mm 0;
+            padding-left: 6mm;
+        }
+
+        li {
+            margin-bottom: 2mm;
+        }
+
+        strong {
+            color: var(--primary);
+        }
+
+        .box {
+            background: var(--bg);
+            padding: 4mm;
+            margin: 4mm 0;
+            border-radius: 3px;
+            font-size: 10pt;
+        }
+
+        .tip {
+            background: #f0f9ff;
+            padding: 4mm;
+            margin: 4mm 0;
+            border-radius: 3px;
+        }
+
+        .tip-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 9pt;
+            text-transform: uppercase;
+            margin-bottom: 2mm;
+        }
+
+        .script {
+            background: #fafafa;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 4mm;
+            margin: 4mm 0;
+        }
+
+        .script-label {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 9pt;
+            margin-bottom: 2mm;
+        }
+
+        .script-label.they {
+            color: #b91c1c;
+        }
+
+        .script-label.you {
+            color: var(--accent);
+        }
+
+        .script-text {
+            font-style: italic;
+            color: var(--primary);
+            padding-left: 4mm;
+            border-left: 2px solid var(--accent);
+        }
+
+        .fill-line {
+            border-bottom: 1px dotted var(--border);
+            min-height: 8mm;
+            margin: 2mm 0;
+            display: block;
+        }
+
+        .fill-box {
+            border: 1px solid var(--border);
+            min-height: 20mm;
+            margin: 3mm 0;
+            padding: 3mm;
+            border-radius: 3px;
+            background: #fafafa;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 15mm;
+            left: 20mm;
+            right: 20mm;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 8pt;
+            color: #94a3b8;
+            border-top: 1px solid var(--border);
+            padding-top: 2mm;
+        }
+
+        .banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--primary);
+            color: white;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .toc-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 2mm 0;
+            border-bottom: 1px dotted var(--border);
+        }
+
+        .chapter-num {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 9pt;
+            margin-right: 3mm;
+        }
+
+        .source {
+            font-size: 9pt;
+            color: #64748b;
+            font-style: italic;
+        }
+
+        .example-box {
+            background: #fffbeb;
+            border: 1px solid #fcd34d;
+            padding: 4mm;
+            margin: 4mm 0;
+            border-radius: 3px;
+        }
+
+        .example-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: #92400e;
+            font-size: 9pt;
+            text-transform: uppercase;
+            margin-bottom: 2mm;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner no-print">
+        <div><strong>Komplett Guide (22 sidor)</strong> – Skriv ut och erövra</div>
+        <button class="btn" onclick="window.print()">Spara som PDF</button>
+    </div>
+
+    <!-- P1: COVER -->
+    <div class="page" style="display:flex;flex-direction:column;justify-content:center;text-align:center;">
+        <div
+            style="font-family:'Inter',sans-serif;font-weight:900;letter-spacing:2px;color:var(--accent);font-size:10pt;">
+            RAKNALON.SE</div>
+        <h1 style="font-size:36pt;margin:12mm 0 6mm;">STRATEGISK<br>LONEFORHANDLING</h1>
+        <div style="font-size:13pt;color:var(--secondary);max-width:140mm;margin:0 auto;">Den kompletta handboken for
+            att maximera ditt marknadsvarde</div>
+        <div style="margin-top:50mm;font-size:10pt;color:var(--secondary);"><strong>Version:</strong>
+            2026.1<br><strong>Sidor:</strong> 22</div>
+        <div style="margin-top:auto;font-style:italic;font-size:11pt;">"Du far inte vad du fortjanar. Du far vad du
+            forhandlar."</div>
+        <div class="footer">Sida 1</div>
+    </div>
+
+    <!-- P2: TOC -->
+    <div class="page">
+        <h1>Innehall</h1>
+        <div style="margin-top:8mm;">
+            <div class="toc-item"><span><span class="chapter-num">01</span> Manifestet</span><span>3</span></div>
+            <div class="toc-item"><span><span class="chapter-num">02</span> Lojalitetsskatten</span><span>4</span></div>
+            <div class="toc-item"><span><span class="chapter-num">03</span> Workbook: ROI</span><span>5-6</span></div>
+            <div class="toc-item"><span><span class="chapter-num">04</span> Workbook: Risk</span><span>7-8</span></div>
+            <div class="toc-item"><span><span class="chapter-num">05</span> Svenska Modellen</span><span>9</span></div>
+            <div class="toc-item"><span><span class="chapter-num">06</span> Revision vs Justering</span><span>10</span>
+            </div>
+            <div class="toc-item"><span><span class="chapter-num">07</span> Ancrage</span><span>11</span></div>
+            <div class="toc-item"><span><span class="chapter-num">08</span> Tystnadens Makt</span><span>12</span></div>
+            <div class="toc-item"><span><span class="chapter-num">09</span> Labeling</span><span>13</span></div>
+            <div class="toc-item"><span><span class="chapter-num">10</span> Briefcase Technique</span><span>14</span>
+            </div>
+            <div class="toc-item"><span><span class="chapter-num">11</span> Timing</span><span>15</span></div>
+            <div class="toc-item"><span><span class="chapter-num">12</span> E-postmallen</span><span>16</span></div>
+            <div class="toc-item"><span><span class="chapter-num">13</span> Manuset</span><span>17</span></div>
+            <div class="toc-item"><span><span class="chapter-num">14</span> Invandningar</span><span>18</span></div>
+            <div class="toc-item"><span><span class="chapter-num">15</span> Plan B</span><span>19</span></div>
+            <div class="toc-item"><span><span class="chapter-num">16</span> Checklistan</span><span>20</span></div>
+            <div class="toc-item"><span><span class="chapter-num">17</span> Exempel</span><span>21</span></div>
+            <div class="toc-item"><span><span class="chapter-num">18</span> Källor</span><span>22</span></div>
+        </div>
+        <div class="footer">Sida 2</div>
+    </div>
+
+    <!-- P3: MANIFESTO -->
+    <div class="page">
+        <h1>Kapitel 1: Manifestet</h1>
+        <h2>Sanningen ingen berattar for dig</h2>
+        <p>Har ar en obehaglig sanning: <strong>Hart arbete belonas inte automatiskt.</strong></p>
+        <p>Du har blivit matad med myten att om du "levererar", sa kommer pengarna av sig sjalv. Det ar ett trevligt
+            budskap. Det ar ocksa falskt.</p>
+        <p>I verkligheten belonas tre saker: synlighet, positionering och forhandling. De som beharskar dessa tjanar
+            mer. De som inte gor det – oavsett hur duktiga de ar – betalar ett pris varje manad.</p>
+        <h3>Det har ar inte en guide om att "be om mer"</h3>
+        <p>Det har ar ett system. Det bygger pa forskning fran beteendeekonomi, forhandlingspsykologi och svensk
+            arbetsmarknadspraxis.</p>
+        <p>Om du foljer det, okar du sannolikheten att fa en loneokning som faktiskt spar nagot. Om du ignorerar det,
+            fortsatter du betala den osynliga skatten.</p>
+        <div class="box">
+            <strong>Vad du kommer lara dig:</strong><br>
+            - Hur du bevisar ditt varde med siffror (inte kanslor)<br>
+            - Hur du navigerar det svenska lonesystemet<br>
+            - Tekniker fran FBI-forhandlare och beteendeforskare<br>
+            - Exakta manus for nar de sager "nej"
+        </div>
+        <div class="tip">
+            <div class="tip-title">Innan du laser vidare</div>
+            Skriv ut detta dokument. Fyll i ovningarna for hand. Ta med Workbook-sidorna in i forhandlingsrummet.
+            Forberedelse ar 80% av segern.
+        </div>
+        <div class="footer">Sida 3</div>
+    </div>
+
+    <!-- P4: LOYALTY TAX -->
+    <div class="page">
+        <h1>Kapitel 2: Lojalitetsskatten</h1>
+        <h2>Priset for att stanna</h2>
+        <p>Varje ar publicerar Sveriges Ingenjorer lonestatistik. Siffrorna ar brutala:</p>
+        <div class="box" style="text-align:center;font-size:13pt;">
+            <strong>De som bytte jobb 2024:</strong> +11,5% loneokning<br>
+            <strong>De som stannade:</strong> +5,5% loneokning<br>
+            <span class="source">(Kalla: Sveriges Ingenjorer, privat sektor 2024)</span>
+        </div>
+        <p>Det ar 6 procentenheter. Varje ar. Kumulativt.</p>
+        <h3>Vad det betyder i kronor</h3>
+        <p>Om du tjanar 45 000 kr/manad och stannar i 5 ar utan att agera:</p>
+        <ul>
+            <li>Ar 1: Du mister ca 2 700 kr/manad jamfort med en jobbytare</li>
+            <li>Ar 5: Gapet har vaxt till over 10 000 kr/manad</li>
+            <li>Totalt: Over 400 000 kr i forlorad inkomst</li>
+        </ul>
+        <p>Det ar inte konspirationsteori. Det ar matematik.</p>
+        <h3>Varfor berattar ingen detta?</h3>
+        <p>Enkelt: Foretag tjanar pa din passivitet. En underbetalad anstalld som stannar ar en fantastisk affar.
+            Rekrytering ar dyrt. Lojalitet ar gratis.</p>
+        <p>De hoppas att du aldrig raknar.</p>
+        <div class="tip">
+            <div class="tip-title">Gor detta nu</div>
+            Ga till raknalon.se/verktyg/lone-speedrunner och rakna ut din personliga lojalitetsskatt. Det tar 30
+            sekunder. Du kommer bli arg. Bra. Ilska ar bransle.
+        </div>
+        <div class="footer">Sida 4</div>
+    </div>
+
+    <!-- P5-6: WORKBOOK ROI -->
+    <div class="page">
+        <h1>Kapitel 3: Workbook – ROI</h1>
+        <h2>Harda fakta som pratar for dig</h2>
+        <p>Din chef bryr sig inte om att du "trivs". Hen bryr sig om resultat som gar att mata.</p>
+        <p>Har dokumenterar du bevis. Var specifik. Siffror slår kanslor.</p>
+        <h4>Projekt 1</h4>
+        <p style="font-size:10pt;color:#64748b;">Beskriv ett initiativ du drivit:</p>
+        <div class="fill-box"></div>
+        <p style="font-size:10pt;color:#64748b;">Resultat i kronor, tid eller procent:</p>
+        <div class="fill-box" style="min-height:15mm;"></div>
+        <h4>Projekt 2</h4>
+        <p style="font-size:10pt;color:#64748b;">Beskriv ett initiativ:</p>
+        <div class="fill-box"></div>
+        <p style="font-size:10pt;color:#64748b;">Resultat:</p>
+        <div class="fill-box" style="min-height:15mm;"></div>
+        <div class="footer">Sida 5</div>
+    </div>
+
+    <div class="page">
+        <h2>Marknadsanalys</h2>
+        <p>Vad kostar det att ersatta dig? Anvand data fran facket, SCB eller rekryterare.</p>
+        <h4>Din formella titel</h4>
+        <span class="fill-line"></span>
+        <h4>Ditt faktiska ansvar (vad du EGENTLIGEN gor)</h4>
+        <span class="fill-line"></span>
+        <h4>Marknadsl0n for ditt faktiska ansvar</h4>
+        <span class="fill-line"></span>
+        <span class="source">Kalla: (skriv var du hittade siffran)</span>
+
+        <div class="tip" style="background:#fff1f2;border:1px solid #fecdd3;">
+            <div class="tip-title" style="color:#9f1239;">⚠️ Varning: Är du underbetald?</div>
+            <p style="margin-bottom:2mm;font-size:10pt;">Statistiken ljuger inte. Många i din yrkesgrupp tjänar
+                tusenlappar mer än du tror. Kolla sanningen för ditt yrke nu:</p>
+            <ul style="font-size:9pt;margin-bottom:0;">
+                <li><a href="https://raknalon.se/lon/sjukskoterska"
+                        style="color:#be123c;font-weight:700;text-decoration:none;">Sjuksköterska?</a> Se lönen du
+                    <em>borde</em> ha.</li>
+                <li><a href="https://raknalon.se/lon/civilingenjor"
+                        style="color:#be123c;font-weight:700;text-decoration:none;">Ingenjör?</a> Du förlorar mest på
+                    att stanna. Se siffrorna.</li>
+                <li><a href="https://raknalon.se/lon/larare"
+                        style="color:#be123c;font-weight:700;text-decoration:none;">Lärare?</a> Din lönekarriär är
+                    trasig. Hitta din nivå.</li>
+                <li><a href="https://raknalon.se/lon/ekonom"
+                        style="color:#be123c;font-weight:700;text-decoration:none;">Ekonom?</a> Se gapet mellan dig och
+                    marknaden.</li>
+            </ul>
+        </div>
+
+        <h3>Din beraknade Lojalitetsskatt per ar</h3>
+        <div class="box">
+            <span class="fill-line"></span>
+        </div>
+        <div class="footer">Sida 6</div>
+    </div>
+
+    <!-- P7-8: WORKBOOK SOFT -->
+    <div class="page">
+        <h1>Kapitel 4: Workbook – Risk</h1>
+        <h2>Det tysta vardet</h2>
+        <p>Chefer hatar kaos. Om du forsvinner, vad gar sonder? Vem maste de trana upp? Det har ar ditt dolda varde –
+            och det ar ofta storre an du tror.</p>
+        <h4>Problemlosning</h4>
+        <p style="font-size:10pt;color:#64748b;">Problem du lost tyst, innan de nadde ledningen:</p>
+        <div class="fill-box" style="min-height:30mm;"></div>
+        <h4>Kunskapsmonopol</h4>
+        <p style="font-size:10pt;color:#64748b;">System, processer eller relationer som bara du beharskar:</p>
+        <div class="fill-box" style="min-height:25mm;"></div>
+        <div class="footer">Sida 7</div>
+    </div>
+
+    <div class="page">
+        <h2>Socialt Kapital</h2>
+        <p>Extern validering vatten mer an sjalvberom. Samla citat.</p>
+        <div class="fill-box" style="min-height:35mm;"></div>
+        <h3>Din Vardeproposition</h3>
+        <p>Tva meningar. Detta ar din oppning.</p>
+        <div class="fill-box" style="min-height:20mm;"></div>
+        <div class="footer">Sida 8</div>
+    </div>
+
+    <!-- P9-10: SYSTEM -->
+    <div class="page">
+        <h1>Kapitel 5: Svenska Modellen</h1>
+        <h2>Hur systemet fungerar (och hur du navigerar det)</h2>
+        <p>Sverige har ett unikt lonesystem. Centralt satts ett "Marke" av industrin – en norm for loneokningstakten. I
+            2025-avtalet ar det 3,4% fran april 2025 och 3,0% fran april 2026.</p>
+        <div class="script">
+            <div class="script-label they">Chefen sager:</div>
+            <div class="script-text">"Tyvarr, potten ar 3,2% i ar. Mina hander ar bundna."</div>
+        </div>
+        <h3>Ar det sant?</h3>
+        <p>Delvis. Market ar en norm for kollektiv loneutveckling, inte ett juridiskt tak for individer. Det finns inget
+            i lag eller avtal som hindrar hogre okningar for enskilda.</p>
+        <p>Men – och detta ar viktigt – foretag har ofta interna griller, budgetar och rattvise-policies som begransar
+            friheten. Din chef ljuger kanske inte. Men hen berattar inte heller hela sanningen.</p>
+        <div class="box">
+            <strong>Nyckelbegrepp:</strong><br>
+            <strong>Market:</strong> Industrins rekommenderade okningstakt<br>
+            <strong>Potten:</strong> Foretagens interna budget<br>
+            <strong>Loneglidning:</strong> Okningar utover avtalad niva (fullt lagligt)
+        </div>
+        <span class="source">Kalla: Medlingsinstitutet, ekolex.se</span>
+        <div class="footer">Sida 9</div>
+    </div>
+
+    <div class="page">
+        <h1>Kapitel 6: Revision vs Justering</h1>
+        <h2>Byt kategori for att vinna</h2>
+        <h3>Lonerevision</h3>
+        <ul>
+            <li>Sker en gang per ar</li>
+            <li>Alla far en liten del av potten</li>
+            <li>Typiskt resultat: 2-4%</li>
+        </ul>
+        <h3>Lonejustering</h3>
+        <ul>
+            <li>Sker utanfor ordinarie revision</li>
+            <li>Baseras pa forandrat ansvar eller felaktig vardering</li>
+            <li>Typiskt resultat: 5-20%</li>
+        </ul>
+        <p>Om du vill ha en rejal okning maste du placera dig i justering-kategorin. Du ber inte om "din del av potten".
+            Du flaggar att din lon inte langre matchar din roll.</p>
+        <div class="tip">
+            <div class="tip-title">Formulering</div>
+            "Min roll har forandrats vasentligt sedan min lon sattes. Vi behover titta pa en justering for att matcha
+            mitt nuvarande ansvar – inte bara en revision."
+        </div>
+        <div class="footer">Sida 10</div>
+    </div>
+
+    <!-- P11: ANCRAGE -->
+    <div class="page">
+        <h1>Kapitel 7: Ancrage</h1>
+        <h2>Den forsta siffran formar hela samtalet</h2>
+        <p>Forskning inom forhandlingspsykologi visar att det forsta budet ofta paverkar slutresultatet
+            oproportionerligt mycket. Detta kallas "anchoring effect".</p>
+        <p>Manga ar radda for att saga fel siffra. De vantar. De later chefen ga forst. Det ar ett misstag.</p>
+        <div class="box">
+            <strong>Teknik:</strong><br>
+            Om du vill ha 48 000, sag inte 48 000.<br>
+            Sag: "Baserat pa min marknadsanalys ligger roller med detta ansvar pa 50 000-55 000."<br>
+            Plotsligt ar 48 000 ett "bra erbjudande" for bada parter.
+        </div>
+        <h3>Din ovning</h3>
+        <h4>Ditt verkliga mal</h4>
+        <span class="fill-line"></span>
+        <h4>Ditt ankare (10-15% hogre)</h4>
+        <span class="fill-line"></span>
+        <span class="source">Kalla: Kahneman & Tversky, "Judgment under Uncertainty"</span>
+        <div class="footer">Sida 11</div>
+    </div>
+
+    <!-- P12: SILENCE -->
+    <div class="page">
+        <h1>Kapitel 8: Tystnadens Makt</h1>
+        <h2>Det svaraste verktyget</h2>
+        <p>Nar du har stallt ditt krav, gor det absolut svaraste som finns:</p>
+        <h3 style="text-align:center;font-size:16pt;margin:12mm 0;">HALL TYST.</h3>
+        <p>Rakna tyst till 10. Manniskor hatar tystnad. De vill fylla den.</p>
+        <div class="script">
+            <div class="script-label you">Du sager:</div>
+            <div class="script-text">"Baserat pa min analys tycker jag att 52 000 vore rimligt."</div>
+        </div>
+        <p>Sen: ingenting. Le vanligt. Vanta.</p>
+        <h3>Vad som ofta hander</h3>
+        <p>De fyller tystnaden sjalva. Ofta med medgivanden:</p>
+        <ul>
+            <li>"Ja, alltsa, vi har ju en viss buffert men..."</li>
+            <li>"Jag ska se vad jag kan gora."</li>
+        </ul>
+        <div class="tip">
+            <div class="tip-title">Varning</div>
+            De flesta forstor sin forhandling genom att fylla tystnaden sjalva: "...men jag forstar om det ar svart med
+            budget..."<br>
+            Gor. Inte. Det.
+        </div>
+        <div class="footer">Sida 12</div>
+    </div>
+
+    <!-- P13: LABELING -->
+    <div class="page">
+        <h1>Kapitel 9: Labeling</h1>
+        <h2>Validera for att avvapna</h2>
+        <p>Chris Voss, tidigare FBI-forhandlare, lar en kraftfull teknik: istallet for att mota motstand med logik, mota
+            det med empati.</p>
+        <p>Om chefen ser stressad ut, sag:</p>
+        <div class="script">
+            <div class="script-label you">Du sager:</div>
+            <div class="script-text">"Det verkar som att du sitter i en svar sits med budgetkraven i ar."</div>
+        </div>
+        <p><strong>Effekt:</strong> Chefen kanner sig forstadd. Garden sanks. Nu ar ni allierade mot "budgeten" – inte
+            mot varandra.</p>
+        <h3>Fler exempel</h3>
+        <ul>
+            <li>"Det later som att det varit en tuff period for hela avdelningen."</li>
+            <li>"Jag forstar att det har satter dig i en kinkig position."</li>
+        </ul>
+        <div class="box">
+            <strong>Varfor det fungerar:</strong><br>
+            Manniskor vill kanna sig sedda. Nar du validerar deras kanslor forst, blir de mer benapna att lyssna pa din
+            sak.
+        </div>
+        <span class="source">Kalla: Chris Voss, "Never Split the Difference"</span>
+        <div class="footer">Sida 13</div>
+    </div>
+
+    <!-- P14: BRIEFCASE -->
+    <div class="page">
+        <h1>Kapitel 10: Briefcase Technique</h1>
+        <h2>Overraska med forberedelse</h2>
+        <p>Ramit Sethi populariserade denna teknik. Den separerar proffs fran amatorer.</p>
+        <h3>Scenariot</h3>
+        <p>Ni diskuterar lon. Det gar trogt. Chefen tvekar.</p>
+        <div class="script">
+            <div class="script-label you">Du sager:</div>
+            <div class="script-text">"Jag forstar att det ar ett stort steg. Men jag har funderat pa vad jag ska
+                leverera nasta kvartal for att motivera detta."</div>
+        </div>
+        <p>Och sa tar du fram ett papper – dina Workbook-sidor.</p>
+        <div class="box">
+            <strong>Effekten:</strong><br>
+            99% av anstallda: "Jag vill ha mer pengar."<br>
+            Du: "Har ar min plan for hur jag tjanar in pengarna at dig."<br>
+            Det ar nastan omojligt att saga nej till.
+        </div>
+        <h3>Din 90-dagarsplan</h3>
+        <h4>Manad 1</h4>
+        <span class="fill-line"></span>
+        <h4>Manad 2</h4>
+        <span class="fill-line"></span>
+        <h4>Manad 3</h4>
+        <span class="fill-line"></span>
+        <span class="source">Kalla: Ramit Sethi, "I Will Teach You to Be Rich"</span>
+        <div class="footer">Sida 14</div>
+    </div>
+
+    <!-- P15: TIMING -->
+    <div class="page">
+        <h1>Kapitel 11: Timing</h1>
+        <h2>Nar du ska fraga</h2>
+        <h3>Basta tidpunkter</h3>
+        <ul>
+            <li><strong>Efter stor leverans:</strong> Du har just visat varde.</li>
+            <li><strong>Fore budgetcykel:</strong> Pengarna finns fortfarande.</li>
+            <li><strong>Efter positiv feedback:</strong> Chefen ar i ratt sinne.</li>
+        </ul>
+        <h3>Samsta tidpunkter</h3>
+        <ul>
+            <li>Mitt i en kris</li>
+            <li>Precis efter uppsagningar</li>
+            <li>Fredag eftermiddag</li>
+        </ul>
+        <div class="tip">
+            <div class="tip-title">Strategi</div>
+            Boka motet 2-3 manader fore ordinarie lonerevision. Da har chefen tid att losa finansieringen.
+        </div>
+        <div class="footer">Sida 15</div>
+    </div>
+
+    <!-- P16: EMAIL -->
+    <div class="page">
+        <h1>Kapitel 12: E-postmallen</h1>
+        <h2>Satt agendan i forvag</h2>
+        <p>Skicka detta 1 vecka fore motet. Det visar professionalism och ger chefen tid att forbereda sig.</p>
+        <div class="box" style="background:white;border:1px solid var(--border);">
+            <strong>Amne:</strong> Infor kommande lönedialog<br><br>
+            Hej [Chef],<br><br>
+            Jag vill boka ett mote for att diskutera min lonesituation. Under aret har jag bland annat:<br>
+            - [Punkt 1 fran Workbook]<br>
+            - [Punkt 2 fran Workbook]<br><br>
+            Jag har ocksa tittat pa marknadslaget och vill prata om hur vi kan sakerstalla att min lon speglar mitt
+            nuvarande ansvar.<br><br>
+            Passar nasta torsdag kl 10?<br><br>
+            Mvh,<br>
+            [Namn]
+        </div>
+        <h3>Din anpassade version</h3>
+        <div class="fill-box" style="min-height:40mm;"></div>
+        <div class="footer">Sida 16</div>
+    </div>
+
+    <!-- P17: SCRIPT -->
+    <div class="page">
+        <h1>Kapitel 13: Manuset</h1>
+        <h2>Ord for ord</h2>
+        <h3>Fas 1: Satt tonen</h3>
+        <div class="script">
+            <div class="script-label you">Du sager:</div>
+            <div class="script-text">"Jag vet att det ar hektiskt nu, och jag uppskattar att du tar dig tid. Jag trivs
+                verkligen har och vill sakerstalla att jag fortsatter leverera pa topp."</div>
+        </div>
+        <h3>Fas 2: Visa varde</h3>
+        <div class="script">
+            <div class="script-label you">Du sager:</div>
+            <div class="script-text">"Jag har sammanstalt vad jag gjort det senaste aret. [Visa Workbook.] Sarskilt
+                projektet med X som sparade oss Y kr."</div>
+        </div>
+        <h3>Fas 3: Ankra</h3>
+        <div class="script">
+            <div class="script-label you">Du sager:</div>
+            <div class="script-text">"Jag har analyserat marknaden. Roller med detta ansvar ligger pa 50-55k. Med tanke
+                pa mina resultat tycker jag att 52k ar rimligt."</div>
+        </div>
+        <h3>Fas 4: Tystnad</h3>
+        <p><strong>Hall kaftan. Le. Vanta.</strong></p>
+        <div class="footer">Sida 17</div>
+    </div>
+
+    <!-- P18: OBJECTIONS -->
+    <div class="page">
+        <h1>Kapitel 14: Invandningar</h1>
+        <h2>Nar de sager nej</h2>
+        <div class="script">
+            <div class="script-label they">De sager:</div>
+            <div class="script-text">"Det finns ingen budget."</div>
+        </div>
+        <div class="script">
+            <div class="script-label you">Du svarar:</div>
+            <div class="script-text">"Jag forstar. Men om vi lagger budgeten at sidan – haller du med om att min
+                prestation motsvarar den nivan?"</div>
+        </div>
+        <div class="script">
+            <div class="script-label they">De sager:</div>
+            <div class="script-text">"Det vore orattvist mot de andra."</div>
+        </div>
+        <div class="script">
+            <div class="script-label you">Du svarar:</div>
+            <div class="script-text">"Jag diskuterar min individuella prestation. Jag litar pa att du hanterar varje
+                person baserat pa deras bidrag."</div>
+        </div>
+        <div class="script">
+            <div class="script-label they">De sager:</div>
+            <div class="script-text">"Kanske nasta ar."</div>
+        </div>
+        <div class="script">
+            <div class="script-label you">Du svarar:</div>
+            <div class="script-text">"Jag behover en konkret plan. Vad exakt kravs de kommande 6 manaderna? Lat oss
+                skriva ner det nu."</div>
+        </div>
+        <div class="footer">Sida 18</div>
+    </div>
+
+    <!-- P19: PLAN B -->
+    <div class="page">
+        <h1>Kapitel 15: Plan B</h1>
+        <h2>Nar pengarna verkligen ar slut</h2>
+        <p>Ibland ar kassan faktiskt tom. Da forhandlar du om annat.</p>
+        <h3>Alternativ valuta</h3>
+        <ul>
+            <li><strong>Extra semesterdagar</strong> (vart ca 0,5% av arslon per dag)</li>
+            <li><strong>Hogre pensionsavsattning</strong></li>
+            <li><strong>Titelbyte</strong> (okar ditt marknadsvarde)</li>
+            <li><strong>Betald utbildning eller certifiering</strong></li>
+            <li><strong>Flexibilitet eller hemarbete</strong></li>
+            <li><strong>Engangsbonus</strong></li>
+        </ul>
+        <h3>BATNA</h3>
+        <p>Best Alternative To Negotiated Agreement. Vet ditt "walk-away"-pris for du gar in.</p>
+        <div class="box">
+            <strong>Min BATNA:</strong><br>
+            <span class="fill-line" style="margin-top:3mm;"></span>
+        </div>
+        <div class="footer">Sida 19</div>
+    </div>
+
+    <!-- P20: CHECKLIST -->
+    <div class="page">
+        <h1>Kapitel 16: Checklistan</h1>
+        <h2>Fore motet</h2>
+        <div class="box" style="background:white;border:2px solid var(--primary);padding:6mm;">
+            <div style="display:flex;gap:4mm;align-items:flex-start;margin-bottom:4mm;">
+                <div style="width:5mm;height:5mm;border:1px solid var(--primary);margin-top:1mm;"></div>
+                <div>Jag har fyllt i min Workbook och kan mina siffror</div>
+            </div>
+            <div style="display:flex;gap:4mm;align-items:flex-start;margin-bottom:4mm;">
+                <div style="width:5mm;height:5mm;border:1px solid var(--primary);margin-top:1mm;"></div>
+                <div>Jag har ovrat oppningsrepliken minst 3 ganger</div>
+            </div>
+            <div style="display:flex;gap:4mm;align-items:flex-start;margin-bottom:4mm;">
+                <div style="width:5mm;height:5mm;border:1px solid var(--primary);margin-top:1mm;"></div>
+                <div>Jag lovar vara tyst efter att jag stallt mitt krav</div>
+            </div>
+            <div style="display:flex;gap:4mm;align-items:flex-start;margin-bottom:4mm;">
+                <div style="width:5mm;height:5mm;border:1px solid var(--primary);margin-top:1mm;"></div>
+                <div>Jag vet mitt golv (lagsta acceptabla niva)</div>
+            </div>
+            <div style="display:flex;gap:4mm;align-items:flex-start;margin-bottom:4mm;">
+                <div style="width:5mm;height:5mm;border:1px solid var(--primary);margin-top:1mm;"></div>
+                <div>Jag har skickat forberedande e-post</div>
+            </div>
+            <div style="margin-top:12mm;border-top:1px solid black;width:50%;padding-top:3mm;">
+                Signatur
+            </div>
+        </div>
+        <div class="footer">Sida 20</div>
+    </div>
+
+    <!-- P21: EXAMPLE -->
+    <div class="page">
+        <h1>Kapitel 17: Ifyllt Exempel</h1>
+        <h2>Sa har kan det se ut</h2>
+        <div class="example-box">
+            <div class="example-title">Projekt 1</div>
+            <strong>Initiativ:</strong> Automatiserade manuell rapportgenerering for salyteamet<br>
+            <strong>Resultat:</strong> Sparade 8 timmar per vecka (416 timmar/ar). Med en genomsnittlig lonekostnad pa
+            350 kr/timme motsvarar detta ca 145 000 kr/ar i sparad arbetstid.
+        </div>
+        <div class="example-box">
+            <div class="example-title">Projekt 2</div>
+            <strong>Initiativ:</strong> Tog over projektledning for lansering av ny produkt nar ordinarie PL gick pa
+            foraldraledighet<br>
+            <strong>Resultat:</strong> Produkten lanserades i tid och genererade 2,3 MSEK i intakter forsta kvartalet.
+            Ingen extern interimskonsult behovdes (uppskattad kostnad: 180 000 kr).
+        </div>
+        <div class="example-box">
+            <div class="example-title">Marknadsanalys</div>
+            <strong>Formell titel:</strong> Utvecklare<br>
+            <strong>Faktiskt ansvar:</strong> Tech Lead, arkitekturbeslut, mentorskap<br>
+            <strong>Marknadsl0n for faktiskt ansvar:</strong> 55 000 - 62 000 kr/man (Kalla: Unionen lonestatistik,
+            IT-sektorn Stockholm)
+        </div>
+        <div class="footer">Sida 21</div>
+    </div>
+
+    <!-- P22: SOURCES -->
+    <div class="page">
+        <h1>Kapitel 18: Kallor och Metodik</h1>
+        <h2>Fakta bakom guiden</h2>
+        <h3>Lonestatistik</h3>
+        <ul>
+            <li><strong>Sveriges Ingenjorer (2024):</strong> Jobbytare fick i snitt 11,5% loneokning, stannar-kvar fick
+                5,5% (privat sektor).<br><span
+                    class="source">sverigesingenjorer.se/lon/forhandla-din-lon/forhandla-din-lon-nar-du-byter-jobb/</span>
+            </li>
+        </ul>
+        <h3>Industriavtalet 2025-2026</h3>
+        <ul>
+            <li><strong>Market:</strong> 3,4% fran 1 april 2025, 3,0% fran 1 april 2026<br><span
+                    class="source">sverigesingenjorer.se/opinion-och-press/nyheter/nya-avtal-for-industrin-klara/</span>
+            </li>
+        </ul>
+        <h3>Definitioner</h3>
+        <ul>
+            <li><strong>Loneglidning:</strong> Loneokning utover avtalad niva.<br><span
+                    class="source">ekolex.se/definition/loneglidning</span></li>
+        </ul>
+        <h3>Forhandlingspsykologi</h3>
+        <ul>
+            <li><strong>Never Split the Difference</strong> – Chris Voss (labeling, taktisk empati)</li>
+            <li><strong>Influence</strong> – Robert Cialdini (reciprocitet, auktoritet)</li>
+            <li><strong>I Will Teach You to Be Rich</strong> – Ramit Sethi (Briefcase Technique)</li>
+            <li><strong>Judgment under Uncertainty</strong> – Kahneman & Tversky (anchoring)</li>
+        </ul>
+        <h3>Svenska resurser</h3>
+        <ul>
+            <li>SCB Lonesok: scb.se</li>
+            <li>Unionen Lonestatistik: unionen.se/lonestatistik</li>
+            <li>Medlingsinstitutet: mi.se</li>
+        </ul>
+        <h3>Verktyg</h3>
+        <ul>
+            <li><strong>Löne-Speedrunner:</strong> raknalon.se/verktyg/lone-speedrunner</li>
+        </ul>
+        <div style="margin-top:15mm;text-align:center;font-size:12pt;color:var(--accent);font-weight:700;">
+            LYCKA TILL. DU AR VARD DET.
+        </div>
+        <div class="footer">Sida 22 – Raknalon.se</div>
+    </div>
+
+</body>
+
+</html>

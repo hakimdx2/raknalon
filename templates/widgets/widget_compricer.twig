@@ -1,0 +1,102 @@
+{# Widget 3: Compricer - Comparateur de prêt #}
+{# Autonome - Contrôlé par widgets.compricer.enabled #}
+
+{% if widgets.compricer.enabled %}
+<div class="affiliate-widget compricer-widget mt-12 bg-white rounded-2xl shadow-sm ring-1 ring-slate-900/5 p-6 sm:p-8" 
+     x-data="loanCalculator{{ profession.slug|replace({'-': ''}) }}()" 
+     data-widget="compricer">
+    
+    {# Badge Annons - OBLIGATOIRE pour compliance #}
+    <span class="inline-block bg-slate-200 text-slate-600 text-xs font-medium px-2 py-0.5 rounded uppercase tracking-wide mb-4">Annons</span>
+    
+    <h3 class="text-xl font-bold text-slate-900 mb-2">Vad kan du låna med din lön?</h3>
+    <p class="text-slate-600 text-sm mb-6">Beräkna din lånepotential baserat på din inkomst som {{ profession.title|lower }}</p>
+    
+    <div class="space-y-4">
+        <div>
+            <label for="loan-salary-{{ profession.slug }}" class="block text-sm font-medium text-slate-700 mb-1">Din månadslön före skatt (kr)</label>
+            <div class="relative rounded-lg shadow-sm">
+                <input type="number" 
+                       id="loan-salary-{{ profession.slug }}" 
+                       x-model="salary" 
+                       placeholder="{{ profession.median_salary }}"
+                       class="block w-full rounded-lg border-0 py-3.5 pl-4 pr-16 text-slate-900 ring-1 ring-inset ring-slate-200 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-lg font-medium">
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
+                    <span class="text-slate-500 sm:text-sm font-medium">kr/mån</span>
+                </div>
+            </div>
+        </div>
+        
+        <button @click="calculate()" 
+                type="button"
+                class="w-full bg-indigo-600 text-white rounded-lg py-3.5 px-4 hover:bg-indigo-500 font-bold transition-colors cursor-pointer shadow-sm">
+            Beräkna
+        </button>
+    </div>
+    
+    {# Résultat #}
+    <div x-show="result" x-transition class="mt-6 p-4 bg-indigo-50 rounded-xl border border-indigo-100">
+        <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div>
+                <p class="text-indigo-800 font-medium" x-text="resultMessage"></p>
+                
+                <a href="{{ widgets.compricer.affiliate_url }}" 
+                   rel="sponsored noopener" 
+                   target="_blank"
+                   data-affiliate="compricer"
+                   class="inline-flex items-center gap-2 mt-4 bg-blue-600 text-white rounded-lg py-3 px-5 hover:bg-blue-500 font-bold transition-colors shadow-sm">
+                    Jämför lån hos Compricer
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    {# Warning Crédit - OBLIGATOIRE selon Konsumentkreditlagen #}
+    <div class="mt-6 bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg">
+        <div class="flex items-start gap-2">
+            <span class="text-amber-600 text-lg">⚠️</span>
+            <div>
+                <p class="text-sm text-amber-800">
+                    <strong>Räkneexempel:</strong> 
+                    Lån {{ widgets.compricer.credit_example.amount|number_format(0, ',', ' ') }} kr, 
+                    löptid {{ widgets.compricer.credit_example.duration_years }} år, 
+                    rörlig ränta {{ widgets.compricer.credit_example.rate_nominal }}%, 
+                    uppläggningsavgift {{ widgets.compricer.credit_example.setup_fee }} kr, 
+                    aviavgift {{ widgets.compricer.credit_example.monthly_fee }} kr/mån. 
+                    Effektiv ränta {{ widgets.compricer.credit_example.rate_effective }}%. 
+                    Totalt att betala {{ widgets.compricer.credit_example.total_to_pay|number_format(0, ',', ' ') }} kr.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    {# Mention légale #}
+    <p class="text-xs text-slate-500 mt-4">
+        Annons i samarbete med Compricer
+    </p>
+</div>
+
+<script>
+function loanCalculator{{ profession.slug|replace({'-': ''}) }}() {
+    return {
+        salary: '{{ profession.median_salary }}',
+        result: false,
+        resultMessage: '',
+        
+        calculate() {
+            if (!this.salary || this.salary <= 0) return;
+            
+            const loanCapacity = parseInt(this.salary) * 5;
+            this.result = true;
+            this.resultMessage = 'Med en månadslön på ' + parseInt(this.salary).toLocaleString('sv-SE') + ' kr kan du uppskattningsvis låna upp till ' + loanCapacity.toLocaleString('sv-SE') + ' kr.';
+        }
+    }
+}
+</script>
+{% endif %}

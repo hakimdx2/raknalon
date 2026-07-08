@@ -1,0 +1,358 @@
+{% extends "home.twig" %}
+
+{% block title %}Lön efter skatt 2026 - Räkna ut din nettolön | Räkna Lön{% endblock %}
+
+{% block meta %}
+<meta name="description" content="Räkna ut din lön efter skatt 2026. Gratis lönekalkylator visar exakt nettolön, skatt & jobbskatteavdrag. Uppdaterad med 2026 års skatteregler ✓">
+<link rel="canonical" href="https://raknalon.se/lon-efter-skatt">
+{% endblock %}
+
+{% block content %}
+<article class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    
+    <!-- Hero Section -->
+    <header class="text-center mb-16">
+        <span class="text-indigo-600 font-semibold tracking-wide uppercase text-sm">Guide 2026</span>
+        <h1 class="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+            Lön efter skatt 2026
+        </h1>
+        <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+            Din bruttolön minus skatt = din nettolön. Så enkelt är det. Tja, nästan... 😅
+        </p>
+    </header>
+
+    <!-- Table of Contents -->
+    <nav class="mb-12 p-6 bg-gray-50 rounded-xl border border-gray-100">
+        <h2 class="text-lg font-bold text-gray-900 mb-4">📋 Innehåll</h2>
+        <ul class="grid sm:grid-cols-2 gap-2 text-sm">
+            <li><a href="#kalkylator" class="text-indigo-600 hover:underline">🧮 Lönekalkylator</a></li>
+            <li><a href="#skatter-2026" class="text-indigo-600 hover:underline">📊 Skattesatser 2026</a></li>
+            <li><a href="#berakna-steg" class="text-indigo-600 hover:underline">🔢 Räkna steg för steg</a></li>
+            <li><a href="#exempel" class="text-indigo-600 hover:underline">💰 Löneexempel</a></li>
+            <li><a href="#kommuner" class="text-indigo-600 hover:underline">🏠 Kommuner lägst/högst skatt</a></li>
+            <li><a href="#faq" class="text-indigo-600 hover:underline">❓ Vanliga frågor</a></li>
+        </ul>
+    </nav>
+
+    <div class="prose prose-lg prose-indigo mx-auto">
+        
+        <!-- Intro -->
+        <div class="my-8 bg-gradient-to-r from-indigo-50 to-purple-50 border-l-4 border-indigo-500 p-6 rounded-r-lg">
+            <p class="text-lg text-gray-700 mb-0">
+                <strong>Spoiler alert:</strong> Staten tar ungefär en tredjedel av din lön. Men oroa dig inte – du får världens bästa föräldraförsäkring, gratis sjukvård och riktigt snygga cykelvägar i retur! 🇸🇪
+            </p>
+        </div>
+
+        <p>I den här guiden förklarar vi exakt hur mycket skatt du betalar på din lön 2026. Vi lovar att göra det så okomplicerat som möjligt. (Typ som IKEA-instruktioner, fast utan överblivna skruvar.)</p>
+
+        <!-- Section: Calculator embed -->
+        <section id="kalkylator" class="my-12 not-prose">
+            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-8 text-center text-white">
+                <h2 class="text-2xl font-bold mb-4">🧮 Räkna ut din nettolön</h2>
+                <p class="text-indigo-100 mb-6">Skriv in din bruttolön och se vad du får ut efter skatt, baserat på din kommun.</p>
+                <a href="/" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-lg font-medium rounded-lg text-indigo-600 bg-white hover:bg-gray-100 transition-colors">
+                    Öppna kalkylatorn →
+                </a>
+            </div>
+        </section>
+
+        <!-- Section: Tax rates 2026 -->
+        <section id="skatter-2026">
+            <h2>📊 Skattesatser 2026: Så här mycket försvinner</h2>
+            
+            <p>Sverige har ett av världens högsta skattetryck. Men istället för att gråta, låt oss förstå systemet!</p>
+
+            <h3>Kommunalskatt (den stora bidragstagaren)</h3>
+            <div class="overflow-x-auto not-prose">
+                <table class="min-w-full divide-y divide-gray-300 shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="py-3 pl-4 text-left text-sm font-semibold text-gray-900">Nivå</th>
+                            <th class="px-3 py-3 text-right text-sm font-semibold text-gray-900">Skattesats</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 bg-white">
+                        <tr><td class="py-3 pl-4 font-medium">Rikssnitt</td><td class="text-right px-3 font-bold text-indigo-600">32,38%</td></tr>
+                        <tr class="bg-green-50"><td class="py-3 pl-4">Lägst (Österåker)</td><td class="text-right px-3 text-green-600 font-bold">28,93%</td></tr>
+                        <tr class="bg-red-50"><td class="py-3 pl-4">Högst (Dorotea)</td><td class="text-right px-3 text-red-600 font-bold">35,65%</td></tr>
+                        <tr><td class="py-3 pl-4">Stockholm</td><td class="text-right px-3">31,58%</td></tr>
+                        <tr><td class="py-3 pl-4">Göteborg</td><td class="text-right px-3">33,97%</td></tr>
+                        <tr><td class="py-3 pl-4">Malmö</td><td class="text-right px-3">33,76%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="my-6 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                <p class="text-sm mb-0">💡 <strong>Fun fact:</strong> Skillnaden mellan Österåker och Dorotea = <strong>86 000 kr per år</strong> på en 50 000 kr-lön. Det är typ en bra begagnad bil! 🚗</p>
+            </div>
+
+            <h3>Statlig inkomstskatt (för höginkomsttagare)</h3>
+            <ul>
+                <li><strong>Brytpunkt 2026:</strong> 55 033 kr/mån (660 400 kr/år)</li>
+                <li><strong>Skattesats:</strong> 20% på allt över brytpunkten</li>
+            </ul>
+            <p>Tjänar du under 55 000 kr/mån? <strong>Grattis, du slipper statlig skatt!</strong> 🎉<br>
+            Tjänar du 80 000 kr/mån? Välkommen till 52-55% marginalskatt... 😅</p>
+
+            <h3>Jobbskatteavdrag (Staten ger tillbaka lite)</h3>
+            <ul>
+                <li><strong>Max avdrag:</strong> ~4 366 kr/mån</li>
+                <li><strong>Nytt 2026:</strong> +400 kr/mån extra för vanliga löntagare!</li>
+            </ul>
+            <p>Jobbskatteavdraget är statens sätt att säga "bra jobbat att du jobbar!". Ju mer du jobbar, desto större avdrag (upp till en viss gräns).</p>
+        </section>
+
+        <!-- Section: Step by step -->
+        <section id="berakna-steg">
+            <h2>🔢 Räkna ut lön efter skatt: Steg för steg</h2>
+            <p>Här är formeln som Skatteverket använder. Häng med!</p>
+            
+            <div class="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm">
+                Nettolön = Bruttolön - Kommunalskatt - Statlig skatt + Jobbskatteavdrag
+            </div>
+
+            <h3>1️⃣ Starta med bruttolön</h3>
+            <p>Din lön innan någon petat på den. T.ex. 40 000 kr.</p>
+
+            <h3>2️⃣ Dra av grundavdraget</h3>
+            <p>Alla får ett skatteavdrag som minskar din beskattningsbara inkomst (~17 300 - 45 200 kr/år beroende på inkomst).</p>
+
+            <h3>3️⃣ Räkna ut kommunalskatten</h3>
+            <p>Beskattningsbar inkomst × kommunalskatt (t.ex. 32,38%)</p>
+
+            <h3>4️⃣ Statlig skatt (om du tjänar mycket)</h3>
+            <p>(Inkomst över 660 400 kr/år) × 20%</p>
+
+            <h3>5️⃣ Lägg till jobbskatteavdraget</h3>
+            <p>Det här är din vän! Upp till 4 366 kr/mån tillbaka.</p>
+
+            <h3>6️⃣ = Nettolön! 💵</h3>
+            <p>Det som landar på kontot den 25:e. Party! 🎊</p>
+        </section>
+
+        <!-- Section: Examples -->
+        <section id="exempel">
+            <h2>💰 Löneexempel 2026: Vad får du behålla?</h2>
+            
+            <div class="overflow-x-auto not-prose">
+                <table class="min-w-full divide-y divide-gray-300 shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+                    <thead class="bg-gray-900 text-white">
+                        <tr>
+                            <th class="py-3 pl-4 text-left text-sm font-semibold">Bruttolön</th>
+                            <th class="px-3 py-3 text-right text-sm font-semibold">Nettolön</th>
+                            <th class="px-3 py-3 text-right text-sm font-semibold">Eff. skatt</th>
+                            <th class="px-3 py-3 text-left text-sm font-semibold">Typiskt yrke</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 bg-white text-sm">
+                        <tr><td class="py-3 pl-4 font-medium">25 000 kr</td><td class="text-right px-3 text-green-600 font-bold">18 500 kr</td><td class="text-right px-3">26%</td><td class="px-3">Ingångslön</td></tr>
+                        <tr class="bg-gray-50"><td class="py-3 pl-4 font-medium">30 000 kr</td><td class="text-right px-3 text-green-600 font-bold">22 200 kr</td><td class="text-right px-3">26%</td><td class="px-3">Undersköterska</td></tr>
+                        <tr><td class="py-3 pl-4 font-medium">35 000 kr</td><td class="text-right px-3 text-green-600 font-bold">25 800 kr</td><td class="text-right px-3">26%</td><td class="px-3">Elektriker</td></tr>
+                        <tr class="bg-gray-50"><td class="py-3 pl-4 font-medium">40 000 kr</td><td class="text-right px-3 text-green-600 font-bold">28 100 kr</td><td class="text-right px-3">30%</td><td class="px-3">Sjuksköterska</td></tr>
+                        <tr><td class="py-3 pl-4 font-medium">45 000 kr</td><td class="text-right px-3 text-green-600 font-bold">31 500 kr</td><td class="text-right px-3">30%</td><td class="px-3">Ingenjör</td></tr>
+                        <tr class="bg-gray-50"><td class="py-3 pl-4 font-medium">50 000 kr</td><td class="text-right px-3 text-green-600 font-bold">34 900 kr</td><td class="text-right px-3">30%</td><td class="px-3">Strax under brytpunkt</td></tr>
+                        <tr><td class="py-3 pl-4 font-medium">60 000 kr</td><td class="text-right px-3 text-green-600 font-bold">40 200 kr</td><td class="text-right px-3">33%</td><td class="px-3">IT-arkitekt</td></tr>
+                        <tr class="bg-yellow-50"><td class="py-3 pl-4 font-medium">80 000 kr</td><td class="text-right px-3 text-green-600 font-bold">51 400 kr</td><td class="text-right px-3 text-red-600">36%</td><td class="px-3">VD, överläkare</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-sm text-gray-500 mt-2">⚠️ Beräknat med rikssnitt 32,38%. Din kommun kan ge mer eller mindre!</p>
+        </section>
+
+        <!-- Section: Municipalities -->
+        <section id="kommuner">
+            <h2>🏠 Kommuner med lägst & högst skatt 2026</h2>
+            <p><strong>Vill du spara pengar? Flytta!</strong> (Vi skämtar... typ.)</p>
+
+            <div class="grid md:grid-cols-2 gap-6 not-prose my-8">
+                <!-- Low tax -->
+                <div class="bg-green-50 rounded-xl p-6 border border-green-200">
+                    <h3 class="text-lg font-bold text-green-800 mb-4">🏆 Top 5 Lägst skatt</h3>
+                    <ol class="space-y-2 text-sm">
+                        <li class="flex justify-between"><span>1. Österåker</span><span class="font-bold text-green-600">28,93%</span></li>
+                        <li class="flex justify-between"><span>2. Kävlinge</span><span class="font-bold">29,59%</span></li>
+                        <li class="flex justify-between"><span>3. Lidingö</span><span class="font-bold">29,67%</span></li>
+                        <li class="flex justify-between"><span>4. Vellinge</span><span class="font-bold">29,68%</span></li>
+                        <li class="flex justify-between"><span>5. Solna</span><span class="font-bold">29,70%</span></li>
+                    </ol>
+                </div>
+                <!-- High tax -->
+                <div class="bg-red-50 rounded-xl p-6 border border-red-200">
+                    <h3 class="text-lg font-bold text-red-800 mb-4">😰 Top 5 Högst skatt</h3>
+                    <ol class="space-y-2 text-sm">
+                        <li class="flex justify-between"><span>1. Nordmaling</span><span class="font-bold text-red-600">36,49%</span></li>
+                        <li class="flex justify-between"><span>2. Dorotea</span><span class="font-bold">35,65%</span></li>
+                        <li class="flex justify-between"><span>3. Vilhelmina</span><span class="font-bold">35,50%</span></li>
+                        <li class="flex justify-between"><span>4. Sorsele</span><span class="font-bold">35,45%</span></li>
+                        <li class="flex justify-between"><span>5. Degerfors</span><span class="font-bold">35,30%</span></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="bg-indigo-100 border border-indigo-200 rounded-lg p-4">
+                <p class="text-sm mb-0">💡 <strong>Insikten?</strong> Bor du i Österåker istället för Dorotea = <strong>86 040 kr mer</strong> i fickan varje år. Det är en fin semester till Maldiverna! 🏝️</p>
+            </div>
+        </section>
+
+        <!-- Section: FAQ -->
+        <section id="faq" class="mt-16">
+            <h2>❓ Vanliga frågor om lön efter skatt</h2>
+            
+            <div class="space-y-4 not-prose" itemscope itemtype="https://schema.org/FAQPage">
+                <!-- FAQ 1 -->
+                <div class="border border-gray-200 rounded-lg p-5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="font-bold text-gray-900 mb-2" itemprop="name">Hur mycket skatt betalar jag på 40 000 kr?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="text-gray-600" itemprop="text">Med en bruttolön på 40 000 kr betalar du cirka 11 900 kr i skatt (efter jobbskatteavdrag) och får ungefär 28 100 kr netto. Det motsvarar en effektiv skatt på ca 30%.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="border border-gray-200 rounded-lg p-5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="font-bold text-gray-900 mb-2" itemprop="name">Vad är skillnaden mellan brutto och netto?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="text-gray-600" itemprop="text">Bruttolön är din lön före skatt – det som står i anställningsavtalet. Nettolön är det som faktiskt landar på ditt bankkonto efter att skatt dragits.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="border border-gray-200 rounded-lg p-5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="font-bold text-gray-900 mb-2" itemprop="name">När börjar statlig skatt?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="text-gray-600" itemprop="text">Statlig inkomstskatt (20%) börjar 2026 när din årsinkomst överstiger 660 400 kr, motsvarande cirka 55 033 kr/mån brutto.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="border border-gray-200 rounded-lg p-5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="font-bold text-gray-900 mb-2" itemprop="name">Hur beskattas bonus och övertid?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="text-gray-600" itemprop="text">Bonus och övertidsersättning beskattas exakt som vanlig lön – det finns inga specialregler. Din marginalskatt avgör vad du får behålla. Tjänar du 80 000 kr/mån? Då blir bara ~45% av bonusen kvar.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="border border-gray-200 rounded-lg p-5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="font-bold text-gray-900 mb-2" itemprop="name">När får jag skatteåterbäring 2026?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="text-gray-600" itemprop="text">Lämnar du in deklarationen digitalt senast 31 mars får du skatteåterbäring redan 7-10 april. Väntar du till 2 maj? Då kommer pengarna i juni. Tips: Registrera ditt bankkonto på Skatteverket.se!</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 6 -->
+                <div class="border border-gray-200 rounded-lg p-5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="font-bold text-gray-900 mb-2" itemprop="name">Vad är jobbskatteavdrag?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="text-gray-600" itemprop="text">Jobbskatteavdraget är en skattereduktion för dig som arbetar. 2026 kan du få upp till 4 366 kr/mån i avdrag. Det innebär att du betalar mindre skatt än vad procentsatsen antyder. Tack staten! 🎉</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 7 -->
+                <div class="border border-gray-200 rounded-lg p-5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="font-bold text-gray-900 mb-2" itemprop="name">Hur räknar jag ut min nettolön?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="text-gray-600" itemprop="text">Enklast: Använd vår lönekalkylator! Manuellt: Ta din bruttolön, dra av kommunalskatt (ca 32%), lägg till jobbskatteavdrag (ca 3-4k), och eventuell statlig skatt om du tjänar över 55k/mån.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 8 -->
+                <div class="border border-gray-200 rounded-lg p-5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="font-bold text-gray-900 mb-2" itemprop="name">Spelar det roll vilken kommun jag bor i?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="text-gray-600" itemprop="text">Absolut! Kommunalskatten varierar från 28,93% (Österåker) till 35,65% (Dorotea). På en 50 000 kr-lön är skillnaden 86 000 kr per år – så ja, det spelar roll!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA: Related professions -->
+        <section class="mt-16 p-8 bg-indigo-50 rounded-2xl border border-indigo-100 not-prose">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Se vad just DU tjänar efter skatt</h3>
+            <p class="text-gray-600 mb-6">Kolla in vår lönestatistik för ditt yrke:</p>
+            <div class="flex flex-wrap gap-2">
+                <a href="/lon/sjukskoterska" class="px-4 py-2 rounded-full bg-white text-sm font-medium text-slate-700 ring-1 ring-slate-200 hover:bg-indigo-100 transition">Sjuksköterska</a>
+                <a href="/lon/lakare" class="px-4 py-2 rounded-full bg-white text-sm font-medium text-slate-700 ring-1 ring-slate-200 hover:bg-indigo-100 transition">Läkare</a>
+                <a href="/lon/elektriker" class="px-4 py-2 rounded-full bg-white text-sm font-medium text-slate-700 ring-1 ring-slate-200 hover:bg-indigo-100 transition">Elektriker</a>
+                <a href="/lon/larare" class="px-4 py-2 rounded-full bg-white text-sm font-medium text-slate-700 ring-1 ring-slate-200 hover:bg-indigo-100 transition">Lärare</a>
+                <a href="/lon/underskoterska" class="px-4 py-2 rounded-full bg-white text-sm font-medium text-slate-700 ring-1 ring-slate-200 hover:bg-indigo-100 transition">Undersköterska</a>
+                <a href="/yrken" class="px-4 py-2 rounded-full bg-indigo-600 text-sm font-medium text-white hover:bg-indigo-500 transition">Alla 180 yrken →</a>
+            </div>
+        </section>
+
+    </div>
+</article>
+
+<!-- JSON-LD FAQPage Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hur mycket skatt betalar jag på 40 000 kr?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Med en bruttolön på 40 000 kr betalar du cirka 11 900 kr i skatt (efter jobbskatteavdrag) och får ungefär 28 100 kr netto. Det motsvarar en effektiv skatt på ca 30%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vad är skillnaden mellan brutto och netto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bruttolön är din lön före skatt – det som står i anställningsavtalet. Nettolön är det som faktiskt landar på ditt bankkonto efter att skatt dragits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "När börjar statlig skatt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Statlig inkomstskatt (20%) börjar 2026 när din årsinkomst överstiger 660 400 kr, motsvarande cirka 55 033 kr/mån brutto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur beskattas bonus och övertid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bonus och övertidsersättning beskattas exakt som vanlig lön – det finns inga specialregler. Din marginalskatt avgör vad du får behålla."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "När får jag skatteåterbäring 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lämnar du in deklarationen digitalt senast 31 mars får du skatteåterbäring redan 7-10 april. Väntar du till 2 maj? Då kommer pengarna i juni."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vad är jobbskatteavdrag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jobbskatteavdraget är en skattereduktion för dig som arbetar. 2026 kan du få upp till 4 366 kr/mån i avdrag."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur räknar jag ut min nettolön?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enklast: Använd vår lönekalkylator! Manuellt: Ta din bruttolön, dra av kommunalskatt (ca 32%), lägg till jobbskatteavdrag (ca 3-4k), och eventuell statlig skatt om du tjänar över 55k/mån."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Spelar det roll vilken kommun jag bor i?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolut! Kommunalskatten varierar från 28,93% (Österåker) till 35,65% (Dorotea). På en 50 000 kr-lön är skillnaden 86 000 kr per år."
+      }
+    }
+  ]
+}
+</script>
+{% endblock %}

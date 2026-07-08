@@ -1,0 +1,200 @@
+{% set has_valid_region_data = false %}
+{% if profession.scb.salary_by_region %}
+	{% for region in profession.scb.salary_by_region %}
+		{% if region.name is defined and region.total is defined %}
+			{% set has_valid_region_data = true %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
+{% if has_valid_region_data %}
+	<div class="my-10" x-data="{ view: 'chart' }">
+		<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+			<h3 id="lon-region" class="">
+				Lön per region
+			</h3>
+			<div class="flex items-center gap-1 bg-slate-100 rounded-lg p-1">
+				<button @click="view = 'chart'" :class="{ 'bg-white shadow text-indigo-600': view === 'chart', 'text-slate-500 hover:text-slate-700': view !== 'chart' }" class="px-3 py-1 text-xs font-medium rounded-md transition-all">Graf</button>
+				<button @click="view = 'table'" :class="{ 'bg-white shadow text-indigo-600': view === 'table', 'text-slate-500 hover:text-slate-700': view !== 'table' }" class="px-3 py-1 text-xs font-medium rounded-md transition-all">Tabell</button>
+			</div>
+		</div>
+
+		<!-- Table View -->
+		<div x-show="view === 'table'" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="overflow-x-auto">
+			<table class="min-w-full divide-y divide-slate-200">
+				<thead>
+					<tr>
+						<th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-slate-900 sm:pl-0">Region</th>
+						<th scope="col" class="px-3 py-3.5 text-right text-sm font-semibold text-slate-900">Snittlön</th>
+						<th scope="col" class="px-3 py-3.5 text-right text-sm font-semibold text-slate-900">Män</th>
+						<th scope="col" class="px-3 py-3.5 text-right text-sm font-semibold text-slate-900">Kvinnor</th>
+					</tr>
+				</thead>
+				<tbody class="divide-y divide-slate-200 text-sm">
+					{% for region in profession.scb.salary_by_region %}
+						<tr class="hover:bg-slate-50 transition-colors">
+							<td class="whitespace-nowrap py-4 pl-4 pr-3 font-medium text-slate-900 sm:pl-0">{{ region.name }}</td>
+							<td class="whitespace-nowrap px-3 py-4 text-right font-bold text-indigo-600">{{ region.total|number_format(0, ' ', ' ') }}
+								kr</td>
+							<td class="whitespace-nowrap px-3 py-4 text-right text-slate-500">{{ region.men|number_format(0, ' ', ' ') }}
+								kr</td>
+							<td class="whitespace-nowrap px-3 py-4 text-right text-slate-500">{{ region.women|number_format(0, ' ', ' ') }}
+								kr</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Chart View -->
+		<div x-show="view === 'chart'" x-cloak class="h-80" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+			<canvas id="salaryRegionChart"></canvas>
+		</div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+const regionCtx = document.getElementById('salaryRegionChart');
+if (regionCtx) {
+new Chart(regionCtx, {
+type: 'bar',
+data: {
+labels: [{% for region in profession.scb.salary_by_region %}'{{ region.name }}'{% if not loop.last %},{% endif %}{% endfor %}],
+datasets: [
+{
+label: 'Totalt',
+data: [{% for region in profession.scb.salary_by_region %}{{ region.total }}{% if not loop.last %},{% endif %}{% endfor %}],
+backgroundColor: 'rgba(79, 70, 229, 0.8)',
+borderRadius: 4
+}, {
+label: 'Män',
+data: [{% for region in profession.scb.salary_by_region %}{{ region.men }}{% if not loop.last %},{% endif %}{% endfor %}],
+backgroundColor: 'rgba(59, 130, 246, 0.6)',
+borderRadius: 4,
+hidden: false
+}, {
+label: 'Kvinnor',
+data: [{% for region in profession.scb.salary_by_region %}{{ region.women }}{% if not loop.last %},{% endif %}{% endfor %}],
+backgroundColor: 'rgba(236, 72, 153, 0.6)',
+borderRadius: 4,
+hidden: false
+}
+]
+},
+options: {
+responsive: true,
+maintainAspectRatio: false,
+interaction: {
+mode: 'index',
+intersect: false
+},
+plugins: {
+legend: {
+position: 'top',
+display: true
+},
+tooltip: {
+callbacks: {
+label: function (context) {
+return context.dataset.label + ': ' + context.formattedValue + ' kr';
+}
+}
+}
+},
+scales: {
+y: {
+beginAtZero: false,
+grid: {
+color: 'rgba(0, 0, 0, 0.05)'
+},
+ticks: {
+font: {
+size: 10
+},
+callback: function (value) {
+return value.toLocaleString('sv-SE');
+}
+}
+},
+x: {
+grid: {
+display: false
+},
+ticks: {
+font: {
+size: 10
+}
+}
+}
+}
+}
+});
+}
+});
+		</script>
+
+		<!-- Dynamic Analysis -->
+		{% set highest_region = null %}
+		{% set lowest_region = null %}
+		{% set max_salary = 0 %}
+		{% set min_salary = 9999999 %}
+
+		{% for region in profession.scb.salary_by_region %}
+			{% if region.total > max_salary %}
+				{% set max_salary = region.total %}
+				{% set highest_region = region %}
+			{% endif %}
+			{% if region.total < min_salary %}
+				{% set min_salary = region.total %}
+				{% set lowest_region = region %}
+			{% endif %}
+		{% endfor %}
+
+		{% if highest_region and lowest_region %}
+			<div class="mt-8 p-5 bg-indigo-50 border-l-4 border-indigo-500 rounded-r-xl">
+				<h4 class="text-sm font-bold text-indigo-900 uppercase tracking-wide mb-3 flex items-center gap-2">
+					<svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+					</svg>
+					Löneanalys
+					{{ profession.scb.year }}: Regionala skillnader
+				</h4>
+				<div class="space-y-4 text-slate-700 text-sm leading-relaxed">
+					<p>
+						Data från SCB visar på en betydande lönespridning över landet.
+						<strong>{{ highest_region.name }}</strong>
+						utmärker sig med landets högsta snittlön på
+						<strong>{{ highest_region.total|number_format(0, ' ', ' ') }}
+							kr</strong>, vilket indikerar en stark efterfrågan och ett högre löneläge i regionen.
+					</p>
+					<p>
+						Detta kan ställas mot
+						<strong>{{ lowest_region.name }}</strong>, där marknadslönen ligger lägst på
+						{{ lowest_region.total|number_format(0, ' ', ' ') }}
+						kr – en regional differens på hela
+						<strong>{{ (highest_region.total - lowest_region.total)|number_format(0, ' ', ' ') }}
+							kr</strong>
+						({{ ((highest_region.total - lowest_region.total) / lowest_region.total * 100)|round(1) }}%). 
+																		                            En sådan variation understryker vikten av geografisk mobilitet för löneutvecklingen.
+					</p>
+
+					{% if highest_region.men != highest_region.women %}
+						<div class="pt-3 border-t border-indigo-100 mt-3">
+							<p class="font-medium text-indigo-900 mb-1">Jämställdhet i
+								{{ highest_region.name }}:</p>
+							<p>
+								Här noteras ett lönegap på
+								<strong>{{ ((highest_region.men - highest_region.women)|abs)|number_format(0, ' ', ' ') }}
+									kr</strong>
+								till
+								{% if highest_region.men > highest_region.women %}männens{% else %}kvinnornas
+								{% endif %}
+								fördel.
+							</p>
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		{% endif %}
+
+	</div>
+{% endif %}

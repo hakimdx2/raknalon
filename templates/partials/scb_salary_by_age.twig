@@ -1,0 +1,151 @@
+{% if profession.scb.salary_by_age %}
+	<div x-data="{ view: 'chart' }" class="my-8">
+		<div class="flex items-center justify-between mb-6">
+			<h3 id="lon-alder" class="m-0">Lön efter ålder</h3>
+			<div class="flex items-center gap-1 bg-slate-100 rounded-lg p-1">
+				<button @click="view = 'chart'" :class="{ 'bg-white shadow text-indigo-600': view === 'chart', 'text-slate-500 hover:text-slate-700': view !== 'chart' }" class="px-3 py-1 text-xs font-medium rounded-md transition-all">Graf</button>
+				<button @click="view = 'table'" :class="{ 'bg-white shadow text-indigo-600': view === 'table', 'text-slate-500 hover:text-slate-700': view !== 'table' }" class="px-3 py-1 text-xs font-medium rounded-md transition-all">Tabell</button>
+			</div>
+		</div>
+
+		<div x-show="view === 'chart'" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="h-80">
+			<canvas id="salaryAgeChart"></canvas>
+		</div>
+
+		<div x-show="view === 'table'" x-cloak x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="overflow-hidden bg-white shadow-sm ring-1 ring-slate-900/5 rounded-lg">
+			<table class="min-w-full divide-y divide-slate-200 mt-0">
+				<thead class="bg-slate-50">
+					<tr>
+						<th scope="col" class="px-3 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Ålder</th>
+						<th scope="col" class="px-3 py-3 text-right text-xs font-medium text-slate-500 uppercase tracking-wider">Månadslön</th>
+					</tr>
+				</thead>
+				<tbody class="divide-y divide-slate-200 bg-white">
+					{% for age, salary in profession.scb.salary_by_age %}
+						<tr class="hover:bg-slate-50 transition-colors">
+							<td class="whitespace-nowrap px-3 py-3 text-sm font-medium text-slate-900">{{ age }}
+								år</td>
+							<td class="whitespace-nowrap px-3 py-3 text-sm text-right text-slate-600">{{ salary|number_format(0, ' ', ' ') }}
+								kr</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+
+		<p class="text-sm text-slate-500 mt-4 italic">
+			Källa: SCB ({{ profession.scb.year }}). Visar statistisk löneutveckling över yrkeslivet.
+		</p>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+const ageCtx = document.getElementById('salaryAgeChart');
+if (ageCtx) {
+new Chart(ageCtx, {
+type: 'bar',
+data: {
+labels: [{% for age, salary in profession.scb.salary_by_age %}'{{ age }}'{% if not loop.last %},{% endif %}{% endfor %}],
+datasets: [
+{
+label: 'Bruttolön (kr)',
+data: [{% for age, salary in profession.scb.salary_by_age %}{{ salary }}{% if not loop.last %},{% endif %}{% endfor %}],
+backgroundColor: 'rgba(79, 70, 229, 0.8)',
+borderRadius: 6,
+borderSkipped: false
+}
+]
+},
+options: {
+responsive: true,
+maintainAspectRatio: false,
+plugins: {
+legend: {
+display: false
+},
+tooltip: {
+callbacks: {
+label: function (context) {
+return context.formattedValue + ' kr';
+}
+}
+}
+},
+scales: {
+y: {
+beginAtZero: true,
+grid: {
+color: 'rgba(0, 0, 0, 0.05)'
+},
+ticks: {
+font: {
+size: 11
+},
+callback: function (value) {
+return value.toLocaleString('sv-SE');
+}
+}
+},
+x: {
+grid: {
+display: false
+}
+}
+}
+}
+});
+}
+});
+		</script>
+
+		{# Dynamic Age Analysis #}
+		{% set max_age_salary = 0 %}
+		{% set max_age_group = '' %}
+		{% set min_age_salary = 9999999 %}
+		{% set min_age_group = '' %}
+
+		{% for age, salary in profession.scb.salary_by_age %}
+			{% if salary > max_age_salary %}
+				{% set max_age_salary = salary %}
+				{% set max_age_group = age %}
+			{% endif %}
+			{% if salary < min_age_salary %}
+				{% set min_age_salary = salary %}
+				{% set min_age_group = age %}
+			{% endif %}
+		{% endfor %}
+
+		{% if max_age_salary > 0 %}
+			<div class="p-5 bg-indigo-50 border-l-4 border-indigo-500 rounded-r-xl">
+				<h4 class="text-sm font-bold text-indigo-900 uppercase tracking-wide mb-3 flex items-center gap-2">
+					<svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+					</svg>
+					Löneanalys
+					{{ profession.scb.year }}: Lönekarriär
+				</h4>
+				<div class="space-y-4 text-slate-700 text-sm leading-relaxed">
+					<p>
+						Lönekurvan för
+						{{ profession.title|lower }}
+						visar en tydlig progression. 
+																																		                        Ingångslönen (18-24 år) ligger i snitt på
+						<strong>{{ profession.scb.salary_by_age['18-24']|default(min_age_salary)|number_format(0, ' ', ' ') }}
+							kr</strong>, 
+																																								                        för att sedan stiga i takt med ökad erfarenhet och kompetensutveckling.
+					</p>
+					<p>
+						Lönen toppar i regel i åldersgruppen
+						<strong>{{ max_age_group }}
+							år</strong>, där snittlönen når
+						<strong>{{ max_age_salary|number_format(0, ' ', ' ') }}
+							kr</strong>. 
+																																								                        Det innebär en potentiell löneutveckling på totalt
+						<strong>{{ min_age_salary > 0 ? (((max_age_salary - min_age_salary) / min_age_salary) * 100)|round(0) : 0 }}%</strong>
+						under karriären, 
+																																		                        vilket belyser vikten av långsiktig lönebildning.
+					</p>
+				</div>
+			</div>
+		{% endif %}
+	</div>
+{% endif %}

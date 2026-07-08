@@ -1,0 +1,235 @@
+{# Section Commentaires - Style harmonisé avec le site Raknalon #}
+
+{% if comments is not empty %}
+	<script type="application/ld+json">
+		{
+						    "@context": "https://schema.org",
+						    "@type": "DiscussionForumPosting",
+						    "headline": "Lönefrågor om
+		{{ profession.title }}",
+						    "url": "https://raknalon.se/lon/{{ profession.slug }}#comments-section",
+						    "author": { "@type": "Organization", "name": "Räkna Lön" },
+						    "comment": [
+		{% for comment in comments %}
+			{
+									            "@type": "Comment",
+									            "author": { "@type": "Person", "name": "{{ comment.author }}" },
+									            "text": "{{ comment.content|e('js') }}",
+									            "dateCreated": "{{ comment.created_at }}"
+									        }
+			{% if not loop.last %},
+			{% endif %}
+		{% endfor %}
+		]
+						}
+	</script>
+{% endif %}
+
+<div
+	class="mt-16 border-t border-slate-200 pt-10" id="comments-section" x-data="commentSystem()">
+
+	{# Header #}
+	<div class="mb-8">
+		<h2 class="text-lg font-semibold text-slate-900">Frågor & Svar</h2>
+		<p class="mt-1 text-sm text-slate-500">Har du en fråga om
+			{{ profession.title|lower }}-lönen? Ställ den nedan.</p>
+	</div>
+
+	<div
+		class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+
+		{# LEFT: Comments List #}
+		<div>
+			{% if comments is empty %}
+				{# Empty State #}
+				<div class="rounded-xl border-2 border-dashed border-slate-300 p-12 text-center">
+					<svg class="mx-auto h-12 w-12 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+					</svg>
+					<p class="mt-4 text-sm font-semibold text-slate-900">Inga frågor än</p>
+					<p class="mt-1 text-sm text-slate-500">Bli först med att ställa en fråga!</p>
+				</div>
+			{% else %}
+				{# Comments List #}
+				<div class="space-y-4">
+					{% for comment in comments %}
+						<div
+							class="rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-900/5">
+							{# Comment Header #}
+							<div class="flex items-start justify-between">
+								<div class="flex items-center gap-3">
+									<div class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 text-sm font-bold uppercase text-indigo-600">
+										{{ comment.author|first }}
+									</div>
+									<div>
+										<p class="text-sm font-semibold text-slate-900">{{ comment.author }}</p>
+										<time datetime="{{ comment.created_at }}" class="text-xs text-slate-500">{{ comment.created_at|date('d M Y') }}</time>
+									</div>
+								</div>
+							</div>
+
+							{# Comment Content #}
+							<p class="mt-3 text-sm leading-relaxed text-slate-700">{{ comment.content|nl2br }}</p>
+
+							{# Reply Button #}
+							<button type="button" @click="toggleReply({{ comment._id }})" class="mt-3 text-xs font-medium text-indigo-600 hover:text-indigo-500">
+								Svara
+							</button>
+
+							{# Replies #}
+							{% if comment.replies %}
+								<div class="mt-4 space-y-3 border-l-2 border-slate-200 pl-4">
+									{% for reply in comment.replies %}
+										<div class="flex gap-3">
+											{% if reply.is_admin_reply %}
+												<div class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-emerald-500 text-white">
+													<svg class="h-4 w-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+														<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+													</svg>
+												</div>
+											{% else %}
+												<div class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-slate-200 text-xs font-bold uppercase text-slate-600">
+													{{ reply.author|first }}
+												</div>
+											{% endif %}
+											<div>
+												<div class="flex items-center gap-2">
+													<span class="text-sm font-semibold {{ reply.is_admin_reply ? 'text-emerald-700' : 'text-slate-900' }}">{{ reply.author }}</span>
+													{% if reply.is_admin_reply %}
+														<span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">Officiellt</span>
+													{% endif %}
+													<time datetime="{{ reply.created_at }}" class="text-xs text-slate-500">{{ reply.created_at|date('d M') }}</time>
+												</div>
+												<p class="mt-1 text-sm leading-relaxed text-slate-600">{{ reply.content|nl2br }}</p>
+											</div>
+										</div>
+									{% endfor %}
+								</div>
+							{% endif %}
+
+							{# Reply Form #}
+							<div x-show="replyTo === {{ comment._id }}" x-collapse x-cloak class="mt-4 rounded-lg bg-slate-50 p-4">
+								<form @submit.prevent="submitReply({{ comment._id }})">
+									<div class="grid grid-cols-2 gap-3 mb-3">
+										<input type="text" x-model="replyForm.author" required placeholder="Ditt namn" class="block w-full rounded-md border-slate-300 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+										<input type="email" x-model="replyForm.email" required placeholder="Din e-post" class="block w-full rounded-md border-slate-300 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+									</div>
+									<textarea x-model="replyForm.content" required rows="2" placeholder="Ditt svar..." class="block w-full rounded-md border-slate-300 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500 resize-none"></textarea>
+									<div class="mt-3 flex justify-end gap-2">
+										<button type="button" @click="replyTo = null" class="rounded-md px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-slate-800">Avbryt</button>
+										<button type="submit" :disabled="loading" class="rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 disabled:opacity-50">Skicka</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+		</div>
+
+		{# RIGHT: New Comment Form - TEMPORARILY DISABLED #}
+		<div class="lg:sticky lg:top-24 lg:self-start">
+			<div class="rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-900/5">
+				<h3 class="text-base font-semibold text-slate-900">Ställ en fråga</h3>
+
+				{# Maintenance message #}
+				<div class="mt-4 rounded-lg bg-amber-50 border border-amber-200 p-4">
+					<div class="flex items-start gap-3">
+						<svg class="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+						</svg>
+						<div>
+							<p class="text-sm font-medium text-amber-800">Tillfälligt avstängd</p>
+							<p class="mt-1 text-sm text-amber-700">Vi har problem med spam-robotar just nu. Kommentarsfunktionen är tillfälligt avstängd och kommer snart tillbaka.</p>
+							<p class="mt-2 text-xs text-amber-600">Tack för ditt tålamod! 🙏</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function commentSystem() {
+return {
+loading: false,
+replyTo: null,
+successMessage: '',
+commentForm: {
+page_slug: '{{ profession.slug }}',
+author: '',
+email: '',
+content: ''
+},
+replyForm: {
+author: '',
+email: '',
+content: ''
+},
+
+toggleReply(id) {
+this.replyTo = this.replyTo === id ? null : id;
+this.replyForm = {
+author: '',
+email: '',
+content: ''
+};
+},
+
+async submitComment() {
+this.loading = true;
+this.successMessage = '';
+try {
+const res = await fetch('/api/comments', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/json'
+},
+body: JSON.stringify(this.commentForm)
+});
+const data = await res.json();
+if (data.success) {
+this.successMessage = 'Tack! Din fråga har skickats.';
+this.commentForm = {
+page_slug: '{{ profession.slug }}',
+author: '',
+email: '',
+content: ''
+};
+setTimeout(() => location.reload(), 2000);
+}
+} catch (e) {
+alert('Fel uppstod.');
+}
+this.loading = false;
+},
+
+async submitReply(parentId) {
+this.loading = true;
+try {
+const res = await fetch('/api/comments/reply', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/json'
+},
+body: JSON.stringify(
+{
+parent_id: parentId,
+...this.replyForm
+}
+)
+});
+const data = await res.json();
+if (data.success) {
+this.replyTo = null;
+setTimeout(() => location.reload(), 1500);
+}
+} catch (e) {
+console.error(e);
+}
+this.loading = false;
+}
+}
+}
+	</script>
+</div>

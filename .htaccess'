@@ -1,0 +1,36 @@
+RewriteEngine On
+
+# Ads.txt handled by Slim fallback if file missing
+# RewriteRule ^ads\.txt$ - [L]
+
+# ======================================
+# 1. CANONICAL REDIRECTS (SEO 10/10)
+# ======================================
+
+# Force www → non-www (canonical domain)
+RewriteCond %{HTTP_HOST} ^www\.raknalon\.se$ [NC]
+RewriteRule ^(.*)$ https://raknalon.se/$1 [L,R=301]
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove trailing slashes (except root)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [L,R=301]
+
+
+# ======================================
+# 5. SLIM FRAMEWORK ROUTING
+# ======================================
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^forum($|/) - [L]
+RewriteRule ^ index.php [QSA,L]
+
+# ======================================
+# 6. ERROR PAGES
+# ======================================
+ErrorDocument 404 /index.php
+ErrorDocument 500 /index.php

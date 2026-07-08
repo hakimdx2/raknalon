@@ -1,0 +1,175 @@
+{% extends "home.twig" %}
+
+{% block head_extra %}
+<meta name="robots" content="index, follow">
+{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 py-12 sm:py-16">
+    <article class="prose prose-slate prose-lg max-w-none">
+        
+        <!-- Header -->
+        <div class="not-prose mb-10">
+            <nav class="flex mb-4" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-2 text-sm text-slate-500">
+                    <li><a href="/" class="hover:text-indigo-600">Hem</a></li>
+                    <li><span class="mx-2">/</span></li>
+                    <li class="text-slate-900 font-medium">Integritetspolicy</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">Integritetspolicy</h1>
+            <p class="text-sm text-slate-500">Senast uppdaterad: Januari 2026</p>
+        </div>
+
+        <!-- Introduction -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">1. Introduktion</h2>
+            <p>Raknalon.se ("vi", "oss", "vår") värnar om din integritet. Denna integritetspolicy förklarar hur vi samlar in, använder och skyddar dina personuppgifter när du besöker vår webbplats.</p>
+            <p>Genom att använda raknalon.se godkänner du denna policy. Om du inte accepterar villkoren ber vi dig att inte använda webbplatsen.</p>
+        </section>
+
+        <!-- Data Collection -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">2. Vilka uppgifter samlar vi in?</h2>
+            
+            <h3 class="text-lg font-medium text-slate-700 mt-6">2.1 Uppgifter du ger oss</h3>
+            <p>Raknalon.se är en lönekalkylatortjänst. Vi samlar <strong>inte</strong> in några personuppgifter som du aktivt lämnar. De löneuppgifter du anger i våra kalkylatorer sparas inte på våra servrar – all beräkning sker i din webbläsare.</p>
+            
+            <h3 class="text-lg font-medium text-slate-700 mt-6">2.2 Automatiskt insamlade uppgifter</h3>
+            <p>När du besöker vår webbplats kan följande information samlas in automatiskt:</p>
+            <ul class="list-disc pl-6 space-y-1 text-slate-600">
+                <li>IP-adress (anonymiserad)</li>
+                <li>Webbläsartyp och version</li>
+                <li>Operativsystem</li>
+                <li>Besökta sidor och tid på webbplatsen</li>
+                <li>Hänvisande webbplats (referrer)</li>
+            </ul>
+            <p>Denna information används för att förbättra webbplatsens funktion och innehåll.</p>
+        </section>
+
+        <!-- Data Usage -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">3. Hur använder vi dina uppgifter?</h2>
+            <p>Vi använder insamlad information för att:</p>
+            <ul class="list-disc pl-6 space-y-1 text-slate-600">
+                <li>Förbättra webbplatsens funktion och användarupplevelse</li>
+                <li>Analysera besökstrafik och användarmönster (anonymiserat)</li>
+                <li>Visa relevanta annonser via Google AdSense</li>
+                <li>Förhindra missbruk och säkerhetshot</li>
+            </ul>
+            <p>Vi säljer <strong>aldrig</strong> dina personuppgifter till tredje part.</p>
+        </section>
+
+        <!-- Cookies -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">4. Cookies och spårningsteknik</h2>
+            <p>Raknalon.se använder cookies för att förbättra din upplevelse. En cookie är en liten textfil som lagras på din enhet.</p>
+            
+            <h3 class="text-lg font-medium text-slate-700 mt-6">Typer av cookies vi använder:</h3>
+            
+            <div class="overflow-x-auto my-4 not-prose">
+                <table class="min-w-full border border-slate-200 rounded-lg overflow-hidden">
+                    <thead class="bg-slate-50">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700 border-b">Typ</th>
+                            <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700 border-b">Syfte</th>
+                            <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700 border-b">Varaktighet</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <tr>
+                            <td class="px-4 py-3 text-sm text-slate-600">Nödvändiga</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Webbplatsens grundfunktion</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Session</td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                            <td class="px-4 py-3 text-sm text-slate-600">Analytiska (Google Analytics)</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Förstå hur besökare använder sidan</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">2 år</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm text-slate-600">Annonsering (Google AdSense)</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">Visa relevanta annonser</td>
+                            <td class="px-4 py-3 text-sm text-slate-600">13 månader</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p>Du kan hantera cookies i din webbläsares inställningar. Notera att vissa funktioner kanske inte fungerar om du blockerar alla cookies.</p>
+            <p class="mt-2">Läs mer i vår <a href="/cookies" class="text-indigo-600 hover:underline">fullständiga cookiepolicy</a>.</p>
+        </section>
+
+        <!-- Third Party Services -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">5. Tredjepartstjänster</h2>
+            <p>Vi använder följande tredjepartstjänster som kan samla in uppgifter:</p>
+            
+            <h3 class="text-lg font-medium text-slate-700 mt-6">Google AdSense</h3>
+            <p>Vi visar annonser via Google AdSense. Google kan använda cookies för att visa annonser baserade på dina tidigare besök på denna och andra webbplatser. Du kan välja bort personliga annonser på <a href="https://www.google.com/settings/ads" class="text-indigo-600 hover:underline" target="_blank" rel="noopener noreferrer">Googles annonsinställningar</a>.</p>
+            
+            <h3 class="text-lg font-medium text-slate-700 mt-6">Google Analytics</h3>
+            <p>Vi använder Google Analytics för webbplatsstatistik. Data anonymiseras innan den skickas till Google. Läs mer i <a href="https://policies.google.com/privacy" class="text-indigo-600 hover:underline" target="_blank" rel="noopener noreferrer">Googles integritetspolicy</a>.</p>
+        </section>
+
+        <!-- GDPR Rights -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">6. Dina rättigheter enligt GDPR</h2>
+            <p>Som EU-medborgare har du enligt dataskyddsförordningen (GDPR) följande rättigheter:</p>
+            
+            <ul class="list-disc pl-6 space-y-2 text-slate-600">
+                <li><strong class="text-slate-800">Rätt till tillgång:</strong> Du kan begära information om vilka uppgifter vi har om dig.</li>
+                <li><strong class="text-slate-800">Rätt till rättelse:</strong> Du kan begära att felaktiga uppgifter korrigeras.</li>
+                <li><strong class="text-slate-800">Rätt till radering:</strong> Du kan begära att vi raderar dina uppgifter ("rätten att bli glömd").</li>
+                <li><strong class="text-slate-800">Rätt att invända:</strong> Du kan invända mot viss behandling av dina uppgifter.</li>
+                <li><strong class="text-slate-800">Rätt till dataportabilitet:</strong> Du kan begära att få ut dina uppgifter i ett maskinläsbart format.</li>
+            </ul>
+            
+            <p class="mt-4">För att utöva dessa rättigheter, kontakta oss på <a href="mailto:info@raknalon.se" class="text-indigo-600 hover:underline">info@raknalon.se</a>. Vi svarar inom 30 dagar.</p>
+        </section>
+
+        <!-- Data Security -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">7. Datasäkerhet</h2>
+            <p>Vi vidtar lämpliga tekniska och organisatoriska åtgärder för att skydda dina uppgifter mot obehörig åtkomst, förlust eller förstörelse:</p>
+            <ul class="list-disc pl-6 space-y-1 text-slate-600">
+                <li>HTTPS-kryptering på hela webbplatsen</li>
+                <li>Regelbundna säkerhetsuppdateringar</li>
+                <li>Begränsad åtkomst till servrar</li>
+            </ul>
+        </section>
+
+        <!-- Policy Changes -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">8. Ändringar i denna policy</h2>
+            <p>Vi kan uppdatera denna integritetspolicy vid behov. Väsentliga ändringar kommer att kommuniceras på webbplatsen. Vi rekommenderar att du regelbundet granskar denna sida.</p>
+            <p>Det datum som visas högst upp på sidan anger när policyn senast uppdaterades.</p>
+        </section>
+
+        <!-- Contact -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800">9. Kontakt</h2>
+            <p>Om du har frågor om denna integritetspolicy eller hur vi hanterar dina uppgifter, kontakta oss:</p>
+            
+            <div class="bg-slate-50 rounded-xl p-6 mt-4 not-prose">
+                <p class="font-semibold text-slate-800">E-post</p>
+                <a href="mailto:info@raknalon.se" class="text-indigo-600 hover:underline">info@raknalon.se</a>
+            </div>
+        </section>
+
+        <!-- Back to Home CTA -->
+        <div class="not-prose mt-12">
+            <div class="bg-gradient-to-r from-indigo-50 to-slate-50 rounded-xl p-6 text-center">
+                <p class="text-slate-600 mb-4">Redo att räkna ut din lön?</p>
+                <a href="/" class="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                    Till kalkylatorn
+                </a>
+            </div>
+        </div>
+
+    </article>
+</div>
+{% endblock %}

@@ -1,0 +1,277 @@
+{% extends "home.twig" %}
+
+{% block head_extra %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Är det olagligt att byta jobb ofta?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nej. Du har full frihet att byta jobb när du vill i Sverige. Det finns ingen lojalitetsplikt som hindrar dig från att söka nya utmaningar."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Kan arbetsgivaren neka löneförhöjning?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja, det finns ingen lagstadgad rätt till löneförhöjning. Men du har rätt att förhandla, och att söka dig till en arbetsgivare som betalar marknadslön."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Hur vet jag vad marknaden betalar?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Använd SCB Lönesök, Unionens lönestatistik, eller din fackförenings data för att få en bild av marknadslöneläget."
+    }
+  }]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    
+    <!-- HERO -->
+    <div class="text-center mb-10">
+        <span class="text-indigo-600 font-semibold tracking-wide uppercase text-sm">Verktyg</span>
+        <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Löne-Speedrunner 2026</h1>
+        <p class="mt-4 text-xl text-slate-500">Hur mycket förlorar du på att stanna kvar?</p>
+    </div>
+
+    <!-- CALCULATOR SECTION -->
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
+        <div class="space-y-6">
+            <div>
+                <label for="salary" class="block text-sm font-semibold text-slate-900 mb-2">Din nuvarande månadslön (kr)</label>
+                <input type="number" id="salary" placeholder="40000" min="15000" max="200000" value="40000"
+                    class="w-full px-4 py-3 text-base border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+
+            <div>
+                <label for="tenure" class="block text-sm font-semibold text-slate-900 mb-2">Hur länge har du stannat? (år)</label>
+                <select id="tenure" class="w-full px-4 py-3 text-base border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                    <option value="1">1 år</option>
+                    <option value="2">2 år</option>
+                    <option value="3" selected>3 år</option>
+                    <option value="4">4 år</option>
+                    <option value="5">5 år</option>
+                    <option value="7">7+ år</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold text-slate-900 mb-2">Din bransch</label>
+                <div class="flex flex-wrap gap-2">
+                    <label class="inline-flex items-center px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer hover:border-indigo-500 hover:bg-indigo-50 transition-colors">
+                        <input type="radio" name="sector" value="tech" checked class="mr-2 accent-indigo-600"> IT/Tech
+                    </label>
+                    <label class="inline-flex items-center px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer hover:border-indigo-500 hover:bg-indigo-50 transition-colors">
+                        <input type="radio" name="sector" value="vard" class="mr-2 accent-indigo-600"> Vård/Omsorg
+                    </label>
+                    <label class="inline-flex items-center px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer hover:border-indigo-500 hover:bg-indigo-50 transition-colors">
+                        <input type="radio" name="sector" value="ekonomi" class="mr-2 accent-indigo-600"> Ekonomi/Juridik
+                    </label>
+                    <label class="inline-flex items-center px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer hover:border-indigo-500 hover:bg-indigo-50 transition-colors">
+                        <input type="radio" name="sector" value="annat" class="mr-2 accent-indigo-600"> Annat
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold text-slate-900 mb-2">Scenario</label>
+                <div class="flex gap-2">
+                    <button class="toggle-btn flex-1 py-2.5 px-4 rounded-lg border border-slate-200 bg-slate-50 text-slate-600 font-medium text-sm transition-colors" data-mode="conservative">Konservativ</button>
+                    <button class="toggle-btn active flex-1 py-2.5 px-4 rounded-lg border border-indigo-600 bg-indigo-600 text-white font-medium text-sm transition-colors" data-mode="base">Bas</button>
+                    <button class="toggle-btn flex-1 py-2.5 px-4 rounded-lg border border-slate-200 bg-slate-50 text-slate-600 font-medium text-sm transition-colors" data-mode="aggressive">Aggressiv</button>
+                </div>
+                <p class="mt-3 text-sm text-slate-500 bg-indigo-50 p-3 rounded-lg border-l-4 border-indigo-500" id="modeExplanation">
+                    <strong>Bas:</strong> Jobbyte var 2,5 år med ~10% höjning (baserat på Sveriges Ingenjörers statistik).
+                </p>
+            </div>
+
+            <button id="calculateBtn" class="w-full py-3 px-4 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors">
+                Beräkna min skatt
+            </button>
+        </div>
+    </div>
+
+    <!-- RESULTS SECTION (hidden initially) -->
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6" id="resultsSection" style="display:none;">
+        <h2 class="text-xl font-bold text-slate-900 mb-5">Resultat (5 år framåt)</h2>
+        
+        <div class="space-y-5">
+            <div class="bg-slate-50 rounded-lg p-4">
+                <canvas id="salaryChart"></canvas>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-slate-50 rounded-lg p-4 text-center border border-slate-200">
+                    <span class="block text-xs uppercase tracking-wider text-slate-500 mb-1">Din lön om 5 år (lojal)</span>
+                    <span class="block text-xl font-bold text-slate-500" id="loyalSalary">47 082 kr/mån</span>
+                </div>
+                <div class="bg-emerald-50 rounded-lg p-4 text-center border border-emerald-200">
+                    <span class="block text-xs uppercase tracking-wider text-emerald-600 mb-1">Din lön om 5 år (speedrunner)</span>
+                    <span class="block text-xl font-bold text-emerald-600" id="speedrunnerSalary">64 420 kr/mån</span>
+                </div>
+            </div>
+
+            <div class="bg-red-50 border border-red-200 rounded-xl p-6 text-center">
+                <p class="text-sm font-semibold text-red-700 uppercase tracking-wider mb-2">Din lojalitetsskatt på 5 år</p>
+                <div class="text-4xl font-extrabold text-red-600" id="loyaltyTax">-832 000 kr</div>
+                <p class="text-sm text-red-500 mt-2">≈ <span id="monthlyDiff">17 338</span> kr mindre per månad</p>
+            </div>
+
+            <div class="bg-slate-50 rounded-lg p-4 border border-slate-200" id="assumptionsBox">
+                <p class="font-semibold text-slate-900 mb-2 text-sm">Antaganden för detta scenario:</p>
+                <ul class="text-sm text-slate-600 list-disc list-inside space-y-1" id="assumptionsList">
+                    <li>Lojal: +3,8%/år (märket + löneglidning)</li>
+                    <li>Speedrunner: +10% vid byte (var 2,5 år), +3,8% mellan byten</li>
+                </ul>
+            </div>
+
+            <div class="bg-slate-50 rounded-lg p-3 border border-slate-200 text-xs text-slate-500">
+                <strong>Källor:</strong> 
+                <a href="https://www.mi.se/app/uploads/loneutvecklingen-i-sverige-tom-augusti-2025.pdf" target="_blank" class="text-indigo-600 hover:underline">Medlingsinstitutet (2025)</a>, 
+                <a href="https://www.sverigesingenjorer.se/lon/negotiate-your-salary/negotiate-your-salary-when-you-change-jobs/" target="_blank" class="text-indigo-600 hover:underline">Sveriges Ingenjörer</a>, 
+                <a href="https://www.scb.se/hitta-statistik/sverige-i-siffror/lonesok/" target="_blank" class="text-indigo-600 hover:underline">SCB Lönesök</a>
+            </div>
+
+            <div class="flex gap-3 pt-1">
+                <button id="showScriptsBtn" class="flex-1 py-3 px-4 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors">
+                    Visa löneförhandlings-script
+                </button>
+                <button id="shareBtn" class="flex-1 py-3 px-4 bg-slate-100 text-slate-700 font-semibold rounded-lg border border-slate-200 hover:bg-slate-200 transition-colors">
+                    Dela resultat
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS SECTION -->
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6" id="scriptsSection" style="display:none;">
+        <h2 class="text-xl font-bold text-slate-900 mb-4">Löne-Script: Vad ska du säga?</h2>
+        
+        <div class="space-y-3">
+            <div class="accordion-item border border-slate-200 rounded-lg overflow-hidden">
+                <button class="accordion-header w-full px-4 py-3 text-left flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition-colors">
+                    <span class="font-medium text-slate-900">"Chefen säger: Vi har inget utrymme (märket)"</span>
+                    <span class="text-indigo-600 text-xl icon">+</span>
+                </button>
+                <div class="accordion-content hidden p-4 bg-white">
+                    <div class="bg-indigo-50 border-l-4 border-indigo-500 rounded-r-lg p-4 text-sm text-slate-700 leading-relaxed">
+                        <p class="mb-3">"Jag förstår att märket styr det <strong>kollektiva</strong> utrymmet.</p>
+                        <p class="mb-3">Här pratar vi om mitt <strong>individuella löneläge</strong> i förhållande till marknaden och det ansvar jag faktiskt har idag.</p>
+                        <p class="mb-3">När jag jämför med <a href="https://www.scb.se/hitta-statistik/sverige-i-siffror/lonesok/" target="_blank" class="text-indigo-600 underline">SCB:s statistik</a> för min roll, erfarenhet och region ligger jag ungefär <strong>[X]%</strong> under marknadslön.</p>
+                        <p>Skulle vi kunna titta på en <strong>justering av mitt löneläge</strong> utöver den ordinarie revisionen?"</p>
+                    </div>
+                    <button class="copy-btn mt-3 px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition-colors" data-script="market">Kopiera</button>
+                </div>
+            </div>
+
+            <div class="accordion-item border border-slate-200 rounded-lg overflow-hidden">
+                <button class="accordion-header w-full px-4 py-3 text-left flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition-colors">
+                    <span class="font-medium text-slate-900">"Jag har ett externt erbjudande"</span>
+                    <span class="text-indigo-600 text-xl icon">+</span>
+                </button>
+                <div class="accordion-content hidden p-4 bg-white">
+                    <div class="bg-indigo-50 border-l-4 border-indigo-500 rounded-r-lg p-4 text-sm text-slate-700 leading-relaxed">
+                        <p class="mb-3">"Jag vill vara transparent med dig eftersom jag trivs här.</p>
+                        <p class="mb-3">Jag har fått ett konkret erbjudande på <strong>[X] kr/mån</strong>, vilket är ungefär <strong>[Y]%</strong> över min nuvarande nivå.</p>
+                        <p class="mb-3">Mitt <strong>förstahandsval är att stanna här</strong>, förutsatt att min lön och roll kan spegla min faktiska nivå.</p>
+                        <p>Finns det utrymme att göra en <strong>lönejustering</strong> som tar mig närmare den här nivån?"</p>
+                    </div>
+                    <button class="copy-btn mt-3 px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition-colors" data-script="external">Kopiera</button>
+                </div>
+            </div>
+
+            <div class="accordion-item border border-slate-200 rounded-lg overflow-hidden">
+                <button class="accordion-header w-full px-4 py-3 text-left flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition-colors">
+                    <span class="font-medium text-slate-900">"Förberedande mail 3 månader innan"</span>
+                    <span class="text-indigo-600 text-xl icon">+</span>
+                </button>
+                <div class="accordion-content hidden p-4 bg-white">
+                    <div class="bg-indigo-50 border-l-4 border-indigo-500 rounded-r-lg p-4 text-sm text-slate-700 leading-relaxed">
+                        <p class="mb-2"><strong>Ämne:</strong> Förberedelse inför årets lönedialog</p>
+                        <p class="mb-2">Hej [Chef],</p>
+                        <p class="mb-2">Jag vet att lönerevisionen börjar planeras under [månad], och jag skulle gärna vilja ta ett <strong>förberedande samtal</strong> med dig.</p>
+                        <p class="mb-2">Under året har jag bland annat:</p>
+                        <ul class="list-disc list-inside mb-2 ml-2">
+                            <li>[Resultat 1 med siffror]</li>
+                            <li>[Resultat 2 med siffror]</li>
+                        </ul>
+                        <p class="mb-2">Jag vill diskutera min <strong>fortsatta utveckling</strong> och hur mitt <strong>löneläge kan justeras</strong>.</p>
+                        <p>Har du möjlighet att avsätta 30-45 minuter?</p>
+                    </div>
+                    <button class="copy-btn mt-3 px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition-colors" data-script="email">Kopiera</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LEAD CAPTURE SECTION (GDPR-Compliant) -->
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6" id="leadSection" style="display:none;">
+        <h2 class="text-xl font-bold text-slate-900 mb-2">Få ditt "Brag Sheet" (PDF)</h2>
+        <p class="text-slate-600 mb-4">Ladda ner mallen för att dokumentera dina resultat inför lönesamtalet.</p>
+        
+        <form id="leadForm" class="max-w-md">
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-semibold text-slate-900 mb-2">Din e-postadress</label>
+                <input type="email" id="email" placeholder="namn@exempel.se" required
+                    class="w-full px-4 py-3 text-base border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+
+            <div class="mb-4">
+                <label class="flex items-start gap-2 cursor-pointer">
+                    <input type="checkbox" id="marketingConsent" name="marketingConsent" class="mt-1 accent-indigo-600">
+                    <span class="text-sm text-slate-600">Ja, jag vill även få tips om lön, karriär och arbetsmarknad via e-post. (Valfritt)</span>
+                </label>
+            </div>
+
+            <button type="submit" class="w-full py-3 px-4 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors">
+                Lås upp Brag Sheet-mallen
+            </button>
+
+            <p class="text-xs text-slate-500 mt-3 leading-relaxed">
+                Genom att låsa upp mallen godkänner du vår <a href="/integritet" class="text-indigo-600 hover:underline">integritetspolicy</a>.
+                Om du kryssar i rutan ovan får du också vårt nyhetsbrev. Du kan avregistrera dig när som helst.
+            </p>
+        </form>
+
+        <div id="formSuccess" class="hidden mt-4 p-4 bg-emerald-50 border border-emerald-200 rounded-lg text-center text-emerald-700 font-medium">
+            Klart! Kolla din inkorg (och skräppost) för PDF:en.
+        </div>
+    </div>
+
+    <!-- FAQ SECTION -->
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
+        <h2 class="text-xl font-bold text-slate-900 mb-4">Vanliga frågor</h2>
+        
+        <div class="divide-y divide-slate-200">
+            <div class="py-4 first:pt-0">
+                <h3 class="font-semibold text-slate-900 mb-2">Är det olagligt att byta jobb ofta?</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Nej. Du har full frihet att byta jobb när du vill i Sverige. Det finns ingen "lojalitetsplikt" som hindrar dig.</p>
+            </div>
+            <div class="py-4">
+                <h3 class="font-semibold text-slate-900 mb-2">Kan arbetsgivaren neka löneförhöjning?</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Ja, det finns ingen lagstadgad rätt till löneförhöjning. Men du har rätt att <strong>förhandla</strong>, och att söka dig till en arbetsgivare som betalar marknadslön.</p>
+            </div>
+            <div class="py-4">
+                <h3 class="font-semibold text-slate-900 mb-2">Hur vet jag vad marknaden betalar?</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Använd <a href="https://www.scb.se/hitta-statistik/sverige-i-siffror/lonesok/" target="_blank" class="text-indigo-600 hover:underline">SCB Lönesök</a>, <a href="https://www.unionen.se/rad-och-stod/om-lon/marknadsloner" target="_blank" class="text-indigo-600 hover:underline">Unionens lönestatistik</a>, eller din fackförenings data.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DISCLAIMER -->
+    <div class="bg-slate-100 rounded-lg p-4 text-center text-xs text-slate-500 border border-slate-200">
+        <p><strong>Disclaimer:</strong> Detta verktyg är ett simuleringsverktyg, inte individuell rådgivning. Faktiska löneökningar beror på många faktorer. Siffrorna baseras på aggregerad svensk statistik och publicerade studier.</p>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/js/speedrunner.js"></script>
+{% endblock %}

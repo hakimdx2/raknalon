@@ -1,0 +1,217 @@
+{# 
+  Partial: Salary Chart (Marknadslön)
+  Couleurs: Indigo (homogène avec le site raknalon.se)
+#}
+
+{% if profession.scb is defined and profession.scb.salary_total > 0 %}
+	<div class="mb-12 mt-8">
+		<div
+			id="salary-chart" class="salary-chart-widget" x-data="salaryChartWidget({
+																																																								             q1: {{ (profession.scb.percentiles.p25|default(profession.median_salary * 0.85))|round }},
+																																																								             q2: {{ profession.scb.salary_total }},
+																																																								             q3: {{ (profession.scb.percentiles.p75|default(profession.avg_salary * 1.15))|round }},
+																																																								             currency: 'kr',
+																																																								             hasData: true,
+																																																								             isMonthly: true,
+																																																								             locale: 'sv-SE',
+																																																								             labels: {
+																																																								                 perYear: 'Brutto/År',
+																																																								                 perMonth: 'Brutto/Månad'
+																																																								             }
+																																																								         })">
+
+			{# ========== CONTROLS: Toggle ========== #}
+			<div class="flex items-center justify-center gap-6 mb-6">
+				<div class="inline-flex rounded-full border border-indigo-200 overflow-hidden">
+					<button type="button" class="px-5 py-2.5 text-sm font-semibold transition-all duration-150" :class="unit === 'yearly'
+																																																																																				                            ? 'bg-indigo-50 text-indigo-700'
+																																																																																				                            : 'bg-white text-slate-500 hover:text-slate-700'" @click="unit = 'yearly'">
+						Årslön
+					</button>
+					<button type="button" class="px-5 py-2.5 text-sm font-semibold transition-all duration-150 border-l border-indigo-200" :class="unit === 'monthly'
+																																																																																				                            ? 'bg-indigo-50 text-indigo-700'
+																																																																																				                            : 'bg-white text-slate-500 hover:text-slate-700'" @click="unit = 'monthly'">
+						Månadslön
+					</button>
+				</div>
+			</div>
+
+			{# ========== MAIN SALARY CARD ========== #}
+			<div
+				x-show="mounted" x-transition:enter="transition ease-out duration-700" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0" class="relative rounded-[1.5rem] bg-gradient-to-b from-indigo-50 to-indigo-100/50 px-8 py-4 md:px-12 md:py-5">
+
+				{# Market Label - Top Left #}
+				<div class="text-indigo-800 font-medium text-base mb-1">
+					Marknadslön
+				</div>
+
+				{# ========== CENTRAL VALUE ========== #}
+				<div class="flex items-baseline justify-center gap-3 mt-1 mb-2">
+					<template x-if="hasData">
+						<span class="text-3xl md:text-4xl font-medium text-indigo-900 tracking-tight" x-text="formattedQ2"></span>
+					</template>
+					<template x-if="hasData">
+						<span class="text-lg md:text-xl font-medium text-indigo-700" x-text="unitLabel"></span>
+					</template>
+				</div>
+
+				{# ========== QUARTILES Q1 / Q3 ========== #}
+				<template x-if="hasData">
+					<div class="flex justify-between items-start mt-4 sm:mt-6 mb-0 px-2 relative z-10">
+						<div class="text-left">
+							<div class="text-indigo-600 text-xs font-medium">25% tjänar mindre än</div>
+							<div class="text-indigo-900 text-lg md:text-xl font-medium" x-text="formattedQ1"></div>
+						</div>
+						<div class="text-right">
+							<div class="text-indigo-600 text-xs font-medium">25% tjänar mer än</div>
+							<div class="text-indigo-900 text-lg md:text-xl font-medium" x-text="formattedQ3"></div>
+						</div>
+					</div>
+				</template>
+
+				{# ========== BELL CURVE SVG ========== #}
+				<div class="relative -mt-10 sm:-mt-[60px]">
+					<svg class="w-full h-auto" viewbox="0 0 800 100" fill="none" preserveaspectratio="xMidYMax meet">
+						<defs>
+							<linearGradient id="bellGradientIndigo" x1="400" y1="0" x2="400" y2="100" gradientunits="userSpaceOnUse">
+								<stop offset="0%" stop-color="#818cf8"/>
+								<stop offset="100%" stop-color="#c7d2fe"/>
+							</linearGradient>
+							<mask id="bellMaskIndigo">
+								<path d="M0 100 C0 85, 10 75, 25 74 C80 70, 150 65, 200 60 C250 55, 300 30, 400 10 C500 30, 550 55, 600 60 C650 65, 720 70, 775 74 C790 75, 800 85, 800 100 Z" fill="white"/>
+							</mask>
+						</defs>
+
+						<g mask="url(#bellMaskIndigo)">
+							<rect x="0" y="0" width="800" height="100" fill="url(#bellGradientIndigo)"/>
+							<rect x="0" y="0" width="165" height="100" fill="white" fill-opacity="0.35"/>
+							<rect x="635" y="0" width="165" height="100" fill="white" fill-opacity="0.35"/>
+						</g>
+
+						{# Vertical lines - Indigo #}
+						<rect x="162" y="55" width="4" height="45" rx="2" fill="#6366f1"/>
+						<rect x="398" y="5" width="4" height="50" rx="2" fill="#6366f1"/>
+						<rect x="634" y="55" width="4" height="45" rx="2" fill="#6366f1"/>
+					</svg>
+				</div>
+				{# Info text #}
+				<div class="text-center text-slate-500 text-[10px] mt-4 relative z-10">
+					Alla marknadslöner baseras på heltidstjänst (SCB
+					{{ profession.scb.year }}).
+					<a href="/sa-raknar-vi" class="underline hover:text-indigo-600">Läs mer.</a>
+				</div>
+			</div>
+
+			{# Partners Text #}
+			<div class="mt-6 text-center">
+				<p class="text-[10px] text-slate-400 font-medium mb-1">
+					Vår lönedatabas uppdateras och används dagligen av ett omfattande nätverk av partners:
+				</p>
+				<a href="/kontakt" class="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 hover:text-indigo-700 transition-colors">
+					<svg class="w-3 h-3" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+					</svg>
+					Bli partner
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function salaryChartWidget(config) {
+return {
+q1: config.q1 || 0,
+q2: config.q2 || 0,
+q3: config.q3 || 0,
+currency: config.currency || 'kr',
+locale: config.locale || 'sv-SE',
+hasData: config.hasData !== false && config.q2 > 0,
+isMonthly: config.isMonthly !== false,
+unit: 'monthly',
+withBonus: true,
+labels: config.labels || {
+perYear : 'Brutto/År',
+perMonth : 'Brutto/Månad'
+},
+// Animated values container
+animated: {
+q1: 0,
+q2: 0,
+q3: 0
+},
+mounted: false,
+
+init() { // Initialize with correct values immediately or animate on load
+this.updateValues(false);
+// Trigger entrance animation
+setTimeout(() => {
+this.mounted = true
+}, 100);
+// false = animate on load
+
+// Watch for unit changes to trigger animation
+this.$watch('unit', () => this.updateValues());
+},
+
+calculateValue(baseValue) {
+let value = this.isMonthly ? (this.unit === 'yearly' ? baseValue * 12 : baseValue) : (this.unit === 'yearly' ? baseValue : Math.round(baseValue / 12));
+return this.withBonus ? value : Math.round(value * 0.9);
+},
+
+updateValues(immediate = false) {
+const targetQ1 = this.calculateValue(this.q1);
+const targetQ2 = this.calculateValue(this.q2);
+const targetQ3 = this.calculateValue(this.q3);
+
+if (immediate) {
+this.animated.q1 = targetQ1;
+this.animated.q2 = targetQ2;
+this.animated.q3 = targetQ3;
+} else {
+this.animateTo('q1', targetQ1);
+this.animateTo('q2', targetQ2);
+this.animateTo('q3', targetQ3);
+}
+},
+
+animateTo(key, endValue) {
+const startValue = this.animated[key];
+const duration = 800; // ms
+const startTime = performance.now();
+
+const step = (currentTime) => {
+const elapsed = currentTime - startTime;
+const progress = Math.min(elapsed / duration, 1);
+// Ease Out Cubic function
+const ease = 1 - Math.pow(1 - progress, 3);
+
+this.animated[key] = Math.round(startValue + (endValue - startValue) * ease);
+
+if (progress < 1) {
+requestAnimationFrame(step);
+}
+};
+requestAnimationFrame(step);
+},
+
+formatNumber(num) {
+return num.toLocaleString(this.locale) + ' ' + this.currency;
+},
+
+get formattedQ1() {
+return this.formatNumber(this.animated.q1);
+},
+get formattedQ2() {
+return this.formatNumber(this.animated.q2);
+},
+get formattedQ3() {
+return this.formatNumber(this.animated.q3);
+},
+
+get unitLabel() {
+return this.unit === 'yearly' ? this.labels.perYear : this.labels.perMonth;
+}
+}
+}
+	</script>
+{% endif %}

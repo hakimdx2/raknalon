@@ -1,0 +1,367 @@
+/**
+ * Salary Chart Widget - Standalone CSS
+ * 
+ * Minimal CSS for the salary chart widget when Tailwind is not available.
+ * Uses CSS custom properties for easy theming.
+ * 
+ * Include this file if you're NOT using Tailwind CSS.
+ */
+
+:root {
+    /* Primary colors (green/emerald theme) */
+    --sc-primary-50: #ecfdf5;
+    --sc-primary-100: #d1fae5;
+    --sc-primary-200: #a7f3d0;
+    --sc-primary-300: #6ee7b7;
+    --sc-primary-400: #34d399;
+    --sc-primary-500: #10b981;
+    --sc-primary-600: #059669;
+    --sc-primary-700: #047857;
+    --sc-primary-800: #065f46;
+    --sc-primary-900: #064e3e;
+    --sc-primary-950: #022c22;
+
+    /* Neutral colors */
+    --sc-slate-50: #f8fafc;
+    --sc-slate-100: #f1f5f9;
+    --sc-slate-200: #e2e8f0;
+    --sc-slate-300: #cbd5e1;
+    --sc-slate-400: #94a3b8;
+    --sc-slate-500: #64748b;
+    --sc-slate-600: #475569;
+    --sc-slate-700: #334155;
+    --sc-slate-800: #1e293b;
+    --sc-slate-900: #0f172a;
+
+    /* Yellow for badges */
+    --sc-yellow-200: #fef08a;
+    --sc-yellow-900: #713f12;
+}
+
+/* Widget Container */
+.salary-chart-widget {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--sc-slate-900);
+}
+
+/* Toggle Switch Container */
+.salary-chart-widget .sc-toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .salary-chart-widget .sc-toggle-container {
+        gap: 2rem;
+    }
+}
+
+/* Toggle Switch */
+.salary-chart-widget .sc-toggle {
+    display: flex;
+    border: 1px solid var(--sc-primary-200);
+    border-radius: 9999px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.salary-chart-widget .sc-toggle-btn {
+    padding: 0.625rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: transparent;
+}
+
+.salary-chart-widget .sc-toggle-btn:first-child {
+    border-right: 1px solid var(--sc-primary-200);
+    border-radius: 9999px 0 0 9999px;
+}
+
+.salary-chart-widget .sc-toggle-btn:last-child {
+    border-radius: 0 9999px 9999px 0;
+}
+
+.salary-chart-widget .sc-toggle-btn.active {
+    background-color: var(--sc-primary-50);
+    color: var(--sc-primary-700);
+}
+
+.salary-chart-widget .sc-toggle-btn:not(.active) {
+    color: var(--sc-slate-600);
+}
+
+.salary-chart-widget .sc-toggle-btn:not(.active):hover {
+    background-color: var(--sc-slate-50);
+}
+
+/* Checkbox Toggle */
+.salary-chart-widget .sc-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1rem;
+    border-radius: 9999px;
+    border: 1px solid var(--sc-slate-200);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.875rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.salary-chart-widget .sc-checkbox.active {
+    background-color: var(--sc-primary-50);
+    border-color: var(--sc-primary-200);
+    color: var(--sc-primary-700);
+}
+
+.salary-chart-widget .sc-checkbox:not(.active) {
+    background-color: white;
+    color: var(--sc-slate-600);
+}
+
+.salary-chart-widget .sc-checkbox:not(.active):hover {
+    background-color: var(--sc-slate-50);
+}
+
+.salary-chart-widget .sc-checkbox-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 9999px;
+    border: 1px solid var(--sc-slate-300);
+    background: white;
+    padding: 2px;
+}
+
+.salary-chart-widget .sc-checkbox.active .sc-checkbox-indicator {
+    border-color: var(--sc-primary-300);
+}
+
+.salary-chart-widget .sc-checkbox-dot {
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+}
+
+.salary-chart-widget .sc-checkbox.active .sc-checkbox-dot {
+    background-color: var(--sc-primary-500);
+}
+
+/* Main Card */
+.salary-chart-widget .sc-card {
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--sc-primary-50);
+}
+
+@media (min-width: 640px) {
+    .salary-chart-widget .sc-card {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .salary-chart-widget .sc-card {
+        border-radius: 1.5rem;
+    }
+}
+
+/* Market Salary Label */
+.salary-chart-widget .sc-label {
+    display: none;
+    color: var(--sc-primary-900);
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .salary-chart-widget .sc-label {
+        display: block;
+    }
+}
+
+/* Main Value Display */
+.salary-chart-widget .sc-main-value {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .salary-chart-widget .sc-main-value {
+        text-align: left;
+    }
+}
+
+.salary-chart-widget .sc-q2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--sc-primary-950);
+    line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    .salary-chart-widget .sc-q2 {
+        font-size: 2.25rem;
+    }
+}
+
+.salary-chart-widget .sc-unit {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--sc-primary-800);
+    margin-left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .salary-chart-widget .sc-unit {
+        font-size: 1.125rem;
+    }
+}
+
+/* Quartiles Row */
+.salary-chart-widget .sc-quartiles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: var(--sc-primary-900);
+}
+
+.salary-chart-widget .sc-quartile {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.salary-chart-widget .sc-quartile.left {
+    text-align: left;
+}
+
+.salary-chart-widget .sc-quartile.right {
+    text-align: right;
+}
+
+.salary-chart-widget .sc-quartile-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+    .salary-chart-widget .sc-quartile-label {
+        font-size: 0.875rem;
+    }
+}
+
+.salary-chart-widget .sc-quartile-value {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .salary-chart-widget .sc-quartile-value {
+        font-size: 1.25rem;
+    }
+}
+
+/* SVG Chart */
+.salary-chart-widget .sc-chart {
+    width: 100%;
+    max-width: 100%;
+}
+
+.salary-chart-widget .sc-chart-mobile {
+    display: block;
+    margin-top: 1rem;
+    min-height: 60px;
+}
+
+.salary-chart-widget .sc-chart-desktop {
+    display: none;
+    margin-top: 0.5rem;
+    min-height: 80px;
+}
+
+@media (min-width: 768px) {
+    .salary-chart-widget .sc-chart-mobile {
+        display: none;
+    }
+
+    .salary-chart-widget .sc-chart-desktop {
+        display: block;
+    }
+}
+
+/* No Data Overlay */
+.salary-chart-widget .sc-no-data-overlay {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: grayscale(100%);
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+/* Info Text */
+.salary-chart-widget .sc-info {
+    display: none;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: var(--sc-slate-500);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .salary-chart-widget .sc-info {
+        display: block;
+    }
+}
+
+.salary-chart-widget .sc-info a {
+    text-decoration: underline;
+}
+
+.salary-chart-widget .sc-info a:hover {
+    color: var(--sc-slate-700);
+}
+
+/* Comment Badge */
+.salary-chart-widget .sc-badge {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.625rem;
+    border-radius: 0.75rem;
+    background-color: var(--sc-yellow-200);
+    color: var(--sc-yellow-900);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .salary-chart-widget .sc-badge {
+        top: 1rem;
+        right: 1rem;
+    }
+}
+
+.salary-chart-widget .sc-badge svg {
+    width: 1rem;
+    height: 1rem;
+}

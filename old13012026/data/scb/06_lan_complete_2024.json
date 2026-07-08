@@ -1,0 +1,212 @@
+[
+    {
+        "lan_code": "01",
+        "lan_name": "Stockholms län",
+        "slug": "stockholms-lan",
+        "population": 2415139,
+        "nuts_region": "SE11",
+        "salary_estimate": 46600,
+        "skattesats": 30,
+        "tier": 1
+    },
+    {
+        "lan_code": "03",
+        "lan_name": "Uppsala län",
+        "slug": "uppsala-lan",
+        "population": 395026,
+        "nuts_region": "SE12",
+        "salary_estimate": 39500,
+        "skattesats": 32.21,
+        "tier": 2
+    },
+    {
+        "lan_code": "04",
+        "lan_name": "Södermanlands län",
+        "slug": "sodermanlands-lan",
+        "population": 302252,
+        "nuts_region": "SE12",
+        "salary_estimate": 36500,
+        "skattesats": 33.44,
+        "tier": 2
+    },
+    {
+        "lan_code": "05",
+        "lan_name": "Östergötlands län",
+        "slug": "ostergotlands-lan",
+        "population": 469704,
+        "nuts_region": "SE12",
+        "salary_estimate": 36900,
+        "skattesats": 33.03,
+        "tier": 2
+    },
+    {
+        "lan_code": "06",
+        "lan_name": "Jönköpings län",
+        "slug": "jonkopings-lan",
+        "population": 369420,
+        "nuts_region": "SE21",
+        "salary_estimate": 36400,
+        "skattesats": 32.8,
+        "tier": 2
+    },
+    {
+        "lan_code": "07",
+        "lan_name": "Kronobergs län",
+        "slug": "kronobergs-lan",
+        "population": 205364,
+        "nuts_region": "SE21",
+        "salary_estimate": 35800,
+        "skattesats": 32.89,
+        "tier": 3
+    },
+    {
+        "lan_code": "08",
+        "lan_name": "Kalmar län",
+        "slug": "kalmar-lan",
+        "population": 249500,
+        "nuts_region": "SE21",
+        "salary_estimate": 35200,
+        "skattesats": 33.21,
+        "tier": 3
+    },
+    {
+        "lan_code": "09",
+        "lan_name": "Gotlands län",
+        "slug": "gotlands-lan",
+        "population": 61000,
+        "nuts_region": "SE21",
+        "salary_estimate": 35500,
+        "skattesats": 33.6,
+        "tier": 3
+    },
+    {
+        "lan_code": "10",
+        "lan_name": "Blekinge län",
+        "slug": "blekinge-lan",
+        "population": 159684,
+        "nuts_region": "SE22",
+        "salary_estimate": 35600,
+        "skattesats": 33.17,
+        "tier": 3
+    },
+    {
+        "lan_code": "12",
+        "lan_name": "Skåne län",
+        "slug": "skane-lan",
+        "population": 1402425,
+        "nuts_region": "SE22",
+        "salary_estimate": 37800,
+        "skattesats": 31.93,
+        "tier": 1
+    },
+    {
+        "lan_code": "13",
+        "lan_name": "Hallands län",
+        "slug": "hallands-lan",
+        "population": 340243,
+        "nuts_region": "SE23",
+        "salary_estimate": 37100,
+        "skattesats": 31.33,
+        "tier": 2
+    },
+    {
+        "lan_code": "14",
+        "lan_name": "Västra Götalands län",
+        "slug": "vastra-gotalands-lan",
+        "population": 1744859,
+        "nuts_region": "SE23",
+        "salary_estimate": 38200,
+        "skattesats": 32.58,
+        "tier": 1
+    },
+    {
+        "lan_code": "17",
+        "lan_name": "Värmlands län",
+        "slug": "varmlands-lan",
+        "population": 284997,
+        "nuts_region": "SE31",
+        "salary_estimate": 35400,
+        "skattesats": 33.75,
+        "tier": 3
+    },
+    {
+        "lan_code": "18",
+        "lan_name": "Örebro län",
+        "slug": "orebro-lan",
+        "population": 310380,
+        "nuts_region": "SE12",
+        "salary_estimate": 36200,
+        "skattesats": 32.62,
+        "tier": 2
+    },
+    {
+        "lan_code": "19",
+        "lan_name": "Västmanlands län",
+        "slug": "vastmanlands-lan",
+        "population": 280598,
+        "nuts_region": "SE12",
+        "salary_estimate": 36500,
+        "skattesats": 32.37,
+        "tier": 2
+    },
+    {
+        "lan_code": "20",
+        "lan_name": "Dalarnas län",
+        "slug": "dalarnas-lan",
+        "population": 289465,
+        "nuts_region": "SE31",
+        "salary_estimate": 36100,
+        "skattesats": 33.7,
+        "tier": 2
+    },
+    {
+        "lan_code": "21",
+        "lan_name": "Gävleborgs län",
+        "slug": "gavleborgs-lan",
+        "population": 289385,
+        "nuts_region": "SE31",
+        "salary_estimate": 35700,
+        "skattesats": 33.58,
+        "tier": 2
+    },
+    {
+        "lan_code": "22",
+        "lan_name": "Västernorrlands län",
+        "slug": "vasternorrlands-lan",
+        "population": 244842,
+        "nuts_region": "SE32",
+        "salary_estimate": 35900,
+        "skattesats": 34,
+        "tier": 3
+    },
+    {
+        "lan_code": "23",
+        "lan_name": "Jämtlands län",
+        "slug": "jamtlands-lan",
+        "population": 134842,
+        "nuts_region": "SE32",
+        "salary_estimate": 35600,
+        "skattesats": 33.78,
+        "tier": 3
+    },
+    {
+        "lan_code": "24",
+        "lan_name": "Västerbottens län",
+        "slug": "vasterbottens-lan",
+        "population": 275340,
+        "nuts_region": "SE33",
+        "salary_estimate": 36800,
+        "skattesats": 34.04,
+        "tier": 2
+    },
+    {
+        "lan_code": "25",
+        "lan_name": "Norrbottens län",
+        "slug": "norrbottens-lan",
+        "population": 249436,
+        "nuts_region": "SE33",
+        "salary_estimate": 37500,
+        "skattesats": 33.25,
+        "tier": 2
+    }
+]

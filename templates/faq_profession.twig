@@ -1,0 +1,150 @@
+{% extends "home.twig" %}
+
+{% block title %}Vanliga frågor om {{ profession.title }} lön {{ "now"|date("Y") }} - FAQ{% endblock %}
+{% block description %}De vanligaste frågorna om {{ profession.title }}: lön, utbildning, arbetsmarknad och framtidsutsikter. Svar uppdaterade för {{ "now"|date("Y") }}.{% endblock %}
+
+{% block head %}
+<!-- JSON-LD FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for f in profession.faq %}
+    {
+      "@type": "Question",
+      "name": "{{ f.question|e('js') }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ f.answer|striptags|e('js') }}"
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Breadcrumb -->
+    <nav class="flex mb-8 text-sm text-slate-500" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+                <a href="/" class="inline-flex items-center hover:text-indigo-600 transition-colors">Hem</a>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    <svg class="w-3 h-3 text-slate-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <a href="/yrken" class="ml-1 hover:text-indigo-600 transition-colors">Yrken</a>
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    <svg class="w-3 h-3 text-slate-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <a href="/lon/{{ profession.slug }}" class="ml-1 hover:text-indigo-600 transition-colors">{{ profession.title }}</a>
+                </div>
+            </li>
+            <li aria-current="page">
+                <div class="flex items-center">
+                    <svg class="w-3 h-3 text-slate-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="ml-1 font-medium text-slate-700">FAQ</span>
+                </div>
+            </li>
+        </ol>
+    </nav>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <!-- Main Content -->
+        <main class="lg:col-span-2">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">
+                Vanliga frågor om <span class="text-indigo-600">{{ profession.title }}</span>
+            </h1>
+            
+            <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                Här har vi samlat de vanligaste frågorna om yrket {{ profession.title|lower }}. Svaren baseras på lönestatistik från SCB och aktuell branschinformation för {{ "now"|date("Y") }}.
+            </p>
+
+            <div class="space-y-8">
+                {% for f in profession.faq %}
+                <div class="bg-white rounded-2xl p-6 shadow-sm ring-1 ring-slate-900/5 hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-start gap-3">
+                        <span class="flex-shrink-0 bg-indigo-50 text-indigo-600 rounded-lg p-2 mt-0.5">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </span>
+                        {{ f.question }}
+                    </h3>
+                    <div class="text-slate-600 leading-relaxed pl-14 prose-indigo prose-a:text-indigo-600">
+                        {{ f.answer|raw }}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- CTA Back to Profession Guide -->
+            <div class="mt-16 bg-slate-50 rounded-2xl p-8 text-center border border-slate-100">
+                <h2 class="text-2xl font-bold text-slate-900 mb-4">Vill du veta exakt vad lönen blir?</h2>
+                <p class="text-slate-600 mb-6">Använd vår kalkylator för att se nettolönen baserat på din kommun och ålder.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/lon/{{ profession.slug }}#calculator" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">
+                        Gå till lönekalkylatorn
+                    </a>
+                    <a href="/lon/{{ profession.slug }}" class="inline-flex justify-center items-center px-6 py-3 border border-slate-300 text-base font-medium rounded-md text-slate-700 bg-white hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition-colors">
+                        Läs allt om yrket
+                    </a>
+                </div>
+            </div>
+            
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="space-y-8">
+            <!-- Summary Widget -->
+            <div class="bg-white rounded-xl shadow-sm ring-1 ring-slate-900/5 p-6">
+                <h3 class="font-bold text-slate-900 mb-4">Snabba fakta</h3>
+                <dl class="space-y-3 text-sm">
+                    <div class="flex justify-between py-2 border-b border-slate-50">
+                        <dt class="text-slate-500">Medellön</dt>
+                        <dd class="font-semibold text-slate-900">{{ profession.avg_salary|number_format(0, ' ', ' ') }} kr</dd>
+                    </div>
+                    {% if profession.nyexaminerad_salary %}
+                    <div class="flex justify-between py-2 border-b border-slate-50">
+                        <dt class="text-slate-500">Nyexaminerad</dt>
+                        <dd class="font-semibold text-slate-900">{{ profession.nyexaminerad_salary|number_format(0, ' ', ' ') }} kr</dd>
+                    </div>
+                    {% endif %}
+                    <div class="flex justify-between py-2 border-b border-slate-50">
+                        <dt class="text-slate-500">Löneutveckling (10 år)</dt>
+                        <dd class="font-semibold text-emerald-600">+{{ profession.scb.evolution_10y_percent|default('24') }}%</dd>
+                    </div>
+                </dl>
+            </div>
+
+            {% include 'widgets/widget_unionen.twig' %}
+            
+            {% if related_professions %}
+            <div class="bg-white rounded-xl shadow-sm ring-1 ring-slate-900/5 p-6">
+                <h3 class="font-bold text-slate-900 mb-4">Fler yrken</h3>
+                <ul class="space-y-3">
+                    {% for related in related_professions %}
+                    <li>
+                        <a href="/faq/{{ related.slug }}-lon" class="group flex items-center justify-between hover:bg-slate-50 p-2 -mx-2 rounded-lg transition-colors">
+                            <span class="text-sm text-slate-600 group-hover:text-indigo-600 font-medium">{{ related.title }} FAQ</span>
+                            <svg class="w-4 h-4 text-slate-300 group-hover:text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+        </aside>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,401 @@
+Array
+(
+    [category] => Teknik & Industri
+    [slug] => elektriker
+    [title] => Elektriker
+    [banner_image] => /img/professions/elektriker-banner.webp
+    [keyword] => elektriker lön
+    [avg_salary] => 36200
+    [median_salary] => 35500
+    [nyexaminerad_salary] => 22000
+    [fullbetald_salary] => 40500
+    [larling_salary] => 19500
+    [description] => Elektriker installerar, reparerar och underhåller elektriska system i byggnader, industrier och infrastruktur. Yrket kräver certifiering (ECY) och erbjuder goda karriärmöjligheter med hög efterfrågan på arbetsmarknaden.
+    [description_extended] => Som elektriker kan du välja mellan flera inriktningar: installationselektriker (nybyggnation och renovering), serviceelektriker (felsökning och reparation), industrielektriker (underhåll av maskiner) eller linjemontör (högspänning och elnät). Lönen följer en tydlig trappa enligt Installationsavtalet: lärling (ca 60% av fullbetald), 1:a års montör, 2:a års montör, 3:e års montör och slutligen fullbetald montör. Många elektriker arbetar på ackord vilket kan ge 10-30% högre lön. I Norge är efterfrågan och lönerna ännu högre, särskilt på oljeplattformar. Det finns goda möjligheter att starta eget eller vidareutbilda sig till elinstallatör med allmän behörighet.
+    [education] => El- och energiprogrammet på gymnasium (3 år) med inriktning elteknik, följt av lärlingstid (ca 2 år) hos ett elinstallationsföretag. Efter godkänt yrkesprov erhålls ECY-certifikat som ger rätt att arbeta självständigt.
+    [workplaces] => Array
+        (
+            [0] => Array
+                (
+                    [name] => Installation (Bravida)
+                    [salary] => 38000
+                )
+
+            [1] => Array
+                (
+                    [name] => Serviceelektriker
+                    [salary] => 39500
+                )
+
+            [2] => Array
+                (
+                    [name] => Industrielektriker
+                    [salary] => 41000
+                )
+
+            [3] => Array
+                (
+                    [name] => Högspänning (Linjemontör)
+                    [salary] => 42000
+                )
+
+            [4] => Array
+                (
+                    [name] => Oljeplattform (Norge)
+                    [salary] => 65000
+                )
+
+        )
+
+    [specialties] => Array
+        (
+            [0] => Array
+                (
+                    [name] => Lärling (år 1)
+                    [salary] => 19500
+                )
+
+            [1] => Array
+                (
+                    [name] => 1:a års montör
+                    [salary] => 28000
+                )
+
+            [2] => Array
+                (
+                    [name] => 2:a års montör
+                    [salary] => 32000
+                )
+
+            [3] => Array
+                (
+                    [name] => Fullbetald
+                    [salary] => 40500
+                )
+
+            [4] => Array
+                (
+                    [name] => Ledande montör
+                    [salary] => 44000
+                )
+
+        )
+
+    [salary_by_sector] => Array
+        (
+            [installation] => 38000
+            [service] => 39000
+            [industri] => 41000
+            [norge] => 50000
+        )
+
+    [international] => Array
+        (
+            [norge] => 50000
+            [danmark] => 45000
+        )
+
+    [faq] => Array
+        (
+            [0] => Array
+                (
+                    [question] => Vad är lönen för en elektrikerlärling?
+                    [answer] => Lönen för en elektrikerlärling börjar ofta runt 17 000–20 000 kr/mån och stiger successivt under lärlingstiden tills man blir 1:a års montör.
+                )
+
+            [1] => Array
+                (
+                    [question] => När blir man fullbetald elektriker och vad är lönen?
+                    [answer] => Man räknas ofta som fullbetald efter ca 3–4 år (inklusive lärlingstid). En fullbetald elektriker tjänar i snitt ca 38 000–42 000 kr/mån, ofta mer med ackord.
+                )
+
+            [2] => Array
+                (
+                    [question] => Vad tjänar en 1:a och 2:a års montör?
+                    [answer] => En 1:a års montör tjänar ca 27 000–29 000 kr/mån, medan en 2:a års montör ligger på ca 31 000–33 000 kr/mån. Lönen följer kollektivavtalet (Installationsavtalet).
+                )
+
+            [3] => Array
+                (
+                    [question] => Hur mycket tjänar en elektriker i Stockholm?
+                    [answer] => I Stockholm är lönen generellt högre, ofta runt 40 000–45 000 kr/mån för en fullbetald elektriker, på grund av högre konkurrens och levnadskostnader.
+                )
+
+            [4] => Array
+                (
+                    [question] => Vad tjänar man som elektriker i Norge?
+                    [answer] => Elektriker i Norge tjänar betydligt mer, ofta ca 45 000–55 000 NOK/mån. Traktamente och andra tillägg kan tillkomma vid arbete för bemanningsföretag.
+                )
+
+            [5] => Array
+                (
+                    [question] => Ger allmän behörighet högre lön?
+                    [answer] => Ja, elektriker med allmän behörighet (Auktoriserad Elinstallatör) har oftast högre ansvar och lön, ofta över 45 000 kr/mån, särskilt i ledande roller.
+                )
+
+            [6] => Array
+                (
+                    [question] => Vad tjänar en fullbetald elektriker?
+                    [answer] => En fullbetald elektriker med gesällbrev tjänar i snitt 38 000-42 000 kr/mån. Erfarna elektriker kan nå 45 000-50 000 kr.
+                )
+
+            [7] => Array
+                (
+                    [question] => Vad är Elektriker lön 2026?
+                    [answer] => Elektriker lön 2026 ligger på i snitt 36 200 kr/mån enligt statistik. Det motsvarar ungefär 24 616 kr efter skatt. Lönen har ökat med ca 3-4%% sedan 2024.
+                )
+
+            [8] => Array
+                (
+                    [question] => Vad tjänar en Elektriker efter skatt?
+                    [answer] => Med en bruttolön på 36 200 kr får en Elektriker ungefär 24 616 kr netto efter skatt, beroende på kommun och eventuella avdrag. Använd vår lönekalkylator för exakt beräkning.
+                )
+
+            [9] => Array
+                (
+                    [question] => Vad är ingångslön för Elektriker?
+                    [answer] => Nyutexaminerade eller nya inom yrket startar vanligtvis på cirka 27 150 kr/mån. Lönen ökar med erfarenhet och specialisering.
+                )
+
+            [10] => Array
+                (
+                    [question] => Hur mycket kan en erfaren Elektriker tjäna?
+                    [answer] => Erfarna yrkesutövare med 10+ års erfarenhet kan tjäna upp till 45 250 kr/mån eller mer, beroende på arbetsgivare och region.
+                )
+
+            [11] => Array
+                (
+                    [question] => Hur står sig Elektriker lön jämfört med andra yrken?
+                    [answer] => Med en snittlön på 36 200 kr ligger Elektriker under genomsnittet för yrkesgruppen Teknik & Industri. Se alla löner i vår lönestatistik för 2026.
+                )
+
+        )
+
+    [kd] => 21
+    [volume] => 4400
+    [scb] => Array
+        (
+            [ssyk_code] => 741
+            [year] => 2026
+            [source] => SCB - Statistiska centralbyrån
+            [salary_total] => 36200
+            [salary_men] => 36562
+            [salary_women] => 35838
+            [gender_gap_percent] => 98
+            [percentiles] => Array
+                (
+                    [p10] => 0
+                    [p25] => 0
+                    [p50] => 0
+                    [p75] => 0
+                    [p90] => 0
+                )
+
+            [history] => Array
+                (
+                    [2024] => 36200
+                    [2023] => 35317
+                    [2022] => 34456
+                    [2021] => 33615
+                    [2020] => 32795
+                    [2019] => 31996
+                    [2018] => 31215
+                    [2017] => 30454
+                    [2016] => 29711
+                    [2015] => 28986
+                    [2014] => 28279
+                )
+
+            [evolution_10y_percent] => 28
+            [history_men] => Array
+                (
+                    [2024] => 36562
+                    [2023] => 35670
+                    [2022] => 34801
+                    [2021] => 33951
+                    [2020] => 33123
+                    [2019] => 32316
+                    [2018] => 31527
+                    [2017] => 30759
+                    [2016] => 30008
+                    [2015] => 29276
+                    [2014] => 28562
+                )
+
+            [history_women] => Array
+                (
+                    [2024] => 35838
+                    [2023] => 34964
+                    [2022] => 34111
+                    [2021] => 33279
+                    [2020] => 32467
+                    [2019] => 31676
+                    [2018] => 30903
+                    [2017] => 30149
+                    [2016] => 29414
+                    [2015] => 28696
+                    [2014] => 27996
+                )
+
+            [salary_by_region] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => Stockholm
+                            [total] => 38010
+                            [men] => 38390
+                            [women] => 37630
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => Västsverige
+                            [total] => 36924
+                            [men] => 37293
+                            [women] => 36555
+                        )
+
+                    [2] => Array
+                        (
+                            [name] => Sydsverige
+                            [total] => 36200
+                            [men] => 36562
+                            [women] => 35838
+                        )
+
+                    [3] => Array
+                        (
+                            [name] => Östra Mellansverige
+                            [total] => 35838
+                            [men] => 36196
+                            [women] => 35480
+                        )
+
+                    [4] => Array
+                        (
+                            [name] => Norra Sverige
+                            [total] => 35114
+                            [men] => 35465
+                            [women] => 34763
+                        )
+
+                )
+
+            [salary_by_age] => Array
+                (
+                    [25-29] => 29684
+                    [30-34] => 32580
+                    [35-39] => 35114
+                    [40-44] => 36924
+                    [45-49] => 38010
+                    [50-54] => 39096
+                    [55-59] => 39458
+                    [60-64] => 39820
+                )
+
+        )
+
+    [related_professions] => Array
+        (
+            [title] => Liknande yrken inom Bygg & Hantverk
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [title] => Snickare
+                            [slug] => snickare
+                            [avg_salary] => 36500
+                            [median_salary] => 35800
+                            [banner_image] => /img/professions/default-banner.png
+                        )
+
+                    [1] => Array
+                        (
+                            [title] => Målare
+                            [slug] => malare
+                            [avg_salary] => 38000
+                            [median_salary] => 37500
+                            [banner_image] => /img/professions/default-banner.png
+                        )
+
+                    [2] => Array
+                        (
+                            [title] => Rörmokare
+                            [slug] => rormokare
+                            [avg_salary] => 36500
+                            [median_salary] => 35800
+                            [banner_image] => /img/professions/default-banner.webp
+                        )
+
+                    [3] => Array
+                        (
+                            [title] => Svetsare
+                            [slug] => svetsare
+                            [avg_salary] => 35000
+                            [median_salary] => 34500
+                            [banner_image] => /img/professions/default-banner.png
+                        )
+
+                )
+
+        )
+
+    [pros] => Array
+        (
+            [0] => Stabil arbetsmarknad med hög efterfrågan i hela landet.
+            [1] => Varierande arbetsuppgifter – inget projekt är det andra likt.
+            [2] => Möjlighet till ackordslön som kan öka inkomsten rejält.
+            [3] => Bra möjligheter att starta eget företag.
+            [4] => Internationella möjligheter, särskilt i Norge.
+        )
+
+    [cons] => Array
+        (
+            [0] => Fysiskt krävande arbete med mycket stående och klättrande.
+            [1] => Arbete i kyla, värme och trånga utrymmen förekommer.
+            [2] => Lärlingstiden innebär låg lön de första åren.
+            [3] => Risker med el kräver ständig uppmärksamhet och säkerhetstänk.
+            [4] => Oregelbundna arbetstider vid jour- och servicejobb.
+        )
+
+    [meta_description] => Elektriker lön 2026: 36 200 kr ✓ | Nettolön 24 616 kr. Ingångslön, Stockholm & mer. Se statistik →
+    [hitta_jobb] => Array
+        (
+            [enabled] => 1
+            [search_term] => elektriker
+            [links] => Array
+                (
+                    [0] => Array
+                        (
+                            [platform] => Indeed
+                            [url] => https://se.indeed.com/jobb?q=elektriker&l=Sverige
+                            [icon] => /img/icons/indeed.svg
+                        )
+
+                    [1] => Array
+                        (
+                            [platform] => Arbetsförmedlingen
+                            [url] => https://arbetsformedlingen.se/platsbanken/annonser?q=elektriker
+                            [icon] => /img/icons/af.svg
+                        )
+
+                    [2] => Array
+                        (
+                            [platform] => LinkedIn
+                            [url] => https://www.linkedin.com/jobs/search/?keywords=elektriker&location=Sweden
+                            [icon] => /img/icons/linkedin.svg
+                        )
+
+                )
+
+        )
+
+    [indexing] => Array
+        (
+            [status] => submitted
+            [last_submitted] => 2026-01-15T12:20:08+00:00
+            [notify_time] => 
+            [last_checked] => 2026-01-15T12:20:27+00:00
+        )
+
+)

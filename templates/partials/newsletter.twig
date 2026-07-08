@@ -1,0 +1,36 @@
+<div class="newsletter-box" id="newsletter-box" style="display: none;">
+    <div class="newsletter-content">
+
+        <!-- Variante A : FOMO -->
+        <div class="newsletter-text" data-variant="variant_fomo">
+            <h3>Din kollega tjänar antagligen mer än dig.</h3>
+            <p>Se statistiken cheferna inte vill att du ska se. Gå med i listan och få lönestatistiken före alla andra.
+            </p>
+        </div>
+
+        <!-- Variante B : Loss Aversion -->
+        <div class="newsletter-text" data-variant="variant_loss">
+            <h3>Sluta kasta bort 3 000 kr varje månad.</h3>
+            <p>Vi har samlat 5 lagliga skatteavdrag som de flesta svenskar missar. Få PDF-guiden direkt i din inkorg.
+            </p>
+        </div>
+
+        <!-- Variante C : Secret -->
+        <div class="newsletter-text" data-variant="variant_secret">
+            <h3>Den Svenska Lönehemligheten 🤫</h3>
+            <p>Det finns ett sätt att höja sin lön utan att byta jobb. 4 500 personer har redan använt metoden. Vill du
+                veta hur?</p>
+        </div>
+
+        <!-- Formulaire -->
+        <form id="newsletter-form" class="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Din e-postadress" required>
+            <button type="submit" id="newsletter-submit">
+                <span class="btn-text">Se vad jag är värd</span> <!-- Texte par défaut, changé par JS -->
+            </button>
+        </form>
+
+        <div id="newsletter-message"></div>
+        <span class="newsletter-close" id="newsletter-close">&times;</span>
+    </div>
+</div>

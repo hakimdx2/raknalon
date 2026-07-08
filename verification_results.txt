@@ -1,0 +1,12 @@
+Verification Results:
+Slug 'st-lakare' FOUND. Count: 1
+  Title: ST-läkare
+  SCB Data present: YES
+    SSYK: 2212
+    Salary: 54000
+Slug 'specialistsjukskoterska' FOUND. Count: 1
+  Title: Specialistsjuksköterska
+  SCB Data present: YES
+    SSYK: 2199
+    Salary: 44500
+Slug 'industrielektriker' NOT FOUND in professions.json

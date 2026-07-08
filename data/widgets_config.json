@@ -1,0 +1,31 @@
+{
+    "simulateur": {
+        "enabled": false,
+        "name": "Simulateur Lön",
+        "description": "FUSIONNÉ dans le calculateur principal"
+    },
+    "unionen": {
+        "enabled": false,
+        "name": "Unionen CTA",
+        "description": "Adhésion syndicat via Adtraction",
+        "affiliate_url": "https://adtraction.com/t/t?a=XXXXXX&as=YYYYYY&t=2&tk=1",
+        "note": "Remplacer XXXXXX et YYYYYY par les vrais IDs Adtraction"
+    },
+    "compricer": {
+        "enabled": false,
+        "name": "Compricer Lån",
+        "description": "Comparateur de prêt via Adtraction",
+        "affiliate_url": "https://adtraction.com/t/t?a=ZZZZZZ&as=WWWWWW&t=2&tk=1",
+        "note": "Remplacer ZZZZZZ et WWWWWW par les vrais IDs Adtraction",
+        "credit_example": {
+            "amount": 150000,
+            "duration_years": 10,
+            "rate_nominal": 8.90,
+            "rate_effective": 10.44,
+            "setup_fee": 495,
+            "monthly_fee": 35,
+            "total_to_pay": 197743,
+            "last_updated": "2026-01-12"
+        }
+    }
+}

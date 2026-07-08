@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Alpine.js cloak to prevent FOUC */
+[x-cloak] {
+    display: none !important;
+}
+
+@layer components {
+    .cursor-wait {
+        cursor: wait;
+    }
+}

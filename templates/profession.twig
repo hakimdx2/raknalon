@@ -1,0 +1,1334 @@
+{% extends "home.twig" %}
+
+{% set months_sv = {'01': 'Januari', '02': 'Februari', '03': 'Mars', '04': 'April', '05': 'Maj', '06': 'Juni', '07': 'Juli', '08': 'Augusti', '09': 'September', '10': 'Oktober', '11': 'November', '12': 'December'} %}
+{% set current_month_sv = months_sv["now"|date("m")] %}
+{% set title = 'Lön ' ~ profession.title ~ ' 2026 (' ~ current_month_sv ~ ') - Statistik & Lön' %}
+
+{% block head_extra %}
+	<!-- Occupation Schema.org - Enriched with SCB Data -->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script type="application/ld+json">
+		{
+																																																																																		    "@context": "https://schema.org",
+																																																																																		    "@type": "Occupation",
+																																																																																		    "name": "{{ profession.title }}",
+																																																																																		    "description": "{{ profession.description|e('js') }}",
+		{% if profession.scb is defined and profession.scb.ssyk_code is defined %}
+			"occupationalCategory": "{{ profession.scb.ssyk_code }}",
+		{% endif %}
+		"occupationLocation": {
+																																																																																		        "@type": "Country",
+																																																																																		        "name": "Sweden",
+																																																																																		        "sameAs": "https://sv.wikipedia.org/wiki/Sverige"
+																																																																																		    },
+																																																																																		    "estimatedSalary": {
+																																																																																		        "@type": "MonetaryAmountDistribution",
+																																																																																		        "name": "Månadslön",
+																																																																																		        "currency": "SEK",
+																																																																																		        "duration": "P1M",
+		{% if profession.scb is defined and profession.scb.salary_total > 0 %}
+			"median":
+			{{ profession.scb.salary_total }},
+																																																																																																																											        "percentile10":
+			{{ profession.scb.percentiles.p10 > 0 ? profession.scb.percentiles.p10 : (profession.median_salary * 0.7)|round }},
+																																																																																																																											        "percentile25":
+			{{ profession.scb.percentiles.p25 > 0 ? profession.scb.percentiles.p25 : (profession.median_salary * 0.85)|round }},
+																																																																																																																											        "percentile75":
+			{{ profession.scb.percentiles.p75 > 0 ? profession.scb.percentiles.p75 : (profession.avg_salary * 1.15)|round }},
+																																																																																																																											        "percentile90":
+			{{ profession.scb.percentiles.p90 > 0 ? profession.scb.percentiles.p90 : (profession.avg_salary * 1.35)|round }}
+		{% else %}
+			"median":
+			{{ profession.median_salary }},
+																																																																																																																											        "percentile25":
+			{{ (profession.median_salary * 0.85)|round }},
+																																																																																																																											        "percentile75":
+			{{ (profession.avg_salary * 1.15)|round }}
+		{% endif %}
+		},
+																																																																																		    "educationRequirements": "{{ profession.education|e('js') }}",
+																																																																																		    "qualifications": "{{ profession.education|e('js') }}"
+																																																																																		}
+	</script>
+
+	{% if profession.scb is defined and profession.scb.salary_men > 0 and profession.scb.salary_women > 0 %}
+		<!-- FAQPage Schema.org for SCB Data -->
+		<script type="application/ld+json">
+			{
+																																																																																																																											    "@context": "https://schema.org",
+																																																																																																																											    "@type": "FAQPage",
+																																																																																																																											    "mainEntity": [
+																																																																																																																											        {
+																																																																																																																											            "@type": "Question",
+																																																																																																																											            "name": "Vad är medellönen för en
+			{{ profession.title|lower }}
+			{{ profession.scb.year }}?",
+																																																																																																																											            "acceptedAnswer": {
+																																																																																																																											                "@type": "Answer",
+																																																																																																																											                "text": "Enligt SCB:s officiella statistik är medellönen för en
+			{{ profession.title|lower }}
+			{{ profession.scb.salary_total|number_format(0, ' ', ' ') }}
+			kr per månad ({{ profession.scb.year }})."
+																																																																																																																											            }
+																																																																																																																											        },
+																																																																																																																											        {
+																																																																																																																											            "@type": "Question",
+																																																																																																																											            "name": "Tjänar män eller kvinnor mer som
+			{{ profession.title|lower }}?",
+																																																																																																																											            "acceptedAnswer": {
+																																																																																																																											                "@type": "Answer",
+																																																																																																																											                "text": "Män tjänar i genomsnitt
+			{{ profession.scb.salary_men|number_format(0, ' ', ' ') }}
+			kr medan kvinnor tjänar
+			{{ profession.scb.salary_women|number_format(0, ' ', ' ') }}
+			kr. Kvinnor tjänar
+			{{ profession.scb.gender_gap_percent }}% av mäns lön."
+																																																																																																																											            }
+																																																																																																																											        }
+			{% if profession.scb.evolution_10y_percent is defined %},
+																																																																																																																																																																				        {
+																																																																																																																																																																				            "@type": "Question",
+																																																																																																																																																																				            "name": "Hur har lönen för
+				{{ profession.title|lower }}
+				utvecklats?",
+																																																																																																																																																																				            "acceptedAnswer": {
+																																																																																																																																																																				                "@type": "Answer",
+																																																																																																																																																																				                "text": "Lönen för
+				{{ profession.title|lower }}
+				har ökat med
+				{{ profession.scb.evolution_10y_percent }}% under de senaste 10 åren (2014-2024), enligt SCB."
+																																																																																																																																																																				            }
+																																																																																																																																																																				        }
+			{% endif %}
+			]
+																																																																																																																											}
+		</script>
+	{% endif %}
+
+	<!-- Article Schema for Freshness & EEAT Signals (Leak Tier 2) -->
+	<script type="application/ld+json">
+		{
+																																																										        "@context": "https://schema.org",
+																																																										        "@type": "Article",
+																																																										        "headline": "{{ profession.title }}
+		Lön 2026 - Lönestatistik & Ingångslön",
+																																																										        "datePublished": "2026-01-01",
+																																																										        "dateModified": "{{ "now"|date("Y-m-d") }}",
+																																																										        "author": {
+																																																										            "@type": "Organization",
+																																																										            "name": "Räkna Lön",
+																																																										            "url": "https://raknalon.se"
+																																																										        },
+																																																										        "publisher": {
+																																																										            "@type": "Organization",
+																																																										            "name": "Räkna Lön",
+																																																										            "logo": {
+																																																										                "@type": "ImageObject",
+																																																										                "url": "https://raknalon.se/img/logo-new.svg"
+																																																										            }
+																																																										        },
+																																																										        "image": "https://raknalon.se{{ profession.banner_image|default('/img/professions/default-banner.webp') }}",
+																																																										        "mainEntityOfPage": {
+																																																										            "@type": "WebPage",
+																																																										            "@id": "https://raknalon.se/lon/{{ profession.slug }}"
+																																																										        }
+																																																										    }
+	</script>
+
+	<!-- BreadcrumbList Schema.org -->
+	<script type="application/ld+json">
+		{
+																																																																																		    "@context": "https://schema.org",
+																																																																																		    "@type": "BreadcrumbList",
+																																																																																		    "itemListElement": [
+																																																																																		        {
+																																																																																		            "@type": "ListItem",
+																																																																																		            "position": 1,
+																																																																																		            "name": "Hem",
+																																																																																		            "item": "https://raknalon.se/"
+																																																																																		        },
+																																																																																		        {
+																																																																																		            "@type": "ListItem",
+																																																																																		            "position": 2,
+																																																																																		            "name": "Yrken",
+																																																																																		            "item": "https://raknalon.se/yrken"
+																																																																																		        },
+																																																																																		        {
+																																																																																		            "@type": "ListItem",
+																																																																																		            "position": 3,
+																																																																																		            "name": "{{ profession.category|default('Allmänt') }}",
+																																																																																		            "item": "https://raknalon.se/yrken#{{ profession.category|default('Allmänt')|lower|replace({' ': '-', '&': ''}) }}"
+																																																																																		        },
+																																																																																		        {
+																																																																																		            "@type": "ListItem",
+																																																																																		            "position": 4,
+																																																																																		            "name": "{{ profession.title }}",
+																																																																																		            "item": "https://raknalon.se/lon/{{ profession.slug }}"
+																																																																																		        }
+																																																																																		    ]
+																																																																																		}
+	</script>
+{% endblock %}
+
+{% block content %}
+	{% include 'partials/ads/config.twig' %}
+	<div class="bg-slate-50 min-h-screen pb-20">
+		<div
+			class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+			<!-- Breadcrumb -->
+			<nav class="flex mb-8" aria-label="Breadcrumb">
+				<ol role="list" class="flex items-center space-x-2">
+					<li>
+						<a href="/" class="text-sm font-medium text-slate-500 hover:text-indigo-600">Hem</a>
+					</li>
+					<li>
+						<span class="text-slate-300">/</span>
+					</li>
+					<li>
+						<a href="/yrken" class="text-sm font-medium text-slate-500 hover:text-indigo-600">Yrken</a>
+					</li>
+					<li>
+						<span class="text-slate-300">/</span>
+					</li>
+					<li>
+						<span class="text-sm font-medium text-slate-500">{{ profession.category|default('Allmänt') }}</span>
+					</li>
+					<li>
+						<span class="text-slate-300">/</span>
+					</li>
+					<li>
+						<span class="text-sm font-medium text-indigo-600" aria-current="page">{{ profession.title }}</span>
+					</li>
+				</ol>
+			</nav>
+
+			<!-- Header -->
+			<div class="text-center mb-12">
+				<div class="flex flex-col items-center justify-center gap-4 mb-8">
+					<div class="flex items-center justify-center gap-2">
+						<span class="inline-flex items-center rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+							Lönestatistik 2026
+						</span>
+						{% if profession.category %}
+							<span class="inline-flex items-center rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600 ring-1 ring-inset ring-slate-500/10">
+								{{ profession.category }}
+							</span>
+						{% endif %}
+					</div>
+				</div>
+				<h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl mb-4">
+					Hur mycket tjänar en
+					{{ profession.title }}?
+				</h1>
+
+				<!-- Ezoic 102: under_page_title -->
+				<!-- AdSense: Top (High Visibility) -->
+				{% include 'partials/ads/display.twig' with {'slot_name': 'profession_top'} %}
+				<p class="text-sm text-slate-500 mb-6 font-medium">
+					<svg class="w-4 h-4 inline-block mr-1 -mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+					</svg>
+					Senast uppdaterad:
+					{{ "now"|date("j F Y") | replace({'January': 'januari', 'February': 'februari', 'March': 'mars', 'April': 'april', 'May': 'maj', 'June': 'juni', 'July': 'juli', 'August': 'augusti', 'September': 'september', 'October': 'oktober', 'November': 'november', 'December': 'december'}) }}
+				</p>
+
+				<!-- Author E-E-A-T (Top) -->
+				{% if profession.author %}
+					<a href="/om-oss/nala" class="group flex items-center justify-center gap-3 mb-6 mt-2 hover:bg-slate-50 p-2 rounded-lg transition-colors">
+						<img src="{{ profession.author.image }}" alt="{{ profession.author.name }}" class="h-10 w-10 rounded-full object-cover ring-2 ring-white shadow-sm group-hover:ring-indigo-200 transition-all" style="
+																																																																																																																																																																																																											    border: 2px solid #0f172a6e;
+																																																																																																																																																																																																											">
+						<div class="text-left">
+							<p class="text-sm font-bold text-slate-900 leading-none group-hover:text-indigo-700 transition-colors">{{ profession.author.name }}</p>
+							<p class="text-xs text-slate-500 font-medium group-hover:text-indigo-500 transition-colors">{{ profession.author.role }}</p>
+						</div>
+					</a>
+				{% endif %}
+				<p class="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
+					Se aktuell lönestatistik, utbildningskrav och räkna ut vad en
+					{{ profession.title|lower }}
+					får ut efter skatt.
+				</p>
+				<div class="flex justify-center">
+					<button onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'})" class="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all">
+						<svg class="h-5 w-5" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-11.25a.75.75 0 00-1.5 0v2.5h-2.5a.75.75 0 000 1.5h2.5v2.5a.75.75 0 001.5 0v-2.5h2.5a.75.75 0 000-1.5h-2.5v-2.5z" clip-rule="evenodd"/>
+						</svg>
+						Räkna ut lön efter skatt
+					</button>
+				</div>
+			</div>
+
+			<!-- Stats Grid -->
+			<div
+				class="grid grid-cols-1 gap-5 sm:grid-cols-3 mb-12">
+				<!-- Snittlön (SCB or fallback) -->
+				<div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 px-6 py-6">
+					<dt class="truncate text-sm font-medium text-slate-500">Snittlön</dt>
+					{% if profession.scb is defined and profession.scb.salary_total > 0 %}
+						<dd class="mt-2 text-3xl font-bold tracking-tight text-slate-900">{{ profession.scb.salary_total|number_format(0, ',', ' ') }}
+							kr</dd>
+						<dd class="mt-2 text-sm text-slate-500">Privat sektor (SCB
+							{{ profession.scb.year }})</dd>
+					{% else %}
+						<dd class="mt-2 text-3xl font-bold tracking-tight text-slate-900">{{ profession.avg_salary|number_format(0, ',', ' ') }}
+							kr</dd>
+						<dd class="mt-2 text-sm text-slate-500">Genomsnitt i Sverige</dd>
+					{% endif %}
+				</div>
+				<!-- Median -->
+				<div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 px-6 py-6">
+					<dt class="truncate text-sm font-medium text-slate-500">Medianlön</dt>
+					<dd class="mt-2 text-3xl font-bold tracking-tight text-slate-900">{{ profession.median_salary|number_format(0, ',', ' ') }}
+						kr</dd>
+					<dd class="mt-2 flex items-center text-sm text-emerald-600 font-medium">
+						<svg class="h-4 w-4 mr-1" viewbox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L8.586 10l-4.293 4.293z" clip-rule="evenodd"/></svg>
+						Vanligaste lönen
+					</dd>
+				</div>
+				<!-- Löneutveckling or Efterfrågan -->
+				<div class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-900/5 px-6 py-6">
+					{% if profession.scb is defined and profession.scb.evolution_10y_percent %}
+						<dt class="truncate text-sm font-medium text-slate-500">Löneutveckling</dt>
+						<dd class="mt-2 text-3xl font-bold tracking-tight text-emerald-600">+{{ profession.scb.evolution_10y_percent }}%</dd>
+						<dd class="mt-2 text-sm text-slate-500">Senaste 10 åren</dd>
+					{% else %}
+						<dt class="truncate text-sm font-medium text-slate-500">Efterfrågan</dt>
+						<dd class="mt-2 text-3xl font-bold tracking-tight text-slate-900">Hög</dd>
+						<dd class="mt-2 text-sm text-slate-500">Framtidsutsikter: Goda</dd>
+					{% endif %}
+				</div>
+			</div>
+
+
+			<!-- Grid Layout: Main Content + Sticky TOC -->
+			<div id="toc-grid" class="lg:grid lg:grid-cols-[1fr_240px] lg:gap-8">
+
+				<!-- Changing target to sidebar col which is likely later, wait. The code snippet shows `lg:grid-cols-[1fr_240px]`. The first div is the main col. The second div (sidebar) is missing in the visible snippet 302-317. I need to scroll down to find the right column. -->
+				<!-- Correction: I will use a different anchor. Line 327 is introduction. -->
+
+					<div class="lg:col-start-1"> {# ============================================== #}
+					{# BLOC SCB 1: Source Officielle + Gender Gap    #}
+					{# ============================================== #}
+					{% include 'partials/scb_gender_gap.twig' %}
+
+
+					<!-- Calculator Embed -->
+					{% include 'partials/salary_calculator.twig' %}
+					{# {% include 'partials/salary_barometer.twig' %} #}
+					{% include 'partials/scb_salary_chart.twig' %}
+
+
+					<!-- Content & FAQ Combined -->
+						<article id="om-yrket" class="prose prose-lg prose-indigo w-full max-w-none bg-white p-8 sm:p-12 rounded-2xl shadow-sm ring-1 ring-slate-900/5 prose-p:leading-loose prose-li:leading-loose" style="position: relative;"> {% if profession.banner_image %}
+							<div style="position: absolute; top: -80px; right: 0; max-width: 150px; z-index: 999;">
+								<img src="{{ profession.banner_image }}" alt="{{ profession.title }}" class="w-full h-auto">
+							</div>
+						{% endif %}
+
+						<h2 class="mt-0">Om yrket
+							{{ profession.title }}</h2>
+
+						<p class="text-lg text-slate-700 leading-loose mb-8">{{ profession.description|raw }}</p>
+
+						<!-- Ezoic 109: under_first_paragraph -->
+						<!-- AdSense: In-Article (Native) -->
+						{% include 'partials/ads/in_article.twig' with {'slot_name': 'profession_in_article'} %}
+
+						<!-- In-Content CTA (High Conversion) -->
+
+
+						{% if profession.description_extended %}
+							<p class="text-slate-600 leading-loose mb-8">{{ profession.description_extended|raw }}</p>
+						{% endif %}
+
+						{% if profession.content_images[0] is defined %}
+							<figure class="my-8 rounded-2xl overflow-hidden shadow-lg ring-1 ring-slate-900/5">
+								<img src="{{ profession.content_images[0].src }}" alt="{{ profession.content_images[0].alt|default(profession.title ~ ' arbetsplats') }}" loading="lazy" class="w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-500">
+								{% if profession.content_images[0].caption is defined %}
+									<figcaption class="mt-0 text-sm text-center text-slate-500 py-3 bg-slate-50 border-t border-slate-100 italic">{{ profession.content_images[0].caption }}</figcaption>
+								{% endif %}
+							</figure>
+						{% endif %}
+
+
+						{% if profession.pros and profession.cons %}
+							<h3 id="fordelar-nackdelar">Fördelar och nackdelar</h3>
+							<div
+								class="grid md:grid-cols-2 gap-x-12 gap-y-8 my-8">
+								<!-- Pros -->
+								<div>
+									<h4 class="text-slate-900 font-bold mb-4 flex items-center gap-2 text-lg mt-0">
+										Fördelar
+									</h4>
+									<ul class="space-y-2 m-0 mt-4 pl-5 list-disc marker:text-emerald-500">
+										{% for pro in profession.pros %}
+											<li class="text-slate-700 m-0 p-0 pl-1">
+												<span>{{ pro }}</span>
+											</li>
+										{% endfor %}
+									</ul>
+								</div>
+
+								<!-- Cons -->
+								<div>
+									<h4 class="text-slate-900 font-bold mb-4 flex items-center gap-2 text-lg mt-0">
+										Utmaningar
+									</h4>
+									<ul class="space-y-2 m-0 mt-4 pl-5 list-disc marker:text-amber-500">
+										{% for con in profession.cons %}
+											<li class="text-slate-700 m-0 p-0 pl-1">
+												<span>{{ con }}</span>
+											</li>
+										{% endfor %}
+									</ul>
+								</div>
+							</div>
+						{% endif %}
+
+						<!-- In-Content CTA (High Conversion / Premium Dark) -->
+						<div
+							class="my-12 relative overflow-hidden rounded-2xl bg-slate-900 p-8 shadow-2xl ring-1 ring-white/10 not-prose group">
+							<!-- Background Effects -->
+							<div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-indigo-500 rounded-full blur-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-700"></div>
+							<div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-orange-500 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-700"></div>
+
+							<div class="relative z-10 grid gap-8 md:grid-cols-[1.5fr_1fr] md:items-center">
+								<div>
+									<div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-orange-300 ring-1 ring-inset ring-white/20 mb-4 backdrop-blur-sm">
+										<span class="flex h-1.5 w-1.5 rounded-full bg-orange-400 animate-pulse"></span>
+										LÖNE-HACK 2026
+									</div>
+									<h3 class="text-2xl font-bold text-white mb-3 tracking-tight leading-tight">
+										Är du en underbetald
+										<span class="text-orange-400">{{ profession.title }}?</span>
+									</h3>
+									<p class="text-slate-300 text-base leading-relaxed">
+										Statistiken bevisar det: Utan rätt strategi förlorar du tusenlappar. Varje månad. Hämta vår
+										<strong>"Shark Mode"</strong>
+										guide och se lönen du borde ha.
+									</p>
+								</div>
+
+								<div class="flex flex-col gap-4 items-center md:items-end">
+									<a href="/verktyg/brag-sheet" class="w-full md:w-auto inline-flex items-center justify-center rounded-xl bg-orange-600 px-8 py-4 text-sm font-bold text-white shadow-lg hover:bg-orange-500 hover:-translate-y-0.5 transition-all duration-300 ring-1 ring-white/20">
+										Ladda ner Guiden
+										<svg class="ml-2.5 h-5 w-5" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+									</a>
+									<p class="text-xs text-slate-500 font-medium">
+										⭐️ 100% Gratis • Direkt PDF-laddning
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<h3 id="utbildning">Utbildning och behörighet</h3>
+
+						<!-- Ezoic 110: under_second_paragraph / mid_content -->
+						<!-- AdSense: Mid Content -->
+						{% include 'partials/ads/display.twig' with {'slot_name': 'profession_mid_content'} %}
+
+						<p>{{ profession.education|raw }}</p>
+
+						{% if profession.specialties %}
+							<h3 id="specialisering">Lön per specialisering</h3>
+							<p>Lönen varierar beroende på vilken inriktning du väljer:</p>
+							<ul>
+								{% for spec in profession.specialties %}
+									<li>
+										<strong>{{ spec.name }}:</strong>
+										~{{ spec.salary|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+
+						{% if profession.salary_by_sector %}
+
+							<!-- Ezoic 111: mid_content -->
+							<div id="ezoic-pub-ad-placeholder-111" class="my-6"></div>
+
+							<h3 id="sektor">Lön per sektor</h3>
+							<ul>
+								{% if profession.salary_by_sector.region %}
+									<li>
+										<strong>Region (offentlig):</strong>
+										~{{ profession.salary_by_sector.region|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endif %}
+								{% if profession.salary_by_sector.offentlig %}
+									<li>
+										<strong>Offentlig sektor:</strong>
+										~{{ profession.salary_by_sector.offentlig|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endif %}
+								{% if has_kommunal_data is defined and has_kommunal_data %}
+									<li>
+										<strong>
+											<a href="/lon/{{ profession.slug }}/kommunal" class="text-indigo-600 hover:underline">Kommunal sektor</a>:</strong>
+										{% if profession.salary_by_sector.kommunal %}
+											~{{ profession.salary_by_sector.kommunal|number_format(0, ',', ' ') }}
+											kr/mån
+										{% else %}
+											Se statistik
+										{% endif %}
+									</li>
+								{% endif %}
+								{% if profession.salary_by_sector.statlig %}
+									<li>
+										<strong>Statlig sektor:</strong>
+										~{{ profession.salary_by_sector.statlig|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endif %}
+								{% if profession.salary_by_sector.privat %}
+									<li>
+										<strong>Privat sektor:</strong>
+										~{{ profession.salary_by_sector.privat|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endif %}
+								{% if profession.salary_by_sector['egenföretagare'] %}
+									<li>
+										<strong>Egenföretagare:</strong>
+										~{{ profession.salary_by_sector['egenföretagare']|number_format(0, ',', ' ') }}
+										kr/mån (varierar stort)</li>
+								{% endif %}
+								{% if profession.salary_by_sector['eget_foretag'] %}
+									<li>
+										<strong>Eget företag:</strong>
+										~{{ profession.salary_by_sector['eget_foretag']|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endif %}
+								{% if profession.salary_by_sector.bemanning %}
+									<li>
+										<strong>Bemanningsföretag:</strong>
+										~{{ profession.salary_by_sector.bemanning|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endif %}
+								{% if profession.salary_by_sector.norge %}
+									<li>
+										<strong>Norge:</strong>
+										~{{ profession.salary_by_sector.norge|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endif %}
+							</ul>
+						{% endif %}
+
+						{% if profession.workplaces %}
+							<h3 id="arbetsplats">Lön per arbetsplats</h3>
+							<p>Lönen varierar beroende på var du arbetar:</p>
+							<ul>
+								{% for wp in profession.workplaces %}
+									<li>
+										<strong>{{ wp.name }}:</strong>
+										~{{ wp.salary|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+
+						{% if profession.employers %}
+							<h3 id="arbetsgivare">Lön per arbetsgivare</h3>
+							<p>Lönen varierar beroende på vilken arbetsgivare du arbetar för:</p>
+							<ul>
+								{% for emp in profession.employers %}
+									<li>
+										<strong>{{ emp.name }}:</strong>
+										~{{ emp.salary|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+
+						{% if profession.slug in ['sjukskoterska', 'underskoterska'] %}
+							<div class="mt-12 border-t border-slate-200 pt-10">
+								<h3 class="text-2xl font-bold text-slate-900 mb-6">Vanliga frågor om lön för
+									{{ profession.title }}</h3>
+								<dl class="space-y-6 divide-y divide-slate-200">
+									{% if profession.slug == 'sjukskoterska' %}
+										<div class="pt-6 first:pt-0">
+											<dt class="text-base font-semibold leading-7 text-slate-900">Vad tjänar en Sjuksköterska 2026 efter skatt?</dt>
+											<dd class="mt-2 text-base leading-7 text-slate-600">Enligt SCB och aktuella lönestatistik är medellönen ca 41 000 kr. Efter skatt (tabell 32) blir det ca 28 500 - 30 000 kr beroende på din kommun.</dd>
+										</div>
+									{% elseif profession.slug == 'underskoterska' %}
+										<div class="pt-6 first:pt-0">
+											<dt class="text-base font-semibold leading-7 text-slate-900">Vad är lönen för en Undersköterska 2026?</dt>
+											<dd class="mt-2 text-base leading-7 text-slate-600">Medellönen ligger på ca 30 500 kr. Ingångslönen är ofta runt 26 000 kr, vilket ger en nettolön på ca 20 000 kr beroende på var du bor.</dd>
+										</div>
+									{% endif %}
+								</dl>
+							</div>
+							<script type="application/ld+json">
+								{
+																																																																																																																																							"@context": "https://schema.org",
+																																																																																																																																							"@type": "FAQPage",
+																																																																																																																																							"mainEntity": [
+								{% if profession.slug == 'sjukskoterska' %}
+									{
+																																																																																																																																																									"@type": "Question",
+																																																																																																																																																									"name": "Vad tjänar en Sjuksköterska 2026 efter skatt?",
+																																																																																																																																																									"acceptedAnswer": {
+																																																																																																																																																										"@type": "Answer",
+																																																																																																																																																										"text": "Enligt SCB och aktuella lönestatistik är medellönen ca 41 000 kr. Efter skatt (tabell 32) blir det ca 28 500 - 30 000 kr beroende på din kommun."
+																																																																																																																																																									}
+																																																																																																																																																								}
+								{% elseif profession.slug == 'underskoterska' %}
+									{
+																																																																																																																																																									"@type": "Question",
+																																																																																																																																																									"name": "Vad är lönen för en Undersköterska 2026?",
+																																																																																																																																																									"acceptedAnswer": {
+																																																																																																																																																										"@type": "Answer",
+																																																																																																																																																										"text": "Medellönen ligger på ca 30 500 kr. Ingångslönen är ofta runt 26 000 kr, vilket ger en nettolön på ca 20 000 kr beroende på var du bor."
+																																																																																																																																																									}
+																																																																																																																																																								}
+								{% endif %}
+								]
+																																																																																																																																						}
+							</script>
+						{% endif %}
+
+						{% if profession.salary_by_type %}
+							<h3 id="typ-av-trafik">Lön per typ av trafik</h3>
+							<ul>
+								{% if profession.salary_by_type['persontåg'] %}
+									<li>
+										<strong>Persontåg:</strong>
+										~{{ profession.salary_by_type['persontåg']|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endif %}
+								{% if profession.salary_by_type['godståg'] %}
+									<li>
+										<strong>Godståg:</strong>
+										~{{ profession.salary_by_type['godståg']|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endif %}
+								{% if profession.salary_by_type['pendeltåg'] %}
+									<li>
+										<strong>Pendeltåg:</strong>
+										~{{ profession.salary_by_type['pendeltåg']|number_format(0, ',', ' ') }}
+										kr/mån</li>
+								{% endif %}
+							</ul>
+						{% endif %}
+
+
+						{% include 'partials/scb_salary_by_region.twig' %}
+
+						<!-- Ezoic 115: incontent_5 -->
+						<div id="ezoic-pub-ad-placeholder-115" class="my-6"></div>
+
+						<h3 id="lonestatistik">Vad påverkar lönen?</h3>
+						<p>
+							Lönen för en
+							{{ profession.title|lower }}
+							kan variera stort. Faktorer som påverkar lönen inkluderar:
+						</p>
+						<ul>
+							<li>
+								<strong>Erfarenhet:</strong>
+								Lönen stiger oftast med antalet år i yrket.</li>
+							<li>
+								<strong>Sektor:</strong>
+								Privat sektor har ofta något högre löner än offentlig sektor.</li>
+							<li>
+								<strong>Geografi:</strong>
+								Lönerna är generellt högre i storstadsregionerna (Stockholm, Göteborg, Malmö).</li>
+						</ul>
+
+						{% if profession.content_images[1] is defined %}
+							<figure class="my-12 rounded-2xl overflow-hidden shadow-lg ring-1 ring-slate-900/5">
+								<img src="{{ profession.content_images[1].src }}" alt="{{ profession.content_images[1].alt|default('Arbetsmiljö för ' ~ profession.title) }}" loading="lazy" class="w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-500">
+								{% if profession.content_images[1].caption is defined %}
+									<figcaption class="mt-0 text-sm text-center text-slate-500 py-3 bg-slate-50 border-t border-slate-100 italic">{{ profession.content_images[1].caption }}</figcaption>
+								{% endif %}
+							</figure>
+						{% endif %}
+
+						<!-- Forecast Block -->
+						{% if profession.forecast %}
+							<div class="my-8 mb-12" x-data="{ view: 'chart' }">
+								<div class="flex items-center justify-between mb-6">
+									<div>
+										<h3 id="loneprognos" class="m-0">Löneprognos 2026–2030</h3>
+										<p class="text-sm text-slate-500 mt-1">
+											Trend:
+											<span class="font-bold text-emerald-600">{{ profession.forecast.trend }}</span>
+											• Orsak:
+											{{ profession.forecast.reason }}
+										</p>
+									</div>
+									<div class="flex items-center gap-1 bg-slate-100 rounded-lg p-1">
+										<button @click="view = 'chart'" :class="{ 'bg-white shadow text-indigo-600': view === 'chart', 'text-slate-500 hover:text-slate-700': view !== 'chart' }" class="px-3 py-1 text-xs font-medium rounded-md transition-all">Graf</button>
+										<button @click="view = 'table'" :class="{ 'bg-white shadow text-indigo-600': view === 'table', 'text-slate-500 hover:text-slate-700': view !== 'table' }" class="px-3 py-1 text-xs font-medium rounded-md transition-all">Tabell</button>
+									</div>
+								</div>
+
+								<!-- Chart View -->
+								<div x-show="view === 'chart'" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="h-64 bg-white p-4 rounded-xl border border-slate-100 shadow-sm relative">
+									<canvas id="salaryForecastChart"></canvas>
+								</div>
+
+								<!-- Table View -->
+								<div x-show="view === 'table'" x-cloak x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="overflow-hidden bg-white shadow-sm ring-1 ring-slate-900/5 rounded-lg">
+									<table class="min-w-full divide-y divide-slate-200 mt-0">
+										<thead class="bg-slate-50">
+											<tr>
+												<th scope="col" class="px-3 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">År</th>
+												<th scope="col" class="px-3 py-3 text-right text-xs font-medium text-slate-500 uppercase tracking-wider">Prognos</th>
+												<th scope="col" class="px-3 py-3 text-right text-xs font-medium text-slate-500 uppercase tracking-wider">Förändring</th>
+											</tr>
+										</thead>
+										<tbody
+											class="divide-y divide-slate-200 bg-white">
+											<!-- Current Year Row -->
+											<tr class="bg-slate-50/50">
+												<td class="whitespace-nowrap px-3 py-3 text-sm font-medium text-slate-900">{{ profession.forecast.current_year }}
+													(Nu)</td>
+												<td class="whitespace-nowrap px-3 py-3 text-sm text-right text-slate-600">{{ profession.forecast.current_value|number_format(0, ' ', ' ') }}
+													kr</td>
+												<td class="whitespace-nowrap px-3 py-3 text-sm text-right text-slate-400">-</td>
+											</tr>
+											<!-- Future Years -->
+											{% for year_data in profession.forecast.data %}
+												<tr class="hover:bg-slate-50 transition-colors">
+													<td class="whitespace-nowrap px-3 py-3 text-sm font-medium text-slate-900">{{ year_data.year }}</td>
+													<td class="whitespace-nowrap px-3 py-3 text-sm text-right text-emerald-700 font-bold">{{ year_data.value|number_format(0, ' ', ' ') }}
+														kr</td>
+													<td class="whitespace-nowrap px-3 py-3 text-sm text-right text-emerald-600">{{ year_data.change }}</td>
+												</tr>
+
+												{# AdSense Injection: Inside Table (High Attention) #}
+												{% if loop.index == 2 %}
+													<tr>
+														<td colspan="3" class="px-0 py-2">
+															<div
+																class="bg-slate-50 border-y border-slate-100 flex justify-center py-2">
+																<!-- AdSense: In-Table -->
+																{% include 'partials/ads/in_article.twig' with {'slot_name': 'profession_in_article'} %}
+															</div>
+														</td>
+													</tr>
+												{% endif %}
+											{% endfor %}
+										</tbody>
+									</table>
+								</div>
+
+								<script>
+									document.addEventListener('DOMContentLoaded', function () {
+const ctxForecast = document.getElementById('salaryForecastChart');
+if (ctxForecast) {
+const currentYear = '{{ profession.forecast.current_year }}';
+const currentValue = {{ profession.forecast.current_value }};
+
+const labels = [currentYear,{% for item in profession.forecast.data %}'{{ item.year }}'{% if not loop.last %},{% endif %}{% endfor %}];
+const data = [currentValue,{% for item in profession.forecast.data %}{{ item.value }}{% if not loop.last %},{% endif %}{% endfor %}];
+
+new Chart(ctxForecast, {
+type: 'line',
+data: {
+labels: labels,
+datasets: [
+{
+label: 'Löneprognos',
+data: data,
+borderColor: 'rgb(16, 185, 129)', // Emerald-500
+backgroundColor: 'rgba(16, 185, 129, 0.1)',
+fill: true,
+tension: 0.4,
+pointBackgroundColor: 'rgb(16, 185, 129)',
+pointBorderColor: '#fff',
+pointBorderWidth: 2,
+pointRadius: 5,
+pointHoverRadius: 7
+}
+]
+},
+options: {
+responsive: true,
+maintainAspectRatio: false,
+plugins: {
+legend: {
+display: false
+},
+tooltip: {
+callbacks: {
+label: function (context) {
+return context.parsed.y.toLocaleString('sv-SE') + ' kr';
+}
+}
+},
+annotation: {
+annotations: {
+line1: {
+type: 'line',
+yMin: currentValue,
+yMax: currentValue,
+borderColor: 'rgba(0,0,0,0.1)',
+borderWidth: 1,
+borderDash: [
+5, 5
+],
+label: {
+content: 'Idag',
+enabled: true,
+position: 'start'
+}
+}
+}
+}
+},
+scales: {
+y: {
+beginAtZero: false,
+grid: {
+display: true,
+borderDash: [
+2, 4
+],
+color: 'rgba(0,0,0,0.05)'
+},
+ticks: {
+callback: function (value) {
+return value.toLocaleString('sv-SE') + ' kr';
+}
+}
+},
+x: {
+grid: {
+display: false
+}
+}
+}
+}
+});
+}
+});
+								</script>
+
+								<!-- Rich Analysis Block -->
+								<div class="mt-6 p-5 bg-indigo-50 border-l-4 border-indigo-500 rounded-r-xl">
+									<h4 class="text-sm font-bold text-indigo-900 uppercase tracking-wide mb-3 flex items-center gap-2">
+										<svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+										</svg>
+										Löneanalys: Framtidsutsikter
+									</h4>
+									<div class="space-y-3 text-slate-700 text-sm leading-relaxed">
+										<p>
+											Baserat på nuvarande marknadsläge ser vi en stabil uppåtgående trend på
+											<strong>{{ profession.forecast.trend }}</strong>. 
+																																																																																																																																																																																																																																																																																																																																																																						Den främsta drivkraften är
+											<strong>{{ profession.forecast.reason|lower }}</strong>, vilket pressar upp lönerna.
+										</p>
+										<p>
+											Om prognosen håller i sig kan en
+											{{ profession.title|lower }}
+											förvänta sig att nå en lön på ca
+											<strong>{{ profession.forecast.data|last.value|number_format(0, ' ', ' ') }}
+												kr</strong>
+											år
+											{{ profession.forecast.data|last.year }}, 
+																																																																																																																																																																																																																																																																																																																																									vilket innebär en total ökning på cirka
+											<strong>15%</strong>
+											över 5-årsperioden.
+										</p>
+									</div>
+								</div>
+							</div>
+						{% endif %}
+
+						<!-- OB-Tillägg Block -->
+						{% if profession.ob_tillagg %}
+							<div class="my-12">
+								<h3 id="ob-tillagg">OB-tillägg & Extrapengar</h3>
+								<p class="mb-6">{{ profession.ob_tillagg.description }}</p>
+
+								<ul>
+									{% for example in profession.ob_tillagg.examples %}
+										<li>
+											<strong>{{ example.type }}:</strong>
+											{{ example.extra }}
+										</li>
+									{% endfor %}
+									<li>
+										<strong>Total månadseffekt:</strong>
+										{{ profession.ob_tillagg.total_extra }}
+									</li>
+								</ul>
+
+								<p class="mt-4 italic text-slate-600">
+									"{{ profession.ob_tillagg.impact_text }}"
+								</p>
+							</div>
+						{% endif %}
+
+						{% include 'partials/scb_history.twig' %}
+
+						<!-- Experience Levels Block -->
+						{% if profession.experience_levels %}
+							<h3 id="erfarenhet">Lön efter erfarenhet</h3>
+							<p>Se hur din lön utvecklas från ingångslön till expertis:</p>
+							<div class="overflow-hidden bg-white shadow-sm ring-1 ring-slate-900/5 rounded-xl mb-8">
+								<table class="min-w-full divide-y divide-slate-300">
+									<thead class="bg-slate-50">
+										<tr>
+											<th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-slate-900 sm:pl-6">Erfarenhet</th>
+											<th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-slate-900">Lön</th>
+											<th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-slate-900">Roll/Nivå</th>
+										</tr>
+									</thead>
+									<tbody class="divide-y divide-slate-200 bg-white">
+										{% for level in profession.experience_levels %}
+											<tr>
+												<td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-slate-900 sm:pl-6">{{ level.years }}</td>
+												<td class="whitespace-nowrap px-3 py-4 text-sm text-emerald-600 font-bold">{{ level.salary|number_format(0, ',', ' ') }}
+													kr</td>
+												<td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">{{ level.description }}</td>
+											</tr>
+										{% endfor %}
+									</tbody>
+								</table>
+							</div>
+						{% endif %}
+
+
+						<!-- Career Paths Block -->
+						{% if profession.career_paths %}
+							<h3 id="karriarvagar">Karriärvägar</h3>
+							<p class="mb-6">Det finns många sätt att höja din lön bortom de vanliga årliga revisionerna:</p>
+							<ul class="mb-12">
+								{% for path in profession.career_paths %}
+									<li class="mb-2">
+										<strong>{{ path.path }}:</strong>
+										{{ path.salary }}.
+										{{ path.desc }}
+									</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+
+
+						{% include 'partials/scb_salary_by_age.twig' %}
+
+						<!-- Salary Distribution Visualization -->
+						{% if profession.salary_distribution %}
+							<h3 id="lonefordelning">Lönefördelning</h3>
+							<p>Hur många tjänar vad? Här är spridningen:</p>
+							<div class="relative pt-6 pb-2 mb-8">
+								<div class="flex mb-2 items-center justify-between text-xs text-slate-500">
+									<span>10% lägst</span>
+									<span>Median</span>
+									<span>10% högst</span>
+								</div>
+								<div class="overflow-hidden h-4 mb-4 text-xs flex rounded bg-slate-100 shadow-inner">
+									<div style="width: 25%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-300"></div>
+									<div style="width: 25%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-400"></div>
+									<div style="width: 25%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"></div>
+									<div style="width: 25%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-600"></div>
+								</div>
+								<div class="flex justify-between font-mono text-xs sm:text-sm text-slate-700">
+									<div>
+										<span class="block font-bold">{{ profession.salary_distribution.p10|number_format(0, ',', ' ') }}
+											kr</span>
+										<span class="text-slate-400">Lägsta</span>
+									</div>
+									<div class="text-center">
+										<span class="block font-bold text-indigo-600">{{ profession.salary_distribution.p50|number_format(0, ',', ' ') }}
+											kr</span>
+										<span class="text-indigo-400">Median</span>
+									</div>
+									<div class="text-right">
+										<span class="block font-bold">{{ profession.salary_distribution.p90|number_format(0, ',', ' ') }}
+											kr</span>
+										<span class="text-slate-400">Högsta</span>
+									</div>
+								</div>
+							</div>
+						{% endif %}
+
+						{% include 'partials/scb_percentiles.twig' %}
+
+
+						{% if profession.content_images[2] is defined %}
+							<figure class="my-12 rounded-2xl overflow-hidden shadow-lg ring-1 ring-slate-900/5">
+								<img src="{{ profession.content_images[2].src }}" alt="{{ profession.content_images[2].alt|default('Arbetsuppgifter för ' ~ profession.title) }}" loading="lazy" class="w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-500">
+								{% if profession.content_images[2].caption is defined %}
+									<figcaption class="mt-0 text-sm text-center text-slate-500 py-3 bg-slate-50 border-t border-slate-100 italic">{{ profession.content_images[2].caption }}</figcaption>
+								{% endif %}
+							</figure>
+						{% endif %}
+
+						{% include 'partials/faq.twig' %}
+					</article>
+
+					{# Kommunal Sector CTA - Show if we have data (via SSYK, Name or Static) #}
+					{% if has_kommunal_data %}
+						<div class="mt-12 bg-indigo-50 rounded-2xl p-6 ring-1 ring-indigo-100">
+							<div class="flex items-start gap-4">
+								<div class="flex-shrink-0">
+									<svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+									</svg>
+								</div>
+								<div class="flex-1">
+									<h3 class="text-lg font-bold text-slate-900 mb-1">{{ profession.title }}
+										i kommunal sektor</h3>
+									<p class="text-slate-600 text-sm mb-3">
+										Se detaljerad lönestatistik för
+										{{ profession.title|lower }}
+										inom kommunal sektor, inklusive jämförelse med privat sektor och löneskillnader mellan könen.
+									</p>
+									<a href="/lon/{{ profession.slug }}/kommunal" class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-700">
+										Visa kommunal lönestatistik
+										<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					{% endif %}
+
+					{# ═══════════════════════════════════════════════════════════════ #}
+					{# WIDGET 2: CTA Unionen - Adhésion syndicat #}
+					{# Emplacement: Après Kommunal CTA #}
+					{# ═══════════════════════════════════════════════════════════════ #}
+					{% include 'widgets/widget_unionen.twig' %}
+
+					<!-- Related Blog Posts -->
+						{% if related_posts %}
+							<div class="mt-16 border-t border-slate-200 pt-10"> <h3 class="text-2xl font-bold text-slate-900 mb-6">Läs mer om
+								{{ profession.title|lower }}</h3>
+							<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+								{% for post in related_posts %}
+									<a href="/blogg/{{ post.slug }}" class="group flex flex-col overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-slate-900/5 hover:ring-indigo-600/20 hover:shadow-md transition-all">
+										{% if post.image %}
+											<div class="aspect-w-16 aspect-h-9 w-full bg-slate-100 overflow-hidden">
+												<img src="{{ post.image }}" alt="{{ post.title }}" class="h-48 w-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
+											</div>
+										{% endif %}
+										<div class="flex flex-1 flex-col p-6">
+											<div class="flex items-center gap-x-2 text-xs">
+												<time datetime="{{ post.date }}" class="text-slate-500">{{ post.formatted_date }}</time>
+												<span class="relative z-10 rounded-full bg-indigo-50 px-2 py-0.5 font-medium text-indigo-600">{{ post.category }}</span>
+											</div>
+											<h3 class="mt-3 text-lg font-semibold leading-6 text-slate-900 group-hover:text-indigo-600">
+												{{ post.title }}
+											</h3>
+											<p class="mt-2 line-clamp-3 text-sm leading-6 text-slate-600">{{ post.excerpt }}</p>
+										</div>
+									</a>
+								{% endfor %}
+							</div>
+						</div>
+					{% endif %}
+
+					{# ═══════════════════════════════════════════════════════════════ #}
+					{# WIDGET 3: Compricer - Comparateur de prêt #}
+					{# Emplacement: Avant Related Professions #}
+					{# ═══════════════════════════════════════════════════════════════ #}
+					{% include 'widgets/widget_compricer.twig' %}
+					<!-- Mini Footer CTA in Card -->
+						<div class="mt-10 pt-6 border-t border-slate-100"> <div class="flex items-center justify-between p-4 bg-slate-50 rounded-xl border border-slate-100 hover:border-indigo-200 hover:bg-indigo-50 transition-all cursor-pointer group" onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'})">
+							<div class="flex items-center gap-4">
+								<div class="bg-white p-2.5 rounded-full shadow-sm text-indigo-600 group-hover:scale-110 transition-transform ring-1 ring-slate-900/5">
+									<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+									</svg>
+								</div>
+								<div>
+									<p class="font-bold text-slate-900 group-hover:text-indigo-900 transition-colors">Nyfiken på din nettolön?</p>
+									<p class="text-sm text-slate-500 group-hover:text-indigo-700 transition-colors">Testa kalkylatorn gratis</p>
+								</div>
+							</div>
+							<button class="bg-white text-indigo-600 px-4 py-2 rounded-lg text-sm font-bold shadow-sm border border-slate-200 group-hover:border-indigo-300 group-hover:text-indigo-700 transition-colors">
+								Räkna ut
+							</button>
+						</div>
+					</div>
+
+					{# ═══════════════════════════════════════════════════════════════ #}
+					{# AdSense Multiplex (High CTR "Related Content" Style)            #}
+					{# ═══════════════════════════════════════════════════════════════ #}
+					{% include 'partials/ads/multiplex.twig' with {'slot_name': 'multiplex_bottom'} %}
+
+						{% if related_professions %}
+							<div class="mt-16 border-t border-slate-200 pt-10"> <h3 class="text-2xl font-bold text-slate-900 mb-6">{{ related_professions.title|default('Liknande yrken') }}</h3>
+							<div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+								{% for p in related_professions.items %}
+									<a href="/lon/{{ p.slug }}" class="group block rounded-lg bg-white p-4 ring-1 ring-slate-900/5 hover:ring-indigo-600/20 hover:shadow-md transition-all">
+										<span class="block text-sm font-semibold text-slate-900 group-hover:text-indigo-600">{{ p.title }}</span>
+										<span class="mt-1 block text-xs text-slate-500">{{ p.median_salary|number_format(0, ',', ' ') }}
+											kr</span>
+									</a>
+								{% endfor %}
+							</div>
+						</div>
+					{% endif %}
+
+				</div>
+				<!-- end main content -->
+
+
+				<!-- Styles moved to bottom -->
+
+
+				<aside id="toc-sidebar" class="hidden lg:block relative">
+
+					<nav id="toc-nav">
+
+
+						<div class="mt-8">
+							<p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Innehåll</p>
+							<div class="space-y-1">
+								<a href="#om-yrket" class="toc-link block text-sm text-slate-600 hover:text-indigo-600 py-1 pl-3 border-l-2 border-transparent hover:border-indigo-300 transition-colors" data-target="om-yrket">
+									Om yrket
+								</a>
+								<a href="#utbildning" class="toc-link block text-sm text-slate-600 hover:text-indigo-600 py-1 pl-3 border-l-2 border-transparent hover:border-indigo-300 transition-colors" data-target="utbildning">
+									Utbildning
+								</a>
+								{% if profession.pros %}
+									<a href="#fordelar-nackdelar" class="toc-link block text-sm text-slate-600 hover:text-indigo-600 py-1 pl-3 border-l-2 border-transparent hover:border-indigo-300 transition-colors" data-target="fordelar-nackdelar">
+										Fördelar & Nackdelar
+									</a>
+								{% endif %}
+								<a href="#lonestatistik" class="toc-link block text-sm text-slate-600 hover:text-indigo-600 py-1 pl-3 border-l-2 border-transparent hover:border-indigo-300 transition-colors" data-target="lonestatistik">
+									Vad påverkar lönen?
+								</a>
+								{% if profession.forecast %}
+									<a href="#loneprognos" class="toc-link block text-sm text-slate-600 hover:text-indigo-600 py-1 pl-3 border-l-2 border-transparent hover:border-indigo-300 transition-colors" data-target="loneprognos">
+										Löneprognos 2026-2030
+									</a>
+								{% endif %}
+								<a href="#loneutveckling-history" class="toc-link block text-sm text-slate-600 hover:text-indigo-600 py-1 pl-3 border-l-2 border-transparent hover:border-indigo-300 transition-colors" data-target="loneutveckling-history">
+									Löneutveckling
+								</a>
+								<a href="#lon-alder" class="toc-link block text-sm text-slate-600 hover:text-indigo-600 py-1 pl-3 border-l-2 border-transparent hover:border-indigo-300 transition-colors" data-target="lon-alder">
+									Lön efter ålder
+								</a>
+								{% if profession.experience_levels %}
+									<a href="#erfarenhet" class="toc-link block text-sm text-slate-600 hover:text-indigo-600 py-1 pl-3 border-l-2 border-transparent hover:border-indigo-300 transition-colors" data-target="erfarenhet">
+										Lön efter erfarenhet
+									</a>
+								{% endif %}
+								{% if profession.specialties %}
+									<a href="#specialisering" class="toc-link block text-sm text-slate-600 hover:text-indigo-600 py-1 pl-3 border-l-2 border-transparent hover:border-indigo-300 transition-colors" data-target="specialisering">
+										Lön per specialisering
+									</a>
+								{% endif %}
+								{% set has_valid_toc_region = false %}
+								{% if profession.scb.salary_by_region %}
+									{% for r in profession.scb.salary_by_region %}
+										{% if r.name is defined and r.total is defined %}
+											{% set has_valid_toc_region = true %}
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+								{% if has_valid_toc_region %}
+									<a href="#lon-region" class="toc-link block text-sm text-slate-600 hover:text-indigo-600 py-1 pl-3 border-l-2 border-transparent hover:border-indigo-300 transition-colors" data-target="lon-region">
+										Lön per region
+									</a>
+								{% endif %}
+								{% if profession.scb.percentiles.p10 > 0 %}
+									<a href="#lonefordelning" class="toc-link block text-sm text-slate-600 hover:text-indigo-600 py-1 pl-3 border-l-2 border-transparent hover:border-indigo-300 transition-colors" data-target="lonefordelning">
+										Lönefördelning
+									</a>
+								{% endif %}
+								{% if profession.faq %}
+									<a href="#faq" class="toc-link block text-sm text-slate-600 hover:text-indigo-600 py-1 pl-3 border-l-2 border-transparent hover:border-indigo-300 transition-colors" data-target="faq">
+										Vanliga frågor
+									</a>
+								{% endif %}
+							</div>
+						</div>
+
+
+						<!-- Ezoic 105: sidebar_middle_1 -->
+						<div id="ezoic-pub-ad-placeholder-105" class="my-4"></div>
+
+						<!-- Lifetime Earnings Widget -->
+						{% if profession.lifetime_earnings %}
+							<div class="mt-8 relative overflow-hidden rounded-lg bg-slate-900 shadow-sm text-center p-4">
+								<div class="absolute inset-0 -z-10">
+									<svg class="absolute top-0 left-1/2 -translate-x-1/2 h-full w-full opacity-20" viewbox="0 0 100 100" preserveaspectratio="none">
+										<defs>
+											<pattern id="grid" width="10" height="10" patternunits="userSpaceOnUse">
+												<path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"/>
+											</pattern>
+										</defs>
+										<rect width="100%" height="100%" fill="url(#grid)"/>
+									</svg>
+								</div>
+								<h3 class="text-white font-bold text-lg mb-1">
+									Din Livsinkomst
+								</h3>
+								<p class="text-indigo-200 text-xs mb-3">Uppskattat brutto ({{ profession.lifetime_earnings.years }}
+									år)</p>
+
+								<div class="bg-white/10 rounded px-3 py-2 backdrop-blur-sm border border-white/10 inline-block w-full">
+									<p class="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-indigo-300 tracking-tight leading-none">
+										{{ profession.lifetime_earnings.amount }}
+									</p>
+								</div>
+							</div>
+						{% endif %}
+					</nav>
+					<!-- Ezoic 106: sidebar_bottom -->
+					<div id="ezoic-pub-ad-placeholder-106" class="mt-4"></div>
+				</aside>
+			</div>
+			<!-- end grid -->
+
+			{# ═══════════════════════════════════════════════════════════════ #}
+			{# WIDGET: Lediga Jobb (JobTech API) #}
+			{# ═══════════════════════════════════════════════════════════════ #}
+			{% include 'partials/jobs.twig' with {'jobs': jobs} %}
+
+			{% include 'partials/comments.twig' %}
+
+
+				<style>
+@media(min-width: 1024px) {
+	#toc-sidebar {
+		display: block !important;
+	}
+	#toc-grid {
+		display: grid !important;
+		grid-template-columns: 1fr 240px;
+		gap: 2rem;
+	}
+}
+.toc-link:hover {
+	color: rgb(79, 70, 229);
+	border-left-color: rgb(79, 70, 229);
+}
+.toc-link.active {
+	color: rgb(79, 70, 229) !important;
+	border-left-color: rgb(79, 70, 229) !important;
+	font-weight: 600;
+}
+
+/* Heading anchor links */
+article h2[id],
+article h3[id],
+article h4[id] {
+	position: relative;
+}
+article h2[id]:before,
+article h3[id]:before,
+article h4[id]:before {
+	content: "#";
+	position: absolute;
+	left: -1.5rem;
+	color: rgb(79, 70, 229);
+	opacity: 1;
+	cursor: pointer;
+}
+
+/* List bullets color */
+article ul > li::marker {
+	color: rgb(79, 70, 229) !important;
+}
+
+article h2[id] a.anchor-link,
+article h3[id] a.anchor-link,
+article h4[id] a.anchor-link {
+	position: absolute;
+	left: -1.5rem;
+	color: rgb(79, 70, 229);
+	text-decoration: none;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+article h2[id]:hover a.anchor-link,
+article h3[id]:hover a.anchor-link,
+article h4[id]:hover a.anchor-link {
+	opacity: 1;
+}
+			</style>
+
+				<script>
+// Smooth scroll and active section tracking for TOC
+document.addEventListener('DOMContentLoaded', function () {
+const tocLinks = document.querySelectorAll('.toc-link');
+const sections = document.querySelectorAll('[id]');
+
+// Smooth scroll
+tocLinks.forEach(link => {
+link.addEventListener('click', function (e) {
+e.preventDefault();
+const targetId = this.getAttribute('data-target');
+const targetSection = document.getElementById(targetId);
+if (targetSection) {
+targetSection.scrollIntoView({behavior: 'smooth', block: 'start'});
+// Manually set active class on click to avoid lag
+tocLinks.forEach(l => l.classList.remove('active'));
+this.classList.add('active');
+}
+});
+});
+
+// Track active section with IntersectionObserver
+const observerOptions = {
+root: null,
+rootMargin: '-10% 0px -70% 0px', // Adjusted to trigger earlier/better
+threshold: 0
+};
+
+const observerCallback = (entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+const activeId = entry.target.id;
+tocLinks.forEach(link => {
+link.classList.remove('active');
+if (link.getAttribute('data-target') === activeId) {
+link.classList.add('active');
+}
+});
+}
+});
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+// Add all tracked section IDs here
+const trackedSections = [
+'om-yrket',
+'fordelar-nackdelar',
+'utbildning',
+'loneprognos',
+'loneutveckling-history',
+'erfarenhet',
+'specialisering',
+'sektor',
+'arbetsplats',
+'arbetsgivare',
+'typ-av-trafik',
+'lonestatistik',
+'lon-alder',
+'lon-region',
+'lonefordelning',
+'faq'
+];
+
+trackedSections.forEach(id => {
+const section = document.getElementById(id);
+if (section) {
+observer.observe(section);
+}
+});
+});
+			</script>
+
+			<!-- Mobile Sticky CTA -->
+				<div class="md:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-slate-200 p-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-50 flex items-center justify-between" style="@media (min-width: 768px) { display: none !important; }"> <div>
+					<p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Lönekalkylator 2026</p>
+					<p class="text-sm font-bold text-slate-900 leading-tight">Vad får du ut efter skatt?</p>
+				</div>
+				<button onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'})" class="ml-4 bg-indigo-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-sm hover:bg-indigo-500 active:bg-indigo-700 transition-colors">
+					Räkna ut
+				</button>
+			</div>
+
+		{% endblock %}

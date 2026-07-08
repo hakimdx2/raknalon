@@ -1,0 +1,1344 @@
+[
+    {
+        "ssyk_code": "0000",
+        "profession": "Samtliga yrken",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 36100,
+        "salary_men": 36400,
+        "salary_women": 36000,
+        "gender_gap_percent": 98.9
+    },
+    {
+        "ssyk_code": "1112",
+        "profession": "General-, landstings- och kommundirektörer m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 109700,
+        "salary_men": 108900,
+        "salary_women": 110600,
+        "gender_gap_percent": 101.6
+    },
+    {
+        "ssyk_code": "1211",
+        "profession": "Ekonomi- och finanschefer, nivå 1",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 78000,
+        "salary_men": 79900,
+        "salary_women": 76400,
+        "gender_gap_percent": 95.6
+    },
+    {
+        "ssyk_code": "1212",
+        "profession": "Ekonomi- och finanschefer, nivå 2",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 64700,
+        "salary_men": 66300,
+        "salary_women": 63800,
+        "gender_gap_percent": 96.2
+    },
+    {
+        "ssyk_code": "1221",
+        "profession": "Personal- och HR-chefer, nivå 1",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 74500,
+        "salary_men": 76200,
+        "salary_women": 74000,
+        "gender_gap_percent": 97.1
+    },
+    {
+        "ssyk_code": "1222",
+        "profession": "Personal- och HR-chefer, nivå 2",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 62500,
+        "salary_men": 60600,
+        "salary_women": 63000,
+        "gender_gap_percent": 104
+    },
+    {
+        "ssyk_code": "1230",
+        "profession": "Förvaltnings- och planeringschefer",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 86100,
+        "salary_men": 86100,
+        "salary_women": 86100,
+        "gender_gap_percent": 100
+    },
+    {
+        "ssyk_code": "1241",
+        "profession": "Informations-, kommunikations- och PR-chefer, nivå 1",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 72400,
+        "salary_men": 71100,
+        "salary_women": 72800,
+        "gender_gap_percent": 102.4
+    },
+    {
+        "ssyk_code": "1242",
+        "profession": "Informations-, kommunikations - och PR-chefer, nivå 2",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 60800,
+        "salary_men": 62500,
+        "salary_women": 60200,
+        "gender_gap_percent": 96.3
+    },
+    {
+        "ssyk_code": "1291",
+        "profession": "Övriga administrations- och servicechefer, nivå 1",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 71800,
+        "salary_men": 72900,
+        "salary_women": 71400,
+        "gender_gap_percent": 97.9
+    },
+    {
+        "ssyk_code": "1292",
+        "profession": "Övriga administrations- och servicechefer, nivå 2",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 54000,
+        "salary_men": 56200,
+        "salary_women": 53300,
+        "gender_gap_percent": 94.8
+    },
+    {
+        "ssyk_code": "1311",
+        "profession": "IT-chefer, nivå 1",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 73700,
+        "salary_men": 72000,
+        "salary_women": 77600,
+        "gender_gap_percent": 107.8
+    },
+    {
+        "ssyk_code": "1312",
+        "profession": "IT-chefer, nivå 2",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 60400,
+        "salary_men": 60800,
+        "salary_women": 59800,
+        "gender_gap_percent": 98.4
+    },
+    {
+        "ssyk_code": "1341",
+        "profession": "Chefer inom arkitekt- och ingenjörsverksamhet, nivå 1",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 70300,
+        "salary_men": 69200,
+        "salary_women": 71700,
+        "gender_gap_percent": 103.6
+    },
+    {
+        "ssyk_code": "1342",
+        "profession": "Chefer inom arkitekt- och ingenjörsverksamhet, nivå 2",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 57200,
+        "salary_men": 55700,
+        "salary_women": 59300,
+        "gender_gap_percent": 106.5
+    },
+    {
+        "ssyk_code": "1411",
+        "profession": "Avdelningschefer inom grund- och gymnasieskola samt vuxenutbildning, nivå 1",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 74200,
+        "salary_men": 75000,
+        "salary_women": 73800,
+        "gender_gap_percent": 98.4
+    },
+    {
+        "ssyk_code": "1412",
+        "profession": "Rektorer, nivå 2",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 58900,
+        "salary_men": 60100,
+        "salary_women": 58500,
+        "gender_gap_percent": 97.3
+    },
+    {
+        "ssyk_code": "1421",
+        "profession": "Avdelningschefer inom förskola, nivå 1",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 67700,
+        "salary_men": 70900,
+        "salary_women": 67300,
+        "gender_gap_percent": 94.9
+    },
+    {
+        "ssyk_code": "1422",
+        "profession": "Förskolechefer, nivå 2",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 54200,
+        "salary_men": 53400,
+        "salary_women": 54200,
+        "gender_gap_percent": 101.5
+    },
+    {
+        "ssyk_code": "1511",
+        "profession": "Klinik- och verksamhetschefer inom hälsa och sjukvård, nivå 1",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 71300,
+        "salary_men": 74300,
+        "salary_women": 70800,
+        "gender_gap_percent": 95.3
+    },
+    {
+        "ssyk_code": "1512",
+        "profession": "Avdelnings- och enhetschefer inom hälsa och sjukvård, nivå 2",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 53600,
+        "salary_men": 52500,
+        "salary_women": 53800,
+        "gender_gap_percent": 102.5
+    },
+    {
+        "ssyk_code": "1521",
+        "profession": "Avdelningschefer inom socialt och kurativt arbete, nivå 1",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 70100,
+        "salary_men": 69700,
+        "salary_women": 70200,
+        "gender_gap_percent": 100.7
+    },
+    {
+        "ssyk_code": "1522",
+        "profession": "Enhetschefer inom socialt och kurativt arbete, nivå 2",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 54900,
+        "salary_men": 54800,
+        "salary_women": 54900,
+        "gender_gap_percent": 100.2
+    },
+    {
+        "ssyk_code": "1531",
+        "profession": "Avdelningschefer inom äldreomsorg, nivå 1",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 67800,
+        "salary_men": 67500,
+        "salary_women": 67900,
+        "gender_gap_percent": 100.6
+    },
+    {
+        "ssyk_code": "1532",
+        "profession": "Enhetschefer inom äldreomsorg, nivå 2",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 50700,
+        "salary_men": 50200,
+        "salary_women": 50700,
+        "gender_gap_percent": 101
+    },
+    {
+        "ssyk_code": "1591",
+        "profession": "Övriga chefer inom samhällsservice, nivå 1",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 67200,
+        "salary_men": 67900,
+        "salary_women": 66700,
+        "gender_gap_percent": 98.2
+    },
+    {
+        "ssyk_code": "1592",
+        "profession": "Övriga verksamhetschefer inom samhällsservice, nivå 2",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 51200,
+        "salary_men": 51400,
+        "salary_women": 51000,
+        "gender_gap_percent": 99.2
+    },
+    {
+        "ssyk_code": "2149",
+        "profession": "Övriga civilingenjörsyrken",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 52800,
+        "salary_men": 0,
+        "salary_women": 52800
+    },
+    {
+        "ssyk_code": "2162",
+        "profession": "Landskapsarkitekter",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 45100,
+        "salary_men": 45900,
+        "salary_women": 44100,
+        "gender_gap_percent": 96.1
+    },
+    {
+        "ssyk_code": "2163",
+        "profession": "Planeringsarkitekter m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 47000,
+        "salary_men": 47300,
+        "salary_women": 46700,
+        "gender_gap_percent": 98.7
+    },
+    {
+        "ssyk_code": "2164",
+        "profession": "Lantmätare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 45800,
+        "salary_men": 45800,
+        "salary_women": 45800,
+        "gender_gap_percent": 100
+    },
+    {
+        "ssyk_code": "2182",
+        "profession": "Miljö- och hälsoskyddsinspektörer",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 40100,
+        "salary_men": 40600,
+        "salary_women": 39900,
+        "gender_gap_percent": 98.3
+    },
+    {
+        "ssyk_code": "2183",
+        "profession": "Specialister inom miljöskydd och miljöteknik",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 44700,
+        "salary_men": 44700,
+        "salary_women": 44600,
+        "gender_gap_percent": 99.8
+    },
+    {
+        "ssyk_code": "2211",
+        "profession": "Specialistläkare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 99100,
+        "salary_men": 110000,
+        "salary_women": 93300,
+        "gender_gap_percent": 84.8
+    },
+    {
+        "ssyk_code": "2221",
+        "profession": "Grundutbildade sjuksköterskor",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 43900,
+        "salary_men": 44500,
+        "salary_women": 43800,
+        "gender_gap_percent": 98.4
+    },
+    {
+        "ssyk_code": "2224",
+        "profession": "Distriktssköterskor",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 47400,
+        "salary_men": 48100,
+        "salary_women": 47300,
+        "gender_gap_percent": 98.3
+    },
+    {
+        "ssyk_code": "2225",
+        "profession": "Psykiatrisjuksköterskor",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 44700,
+        "salary_men": 45200,
+        "salary_women": 44600,
+        "gender_gap_percent": 98.7
+    },
+    {
+        "ssyk_code": "2227",
+        "profession": "Geriatriksjuksköterskor",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 43900,
+        "salary_men": 44900,
+        "salary_women": 43800,
+        "gender_gap_percent": 97.6
+    },
+    {
+        "ssyk_code": "2232",
+        "profession": "Barnsjuksköterskor",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 47800,
+        "salary_men": 0,
+        "salary_women": 47800
+    },
+    {
+        "ssyk_code": "2233",
+        "profession": "Skolsköterskor",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 44800,
+        "salary_men": 43500,
+        "salary_women": 44900,
+        "gender_gap_percent": 103.2
+    },
+    {
+        "ssyk_code": "2234",
+        "profession": "Företagssköterskor",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 43900,
+        "salary_men": 0,
+        "salary_women": 44200
+    },
+    {
+        "ssyk_code": "2239",
+        "profession": "Övriga specialistsjuksköterskor",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 49700,
+        "salary_men": 49100,
+        "salary_women": 49800,
+        "gender_gap_percent": 101.4
+    },
+    {
+        "ssyk_code": "2241",
+        "profession": "Psykologer",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 50300,
+        "salary_men": 50200,
+        "salary_women": 50300,
+        "gender_gap_percent": 100.2
+    },
+    {
+        "ssyk_code": "2242",
+        "profession": "Psykoterapeuter",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 47100,
+        "salary_men": 0,
+        "salary_women": 47000
+    },
+    {
+        "ssyk_code": "2272",
+        "profession": "Sjukgymnaster",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 39500,
+        "salary_men": 39000,
+        "salary_women": 39600,
+        "gender_gap_percent": 101.5
+    },
+    {
+        "ssyk_code": "2273",
+        "profession": "Arbetsterapeuter",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 38800,
+        "salary_men": 37900,
+        "salary_women": 38900,
+        "gender_gap_percent": 102.6
+    },
+    {
+        "ssyk_code": "2281",
+        "profession": "Apotekare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 43000,
+        "salary_men": 0,
+        "salary_women": 43000
+    },
+    {
+        "ssyk_code": "2282",
+        "profession": "Dietister",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 41200,
+        "salary_men": 38400,
+        "salary_women": 41400,
+        "gender_gap_percent": 107.8
+    },
+    {
+        "ssyk_code": "2283",
+        "profession": "Audionomer och logopeder",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 41500,
+        "salary_men": 41600,
+        "salary_women": 41500,
+        "gender_gap_percent": 99.8
+    },
+    {
+        "ssyk_code": "2289",
+        "profession": "Övriga specialister inom hälso- och sjukvård",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 41900,
+        "salary_men": 0,
+        "salary_women": 41700
+    },
+    {
+        "ssyk_code": "2320",
+        "profession": "Lärare i yrkesämnen",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 42200,
+        "salary_men": 42200,
+        "salary_women": 42200,
+        "gender_gap_percent": 100
+    },
+    {
+        "ssyk_code": "2330",
+        "profession": "Gymnasielärare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 43600,
+        "salary_men": 43400,
+        "salary_women": 43700,
+        "gender_gap_percent": 100.7
+    },
+    {
+        "ssyk_code": "2341",
+        "profession": "Grundskollärare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 40400,
+        "salary_men": 39600,
+        "salary_women": 40600,
+        "gender_gap_percent": 102.5
+    },
+    {
+        "ssyk_code": "2342",
+        "profession": "Fritidspedagoger",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 34000,
+        "salary_men": 33500,
+        "salary_women": 34300,
+        "gender_gap_percent": 102.4
+    },
+    {
+        "ssyk_code": "2343",
+        "profession": "Förskollärare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 36300,
+        "salary_men": 35700,
+        "salary_women": 36300,
+        "gender_gap_percent": 101.7
+    },
+    {
+        "ssyk_code": "2351",
+        "profession": "Speciallärare och specialpedagoger m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 46500,
+        "salary_men": 45900,
+        "salary_women": 46600,
+        "gender_gap_percent": 101.5
+    },
+    {
+        "ssyk_code": "2352",
+        "profession": "Studie- och yrkesvägledare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 39700,
+        "salary_men": 38900,
+        "salary_women": 39900,
+        "gender_gap_percent": 102.6
+    },
+    {
+        "ssyk_code": "2359",
+        "profession": "Övriga pedagoger med teoretisk specialistkompetens",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 34600,
+        "salary_men": 34500,
+        "salary_women": 34700,
+        "gender_gap_percent": 100.6
+    },
+    {
+        "ssyk_code": "2412",
+        "profession": "Controller",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 46700,
+        "salary_men": 48000,
+        "salary_women": 46200,
+        "gender_gap_percent": 96.3
+    },
+    {
+        "ssyk_code": "2421",
+        "profession": "Lednings- och organisationsutvecklare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 48000,
+        "salary_men": 49500,
+        "salary_women": 47500,
+        "gender_gap_percent": 96
+    },
+    {
+        "ssyk_code": "2422",
+        "profession": "Planerare och utredare m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 42100,
+        "salary_men": 43500,
+        "salary_women": 41600,
+        "gender_gap_percent": 95.6
+    },
+    {
+        "ssyk_code": "2423",
+        "profession": "Personal- och HR-specialister",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 44200,
+        "salary_men": 45000,
+        "salary_women": 44100,
+        "gender_gap_percent": 98
+    },
+    {
+        "ssyk_code": "2432",
+        "profession": "Informatörer, kommunikatörer och PR-specialister",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 42800,
+        "salary_men": 43400,
+        "salary_women": 42600,
+        "gender_gap_percent": 98.2
+    },
+    {
+        "ssyk_code": "2511",
+        "profession": "Systemanalytiker och IT-arkitekter m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 45800,
+        "salary_men": 46800,
+        "salary_women": 44700,
+        "gender_gap_percent": 95.5
+    },
+    {
+        "ssyk_code": "2512",
+        "profession": "Mjukvaru- och systemutvecklare m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 44500,
+        "salary_men": 45000,
+        "salary_women": 43400,
+        "gender_gap_percent": 96.4
+    },
+    {
+        "ssyk_code": "2615",
+        "profession": "Förvaltnings- och organisationsjurister",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 54400,
+        "salary_men": 55600,
+        "salary_women": 53900,
+        "gender_gap_percent": 96.9
+    },
+    {
+        "ssyk_code": "2621",
+        "profession": "Museiintendenter m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 35000,
+        "salary_men": 34800,
+        "salary_women": 35100,
+        "gender_gap_percent": 100.9
+    },
+    {
+        "ssyk_code": "2622",
+        "profession": "Bibliotekarier och arkivarier",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 36300,
+        "salary_men": 36400,
+        "salary_women": 36300,
+        "gender_gap_percent": 99.7
+    },
+    {
+        "ssyk_code": "2643",
+        "profession": "Översättare, tolkar och lingvister m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 34900,
+        "salary_men": 36000,
+        "salary_women": 34700,
+        "gender_gap_percent": 96.4
+    },
+    {
+        "ssyk_code": "2655",
+        "profession": "Skådespelare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 36700,
+        "salary_men": 36800,
+        "salary_women": 36700,
+        "gender_gap_percent": 99.7
+    },
+    {
+        "ssyk_code": "2661",
+        "profession": "Socialsekreterare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 40200,
+        "salary_men": 39500,
+        "salary_women": 40400,
+        "gender_gap_percent": 102.3
+    },
+    {
+        "ssyk_code": "2662",
+        "profession": "Kuratorer",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 40500,
+        "salary_men": 40500,
+        "salary_women": 40500,
+        "gender_gap_percent": 100
+    },
+    {
+        "ssyk_code": "2663",
+        "profession": "Biståndsbedömare m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 38200,
+        "salary_men": 37600,
+        "salary_women": 38200,
+        "gender_gap_percent": 101.6
+    },
+    {
+        "ssyk_code": "2669",
+        "profession": "Övriga yrken inom socialt arbete",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 36200,
+        "salary_men": 35700,
+        "salary_women": 36400,
+        "gender_gap_percent": 102
+    },
+    {
+        "ssyk_code": "3112",
+        "profession": "Ingenjörer och tekniker inom bygg och anläggning",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 47400,
+        "salary_men": 47600,
+        "salary_women": 47100,
+        "gender_gap_percent": 98.9
+    },
+    {
+        "ssyk_code": "3114",
+        "profession": "Ingenjörer och tekniker inom maskinteknik",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 46500,
+        "salary_men": 47400,
+        "salary_women": 44900,
+        "gender_gap_percent": 94.7
+    },
+    {
+        "ssyk_code": "3117",
+        "profession": "GIS- och kartingenjörer",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 41000,
+        "salary_men": 41200,
+        "salary_women": 40700,
+        "gender_gap_percent": 98.8
+    },
+    {
+        "ssyk_code": "3211",
+        "profession": "Tekniker, bilddiagnostik och medicinteknisk utrustning",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 32800,
+        "salary_men": 32900,
+        "salary_women": 32400,
+        "gender_gap_percent": 98.5
+    },
+    {
+        "ssyk_code": "3212",
+        "profession": "Biomedicinska analytiker m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 40800,
+        "salary_men": 40600,
+        "salary_women": 40900,
+        "gender_gap_percent": 100.7
+    },
+    {
+        "ssyk_code": "3213",
+        "profession": "Receptarier",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 40200,
+        "salary_men": 0,
+        "salary_women": 40100
+    },
+    {
+        "ssyk_code": "3214",
+        "profession": "Tandtekniker och ortopedingenjörer m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 43300,
+        "salary_men": 0,
+        "salary_women": 43400
+    },
+    {
+        "ssyk_code": "3323",
+        "profession": "Inköpare och upphandlare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 45800,
+        "salary_men": 47000,
+        "salary_women": 45300,
+        "gender_gap_percent": 96.4
+    },
+    {
+        "ssyk_code": "3343",
+        "profession": "Chefssekreterare och VD-assistenter m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 35800,
+        "salary_men": 36600,
+        "salary_women": 35700,
+        "gender_gap_percent": 97.5
+    },
+    {
+        "ssyk_code": "3355",
+        "profession": "Brandingenjörer och byggnadsinspektörer m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 43300,
+        "salary_men": 44300,
+        "salary_women": 42000,
+        "gender_gap_percent": 94.8
+    },
+    {
+        "ssyk_code": "3411",
+        "profession": "Behandlingsassistenter och socialpedagoger m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 35700,
+        "salary_men": 35800,
+        "salary_women": 35600,
+        "gender_gap_percent": 99.4
+    },
+    {
+        "ssyk_code": "3422",
+        "profession": "Idrottstränare och instruktörer m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 29800,
+        "salary_men": 29400,
+        "salary_women": 30100,
+        "gender_gap_percent": 102.4
+    },
+    {
+        "ssyk_code": "3423",
+        "profession": "Fritidsledare m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 31400,
+        "salary_men": 31600,
+        "salary_women": 31300,
+        "gender_gap_percent": 99.1
+    },
+    {
+        "ssyk_code": "3424",
+        "profession": "Friskvårdskonsulenter och hälsopedagoger m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 37400,
+        "salary_men": 36400,
+        "salary_women": 37600,
+        "gender_gap_percent": 103.3
+    },
+    {
+        "ssyk_code": "3452",
+        "profession": "Storhushållsföreståndare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 41900,
+        "salary_men": 41500,
+        "salary_women": 42000,
+        "gender_gap_percent": 101.2
+    },
+    {
+        "ssyk_code": "3511",
+        "profession": "Drifttekniker, IT",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 37300,
+        "salary_men": 37400,
+        "salary_women": 36700,
+        "gender_gap_percent": 98.1
+    },
+    {
+        "ssyk_code": "4111",
+        "profession": "Ekonomiassistenter m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 34500,
+        "salary_men": 34300,
+        "salary_women": 34600,
+        "gender_gap_percent": 100.9
+    },
+    {
+        "ssyk_code": "4112",
+        "profession": "Löne- och personaladministratörer",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 34400,
+        "salary_men": 35100,
+        "salary_women": 34400,
+        "gender_gap_percent": 98
+    },
+    {
+        "ssyk_code": "4116",
+        "profession": "Skolassistenter m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 34700,
+        "salary_men": 35000,
+        "salary_women": 34700,
+        "gender_gap_percent": 99.1
+    },
+    {
+        "ssyk_code": "4117",
+        "profession": "Medicinska sekreterare, vårdadministratörer m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 33800,
+        "salary_men": 33900,
+        "salary_women": 33800,
+        "gender_gap_percent": 99.7
+    },
+    {
+        "ssyk_code": "4119",
+        "profession": "Övriga kontorsassistenter och sekreterare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 33900,
+        "salary_men": 33700,
+        "salary_women": 34000,
+        "gender_gap_percent": 100.9
+    },
+    {
+        "ssyk_code": "4221",
+        "profession": "Resesäljare och trafikassistenter m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 33600,
+        "salary_men": 32900,
+        "salary_women": 33700,
+        "gender_gap_percent": 102.4
+    },
+    {
+        "ssyk_code": "4225",
+        "profession": "Kontorsreceptionister",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 31300,
+        "salary_men": 32100,
+        "salary_women": 31200,
+        "gender_gap_percent": 97.2
+    },
+    {
+        "ssyk_code": "4322",
+        "profession": "Lager- och terminalpersonal",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 30400,
+        "salary_men": 30600,
+        "salary_women": 29900,
+        "gender_gap_percent": 97.7
+    },
+    {
+        "ssyk_code": "4410",
+        "profession": "Biblioteks- och arkivassistenter m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 29700,
+        "salary_men": 29800,
+        "salary_women": 29700,
+        "gender_gap_percent": 99.7
+    },
+    {
+        "ssyk_code": "5120",
+        "profession": "Kockar och kallskänkor",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 31000,
+        "salary_men": 31600,
+        "salary_women": 30800,
+        "gender_gap_percent": 97.5
+    },
+    {
+        "ssyk_code": "5144",
+        "profession": "Fotterapeuter",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 32000,
+        "salary_men": 0,
+        "salary_women": 32000
+    },
+    {
+        "ssyk_code": "5152",
+        "profession": "Fastighetsskötare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 31200,
+        "salary_men": 31400,
+        "salary_women": 30200,
+        "gender_gap_percent": 96.2
+    },
+    {
+        "ssyk_code": "5311",
+        "profession": "Barnskötare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 27700,
+        "salary_men": 26600,
+        "salary_women": 27800,
+        "gender_gap_percent": 104.5
+    },
+    {
+        "ssyk_code": "5312",
+        "profession": "Elevassistenter m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 28400,
+        "salary_men": 28100,
+        "salary_women": 28600,
+        "gender_gap_percent": 101.8
+    },
+    {
+        "ssyk_code": "5321",
+        "profession": "Undersköterskor, hemtjänst, hemsjukvård och äldreboende",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 33000,
+        "salary_men": 32400,
+        "salary_women": 33100,
+        "gender_gap_percent": 102.2
+    },
+    {
+        "ssyk_code": "5324",
+        "profession": "Undersköterskor, mottagning",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 32400,
+        "salary_men": 33400,
+        "salary_women": 32200,
+        "gender_gap_percent": 96.4
+    },
+    {
+        "ssyk_code": "5330",
+        "profession": "Vårdbiträden",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 28600,
+        "salary_men": 28500,
+        "salary_women": 28700,
+        "gender_gap_percent": 100.7
+    },
+    {
+        "ssyk_code": "5341",
+        "profession": "Skötare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 32900,
+        "salary_men": 33000,
+        "salary_women": 32900,
+        "gender_gap_percent": 99.7
+    },
+    {
+        "ssyk_code": "5342",
+        "profession": "Vårdare, boendestödjare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 32300,
+        "salary_men": 31900,
+        "salary_women": 32400,
+        "gender_gap_percent": 101.6
+    },
+    {
+        "ssyk_code": "5343",
+        "profession": "Personliga assistenter",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 32500,
+        "salary_men": 32100,
+        "salary_women": 32700,
+        "gender_gap_percent": 101.9
+    },
+    {
+        "ssyk_code": "5349",
+        "profession": "Övrig vård- och omsorgspersonal",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 28900,
+        "salary_men": 28300,
+        "salary_women": 29100,
+        "gender_gap_percent": 102.8
+    },
+    {
+        "ssyk_code": "5411",
+        "profession": "Brandmän",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 37400,
+        "salary_men": 37500,
+        "salary_women": 35200,
+        "gender_gap_percent": 93.9
+    },
+    {
+        "ssyk_code": "5419",
+        "profession": "Övrig bevaknings- och säkerhetspersonal",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 31300,
+        "salary_men": 31100,
+        "salary_women": 31500,
+        "gender_gap_percent": 101.3
+    },
+    {
+        "ssyk_code": "6113",
+        "profession": "Trädgårdsanläggare m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 30700,
+        "salary_men": 30800,
+        "salary_women": 30600,
+        "gender_gap_percent": 99.4
+    },
+    {
+        "ssyk_code": "6130",
+        "profession": "Växtodlare och djuruppfödare, blandad drift",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 31500,
+        "salary_men": 31400,
+        "salary_women": 31500,
+        "gender_gap_percent": 100.3
+    },
+    {
+        "ssyk_code": "7111",
+        "profession": "Träarbetare, snickare m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 34700,
+        "salary_men": 34700,
+        "salary_women": 0
+    },
+    {
+        "ssyk_code": "7112",
+        "profession": "Murare m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 35800,
+        "salary_men": 36000,
+        "salary_women": 0
+    },
+    {
+        "ssyk_code": "7114",
+        "profession": "Anläggningsarbetare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 34400,
+        "salary_men": 34600,
+        "salary_women": 31400,
+        "gender_gap_percent": 90.8
+    },
+    {
+        "ssyk_code": "7125",
+        "profession": "VVS-montörer m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 38300,
+        "salary_men": 38300,
+        "salary_women": 0
+    },
+    {
+        "ssyk_code": "7131",
+        "profession": "Målare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 34400,
+        "salary_men": 34800,
+        "salary_women": 32700,
+        "gender_gap_percent": 94
+    },
+    {
+        "ssyk_code": "7133",
+        "profession": "Skorstensfejare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 35300,
+        "salary_men": 35400,
+        "salary_women": 0
+    },
+    {
+        "ssyk_code": "7221",
+        "profession": "Smeder",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 39800,
+        "salary_men": 39800,
+        "salary_women": 0
+    },
+    {
+        "ssyk_code": "7223",
+        "profession": "Maskinställare och maskinoperatörer, metallarbete",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 33300,
+        "salary_men": 33300,
+        "salary_women": 0
+    },
+    {
+        "ssyk_code": "7231",
+        "profession": "Motorfordonsmekaniker och fordonsreparatörer",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 33700,
+        "salary_men": 33700,
+        "salary_women": 0
+    },
+    {
+        "ssyk_code": "7233",
+        "profession": "Underhållsmekaniker och maskinreparatörer",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 35600,
+        "salary_men": 35500,
+        "salary_women": 36300,
+        "gender_gap_percent": 102.3
+    },
+    {
+        "ssyk_code": "7411",
+        "profession": "Installations- och serviceelektriker",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 40000,
+        "salary_men": 40000,
+        "salary_women": 37800,
+        "gender_gap_percent": 94.5
+    },
+    {
+        "ssyk_code": "7531",
+        "profession": "Skräddare och ateljésömmerskor m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 32000,
+        "salary_men": 0,
+        "salary_women": 32000
+    },
+    {
+        "ssyk_code": "8151",
+        "profession": "Maskinoperatörer, blekning, färgning och tvättning",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 26700,
+        "salary_men": 25300,
+        "salary_women": 27300,
+        "gender_gap_percent": 107.9
+    },
+    {
+        "ssyk_code": "8191",
+        "profession": "Drifttekniker vid värme- och vattenverk",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 36600,
+        "salary_men": 36800,
+        "salary_women": 35400,
+        "gender_gap_percent": 96.2
+    },
+    {
+        "ssyk_code": "8329",
+        "profession": "Övriga bil-, motorcykel- och cykelförare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 31600,
+        "salary_men": 31800,
+        "salary_women": 30500,
+        "gender_gap_percent": 95.9
+    },
+    {
+        "ssyk_code": "9111",
+        "profession": "Städare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 27200,
+        "salary_men": 26700,
+        "salary_women": 27300,
+        "gender_gap_percent": 102.2
+    },
+    {
+        "ssyk_code": "9120",
+        "profession": "Bilrekonditionerare, fönsterputsare och övriga rengöringsarbetare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 25800,
+        "salary_men": 26400,
+        "salary_women": 25300,
+        "gender_gap_percent": 95.8
+    },
+    {
+        "ssyk_code": "9412",
+        "profession": "Restaurang- och köksbiträden m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 27200,
+        "salary_men": 26900,
+        "salary_women": 27300,
+        "gender_gap_percent": 101.5
+    },
+    {
+        "ssyk_code": "9610",
+        "profession": "Renhållnings- och återvinningsarbetare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 30900,
+        "salary_men": 31000,
+        "salary_women": 30300,
+        "gender_gap_percent": 97.7
+    },
+    {
+        "ssyk_code": "9622",
+        "profession": "Vaktmästare m.fl.",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 29500,
+        "salary_men": 29700,
+        "salary_women": 29000,
+        "gender_gap_percent": 97.6
+    },
+    {
+        "ssyk_code": "9629",
+        "profession": "Övriga servicearbetare",
+        "sector": "kommunal",
+        "year": 2024,
+        "salary_total": 32900,
+        "salary_men": 34500,
+        "salary_women": 0
+    }
+]
