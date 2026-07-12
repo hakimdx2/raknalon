@@ -4,7 +4,7 @@ date: 2026-01-23T08:00:00+01:00
 draft: false
 image: "/img/blog/foraldraledighet_featured.png"
 description: "En komplett guide till föräldraledighet i Sverige 2026. Lär dig om SGI, dagar, ersättning och dina rättigheter."
-categories: ["Lag & Rätt", "Ekonomi"]
+category: "Lön och Karriär"
 tags: ["föräldraledighet", "sgi", "försäkringskassan", "föräldrapenning"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Sjuksköterska Lön 2026: Den Kompletta Guiden"
 description: "Vad tjänar en sjuksköterska 2026? Se lönestatistik, ingångslöner och skillnader mellan regioner. Vi går igenom allt du behöver veta om din lön."
 date: 2026-01-12
-category: Lön & Karriär
+category: Lön och Karriär
 author: Redaktionen
 reading_time: 6
 published: true

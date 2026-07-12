@@ -2,7 +2,7 @@
 title: "Jobba som Undersköterska 2026: Allt om Lön, Utbildning & Skyddad Titel"
 date: 2026-01-22T20:55:00+01:00
 draft: false
-categories: ["Undersköterska", "Karriär"]
+category: "Karriär"
 tags: ["Lön 2026", "Utbildning", "Skyddad Titel", "Framtidsutsikter"]
 image: "/img/blog/jobba-som-underskoterska-2026.jpg"
 description: "Den kompletta guiden för dig som vill jobba som undersköterska 2026. Vi går igenom exakta löner, den nya skyddade yrkestiteln, utbildningsvägar och hur du löneförhandlar."

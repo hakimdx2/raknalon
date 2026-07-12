@@ -3,7 +3,7 @@ title: "Lön efter skatt 2026: Komplett guide till din nettolön"
 description: "Räkna ut din lön efter skatt 2026. Se skattesatser, brytpunkter och jobbskatteavdrag. Jämför nettolön för olika lönenivåer och kommuner."
 date: 2026-01-14
 updated: 2026-01-14
-category: Skatt & Ekonomi
+category: Skatt och Ekonomi
 author: Redaktionen
 reading_time: 12
 published: true

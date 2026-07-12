@@ -2,7 +2,7 @@
 title: "Undersköterska Lön 2026: Lönestatistik och Framtidsutsikter"
 description: "Vad tjänar en undersköterska 2026? Se aktuell lönestatistik, ingångslöner och löneskillnader mellan kommun och region. Räkna ut din lön efter skatt."
 date: 2026-01-14
-category: Lön & Karriär
+category: Lön och Karriär
 author: Redaktionen
 reading_time: 5
 published: true

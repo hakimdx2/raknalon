@@ -4,8 +4,12 @@ slug: lojalitetsskatt-priset-pa-att-stanna
 date: 2026-01-23
 author: "Raknalon Redaktionen"
 category: "Löneförhandling"
-excerpt: "Din stilla uppoffring kostar dig nästan en miljon kronor. Varför berättar ingen om lojalitetsskatten?"
+meta_description: "Din stilla uppoffring kostar dig nästan en miljon kronor. Varför berättar ingen om lojalitetsskatten? Så mycket förlorar du på att inte byta jobb."
+keywords: ["lojalitetsskatt", "löneförhandling", "byta jobb lön", "löneökning", "karriärbyte"]
 image: "/img/blog/lojalitetsskatt.jpg"
+image_license: "unsplash"
+potential_score: 78
+status: "draft"
 ---
 
 **Din stilla uppoffring kostar dig nästan en miljon kronor**

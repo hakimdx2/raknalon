@@ -1,8 +1,9 @@
 # Tâches — raknalon.se
 
-**Créé:** 2026-07-08 | **Contexte:** -92% trafic, déclassement algorithmique page 1→2-3
+**Créé:** 2026-07-08 | **Contexte:** -92% trafic, déclassement page 1→2-3
 
-- [ ] 1. Ajouter header `Last-Modified` sur les pages /lon/*
-- [ ] 2. Ajouter lien source SCB + date mise à jour visible sur chaque fiche
-- [ ] 3. Ajouter page /a-propos avec expertise métier (E-E-A-T)
-- [ ] 4. Vérifier/mettre à jour les données salariales (juillet 2026)
+- [x] 1. Ajouter header `Last-Modified` → commit 02f3fca
+- [x] 2. Améliorer crédit SCB (data från SCB 2024 · uppdaterad...) → commit 02f3fca
+- [x] 3. E-E-A-T déjà en place (auteur photo+nom+rôle sur chaque fiche)
+- [ ] 4. Récupérer données SCB 2025 pour remplacer 2024
+- [ ] 5. Surveiller GSC : positions, nouvelles baisses (cron mardi existe déjà)

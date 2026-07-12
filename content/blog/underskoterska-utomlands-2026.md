@@ -2,7 +2,7 @@
 title: "Undersköterska Utomlands 2026: Så Dubblar Du Lönen i Norge & Spanien"
 date: 2026-01-22T21:00:00+01:00
 draft: false
-categories: ["Undersköterska", "Utomlands"]
+category: "Karriär"
 tags: ["Norge", "Spanien", "Lön", "Volontärarbete", "Helsefagarbeider"]
 image: "/img/blog/underskoterska-utomlands-2026.jpg"
 description: "Drömmer du om att jobba som undersköterska utomlands? Vi jämför löner i Norge (44% högre!) och livskvalitet i Spanien. Läs om auktorisation, skatt och A1-intyg."

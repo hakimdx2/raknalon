@@ -2,7 +2,7 @@
 title: "Specialistundersköterska 2026: Din Väg till Högre Lön och Specialkompetens"
 date: 2026-01-22T21:05:00+01:00
 draft: false
-categories: ["Karriär", "Utbildning"]
+category: "Karriär"
 tags: ["Specialistundersköterska", "YH-utbildning", "Lön", "Silviasyster", "Psykiatri"]
 image: "/img/blog/specialistunderskoterska-2026.jpg"
 description: "Vill du höja din lön och ta nästa steg i karriären? Läs allt om att bli specialistundersköterska 2026, YH-utbildningar, löner och hur du pluggar med 80% lön."
