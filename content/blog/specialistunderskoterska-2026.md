@@ -24,7 +24,7 @@ Många undersköterskor når en punkt där de känner att de "kan allt" i sin nu
 ***
 
 ## Lönelyftet: Är Det Värt Det?
-En "vanlig" undersköterska tjänar i snitt [33 100 kr](/blog/jobba-som-underskoterska-2026/) (2024). En **specialistundersköterska** kan förvänta sig en lön mellan **35 000 – 40 000 kr** beroende på inriktning och arbetsgivare.
+En "vanlig" undersköterska tjänar i snitt [33 100 kr](/blogg/jobba-som-underskoterska-2026/) (2024). En **specialistundersköterska** kan förvänta sig en lön mellan **35 000 – 40 000 kr** beroende på inriktning och arbetsgivare.
 
 | Inriktning | Löneintervall (uppskattat 2026) |
 |--|--|
@@ -99,7 +99,7 @@ Ansökningsperioden är ofta **februari – april** med start i augusti/septembe
 
 ## FAQ om Specialistundersköterska
 ### "Får jag automatiskt högre lön?"
-A: Inte automatiskt enligt lag, men det ger dig ett mycket starkt förhandlingsläge. Jämför med [grundlönerna för undersköterskor](/blog/jobba-som-underskoterska-2026/) för att se skillnaden. Många kommuner har infört lönepåslag för att behålla specialister. Fråga din chef *innan* du börjar plugga!
+A: Inte automatiskt enligt lag, men det ger dig ett mycket starkt förhandlingsläge. Jämför med [grundlönerna för undersköterskor](/blogg/jobba-som-underskoterska-2026/) för att se skillnaden. Många kommuner har infört lönepåslag för att behålla specialister. Fråga din chef *innan* du börjar plugga!
 
 ### "Är specialistundersköterska en skyddad titel?"
 "Undersköterska" är skyddad, men "Specialistundersköterska" är än så länge en *funktionsbenämning* eller examensbenämning, inte en separat legitimation hos Socialstyrelsen. Men den bygger på din grundtitel som undersköterska.

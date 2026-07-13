@@ -1,0 +1,22 @@
+# Raknalon.se — Lonekalkylator for Sverige
+# LLMs.txt — maskinlasbar oversikt for AI-agenter och crawlers
+
+## Huvudsidor
+- https://raknalon.se: Hem — lonekalkylator, bruttolon → nettolon
+- https://raknalon.se/yrken: Alla yrken och loner
+- https://raknalon.se/blogg: Blogg och guider om arbetsmarknad
+- https://raknalon.se/kommunal-lon: Loner i kommunal sektor
+
+## Koncept
+- https://raknalon.se/brutto-netto: Brutto vs netto forklarat
+- https://raknalon.se/jobbskatteavdrag: Jobbskatteavdrag 2026
+- https://raknalon.se/statlig-skatt: Statlig inkomstskatt
+
+## Verktyg
+- https://raknalon.se/verktyg/lone-speedrunner: Loneforhandlingssimulator
+- https://raknalon.se/verktyg/brag-sheet: Brag sheet for lonesamtal
+
+## Om
+- https://raknalon.se/om-oss: Om Raknalon
+- https://raknalon.se/integritetspolicy: Integritetspolicy
+- https://raknalon.se/kontakt: Kontakta oss

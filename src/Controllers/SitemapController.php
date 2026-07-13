@@ -35,11 +35,16 @@ class SitemapController
 
         // Legal & Information Pages (AdSense & GDPR)
         $urls[] = ['loc' => '/om-oss', 'priority' => '0.5', 'changefreq' => 'monthly'];
+        $urls[] = ['loc' => '/om-oss/nala', 'priority' => '0.4', 'changefreq' => 'monthly'];
         $urls[] = ['loc' => '/kontakt', 'priority' => '0.5', 'changefreq' => 'monthly'];
         $urls[] = ['loc' => '/sa-raknar-vi', 'priority' => '0.6', 'changefreq' => 'monthly'];
         $urls[] = ['loc' => '/integritetspolicy', 'priority' => '0.3', 'changefreq' => 'yearly'];
         $urls[] = ['loc' => '/cookies', 'priority' => '0.3', 'changefreq' => 'yearly'];
         $urls[] = ['loc' => '/ansvarsfriskrivning', 'priority' => '0.3', 'changefreq' => 'yearly'];
+
+        // Verktyg pages
+        $urls[] = ['loc' => '/verktyg/lone-speedrunner', 'priority' => '0.7', 'changefreq' => 'monthly'];
+        $urls[] = ['loc' => '/verktyg/brag-sheet', 'priority' => '0.7', 'changefreq' => 'monthly'];
 
         // Dynamic Profession Pages
         $professions = $this->professionService->getAll();

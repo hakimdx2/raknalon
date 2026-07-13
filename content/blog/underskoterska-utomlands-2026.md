@@ -11,7 +11,7 @@ description: "Drömmer du om att jobba som undersköterska utomlands? Vi jämfö
 ## The Golden Opportunity: Norge als löneökning på 44%
 För en svensk undersköterska är Norge det moderna eldoradet – inte bara för lönen, utan för möjligheten att **faktiskt spara pengar** samtidigt som man arbetar i ett välutvecklat välfärdssystem. Medan Sverige kämpar med en brist på 3 500 undersköterskor, söker Norge desperat efter helsefagarbeidere (det norska namnet för undersköterska). Denna kombination av efterfrågan och högre löner skapar en perfekt storm för svenska arbetstagare.
 
-En norsk helsefagarbeider tjänar i genomsnitt **46 050 norska kronor per månad** (2025), vilket motsvarar ungefär **4 470 svenska kronor** när vi konverterar enligt nuvarande växelkurs. Jämfört med den [svenska medellönen för undersköterskor](/blog/jobba-som-underskoterska-2026/) på 33 100 kronor är detta en direkt **löneökning på 35%**. Men om vi tittar på nettolönen – det som hamnar på kontot efter skatter – ökar skillnaden till nästan **44%**. [se.indeed](https://se.indeed.com/karriarrad/hitta-ett-jobb/jobba-som-underskoterska-norge)
+En norsk helsefagarbeider tjänar i genomsnitt **46 050 norska kronor per månad** (2025), vilket motsvarar ungefär **4 470 svenska kronor** när vi konverterar enligt nuvarande växelkurs. Jämfört med den [svenska medellönen för undersköterskor](/blogg/jobba-som-underskoterska-2026/) på 33 100 kronor är detta en direkt **löneökning på 35%**. Men om vi tittar på nettolönen – det som hamnar på kontot efter skatter – ökar skillnaden till nästan **44%**. [se.indeed](https://se.indeed.com/karriarrad/hitta-ett-jobb/jobba-som-underskoterska-norge)
 ### Varför Är Lönen Högre i Norge?
 Det finns flera strukturella skäl till löneökningen:
 
@@ -369,7 +369,7 @@ Du står vid ett vägskäl. Som svensk undersköterska har du **tre realistiska 
 
 **Min rekomendation?** 
 
-**För 25–40 år:** Två år i Norge **nu**, spara 200 000 SEK, bygg ditt norska CV och nätverk. Om du vill stanna i Sverige istället kan du satsa på att bli [specialistundersköterska](/blog/specialistunderskoterska-2026/) för att höja din lön på hemmaplan.
+**För 25–40 år:** Två år i Norge **nu**, spara 200 000 SEK, bygg ditt norska CV och nätverk. Om du vill stanna i Sverige istället kan du satsa på att bli [specialistundersköterska](/blogg/specialistunderskoterska-2026/) för att höja din lön på hemmaplan.
 
 **För 45–55 år:** Ett år i Norge, sedan två år i Spanien för lifestyle-övergång, kombinera deltid-jobb med pensionsinsamling.
 

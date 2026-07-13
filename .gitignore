@@ -10,3 +10,4 @@ public_html/uploads/
 *.xlsx
 *.png
 *.jpg
+credentials/

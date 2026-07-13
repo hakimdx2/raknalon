@@ -286,7 +286,7 @@ I hemtjänsten är **körkort mycket värdefullt** – du behöver kunna ta dig 
 Ja, absolut. Många undersköterskor använder yrket som **springbräde för vidare utbildning**:
 - **Sjuksköterska** (3-årig högskoleutbildning)
 - **Arbetsterapeut** eller **fysioterapeut**
-- **[Specialistundersköterska](/blog/specialistunderskoterska-2026/)** inom psykiatri, intensivvård, operation, m.m.
+- **[Specialistundersköterska](/blogg/specialistunderskoterska-2026/)** inom psykiatri, intensivvård, operation, m.m.
 
 Din erfarenhet som undersköterska är ett stort plus när du söker dessa vidare utbildningar. [praktiska](https://praktiska.se/program/vard-och-omsorgsprogrammet/underskoterska/)
 
@@ -304,7 +304,7 @@ Med införandet av skyddad yrkestitel har riksdagen gjort ett uttalat prioritera
 För 2026 och framåt förväntas: [arbetsformedlingen](https://arbetsformedlingen.se/for-arbetsgivare/tips-inspiration-och-nyheter/nyheter/2025-12-17-starkare-arbetsmarknad-2026-och-2027)
 - **Fortsatt brist** på undersköterskor
 - **Höjda löner** tack vare kollektivavtals ökning
-- **Fler jobberbjudanden** från arbetsgivare. Är du nyfiken på att jobba krigs och tjäna betydligt mer? Läs vår guide om att [jobba som undersköterska utomlands (Norge & Spanien)](/blog/underskoterska-utomlands-2026/).
+- **Fler jobberbjudanden** från arbetsgivare. Är du nyfiken på att jobba krigs och tjäna betydligt mer? Läs vår guide om att [jobba som undersköterska utomlands (Norge & Spanien)](/blogg/underskoterska-utomlands-2026/).
 - **Bättre arbetsmiljö** – arbetsgivare konkurrerar om att attrahera personal
 
 Den studerande eller arbetssökande som utbildar sig till undersköterska väljer ett yrke med **säker framtid**, **meningsfull arbetsuppgift** och **god löneutveckling**.
@@ -317,7 +317,7 @@ Den studerande eller arbetssökande som utbildar sig till undersköterska välje
 3. **Löneförväntningar**: Ingångslön omkring 25 000 kr, stigande till 33 000+ kronor efter några år.
 4. **Arbetsmarknad**: Stort underskud på undersköterskor – enkelt att få jobb.
 5. **Arbetstid**: Ofta skiftarbete (dag, kväll, natt). OB-ersättning för obekväm arbetstid.
-6. **Vidareutbildning**: Möjlighet att studera vidare till sjuksköterska eller bli [specialistundersköterska](/blog/specialistunderskoterska-2026/) för högre lön.
+6. **Vidareutbildning**: Möjlighet att studera vidare till sjuksköterska eller bli [specialistundersköterska](/blogg/specialistunderskoterska-2026/) för högre lön.
 
 Undersköterska 2026 är ett **stabilt, efterfrågat och meningsfullt yrke** – med en skyddad titel som faktiskt betyder något.
 
