@@ -70,6 +70,8 @@ Lägg märke till vad denna fras gör:
 2.  **Den appellerar till marknaden, inte moral.** Du säger inte "jag förtjänar det". Du säger "marknaden säger att det är värt det".
 3.  **Den är precis.** En exakt siffra uppfattas som mer genomtänkt.
 
+Vill du ha fler förhandlingstekniker? Läs vår guide om [hemliga löneförhandlingstekniker som kan dubbla din lön](/blogg/hemliga-loneforhandlings-tekniker).
+
 ### Beräkna din egen lojalitetsskatt
 
 Detta är inte girighet. Det är matematik. Du är en professionell tillgång. Din tid är ändlig. Din kunskap är värd något.
@@ -85,3 +87,5 @@ Klicka nedan för att se din personliga "Lojalitetsskatt".
 </div>
 
 Du är värd det. Börja agera som om du redan vet det.
+
+**Relaterat:** [Lön efter skatt 2026 – så mycket får du behålla](/blogg/lon-efter-skatt-2026) · [Allt om löneavtal 2026 och avtalsrörelsen](/blogg/allt-om-loneavtal-2026-avtalsrorselsen)

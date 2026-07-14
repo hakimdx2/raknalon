@@ -1,12 +1,14 @@
 ---
 title: "Sjuksköterska Lön 2026: Den Kompletta Guiden"
-description: "Vad tjänar en sjuksköterska 2026? Se lönestatistik, ingångslöner och skillnader mellan regioner. Vi går igenom allt du behöver veta om din lön."
-date: 2026-01-12
-category: Lön och Karriär
-author: Redaktionen
-reading_time: 6
-published: true
-image: /img/blog/sjukskoterska_lon_hero.png
+slug: sjukskoterska-lon
+date: 2026-07-14
+category: "Lön och Karriär"
+meta_description: "Vad tjänar en sjuksköterska 2026? Se lönestatistik, ingångslöner och skillnader mellan regioner. Vi går igenom allt du behöver veta om din lön — uppdaterad juli 2026."
+keywords: ["sjuksköterska lön 2026", "sjuksköterska ingångslön", "sjuksköterska lön statistik", "vad tjänar sjuksköterska", "sjuksköterska lön region"]
+image: "/img/blog/sjukskoterska_lon_hero.png"
+image_license: "unsplash"
+potential_score: 65
+status: "published"
 ---
 
 Vad är egentligen genomsnittslönen för en sjuksköterska i Sverige idag? Svaret varierar stort beroende på om du jobbar i regionen, kommunen eller som konsult. Generellt ligger snittlönen på cirka **43 900 kr**, men som specialistsjuksköterska eller inom bemanning kan du tjäna betydligt mer.
@@ -29,7 +31,7 @@ Här får du all statistik, aktuella ingångslöner för 2026 och tipsen som hö
 
 ## Vad tjänar en sjuksköterska? (Statistik & Snittlön)
 
-Enligt den senaste statistiken från SCB (publicerad 2024/2025) ligger genomsnittslönen för en grundutbildad sjuksköterska på **43 900 kronor i månaden**. Det är viktigt att skilja på medellön och medianlön. Medianlönen, som ofta ger en mer rättvisande bild då den inte dras upp av extrema toppmånadslöner, ligger något lägre, ofta runt 42 000 kr.
+Enligt den senaste statistiken från SCB (lönestatistik 2025, publicerad våren 2026) ligger genomsnittslönen för en grundutbildad sjuksköterska på **43 900 kronor i månaden**. Det är viktigt att skilja på medellön och medianlön. Medianlönen, som ofta ger en mer rättvisande bild då den inte dras upp av extrema toppmånadslöner, ligger något lägre, ofta runt 42 000 kr.
 
 Lönen stiger också tydligt med erfarenhet. Statistik shows att löneutvecklingen ofta planar ut efter 55-årsåldern, men ingången i karriären är brantare nu än tidigare på grund av personalbristen.
 
@@ -124,4 +126,8 @@ Ja, ur ett arbetsmarknadsperspektiv. Det råder stor brist på sjuksköterskor i
 2.  **Specialisera dig:** Kompetens ger hävstång.
 3.  **Jämför sektorer:** Våga söka jobb hos kommunen eller privata vårdgivare för att få upp lönenivån.
 
-**Vill du rakna ut din exakta lön?** Använd vår [lönekalkylator](/) för att se vad du får ut efter skatt 2026.
+**Vill du rakna ut din exakta lön?** Använd vår [lönekalkylator](/blogg/lon-efter-skatt-2026) för att se vad du får ut efter skatt 2026.
+
+---
+
+*Källor: SCB (lönestatistik 2025), Vårdförbundet, Medlingsinstitutet. Senast uppdaterad: 14 juli 2026.*

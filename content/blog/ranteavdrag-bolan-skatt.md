@@ -105,7 +105,7 @@ Genom att ansöka om **jämkning** hos Skatteverket sänks din preliminärskatt 
 
 **Ansök om jämkning på [skatteverket.se/jamkning](https://www.skatteverket.se/privat/skatter/arbeteginkomst/skattetabeller/jamkning.4.18e1b10334ebe8bc8000588.html)** — det tar 5 minuter och kan göras när som helst under året.
 
-[Räkna ut exakt hur mycket du får i nettolön med vår lönekalkylator](/)
+[Räkna ut exakt hur mycket du får i nettolön med vår lönekalkylator](/blogg/lon-efter-skatt-2026)
 
 ## Ränteavdrag vid olika räntenivåer
 
@@ -153,6 +153,7 @@ Det har diskuterats politiskt att förändra ränteavdraget — exempelvis att s
 - **Finansdepartementets budgetpropositioner** (lämnas i september varje år)
 - **Skatteverkets nyhetsbrev** om skatteförändringar
 - **Bankernas årsbesked** som visar din exakta räntekostnad
+- **Den politiska debatten** — läs vår guide om [den svenska modellen och lönebildning](/blogg/den-svenska-modellen-arbetsmarknad-lon) för att förstå hur fack och arbetsgivare påverkar din ekonomi
 
 ## Sammanfattning: Så maximerar du ditt ränteavdrag
 
@@ -160,6 +161,7 @@ Det har diskuterats politiskt att förändra ränteavdraget — exempelvis att s
 2. **Kontrollera deklarationen** — säkerställ att alla räntor är med
 3. **Fördela rätt** — för sambos: överväg om 50/50 är optimalt för er situation
 4. **Ha koll på räntan** — din ränta påverkar avdraget, omförhandla vid behov
+5. **Se över hela din ekonomi** — ränteavdraget är en del av din totala privatekonomi. Läs vår [guide om arbetslöshet och a-kassa](/blogg/arbetsloshet-akassa-2026-guide) och vår guide om [hur löneavtal fungerar](/blogg/allt-om-loneavtal-2026-avtalsrorselsen)
 
 ---
 

@@ -30,6 +30,28 @@ Det spelar ingen roll vad lånet är till för — alla räntekostnader räknas.
 
 ## Så mycket får du tillbaka 2026
 
+<div class="not-prose my-8 p-6 bg-indigo-50 rounded-2xl border border-indigo-100" x-data="{ lan: 3000000, ranta: 4.2, get kostnad() { return this.lan * (this.ranta/100); }, get avdrag30() { return Math.min(this.kostnad, 100000) * 0.30; }, get avdrag21() { return Math.max(0, this.kostnad - 100000) * 0.21; }, get total() { return this.avdrag30 + this.avdrag21; } }">
+    <h3 class="text-lg font-bold text-indigo-900 mb-3">🧮 Räkna ut ditt ränteavdrag</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+            <label class="block text-sm font-medium text-indigo-800 mb-1">Bolån (kr)</label>
+            <input type="range" x-model="lan" min="100000" max="10000000" step="50000" class="w-full">
+            <input type="number" x-model="lan" class="w-full mt-1 rounded-lg border-indigo-200 text-sm p-2">
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-indigo-800 mb-1">Ränta (%)</label>
+            <input type="range" x-model="ranta" min="1" max="8" step="0.1" class="w-full">
+            <input type="number" x-model="ranta" step="0.1" class="w-full mt-1 rounded-lg border-indigo-200 text-sm p-2">
+        </div>
+    </div>
+    <div class="grid grid-cols-3 gap-3 text-center">
+        <div class="bg-white rounded-lg p-3"><div class="text-xs text-indigo-600">Årlig ränta</div><div class="text-xl font-bold text-indigo-900" x-text="Math.round(kostnad).toLocaleString() + ' kr'"></div></div>
+        <div class="bg-white rounded-lg p-3"><div class="text-xs text-indigo-600">Avdrag 30%</div><div class="text-xl font-bold text-green-700" x-text="Math.round(avdrag30).toLocaleString() + ' kr'"></div></div>
+        <div class="bg-white rounded-lg p-3"><div class="text-xs text-indigo-600">Totalt avdrag</div><div class="text-xl font-bold text-green-700" x-text="Math.round(total).toLocaleString() + ' kr'"></div></div>
+    </div>
+    <p class="text-xs text-indigo-500 mt-3" x-show="kostnad > 100000">Över 100 000 kr: 21% avdrag på <span x-text="Math.round(kostnad - 100000).toLocaleString() + ' kr'"></span> = <strong x-text="Math.round(avdrag21).toLocaleString() + ' kr'"></strong></p>
+</div>
+
 Ränteavdraget är uppdelat i två nivåer. Så här ser reglerna ut för inkomståret 2026 (deklarationen 2027):
 
 | Räntekostnader per person | Avdrag | Effektiv skattereduktion |
@@ -83,7 +105,7 @@ Genom att ansöka om **jämkning** hos Skatteverket sänks din preliminärskatt 
 
 **Ansök om jämkning på [skatteverket.se/jamkning](https://www.skatteverket.se/privat/skatter/arbeteginkomst/skattetabeller/jamkning.4.18e1b10334ebe8bc8000588.html)** — det tar 5 minuter och kan göras när som helst under året.
 
-[Räkna ut exakt hur mycket du får i nettolön med vår lönekalkylator](/)
+[Räkna ut exakt hur mycket du får i nettolön med vår lönekalkylator](/blogg/lon-efter-skatt-2026)
 
 ## Ränteavdrag vid olika räntenivåer
 
@@ -131,6 +153,7 @@ Det har diskuterats politiskt att förändra ränteavdraget — exempelvis att s
 - **Finansdepartementets budgetpropositioner** (lämnas i september varje år)
 - **Skatteverkets nyhetsbrev** om skatteförändringar
 - **Bankernas årsbesked** som visar din exakta räntekostnad
+- **Den politiska debatten** — läs vår guide om [den svenska modellen och lönebildning](/blogg/den-svenska-modellen-arbetsmarknad-lon) för att förstå hur fack och arbetsgivare påverkar din ekonomi
 
 ## Sammanfattning: Så maximerar du ditt ränteavdrag
 
@@ -138,6 +161,7 @@ Det har diskuterats politiskt att förändra ränteavdraget — exempelvis att s
 2. **Kontrollera deklarationen** — säkerställ att alla räntor är med
 3. **Fördela rätt** — för sambos: överväg om 50/50 är optimalt för er situation
 4. **Ha koll på räntan** — din ränta påverkar avdraget, omförhandla vid behov
+5. **Se över hela din ekonomi** — ränteavdraget är en del av din totala privatekonomi. Läs vår [guide om arbetslöshet och a-kassa](/blogg/arbetsloshet-akassa-2026-guide) och vår guide om [hur löneavtal fungerar](/blogg/allt-om-loneavtal-2026-avtalsrorselsen)
 
 ---
 
