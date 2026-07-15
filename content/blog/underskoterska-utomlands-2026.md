@@ -1,11 +1,12 @@
 ---
-title: "Undersköterska Utomlands 2026: Så Dubblar Du Lönen i Norge & Spanien"
-date: 2026-01-22T21:00:00+01:00
-draft: false
-category: "Karriär"
-tags: ["Norge", "Spanien", "Lön", "Volontärarbete", "Helsefagarbeider"]
-image: "/img/blog/underskoterska-utomlands-2026.jpg"
-description: "Drömmer du om att jobba som undersköterska utomlands? Vi jämför löner i Norge (44% högre!) och livskvalitet i Spanien. Läs om auktorisation, skatt och A1-intyg."
+title: "Undersköterska lön i Norge 2026: Så dubblar du lönen – komplett guide"
+slug: underskoterska-utomlands-2026
+meta_description: "Undersköterska lön i Norge 2026: Tjäna 44% mer som helsefagarbeider. Komplett guide till auktorisation, jobb, skatt och levnadskostnader. Jämför lön Norge vs Sverige vs Spanien."
+keywords: ["undersköterska lön norge 2026", "helsefagarbeider lön", "jobba som undersköterska i norge", "norge lön undersköterska", "auktorisation helsefagarbeider"]
+date: 2026-07-15
+category: Karriär
+image: /img/blog/underskoterska-utomlands-2026.jpg
+image_license: unsplash
 ---
 
 ## The Golden Opportunity: Norge als löneökning på 44%
@@ -384,3 +385,7 @@ Oavsett väg: Du är en efterfrågad professionell. Använd det för att forma d
 - **Spanien:** CK Senior Spain, Sydkusten.es jobsforum
 - **Volontär:** Volontärresor.se, europa.eu/youreurope (Europeiska Solidaritetskåren)
 - **Pensions-koordinering:** Pensionsmyndigheten.se (Swedish), UDI.no (Norwegian migration), IBAN.es (Spanish tax).
+
+---
+
+*Källor: Helsedirektoratet, NAV, SSB, Försäkringskassan, worknorway.se, vardinsats.se, sydkusten.es. Senast uppdaterad: 15 juli 2026.*

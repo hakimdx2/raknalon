@@ -1,13 +1,14 @@
 ---
 title: "Lön efter skatt 2026: Komplett guide till din nettolön"
-description: "Räkna ut din lön efter skatt 2026. Se skattesatser, brytpunkter och jobbskatteavdrag. Jämför nettolön för olika lönenivåer och kommuner."
-date: 2026-01-14
-updated: 2026-01-14
+slug: lon-efter-skatt-2026
+meta_description: "Räkna ut din lön efter skatt 2026. Se skattesatser, brytpunkter och jobbskatteavdrag. Jämför nettolön för olika lönenivåer och kommuner."
+keywords: ["lön efter skatt 2026", "nettolön", "skattesatser 2026", "jobbskatteavdrag", "statlig skatt brytpunkt", "kommunalskatt"]
+date: 2026-07-15
 category: Skatt och Ekonomi
 author: Redaktionen
 reading_time: 12
-published: true
 image: /img/blog/lon-efter-skatt-2026.png
+image_license: unsplash
 faq:
   - question: "Vad är skillnaden mellan brutto och netto?"
     answer: "Bruttolön är din lön före skatt, det belopp som står i ditt anställningsavtal. Nettolön är det som faktiskt betalas ut till ditt bankkonto efter att skatten dragits."
@@ -88,7 +89,7 @@ Nedan följer exempel på vad olika bruttolöner ger i nettolön, beräknat med 
 | **60 000 kr** | 40 200 kr     | 33%            |
 | **80 000 kr** | 51 400 kr     | 36%            |
 
-> **Tips:** Använd vår [lönekalkylator](/) på startsidan för att räkna ut din exakta nettolön baserat på din kommuns skattesats.
+> **Tips:** Använd vår [lönekalkylator](/verktyg/lon-efter-skatt) för att räkna ut din exakta nettolön baserat på din kommuns skattesats.
 
 ![Karta över kommunalskatt i Sverige – jämförelse mellan olika kommuner](/img/blog/kommunskatt-karta.png)
 
@@ -157,7 +158,7 @@ Regeringen har genomfört flera förändringar för inkomståret 2026:
 *   **Sänkt moms på mat:** 6% istället för 12% (april 2026 – december 2027)
 *   **Sänkt SINK-skatt:** 22,5% för utländska arbetstagare
 
-Sammantaget innebär förändringarna att de flesta löntagare får behålla mer av sin [lön 2026](/yrken) jämfört med 2025.
+Sammantaget innebär förändringarna att de flesta löntagare får behålla mer av sin [lön 2026](/blogg/lon-efter-skatt-2026) jämfört med 2025.
 
 ## Vanliga frågor om lön efter skatt
 
@@ -180,4 +181,9 @@ Du kan göra avdrag för exempelvis pendlingskostnader, ROT/RUT-arbeten och pens
 
 *   [Undersköterska lön 2026](/blogg/underskoterska-lon-2026)
 *   [Sjuksköterska lön 2026](/blogg/sjukskoterska-lon)
-*   [Alla yrken och löner](/yrken)
+*   [Ränteavdrag 2026 — komplett guide](/blogg/ranteavdrag-bolan-skatt)
+*   [Arbetslöshet och a-kassa 2026](/blogg/arbetsloshet-akassa-guide)
+
+---
+
+*Källor: Skatteverket (skatteverket.se), SCB (scb.se), Regeringen — Budgetpropositionen 2026. Senast uppdaterad: 15 juli 2026.*
