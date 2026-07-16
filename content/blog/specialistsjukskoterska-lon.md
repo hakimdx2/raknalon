@@ -1,12 +1,13 @@
 ---
 title: "Specialistsjuksköterska 2026: Löner, Utbildningar & Karriärvägar"
-description: "Vilken sjuksköterskespecialisering tjänar mest? Se löner för anestesi, operation, IVA och distrikt. Guide till 18 specialistutbildningar och 7-stegsmodellen."
+slug: specialistsjukskoterska-lon-2026
 date: 2026-01-21
 category: Karriär
-author: Redaktionen
-reading_time: 15
-published: true
+meta_description: "Vilken specialistsjuksköterska tjänar mest 2026? Se löner för anestesi, operation, IVA och distrikt. Guide till 18 specialistutbildningar och 7-stegsmodellen."
+keywords: ["specialistsjuksköterska lön", "vilken specialistsjuksköterska tjänar mest", "specialistsjuksköterska utbildning", "anestesisjuksköterska lön", "operationssjuksköterska lön"]
 image: /img/blog/sjukskoterska_specialist_hero.png
+image_license: unsplash
+potential_score: 68
 ---
 
 *"Efter min specialisering till anestesi ökade min lön med 8 000 kr i månaden. Det var de bästa 1,5 åren jag lagt på utbildning."*
@@ -245,8 +246,8 @@ Storstadsregionerna (Stockholm, Göteborg, Skåne) har störst behov men också 
 
 ## Vanliga frågor
 
-### Vilken specialisering tjänar mest?
-Operationssjuksköterska (54 500 kr/mån) och anestesisjuksköterska (53 800 kr/mån) har högst löner.
+### Vilken specialistsjuksköterska tjänar mest?
+Operationssjuksköterska (54 500 kr/mån) och anestesisjuksköterska (53 800 kr/mån) är de specialistsjuksköterskor som tjänar mest — cirka 8 000 kr mer än en grundutbildad sjuksköterska.
 
 ### Hur lång är specialistutbildningen?
 De flesta: 1 år (60 hp). Distriktssköterska och barnmorska: 1,5 år (75-90 hp).

@@ -1,12 +1,13 @@
 ---
 title: "Undersköterska Lön 2026: Lönestatistik och Framtidsutsikter"
-description: "Vad tjänar en undersköterska 2026? Se aktuell lönestatistik, ingångslöner och löneskillnader mellan kommun och region. Räkna ut din lön efter skatt."
-date: 2026-01-14
+slug: underskoterska-lon-2026
+date: 2026-07-16
 category: Lön och Karriär
-author: Redaktionen
-reading_time: 5
-published: true
-image: /img/professions/underskoterska-banner.webp
+meta_description: "Vad tjänar en undersköterska 2026? Se aktuell lönestatistik, ingångslöner och löneskillnader mellan kommun och region. Räkna ut din lön efter skatt."
+keywords: ["undersköterska lön", "undersköterska lön 2026", "lönestatistik undersköterska", "ingångslön undersköterska", "vad tjänar en undersköterska"]
+image: /img/blog/underskoterska-lon-2026.jpg
+image_license: unsplash
+potential_score: 65
 ---
 
 Undersköterska är ett av Sveriges viktigaste och vanligaste yrken. Men vad ligger egentligen lönen på 2026? Svaret beror stort på var du arbetar – skillnaden mellan en kommunal anställning och ett bemanningsuppdrag kan vara flera tusenlappar i månaden.
@@ -76,13 +77,13 @@ Hur mycket får du egentligen kvar på kontot? Här är en uppskattning baserad 
 
 *Obs: Detta är en generell beräkning inklusive jobbskatteavdrag.*
 
-> **Tips:** Använd vår [lönekalkylator](/) på startsidan för att få en exakt uträkning baserat på just din kommun skattesats.
+> **Tips:** Använd vår [lönekalkylator](/verktyg/lon-efter-skatt) för att få en exakt uträkning baserat på just din kommuns skattesats. Se även vår guide [Lön efter skatt 2026](/blogg/lon-efter-skatt-2026) för en komplett genomgång av skattetabeller och jobbskatteavdrag.
 
 ## Så höjer du din lön som undersköterska
 
 Vill du tjäna mer? Här är tre konkreta tips:
 
-1.  **Specialisera dig:** Utbilda dig till **Specialistundersköterska** (YH-utbildning på 1-2 år). Det kan ge 2 000 – 4 000 kr extra i månaden och öppna dörrar till mer avancerade tjänster inom t.ex. demensvård, psykiatri eller akutsjukvård.
+1.  **Specialisera dig:** Utbilda dig till **[Specialistundersköterska](/blogg/specialistunderskoterska-2026)** (YH-utbildning på 1-2 år). Det kan ge 2 000 – 4 000 kr extra i månaden och öppna dörrar till mer avancerade tjänster inom t.ex. demensvård, psykiatri eller akutsjukvård.
 2.  **Jobba obekväma arbetstider:** Genom att ta pass på kvällar, helger och nätter kan du öka din månadsinkomst rejält via OB-tillägg. Nattarbete ger ofta bäst betalt.
 3.  **Byt jobb regelbundet:** Statistik visar att de som byter arbetsgivare vart 3–5:e år ofta har en bättre löneutveckling än de som stannar kvar på samma arbetsplats länge.
 
@@ -96,3 +97,13 @@ Ja, det råder mycket stor brist på utbildade undersköterskor i nästan hela S
 
 ### Vad tjänar en vårdbiträde jämfört med en undersköterska?
 Ett vårdbiträde tjänar generellt 2 000 – 4 000 kr mindre än en undersköterska och har inte samma delegeringsansvar. Att utbilda sig lönar sig alltså snabbt.
+
+---
+
+**Läs mer:**
+- [Jobba som undersköterska 2026 — komplett guide](/blogg/jobba-som-underskoterska-2026)
+- [Specialistundersköterska — lön, utbildning och framtid](/blogg/specialistunderskoterska-2026)
+- [Lön efter skatt 2026 — räkna ut din nettolön](/blogg/lon-efter-skatt-2026)
+- [Hemliga löneförhandlingstekniker — få högre lön](/blogg/hemliga-loneforhandlings-tekniker)
+
+*Källor: SCB (Statistiska centralbyrån), Socialstyrelsen, Kommunal. Senast uppdaterad: 16 juli 2026.*
