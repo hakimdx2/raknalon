@@ -1,12 +1,14 @@
 ---
 title: "Jobba som Sjuksköterska Utomlands 2026: Den Kompletta Guiden"
-description: "Vill du jobba som sjuksköterska utomlands? Se löner i Norge, Danmark, Australien och USA. Steg-för-steg guide till licensiering, kostnadskalkyl och rekryteringsbyråer."
-date: 2026-01-21
+slug: sjukskoterska-jobb-utomlands
+date: 2026-07-17
 category: Karriär
-author: Redaktionen
-reading_time: 15
-published: true
+meta_description: "Vad tjänar en sjuksköterska i Danmark, Norge eller Australien 2026? Se löner, licensiering och steg-för-steg guide för att jobba utomlands."
+keywords: ["sjuksköterska utomlands", "sjuksköterska lön danmark", "vad tjänar en sjuksköterska i danmark", "sjuksköterska jobb utomlands", "sjuksköterska norge lön", "sjuksköterska utomlands lön"]
 image: /img/blog/sjukskoterska_utomlands_hero.png
+image_license: unsplash
+potential_score: 62
+status: published
 ---
 
 *"Jag jobbade 6 månader i Australien. Lönen var dubbelt så hög och jag fick uppleva ett helt annat vårdsystem. Det förändrade mitt liv."*
@@ -277,8 +279,8 @@ Norge. Ingen språkbarriär, automatiskt erkänd legitimation, hög lön, nära 
 ### Vad tjänar man i Norge?
 Grundlön: 47 000–55 000 NOK/mån (~48 000 SEK). Med OB och feriepenger kan du landa på 60 000+ SEK.
 
-### Vad tjänar man i Danmark?
-35 000–40 000 DKK/mån (~52 000 SEK). Höga skatter men starka fackliga villkor.
+### Vad tjänar en sjuksköterska i Danmark?
+35 000–40 000 DKK/mån (~52 000 SEK), vilket motsvarar cirka 52 000 SEK före skatt. Höga skatter men starka fackliga villkor och generösare semesterersättning än i Sverige.
 
 ### Kan jag jobba i USA?
 Ja, men processen tar 1-3 år. Du måste klara NCLEX-examen och ha visum sponsrat av arbetsgivare.
@@ -326,3 +328,5 @@ Du har kunskapen. Du har erfarenheten. Världen väntar.
 [Läs om utbildning till sjuksköterska](/blogg/utbildning-sjukskoterska-2026)
 
 [Läs om att jobba som sjuksköterska i Sverige](/blogg/jobba-som-sjukskoterska)
+
+*Källor: SCB, Helsedirektoratet, Styrelsen for Patientsikkerhed, Dignus Medical, Socialstyrelsen. Senast uppdaterad: 17 juli 2026.*
