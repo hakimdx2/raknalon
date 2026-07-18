@@ -1,12 +1,14 @@
 ---
 title: "Jobba som Sjuksköterska 2026: Arbetsuppgifter, Arbetsgivare & Karriär"
-description: "Vad gör en sjuksköterska egentligen? Se arbetsuppgifter, löner med OB-tillägg, arbetsgivare och karriärmöjligheter. 2000+ lediga jobb i Stockholm, Göteborg och Malmö."
-date: 2026-01-21
-category: Karriär
-author: Redaktionen
-reading_time: 15
-published: true
+slug: jobba-som-sjukskoterska
+date: 2026-07-18
+category: "Karriär"
+meta_description: "Vad gör en sjuksköterska egentligen? Se arbetsuppgifter, löner med OB-tillägg, arbetsgivare och karriärmöjligheter. 2000+ lediga jobb i Stockholm, Göteborg och Malmö."
+keywords: ["jobba som sjuksköterska", "sjuksköterska arbetsuppgifter", "sjuksköterska arbetsgivare", "sjuksköterska karriär", "sjuksköterska jobb 2026"]
 image: /img/blog/sjukskoterska_jobba_hero.png
+image_license: "unsplash"
+potential_score: 58
+status: "published"
 ---
 
 *"Det svåraste är inte blodet eller döden. Det är schemat som ändras hela tiden."*
@@ -22,7 +24,7 @@ Låt oss börja med det alla undrar: Vad tjänar man egentligen?
 
 ### Grundlön per erfarenhet
 
-Enligt [SCB 2024](https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/) och [Vårdförbundet](https://www.vardforbundet.se):
+Enligt [SCB (lönestatistik 2025, publicerad våren 2026)](https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/) och [Vårdförbundet](https://www.vardforbundet.se):
 
 | Erfarenhet | Medianlön | Lönespann |
 |------------|-----------|-----------|
@@ -356,3 +358,5 @@ Med 8 000+ lediga jobb och under 1% arbetslöshet har du en **stark förhandling
 [Läs om att jobba utomlands](/blogg/sjukskoterska-jobb-utomlands)
 
 [Läs om utbildning till sjuksköterska](/blogg/utbildning-sjukskoterska-2026)
+
+*Källor: SCB (lönestatistik 2025, publicerad våren 2026), Vårdförbundet, Arbetsförmedlingen, Socialstyrelsen. Senast uppdaterad: 18 juli 2026.*

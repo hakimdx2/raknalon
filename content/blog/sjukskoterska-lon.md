@@ -1,7 +1,7 @@
 ---
 title: "Sjuksköterska Lön 2026: Den Kompletta Guiden"
 slug: sjukskoterska-lon
-date: 2026-07-14
+date: 2026-07-18
 category: "Lön och Karriär"
 meta_description: "Vad tjänar en sjuksköterska 2026? Se lönestatistik, ingångslöner och skillnader mellan regioner. Vi går igenom allt du behöver veta om din lön — uppdaterad juli 2026."
 keywords: ["sjuksköterska lön 2026", "sjuksköterska ingångslön", "sjuksköterska lön statistik", "vad tjänar sjuksköterska", "sjuksköterska lön region"]
@@ -126,8 +126,11 @@ Ja, ur ett arbetsmarknadsperspektiv. Det råder stor brist på sjuksköterskor i
 2.  **Specialisera dig:** Kompetens ger hävstång.
 3.  **Jämför sektorer:** Våga söka jobb hos kommunen eller privata vårdgivare för att få upp lönenivån.
 
+### Vad får jag i lön efter skatt på 34 300 kr?
+34 300 kr i nettolön motsvarar en bruttolön på cirka 45 000 kr för en sjuksköterska (baserat på genomsnittlig kommunalskatt ~32 % och jobbskatteavdrag 2026). Det är en vanlig nivå för en sjuksköterska med 5–10 års erfarenhet i storstadsregion. För att räkna ut din exakta nettolön, använd vår [lönekalkylator](/blogg/lon-efter-skatt-2026) med din specifika kommun.
+
 **Vill du rakna ut din exakta lön?** Använd vår [lönekalkylator](/blogg/lon-efter-skatt-2026) för att se vad du får ut efter skatt 2026.
 
 ---
 
-*Källor: SCB (lönestatistik 2025), Vårdförbundet, Medlingsinstitutet. Senast uppdaterad: 14 juli 2026.*
+*Källor: SCB (lönestatistik 2025), Vårdförbundet, Medlingsinstitutet. Senast uppdaterad: 18 juli 2026.*

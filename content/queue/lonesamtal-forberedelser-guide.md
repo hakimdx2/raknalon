@@ -156,7 +156,7 @@ Grattis! Kontrollera att löneökningen syns på din nästa lönespecifikation. 
 
 ### Om du fick nej
 
-Fråga om en uppföljning om 3–6 månader med tydliga, mätbara mål. Börja samtidigt dokumentera allt du gör — du bygger ditt case för nästa runda. Och kom ihåg: att stanna på samma arbetsplats utan löneutveckling kan bli en dyr vana. Läs vår artikel om [lojalitetsskatten](/blogg/lojalitetsskatt-priset-pa-att-stanna) för att förstå de långsiktiga kostnaderna.
+Fråga om en uppföljning om 3–6 månader med tydliga, mätbara mål. Börja samtidigt dokumentera allt du gör — du bygger ditt case för nästa runda. Och kom ihåg: att stanna på samma arbetsplats utan löneutveckling kan bli en dyr vana. Läs vår artikel om [hemliga löneförhandlingstekniker](/blogg/hemliga-loneforhandlings-tekniker) för att förstå hur du maximerar din nästa löneökning.
 
 ---
 
