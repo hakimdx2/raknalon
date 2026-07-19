@@ -1,12 +1,13 @@
 ---
 title: "Utbildning till Sjuksköterska 2026: Krav, Längd & Antagning"
-description: "Hur blir man sjuksköterska? Se behörighetskrav, antagningspoäng för alla lärosäten och alternativa vägar. Komplett guide för 2026."
-date: 2026-01-21
+slug: utbildning-sjukskoterska-2026
+date: 2026-07-19
 category: Utbildning
-author: Redaktionen
-reading_time: 7
-published: true
+meta_description: "Antagningspoäng sjuksköterska 2026 — se aktuella krav för Karolinska, Göteborg, Uppsala och fler. Behörighet, distansstudier och alternativa vägar."
+keywords: ["antagningspoäng sjuksköterska 2026", "utbildning sjuksköterska", "sjuksköterskeprogrammet behörighet", "sjuksköterska distans", "hur lång är sjuksköterskeutbildningen"]
 image: /img/blog/sjukskoterska_utbildning_hero.png
+image_license: unsplash
+potential_score: 58
 ---
 
 *"Jag ångrar inte en sekund av mina 3 år. Det var tufft, men nu har jag ett jobb för livet."*
@@ -94,6 +95,9 @@ Du behöver gymnasiebehörighet med Matematik 2, Naturkunskap 2 och Samhällskun
 ### Kan man läsa till sjuksköterska på distans?
 Ja, flera universitet erbjuder distansutbildning. Praktiken (VFU) sker dock alltid på plats.
 
+### Antagningspoäng sjuksköterska 2026
+Antagningspoängen för sjuksköterskeprogrammet varierar mellan lärosäten. För hösten 2025 låg betygsgränsen (BI) på 19.85 för Karolinska Institutet, 18.80 för Göteborgs universitet och 17.50 för Malmö universitet. Mindre konkurrerande lärosäten som Högskolan Väst hade gränser ner till 14.10. Poängen för 2026 publiceras på [Antagning.se](https://www.antagning.se) efter urval 1 i juli.
+
 ### Vilka betyg behöver man för sjuksköterska?
 Det beror på lärosätet. På Karolinska krävs ca 19.85, men mindre konkurrerande skolor har lägre krav (ner till 14).
 
@@ -109,3 +113,7 @@ Nu vet du vad som krävs. Men vad tjänar du egentligen som sjuksköterska?
 Vill du veta hur vardagen ser ut? 
 
 [Läs om att jobba som sjuksköterska](/blogg/jobba-som-sjukskoterska)
+
+---
+
+*Källor: [Antagning.se](https://www.antagning.se) — antagningsstatistik hösten 2025, [Universitets- och högskolerådet (UHR)](https://www.uhr.se) — behörighetskrav 2026, [Skolverket](https://www.skolverket.se) — Komvux. Senast uppdaterad: 19 juli 2026.*
