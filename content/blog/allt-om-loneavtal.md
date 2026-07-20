@@ -1,11 +1,14 @@
 ---
-title: Allt om Löneavtal 2026 - Hur påverkas din lön av avtalsrörelsen?
-date: 2026-01-22
-slug: allt-om-loneavtal-2026-avtalsrorselsen
+title: "Allt om Löneavtal 2026 — Hur påverkas din lön av avtalsrörelsen?"
+date: 2026-07-20
+slug: allt-om-loneavtal
 category: Lön och Karriär
-tags: [löneavtal, avtalsrörelse, lönepott, lönesamtal, kollektivavtal, märket]
-description: Omfattande guide till löneavtal 2026 - hur märket fungerar, vad en lönepott är, individuell lönesättning, och praktiska tips för ditt lönesamtal.
-image: /img/blog/loneavtal-hero.png
+meta_description: "Komplett guide till löneavtal 2026: märket, lönepott, individuell lönesättning. Så fungerar avtalsrörelsen, kollektivavtal och ditt lönesamtal."
+keywords: ["löneavtal 2026", "avtalsrörelse", "lönepott", "lönesamtal", "kollektivavtal", "märket", "individuell lönesättning"]
+image: /img/blog/allt-om-loneavtal.jpg
+image_license: unsplash
+potential_score: 52
+status: published
 ---
 
 # Allt om Löneavtal 2026 - Hur påverkas din lön av avtalsrörelsen?
@@ -356,12 +359,14 @@ Om din arbetsplats saknar kollektivavtal är situationen mycket svagare – du m
 
 Läs mer om lön och karriär i Sverige på dessa sidor:
 
-- [Lönekalkylator](/): Räkna på din nettolön
+- [Lönekalkylator](/verktyg/lon-efter-skatt): Räkna på din nettolön
 - [Svenska modellen](/blogg/svenska-modellen-lon): Fördjupad artikel om den svenska arbetsmarknadsmodellen
-- [Lönestatistik](/lonestatistik): Se lönestatistik från olika branscher och yrkesgrupper
+- [Löneförhandling — hemliga tekniker](/blogg/hemliga-loneforhandlings-tekniker): Lär dig förhandla din lön
+- [Arbetslöshet och a-kassa 2026](/blogg/arbetsloshet-akassa-guide): Guide till a-kassa och ersättning
+- [Lön efter skatt 2026](/blogg/lon-efter-skatt-2026): Komplett guide till nettolön
 
 ---
 
 **Viktiga källor för denna artikel:**
 
-Denna artikel bygger på information från Medlingsinstitutet, Konjunkturinstitutet, IF Metall, Unionen, Kommunal, Svenskt Näringsliv, och andra officiella källor om Sveriges arbetsmarknad och lönebildning.
+Denna artikel bygger på information från Medlingsinstitutet, Konjunkturinstitutet, IF Metall, Unionen, Kommunal, Svenskt Näringsliv, och andra officiella källor om Sveriges arbetsmarknad och lönebildning. Senast uppdaterad: 20 juli 2026.
