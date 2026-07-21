@@ -1,11 +1,12 @@
 ---
 title: Arbetslöshet & A-kassa 2026 - Din kompletta guide till trygghet
-date: 2026-01-22
+date: 2026-07-21
 slug: arbetsloshet-akassa-2026-guide
 category: Lön och Karriär
-tags: [a-kassa, arbetslöshet, försäkring, trygghet, ekonomi, inkomstförsäkring]
-description: Fullständig guide till arbetslöshetsförsäkringen i Sverige - hur a-kassan fungerar, vad den täcker, och hur du skyddar din ekonomi vid uppsägning 2026.
+keywords: [a-kassa, arbetslöshet, försäkring, trygghet, ekonomi, inkomstförsäkring, arbetslöshetsersättning]
+meta_description: Fullständig guide till arbetslöshetsförsäkringen i Sverige - hur a-kassan fungerar, vad den täcker, och hur du skyddar din ekonomi vid uppsägning 2026.
 image: /img/blog/akassa-hero.png
+image_license: unsplash
 ---
 
 # Arbetslöshet & A-kassa 2026 - Din kompletta guide till trygghet
@@ -393,11 +394,9 @@ Här är de viktigaste punkterna att komma ihåg:
 
 För att läsa mer om lön och ekonomi i Sverige kan du kolla:
 
-- [Lönekalkylator](/): Räkna på din nettolön och jämför med a-kassaersättning
+- [Lönekalkylator](/verktyg/lone-speedrunner): Räkna på din nettolön och jämför med a-kassaersättning
 - [Svenska modellen](/blogg/svenska-modellen-lon): Läs mer om hur arbetsmarknaden fungerar i Sverige
 
 ---
 
-**Viktiga källor för denna artikel:**
-
-Denna artikel baseras på information från Arbetsförmedlingen, Sveriges a-kassor, LO, TCO, Saco, och Inspektionen för arbetslöshetsförsäkringen (IAF). Alla siffror och regler är uppdaterade för 2026.
+*Källor: Arbetsförmedlingen, Sveriges a-kassor, LO, TCO, Saco, Inspektionen för arbetslöshetsförsäkringen (IAF), Försäkringskassan, Skatteverket. Siffror uppdaterade för 2026. Senast uppdaterad: 21 juli 2026.*
