@@ -1,11 +1,14 @@
 ---
 title: Den Svenska Modellen - Hur fungerar arbetsmarknaden och din lön i Sverige?
-date: 2026-01-22
+date: 2026-07-22
 slug: den-svenska-modellen-arbetsmarknad-lon
 category: Lön och Karriär
-tags: [lön, kollektivavtal, fack, arbetsrätt, svenska modellen]
-description: En omfattande guide till den svenska arbetsmarknadsmodellen - hur löner bestäms, varför kollektivavtal är viktiga, och hur du skyddas som arbetstagare i Sverige.
+meta_description: En omfattande guide till den svenska arbetsmarknadsmodellen — hur löner bestäms, varför kollektivavtal är viktiga, och hur du skyddas som arbetstagare i Sverige. Från Saltsjöbadsavtalet 1938 till dagens gig-ekonomi.
+keywords: [svenska modellen, kollektivavtal, lön, fackförbund, arbetsmarknad, arbetsrätt, Saltsjöbadsavtalet]
 image: /img/blog/svenska-modellen-hero.png
+image_license: Wikimedia Commons
+potential_score: 48
+status: published
 ---
 
 # Den Svenska Modellen - Hur fungerar arbetsmarknaden och din lön i Sverige?
@@ -249,9 +252,11 @@ För dig som arbetstagare betyder detta att det är viktigt att förstå den sve
 
 För att lära dig mer om lön och karriär i Sverige kan du kolla in dessa resurser:
 
-- [Lönekalkylator](/): Räkna på din nettolön
+- [Lönekalkylator](/verktyg/lon-efter-skatt): Räkna på din nettolön
+- [Lön efter skatt 2026](/blogg/lon-efter-skatt-2026): Guide till skatter och nettolön
 - [Allt om löneavtal](/blogg/allt-om-loneavtal): Mer om hur löneavtal fungerar
 - [A-kassa guide](/blogg/arbetsloshet-akassa-guide): Försäkring vid arbetslöshet
+- [Hemliga löneförhandlingstekniker](/blogg/hemliga-loneforhandlings-tekniker): Förhandla din lön
 
 ---
 
@@ -264,3 +269,5 @@ För att lära dig mer om lön och karriär i Sverige kan du kolla in dessa resu
 [3] 90 procent omfattas av kollektivavtal: https://www.svensktnaringsliv.se/sakomraden/arbetsgivarsamverkan/sa-fungerar-kollektivavtal_1006616.html
 
 [4] Facklig organisationsgrad: https://arenaide.se/rapporter/den-svenska-modellen-2025/
+
+*Källor: LO, Kommunal, Svenskt Näringsliv, Arena Idé, Sveriges Ingenjörer. Senast uppdaterad: 22 juli 2026.*
