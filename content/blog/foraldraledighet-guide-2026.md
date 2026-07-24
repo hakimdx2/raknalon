@@ -1,14 +1,17 @@
 ---
 title: "Den Svenska Föräldraledighetsguiden 2026: Allt Du Behöver Veta"
-date: 2026-01-23T08:00:00+01:00
-draft: false
-image: "/img/blog/foraldraledighet_featured.png"
-description: "En komplett guide till föräldraledighet i Sverige 2026. Lär dig om SGI, dagar, ersättning och dina rättigheter."
+date: 2026-07-24
+slug: foraldraledighet-guide-2026
+status: published
+image: "/img/blog/foraldraledighet-guide-2026.jpg"
+image_license: "unsplash"
+meta_description: "En komplett guide till föräldraledighet i Sverige 2026. Lär dig om SGI, dagar, ersättning och dina rättigheter."
 category: "Lön och Karriär"
-tags: ["föräldraledighet", "sgi", "försäkringskassan", "föräldrapenning"]
+keywords: ["föräldraledighet", "sgi", "försäkringskassan", "föräldrapenning"]
+potential_score: 50
 ---
 
-![Föräldraledighet i Sverige](/img/blog/foraldraledighet_featured.png)
+![Föräldraledighet i Sverige](/img/blog/foraldraledighet-guide-2026.jpg)
 
 ## 1. Introduktion: Den Svenska Föräldraförsäkringen
 
@@ -28,7 +31,7 @@ Dessa är de värdefulla dagarna.
 
 Ersättningen baseras på din sjukpenninggrundande inkomst (SGI) – i praktiken, din tidigare lön.
 
-Du får ungefär 80 procent av din löneförlust, max cirka 1 259 kronor per dag (2025-nivå).
+Du får ungefär 80 procent av din löneförlust, max cirka 1 320 kronor per dag (2026-nivå).
 
 De två första föräldrarna använder dessa dagar först.
 
@@ -100,7 +103,7 @@ SGI för dig: Ungefär 45 000 × 12 = 540 000 kronor per år.
 
 Föräldrapenning: Ungefär 80 % = 432 000 kronor per år ÷ 365 dagar ≈ 1 185 kronor per dag.
 
-(Notera: Det finns ett tak – max cirka 1 259 kronor/dag 2025 – och skatt dras av.)
+(Notera: Det finns ett tak – max cirka 1 320 kronor/dag 2026 – och skatt dras av.)
 
 ### 3.2 Att Skydda Din SGI – Den Kritiska Regel Efter 12 Månader
 Detta är en av de viktigaste strategierna för föräldrar som vill mixa arbete och föräldraledighet.
@@ -166,7 +169,7 @@ Avdrag: (40 000 × 12) ÷ 365 × 32 = 52 055 kronor.
 
 Det är mycket större avdrag än arbetsdagsmetoden skulle ge!
 
-Praktisk Tips: Planera dina longer föräldraledighetsperioder noga. Om du kan undvika att gå över 5 arbetsdagar i följd på ett sätt som är möjligt för dig, kan du få ett mindre löneavdrag.
+Praktisk Tips: Planera dina longer föräldraledighetsperioder noga. Om du kan undvika att gå över 5 arbetsdagar i följd på ett sätt som är möjligt för dig, kan du få ett mindre löneavdrag. Använd vår [lönekalkylator](/verktyg/lon-efter-skatt) för att se hur mycket du får ut netto under föräldraledigheten. Läs också vår guide om [lön efter skatt 2026](/blogg/lon-efter-skatt-2026).
 
 ### 3.4 Föräldralön och Ersättning från Arbetsgivaren
 Många arbetsgivare – särskilt större företag och den offentliga sektorn – betalar en föräldralön eller ersättning som toppar upp Försäkringskassans ersättning.
@@ -284,7 +287,7 @@ Arbetsgivaren kan inte neka föräldraledighet för att det är kostsamt att ers
 
 Arbetsgivaren kan inte neka föräldraledighet under någon som helst anledning relaterad till kön (det skulle vara diskriminering).
 
-Om Arbetsgivaren Vägrar: Du kan väcka talan vid Arbetsdomstolen för att tvinga arbetsgivaren att respektera dina rättigheter.
+Om Arbetsgivaren Vägrar: Du kan väcka talan vid Arbetsdomstolen för att tvinga arbetsgivaren att respektera dina rättigheter. För en djupare förståelse av hur den svenska arbetsmarknaden fungerar, läs vår artikel om [den svenska modellen](/blogg/svenska-modellen-lon).
 
 ### 5.3 Uppsägning och Föräldraledighet
 Du kan inte sägas upp på grund av att du tar föräldraledighet. Det är strikt förbjudet enligt lag.
@@ -302,7 +305,7 @@ Du bör bjudas in till lönesamtal även när du är föräldraledig (eller inna
 
 Arbetsgivaren kan inte använda föräldraledigheten som anledning att ge dig en lägre löneökning än normalt.
 
-Tips: Planera ett lönesamtal före din föräldraledighet om möjligt. Det är enklare att förhandla när du är aktiv på arbetsplatsen än när du är borta.
+Tips: Planera ett lönesamtal före din föräldraledighet om möjligt. Det är enklare att förhandla när du är aktiv på arbetsplatsen än när du är borta. Läs vår guide om [hemliga löneförhandlingstekniker](/blogg/hemliga-loneforhandlings-tekniker) för att maximera din lön.
 
 ## 6. Speciella Scenarier och Vanliga Frågor
 ### 6.1 Sjukdom Under Föräldraledighet
@@ -400,7 +403,7 @@ Du kan inte samtidigt få arbetslöshetsersättning (A-kassa) när du är helt f
 
 Du kan få delvis A-kassa om du är föräldraledig på deltid och jobbar en del av veckan.
 
-Strategisk Tip: Om du blir arbetslös kort före eller efter barnet föds, anmäl dig omedelbar på Arbetsförmedlingen för att bevara rätten till inkomstbaserad föräldrapenning.
+Strategisk Tip: Om du blir arbetslös kort före eller efter barnet föds, anmäl dig omedelbar på Arbetsförmedlingen för att bevara rätten till inkomstbaserad föräldrapenning. Läs vår kompletta [guide om arbetslöshet och a-kassa](/blogg/arbetsloshet-akassa-guide) för att förstå dina rättigheter.
 
 ### 6.6 Barnomsorg och Förskola Under Föräldraledighet
 Får Du Barnomsorg Eller Förskola Medans Du Är Föräldraledig?
@@ -507,7 +510,7 @@ Du kan ta föräldraledighet upp till dess att barnets fyller 12 år (eller slut
 Praktiskt taget nej. Det är en lagstadgad rätt. Arbetsgivaren kan bara neka om det finns extraordinära omständigheter (mycket sällsynt).
 
 "Hur Mycket Pengar Får Jag?"
-Ungefär 80 procent av din tidigare lön, men max omkring 1 259 kronor per dag (2025-nivå). Efter 390 dagar: bara 180 kronor per dag. Många arbetsgivare betalar tillskott så du får nära 90 procent.
+Ungefär 80 procent av din tidigare lön, men max omkring 1 320 kronor per dag (2026-nivå). Efter 390 dagar: bara 180 kronor per dag. Många arbetsgivare betalar tillskott så du får nära 90 procent.
 
 "Måste Jag Arbeta Båda Föräldrarna?"
 Nej. En förälder kan vara helt hemma medan den andra arbetar heltid. Men 90 dagar är reserverade för varje förälder och kan inte ges bort.
@@ -598,6 +601,9 @@ Kontakta ditt fackförbund om du behöver hjälp med arbetsgivaren.
 Lycka Till Med Din Föräldraledighet – Du Förtjänar Det!
 
 Användbara Länkar
+
+*Källor: Försäkringskassan, Socialförsäkringsbalken (11 kap.), Föräldraledighetslagen, Skatteverket. Senast uppdaterad: 24 juli 2026.*
+
 Försäkringskassan: https://www.forsakringskassan.se
 
 Jämställdhetsmyndigheten: https://jamstalldhetsmyndigheten.se
