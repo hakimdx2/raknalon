@@ -1,13 +1,14 @@
 ---
 title: "Att bli och vara Polis 2026: Den ultimata guiden till verkligheten bakom uniformen"
-description: "Den kompletta guiden till polisyrket i Sverige 2026. Lön, utbildning, antagning, specialiseringar och den brutala sanningen om skiftarbete och gängvåld."
-date: 2026-02-02
-updated: 2026-02-02
-category: Karriär & Utbildning
-author: Redaktionen
-reading_time: 25
-published: true
+meta_description: "Den kompletta guiden till polisyrket i Sverige 2026. Lön, utbildning, antagning, specialiseringar och den brutala sanningen om skiftarbete och gängvåld."
+slug: att-bli-polis-2026
+date: 2026-07-25
+category: Karriär och Utbildning
+keywords: ["polis lön 2026", "bli polis", "polisutbildning", "polis antagning", "polisyrket", "polis karriär"]
 image: /img/blog/polis-2026.png
+image_license: unsplash
+potential_score: 68
+status: published
 faq:
   - question: "Vad tjänar en polis 2026?"
     answer: "Ingångslönen ligger på ca 31 000 kr under aspiranten, men stiger snabbt. En erfaren polis i yttre tjänst tjänar ofta 42 000 - 46 000 kr grundlön, plus 4 000 - 8 000 kr i OB-tillägg."
@@ -199,7 +200,7 @@ Erfarna poliser som håller i längden använder dessa strategier:
 
 Efter aspirantutbildning och provanställning är du tillsvidareanställd polis (Polisassistent). Du har ett jobb, en lön (ofta **31 000+ kr** ingångslön, stiger snabbt), och en värld av möjligheter.
 
-Det finns ingen enda väg. Sverige är liberalt här—du kan byta spår.
+Det finns ingen enda väg. Sverige är liberalt här—du kan byta spår. Lönesättningen i Sverige följer [den svenska modellen](/blogg/svenska-modellen-lon) — individuell lönesättning via kollektivavtal, vilket ger dig som polis goda möjligheter att påverka din egen lön genom specialisering och erfarenhet.
 
 ### **IGV (Ingripandeverksamheten) – Det blåljus-jobbet**
 
@@ -255,11 +256,14 @@ Du blir inte miljonär som polis, men lönerna har höjts rejält på 20-talet.
 
 **Kom ihåg OB:** En polis i yttre tjänst tjänar ofta 4-8 000 kr *mer* än grundlönen varje månad tack vare obekväm arbetstid.
 
+Vill du veta exakt vad som blir kvar efter skatt? Använd vår [lönekalkylator för 2026](/blogg/lon-efter-skatt-2026) för att räkna ut din nettolön som polis — med alla tillägg inräknade.
+
 ### **Hur tjänar man mer?**
 
 1. **Bli chef (Gruppchef, Yttre befäl):** Lönehopp på 5-10k.
 2. **Byt myndighet:** Säpo, Tullverket, Ekobrottsmyndigheten betalar ofta bättre för poliskompetens.
 3. **Privat sektor:** Säkerhetschef, utredare på försäkringsbolag. Lönerna här kan ligga på 60-80k.
+4. **Förhandla strategiskt:** Oavsett sektor — lär dig [teknikerna som dubblar löneökningen](/blogg/hemliga-loneforhandlings-tekniker) vid nästa lönesamtal.
 
 ## **SLUTORDEN: VARFÖR BLI POLIS?**
 
@@ -276,3 +280,5 @@ Men var medveten: **Detta jobb kommer att förändra dig.** Gå in med öppna ö
 ***
 
 *Denna artikel är en del av Räkna Löns karriärguide 2026. Läs mer om löner och yrken i vår [statistikdatabas](/yrken).*
+
+*Källor: Polismyndigheten, Plikt- och Prövningsverket, SCB Lönestatistik 2025, Medlingsinstitutet. Senast uppdaterad: 25 juli 2026.*

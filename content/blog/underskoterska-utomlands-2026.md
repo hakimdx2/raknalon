@@ -3,7 +3,7 @@ title: "Undersköterska lön i Norge 2026: Så dubblar du lönen – komplett gu
 slug: underskoterska-utomlands-2026
 meta_description: "Undersköterska lön i Norge 2026: Tjäna 44% mer som helsefagarbeider. Komplett guide till auktorisation, jobb, skatt och levnadskostnader. Jämför lön Norge vs Sverige vs Spanien."
 keywords: ["undersköterska lön norge 2026", "helsefagarbeider lön", "jobba som undersköterska i norge", "norge lön undersköterska", "auktorisation helsefagarbeider"]
-date: 2026-07-21
+date: 2026-07-25
 category: Karriär
 image: /img/blog/underskoterska-utomlands-2026.jpg
 image_license: unsplash
@@ -12,7 +12,7 @@ image_license: unsplash
 ## The Golden Opportunity: Norge als löneökning på 44%
 För en svensk undersköterska är Norge det moderna eldoradet – inte bara för lönen, utan för möjligheten att **faktiskt spara pengar** samtidigt som man arbetar i ett välutvecklat välfärdssystem. Medan Sverige kämpar med en brist på 3 500 undersköterskor, söker Norge desperat efter helsefagarbeidere (det norska namnet för undersköterska). Denna kombination av efterfrågan och högre löner skapar en perfekt storm för svenska arbetstagare.
 
-En norsk helsefagarbeider tjänar i genomsnitt **46 050 norska kronor per månad** (2025), vilket motsvarar ungefär **4 470 svenska kronor** när vi konverterar enligt nuvarande växelkurs. Jämfört med den [svenska medellönen för undersköterskor](/blogg/jobba-som-underskoterska-2026/) på 33 100 kronor är detta en direkt **löneökning på 35%**. Men om vi tittar på nettolönen – det som hamnar på kontot efter skatter – ökar skillnaden till nästan **44%**. [se.indeed](https://se.indeed.com/karriarrad/hitta-ett-jobb/jobba-som-underskoterska-norge)
+En norsk helsefagarbeider tjänar i genomsnitt **46 050 norska kronor per månad** (2025), vilket motsvarar ungefär **4 470 svenska kronor** när vi konverterar enligt nuvarande växelkurs. Jämfört med den [svenska medellönen för undersköterskor](/blogg/underskoterska-lon-2026) på 33 100 kronor är detta en direkt **löneökning på 35%**. Men om vi tittar på nettolönen – det som hamnar på kontot efter skatter – ökar skillnaden till nästan **44%**. [se.indeed](https://se.indeed.com/karriarrad/hitta-ett-jobb/jobba-som-underskoterska-norge)
 ### Varför Är Lönen Högre i Norge?
 Det finns flera strukturella skäl till löneökningen:
 
@@ -140,6 +140,8 @@ En norsk helsefagarbeider tjänar 46 050 NOK brutto. Här kommer skatterna:
 - Bruttolön: 33 100 SEK
 - Efter skatt (~32%): 22 500 SEK/månad
 - **Skillnad:** 32 338 NOK (~3 157 SEK) vs 22 500 SEK = **+10 657 SEK/månad** eller **+127 884 SEK/år** [worknorway](https://www.worknorway.se/blog/jobba-i-norge-2025-bristyrken-l%C3%B6ner-och-smarta-genv%C3%A4gar-f%C3%B6r-svenska-kandidater/)
+
+Se vår [lönekalkylator efter skatt](/blogg/lon-efter-skatt-2026) för att själv räkna ut vad du får kvar i plånboken — både i Sverige och vid en flytt till Norge.
 
 ### Levnadskostnader: Tar Den Högre Lönen Slut?
 Ja och nej. Här är en tydlig jämförelse:
@@ -339,6 +341,9 @@ Många frågar: "Kan jag helt enkelt åka till Afrika eller Asien och arbeta som
 ***
 
 ## FAQ: The Reality Questions
+### Undersköterska lön i Norge 2026?
+En norsk helsefagarbeider (motsvarande svensk undersköterska) tjänar i genomsnitt **46 050 NOK per månad** brutto (2026), vilket motsvarar cirka 44 700 SEK. Efter norsk skatt (~29,7%) blir nettolönen omkring 32 338 NOK/mån. Jämfört med den svenska medellönen på 33 100 SEK för undersköterskor är detta en nettolöneökning på cirka 44%. OB-tillägg och feriepenger tillkommer — med dessa kan du som helsefagarbeider nå över 50 000 NOK/mån. [Se fullständig lönejämförelse ovan](#the-golden-opportunity-norge-als-lneökning-p-44).
+
 ### "Vad är undersköterska lön i Norge 2026?"
 En norsk helsefagarbeider (motsvarande svensk undersköterska) tjänar i genomsnitt **46 050 NOK per månad** brutto (2026), vilket motsvarar cirka 44 700 SEK. Efter norsk skatt (~29,7%) blir nettolönen omkring 32 338 NOK/mån. Jämfört med den svenska medellönen på 33 100 SEK för undersköterskor är detta en nettolöneökning på cirka 44%. OB-tillägg och feriepenger tillkommer — med dessa kan du som helsefagarbeider nå över 50 000 NOK/mån. [Se fullständig lönejämförelse ovan](#the-golden-opportunity-norge-als-lneökning-p-44).
 
@@ -391,4 +396,4 @@ Oavsett väg: Du är en efterfrågad professionell. Använd det för att forma d
 
 ---
 
-*Källor: Helsedirektoratet, NAV, SSB, Försäkringskassan, worknorway.se, vardinsats.se, sydkusten.es, lommeregner.no. Senast uppdaterad: 21 juli 2026.*
+*Källor: Helsedirektoratet, NAV, SSB, Försäkringskassan, worknorway.se, vardinsats.se, sydkusten.es, lommeregner.no. Senast uppdaterad: 25 juli 2026.*
