@@ -1,6 +1,6 @@
 ---
 title: "Valet 2026: Så påverkar partiernas politik din lön, ditt jobb och din trygghet"
-date: 2026-07-13
+date: 2026-07-26
 slug: valet-2026-arbetsmarknad-lon-jobb
 category: Lön och Karriär
 meta_description: "Valet 2026 närmar sig. Vi går igenom vad partierna vill för arbetsmarknaden — löner, a-kassa, LAS och jobbskapande — och vad det betyder för din plånbok."
@@ -13,7 +13,7 @@ status: published
 
 # Valet 2026: Så påverkar partiernas politik din lön, ditt jobb och din trygghet
 
-Söndagen den **13 september 2026** går svenska folket till valurnorna. Om drygt två månader avgörs vilken politik som ska styra Sverige de kommande fyra åren — och få frågor påverkar dig som arbetstagare mer direkt än arbetsmarknadspolitiken.
+Söndagen den **13 september 2026** går svenska folket till valurnorna. Om knappt två månader avgörs vilken politik som ska styra Sverige de kommande fyra åren — och få frågor påverkar dig som arbetstagare mer direkt än arbetsmarknadspolitiken.
 
 Din lön. Din anställningstrygghet. Din a-kassa. Dina möjligheter till vidareutbildning. Allt detta avgörs inte bara av din chef eller ditt fackförbund — det avgörs också av vilka partier som får majoritet i riksdagen.
 
@@ -77,7 +77,7 @@ A-kassan är en av de frågor där partierna skiljer sig mest åt. Här är läg
 | **Kvalificeringsregler** | Skärpta krav på motprestation | Återgå till tidigare, mer generösa regler |
 | **Arbetslöshetsförsäkring** | Obligatorisk för alla arbetstagare | Frivillig via facken, men höjd grundnivå |
 
-Från och med **oktober 2025** gäller nya, hårdare kvalificeringsregler för a-kassan: du måste ha arbetat minst 60 timmar per månad under sex månader för att få inkomstbaserad ersättning. Flera vänsterpartier har lovat att riva upp denna reform om de vinner valet. Läs vår kompletta guide om [arbetslöshet och a-kassa](/blogg/arbetsloshet-akassa-2026-guide) för detaljer om vad som gäller just nu.
+Från och med **oktober 2025** gäller nya, hårdare kvalificeringsregler för a-kassan: du måste ha arbetat minst 60 timmar per månad under sex månader för att få inkomstbaserad ersättning. Flera vänsterpartier har lovat att riva upp denna reform om de vinner valet. Läs vår kompletta guide om [arbetslöshet och a-kassa](/blogg/arbetsloshet-akassa-guide) för detaljer om vad som gäller just nu.
 
 Sjukförsäkringen är en annan het fråga. Moderaterna och Kristdemokraterna vill behålla det nuvarande systemet med tidsgränser i sjukförsäkringen (den så kallade "rehabiliteringskedjan"). Socialdemokraterna och Vänsterpartiet vill avskaffa eller kraftigt reformera den.
 
@@ -98,7 +98,7 @@ Flera partier vill nu ändra LAS igen. Vänsterpartiet vill riva upp hela reform
 
 Cirka **90 procent av alla anställda i Sverige** omfattas av kollektivavtal — en siffra som varit relativt stabil. [7] Men fackens organisationsgrad sjunker långsamt, särskilt bland unga och i tjänstesektorn. Utan en stark facklig organisation försvagas själva grundvalen för den svenska modellen.
 
-För en djupare genomgång av hur den svenska modellen fungerar, läs vår artikel om [den svenska modellen och din lön](/blogg/den-svenska-modellen-arbetsmarknad-lon).
+För en djupare genomgång av hur den svenska modellen fungerar, läs vår artikel om [den svenska modellen och din lön](/blogg/svenska-modellen-lon).
 
 ## Vad betyder valet 2026 för dig?
 
@@ -110,7 +110,7 @@ Din vardag förändras inte dramatiskt oavsett valresultat. Löneförhandlingarn
 
 ### Om du är visstidsanställd eller timvikarie
 
-LAS-reformen påverkar dig direkt. En förändring av turordningsreglerna eller reglerna för inlasning (att en visstidsanställning övergår till fast) kan avgöra om du får en tillsvidareanställning eller inte. Läs vår guide om [löneavtal och kollektivavtal](/blogg/allt-om-loneavtal-2026-avtalsrorselsen) för att förstå hur anställningsvillkor påverkar din lön.
+LAS-reformen påverkar dig direkt. En förändring av turordningsreglerna eller reglerna för inlasning (att en visstidsanställning övergår till fast) kan avgöra om du får en tillsvidareanställning eller inte. Läs vår guide om [löneavtal och kollektivavtal](/blogg/allt-om-loneavtal) för att förstå hur anställningsvillkor påverkar din lön.
 
 ### Om du är arbetslös eller riskerar arbetslöshet
 
@@ -173,3 +173,5 @@ Och kom ihåg: oavsett valresultat är din bästa strategi för en högre lön a
 [6] Unionen, "Fortsatt goda skäl att höja löneökningstakten", opinion 2026. https://www.unionen.se
 
 [7] Medlingsinstitutet, "Avtalsrörelsen och lönebildningen 2025", årsrapport. https://www.mi.se
+
+*Källor: Unionen, SCB, Moderaterna, Medlingsinstitutet. Senast uppdaterad: 26 juli 2026.*
