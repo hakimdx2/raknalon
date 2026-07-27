@@ -1,7 +1,7 @@
 ---
 title: "Ränteavdrag 2026: Så fungerar skatteavdraget för dina bolån"
 slug: ranteavdrag-bolan-skatt
-date: 2026-07-10
+date: 2026-07-27
 category: "Skatt och Ekonomi"
 meta_description: "Ränteavdrag 2026: 30% på räntor upp till 100 000 kr, 21% över. Så mycket får du tillbaka på dina bolån — komplett guide med räkneexempel."
 keywords: ["ränteavdrag 2026", "skatteavdrag bolån", "ränteavdrag skatteverket", "avdrag ränta", "bolåneränta avdrag"]
@@ -153,7 +153,7 @@ Det har diskuterats politiskt att förändra ränteavdraget — exempelvis att s
 - **Finansdepartementets budgetpropositioner** (lämnas i september varje år)
 - **Skatteverkets nyhetsbrev** om skatteförändringar
 - **Bankernas årsbesked** som visar din exakta räntekostnad
-- **Den politiska debatten** — läs vår guide om [den svenska modellen och lönebildning](/blogg/den-svenska-modellen-arbetsmarknad-lon) för att förstå hur fack och arbetsgivare påverkar din ekonomi
+- **Den politiska debatten** — läs vår guide om [den svenska modellen och lönebildning](/blogg/svenska-modellen-lon) för att förstå hur fack och arbetsgivare påverkar din ekonomi
 
 ## Sammanfattning: Så maximerar du ditt ränteavdrag
 
@@ -161,10 +161,8 @@ Det har diskuterats politiskt att förändra ränteavdraget — exempelvis att s
 2. **Kontrollera deklarationen** — säkerställ att alla räntor är med
 3. **Fördela rätt** — för sambos: överväg om 50/50 är optimalt för er situation
 4. **Ha koll på räntan** — din ränta påverkar avdraget, omförhandla vid behov
-5. **Se över hela din ekonomi** — ränteavdraget är en del av din totala privatekonomi. Läs vår [guide om arbetslöshet och a-kassa](/blogg/arbetsloshet-akassa-2026-guide) och vår guide om [hur löneavtal fungerar](/blogg/allt-om-loneavtal-2026-avtalsrorselsen)
+5. **Se över hela din ekonomi** — ränteavdraget är en del av din totala privatekonomi. Läs vår [guide om arbetslöshet och a-kassa](/blogg/arbetsloshet-akassa-guide) och vår guide om [hur löneavtal fungerar](/blogg/allt-om-loneavtal)
 
 ---
 
-*Källor: Skatteverket (skatteverket.se), Inkomstskattelagen (1999:1229), Sveriges Riksbank.*
-
-*Senast uppdaterad: 10 juli 2026.*
+*Källor: Skatteverket (skatteverket.se), Inkomstskattelagen (1999:1229), Sveriges Riksbank. Senast uppdaterad: 27 juli 2026.*

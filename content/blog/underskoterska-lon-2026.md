@@ -1,7 +1,7 @@
 ---
 title: "Undersköterska Lön 2026: Lönestatistik och Framtidsutsikter"
 slug: underskoterska-lon-2026
-date: 2026-07-16
+date: 2026-07-27
 category: Lön och Karriär
 meta_description: "Vad tjänar en undersköterska 2026? Se aktuell lönestatistik, ingångslöner och löneskillnader mellan kommun och region. Räkna ut din lön efter skatt."
 keywords: ["undersköterska lön", "undersköterska lön 2026", "lönestatistik undersköterska", "ingångslön undersköterska", "vad tjänar en undersköterska"]
@@ -98,6 +98,9 @@ Ja, det råder mycket stor brist på utbildade undersköterskor i nästan hela S
 ### Vad tjänar en vårdbiträde jämfört med en undersköterska?
 Ett vårdbiträde tjänar generellt 2 000 – 4 000 kr mindre än en undersköterska och har inte samma delegeringsansvar. Att utbilda sig lönar sig alltså snabbt.
 
+### Vad är snittlön för undersköterska 2026?
+Medellönen för undersköterskor 2026 är **31 500 kr/mån** (brutto). Medianlönen ligger på **30 500 kr/mån**, vilket är den vanligaste nivån. Ingångslön för nyexaminerade varierar mellan 26 000 – 28 000 kr/mån. Lönen påverkas av arbetsgivare (kommun ca 29 500 kr, region ca 30 000 kr), erfarenhetsnivå och geografisk placering. Bemanningsundersköterskor kan tjäna betydligt mer: 38 000 – 45 000 kr/mån. Se tabellen ovan för en fullständig lönejämförelse.
+
 ---
 
 **Läs mer:**
@@ -106,4 +109,4 @@ Ett vårdbiträde tjänar generellt 2 000 – 4 000 kr mindre än en undersköte
 - [Lön efter skatt 2026 — räkna ut din nettolön](/blogg/lon-efter-skatt-2026)
 - [Hemliga löneförhandlingstekniker — få högre lön](/blogg/hemliga-loneforhandlings-tekniker)
 
-*Källor: SCB (Statistiska centralbyrån), Socialstyrelsen, Kommunal. Senast uppdaterad: 16 juli 2026.*
+*Källor: SCB (Statistiska centralbyrån), Socialstyrelsen, Kommunal. Senast uppdaterad: 27 juli 2026.*
