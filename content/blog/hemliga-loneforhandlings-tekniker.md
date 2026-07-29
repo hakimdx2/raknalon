@@ -1,7 +1,7 @@
 ---
 title: "Hemligheten till 50% högre lön 2026 – Det här vill din chef INTE att du vet"
 slug: hemliga-loneforhandlings-tekniker
-date: 2026-07-17
+date: 2026-07-29
 category: Löneförhandling
 meta_description: "Upptäck de beprövade förhandlingstekniker som kan öka din lön med upp till 50%. Baserat på forskning och verkliga framgångshistorier från svenska arbetstagare. Uppdaterad juli 2026."
 keywords: ["löneförhandling", "löneförhandling tekniker", "högre lön", "lönesamtal", "förhandla lön", "löneökning"]
@@ -452,4 +452,4 @@ Svaret är nästan säkert ja.
 
 *Har du förhandlat din lön framgångsrikt? Dela din historia i kommentarerna nedan – den kan inspirera någon annan att ta steget.*
 
-*Källor: SCB, Medlingsinstitutet, Sveriges Ingenjörer, Harvard Business School. Senast uppdaterad: 17 juli 2026.*
+*Källor: SCB, Medlingsinstitutet, Sveriges Ingenjörer, Harvard Business School. Senast uppdaterad: 29 juli 2026.*

@@ -2,8 +2,7 @@
 title: "Lojalitetsskatt: Det höga priset på att stanna kvar"
 slug: lojalitetsskatt-priset-pa-att-stanna
 date: 2026-01-23
-author: "Raknalon Redaktionen"
-category: "Löneförhandling"
+category: Löneförhandling
 meta_description: "Din stilla uppoffring kostar dig nästan en miljon kronor. Varför berättar ingen om lojalitetsskatten? Så mycket förlorar du på att inte byta jobb."
 keywords: ["lojalitetsskatt", "löneförhandling", "byta jobb lön", "löneökning", "karriärbyte"]
 image: "/img/blog/lojalitetsskatt.jpg"
@@ -88,4 +87,4 @@ Klicka nedan för att se din personliga "Lojalitetsskatt".
 
 Du är värd det. Börja agera som om du redan vet det.
 
-**Relaterat:** [Lön efter skatt 2026 – så mycket får du behålla](/blogg/lon-efter-skatt-2026) · [Allt om löneavtal 2026 och avtalsrörelsen](/blogg/allt-om-loneavtal-2026-avtalsrorselsen)
+**Relaterat:** [Lön efter skatt 2026 – så mycket får du behålla](/blogg/lon-efter-skatt-2026) · [Allt om löneavtal 2026 och avtalsrörelsen](/blogg/allt-om-loneavtal) · [Den svenska modellen – så fungerar arbetsmarknaden](/blogg/svenska-modellen-lon)
