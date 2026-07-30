@@ -185,11 +185,11 @@ Nej, inte utan ditt godkännande. Din anställningsform är en del av ditt anst�
 
 ### Vad händer med min a-kassa om jag har en osäker anställningsform?
 
-Din rätt till a-kassa beror på hur mycket du har arbetat, inte på din anställningsform. För att kvalificera dig för inkomstbaserad ersättning måste du ha arbetat minst 60 timmar per månad under sex månader (från oktober 2025). Detta kan vara svårare att uppnå med behovsanställning eller korta säsongsjobb, men det är fullt möjligt om du arbetar tillräckligt många timmar. Läs mer i vår [guide om arbetslöshet och a-kassa](/blogg/arbetsloshet-akassa-2026-guide).
+Din rätt till a-kassa beror på hur mycket du har arbetat, inte på din anställningsform. För att kvalificera dig för inkomstbaserad ersättning måste du ha arbetat minst 60 timmar per månad under sex månader (från oktober 2025). Detta kan vara svårare att uppnå med behovsanställning eller korta säsongsjobb, men det är fullt möjligt om du arbetar tillräckligt många timmar. Läs mer i vår [guide om arbetslöshet och a-kassa](/blogg/arbetsloshet-akassa-guide).
 
 ### Hur påverkar anställningsformen min lön?
 
-Anställningsformen i sig påverkar inte din lön – du har rätt till samma lön oavsett om du är fast eller visstidsanställd, enligt EU:s visstidsdirektiv och svensk lag. I praktiken kan dock personer med otrygga anställningsformer ha svårare att förhandla upp sin lön eftersom de står i en svagare position. Läs vår [guide om löneavtal](/blogg/allt-om-loneavtal-2026-avtalsrorselsen) för att förstå hur lönesättningen fungerar.
+Anställningsformen i sig påverkar inte din lön – du har rätt till samma lön oavsett om du är fast eller visstidsanställd, enligt EU:s visstidsdirektiv och svensk lag. I praktiken kan dock personer med otrygga anställningsformer ha svårare att förhandla upp sin lön eftersom de står i en svagare position. Läs vår [guide om löneavtal](/blogg/allt-om-loneavtal) för att förstå hur lönesättningen fungerar.
 
 ### Vad gäller vid föräldraledighet med olika anställningsformer?
 

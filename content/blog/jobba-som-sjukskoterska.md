@@ -1,7 +1,7 @@
 ---
 title: "Jobba som Sjuksköterska 2026: Arbetsuppgifter, Arbetsgivare & Karriär"
 slug: jobba-som-sjukskoterska
-date: 2026-07-18
+date: 2026-07-30
 category: "Karriär"
 meta_description: "Vad gör en sjuksköterska egentligen? Se arbetsuppgifter, löner med OB-tillägg, arbetsgivare och karriärmöjligheter. 2000+ lediga jobb i Stockholm, Göteborg och Malmö."
 keywords: ["jobba som sjuksköterska", "sjuksköterska arbetsuppgifter", "sjuksköterska arbetsgivare", "sjuksköterska karriär", "sjuksköterska jobb 2026"]
@@ -359,4 +359,4 @@ Med 8 000+ lediga jobb och under 1% arbetslöshet har du en **stark förhandling
 
 [Läs om utbildning till sjuksköterska](/blogg/utbildning-sjukskoterska-2026)
 
-*Källor: SCB (lönestatistik 2025, publicerad våren 2026), Vårdförbundet, Arbetsförmedlingen, Socialstyrelsen. Senast uppdaterad: 18 juli 2026.*
+*Källor: SCB (lönestatistik 2025, publicerad våren 2026), Vårdförbundet, Arbetsförmedlingen, Socialstyrelsen. Senast uppdaterad: 30 juli 2026.*
