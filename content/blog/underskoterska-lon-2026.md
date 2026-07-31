@@ -1,13 +1,14 @@
 ---
 title: "Undersköterska Lön 2026: Lönestatistik och Framtidsutsikter"
 slug: underskoterska-lon-2026
-date: 2026-07-27
+date: 2026-07-31
 category: Lön och Karriär
 meta_description: "Vad tjänar en undersköterska 2026? Se aktuell lönestatistik, ingångslöner och löneskillnader mellan kommun och region. Räkna ut din lön efter skatt."
 keywords: ["undersköterska lön", "undersköterska lön 2026", "lönestatistik undersköterska", "ingångslön undersköterska", "vad tjänar en undersköterska"]
 image: /img/blog/underskoterska-lon-2026.jpg
 image_license: unsplash
 potential_score: 65
+status: published
 ---
 
 Undersköterska är ett av Sveriges viktigaste och vanligaste yrken. Men vad ligger egentligen lönen på 2026? Svaret beror stort på var du arbetar – skillnaden mellan en kommunal anställning och ett bemanningsuppdrag kan vara flera tusenlappar i månaden.
@@ -101,6 +102,9 @@ Ett vårdbiträde tjänar generellt 2 000 – 4 000 kr mindre än en undersköte
 ### Vad är snittlön för undersköterska 2026?
 Medellönen för undersköterskor 2026 är **31 500 kr/mån** (brutto). Medianlönen ligger på **30 500 kr/mån**, vilket är den vanligaste nivån. Ingångslön för nyexaminerade varierar mellan 26 000 – 28 000 kr/mån. Lönen påverkas av arbetsgivare (kommun ca 29 500 kr, region ca 30 000 kr), erfarenhetsnivå och geografisk placering. Bemanningsundersköterskor kan tjäna betydligt mer: 38 000 – 45 000 kr/mån. Se tabellen ovan för en fullständig lönejämförelse.
 
+### Kommunal undersköterska lön 2026 — vad tjänar man i kommunen?
+En kommunalt anställd undersköterska tjänar i snitt **29 500 kr/mån** (brutto) 2026. Lönen varierar mellan cirka 27 000 kr för nyexaminerade och upp till 32 000 kr för erfarna med specialistkompetens. OB-tillägg för kvällar, helger och nätter kan höja månadsinkomsten med 3 000 – 7 000 kr. Jämfört med regionen (ca 30 000 kr) är kommunlönen något lägre, men schemaläggningen kan vara mer flexibel. För högsta möjliga lön rekommenderas bemanning (38 000 – 45 000 kr/mån) eller att specialisera sig via YH-utbildning.
+
 ---
 
 **Läs mer:**
@@ -109,4 +113,4 @@ Medellönen för undersköterskor 2026 är **31 500 kr/mån** (brutto). Medianl�
 - [Lön efter skatt 2026 — räkna ut din nettolön](/blogg/lon-efter-skatt-2026)
 - [Hemliga löneförhandlingstekniker — få högre lön](/blogg/hemliga-loneforhandlings-tekniker)
 
-*Källor: SCB (Statistiska centralbyrån), Socialstyrelsen, Kommunal. Senast uppdaterad: 27 juli 2026.*
+*Källor: SCB (Statistiska centralbyrån), Socialstyrelsen, Kommunal. Senast uppdaterad: 31 juli 2026.*

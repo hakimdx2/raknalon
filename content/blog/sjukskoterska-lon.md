@@ -1,7 +1,7 @@
 ---
 title: "Sjuksköterska Lön 2026: Den Kompletta Guiden"
 slug: sjukskoterska-lon
-date: 2026-07-18
+date: 2026-07-31
 category: "Lön och Karriär"
 meta_description: "Vad tjänar en sjuksköterska 2026? Se lönestatistik, ingångslöner och skillnader mellan regioner. Vi går igenom allt du behöver veta om din lön — uppdaterad juli 2026."
 keywords: ["sjuksköterska lön 2026", "sjuksköterska ingångslön", "sjuksköterska lön statistik", "vad tjänar sjuksköterska", "sjuksköterska lön region"]
@@ -133,4 +133,4 @@ Ja, ur ett arbetsmarknadsperspektiv. Det råder stor brist på sjuksköterskor i
 
 ---
 
-*Källor: SCB (lönestatistik 2025), Vårdförbundet, Medlingsinstitutet. Senast uppdaterad: 18 juli 2026.*
+*Källor: SCB (lönestatistik 2025), Vårdförbundet, Medlingsinstitutet. Senast uppdaterad: 31 juli 2026.*

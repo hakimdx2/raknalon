@@ -3,10 +3,9 @@ title: "Lön efter skatt 2026: Komplett guide till din nettolön"
 slug: lon-efter-skatt-2026
 meta_description: "Räkna ut din lön efter skatt 2026. Se skattesatser, brytpunkter och jobbskatteavdrag. Jämför nettolön för olika lönenivåer och kommuner."
 keywords: ["lön efter skatt 2026", "nettolön", "skattesatser 2026", "jobbskatteavdrag", "statlig skatt brytpunkt", "kommunalskatt"]
-date: 2026-07-20
+date: 2026-07-31
 category: Skatt och Ekonomi
-author: Redaktionen
-reading_time: 12
+status: published
 image: /img/blog/lon-efter-skatt-2026.png
 image_license: unsplash
 faq:
@@ -191,4 +190,4 @@ Din lön efter skatt 2026 beror på din bruttolön, din kommuns skattesats, och 
 
 ---
 
-*Källor: Skatteverket (skatteverket.se), SCB (scb.se), Regeringen — Budgetpropositionen 2026. Senast uppdaterad: 20 juli 2026.*
+*Källor: Skatteverket (skatteverket.se), SCB (scb.se), Regeringen — Budgetpropositionen 2026. Senast uppdaterad: 31 juli 2026.*
