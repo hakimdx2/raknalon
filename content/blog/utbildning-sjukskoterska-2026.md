@@ -1,8 +1,9 @@
 ---
 title: "Utbildning till Sjuksköterska 2026: Krav, Längd & Antagning"
 slug: utbildning-sjukskoterska-2026
-date: 2026-07-19
+date: 2026-08-01
 category: Utbildning
+status: published
 meta_description: "Antagningspoäng sjuksköterska 2026 — se aktuella krav för Karolinska, Göteborg, Uppsala och fler. Behörighet, distansstudier och alternativa vägar."
 keywords: ["antagningspoäng sjuksköterska 2026", "utbildning sjuksköterska", "sjuksköterskeprogrammet behörighet", "sjuksköterska distans", "hur lång är sjuksköterskeutbildningen"]
 image: /img/blog/sjukskoterska_utbildning_hero.png
@@ -116,4 +117,4 @@ Vill du veta hur vardagen ser ut?
 
 ---
 
-*Källor: [Antagning.se](https://www.antagning.se) — antagningsstatistik hösten 2025, [Universitets- och högskolerådet (UHR)](https://www.uhr.se) — behörighetskrav 2026, [Skolverket](https://www.skolverket.se) — Komvux. Senast uppdaterad: 19 juli 2026.*
+*Källor: [Antagning.se](https://www.antagning.se) — antagningsstatistik hösten 2025, [Universitets- och högskolerådet (UHR)](https://www.uhr.se) — behörighetskrav 2026, [Skolverket](https://www.skolverket.se) — Komvux. Senast uppdaterad: 1 augusti 2026.*
