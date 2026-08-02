@@ -1,6 +1,6 @@
 ---
 title: "Allt om Löneavtal 2026 — Hur påverkas din lön av avtalsrörelsen?"
-date: 2026-07-20
+date: 2026-08-02
 slug: allt-om-loneavtal
 category: Lön och Karriär
 meta_description: "Komplett guide till löneavtal 2026: märket, lönepott, individuell lönesättning. Så fungerar avtalsrörelsen, kollektivavtal och ditt lönesamtal."
@@ -369,4 +369,4 @@ Läs mer om lön och karriär i Sverige på dessa sidor:
 
 **Viktiga källor för denna artikel:**
 
-Denna artikel bygger på information från Medlingsinstitutet, Konjunkturinstitutet, IF Metall, Unionen, Kommunal, Svenskt Näringsliv, och andra officiella källor om Sveriges arbetsmarknad och lönebildning. Senast uppdaterad: 20 juli 2026.
+Denna artikel bygger på information från Medlingsinstitutet, Konjunkturinstitutet, IF Metall, Unionen, Kommunal, Svenskt Näringsliv, och andra officiella källor om Sveriges arbetsmarknad och lönebildning. Senast uppdaterad: 2 augusti 2026.
