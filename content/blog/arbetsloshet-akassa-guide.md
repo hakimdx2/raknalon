@@ -1,7 +1,8 @@
 ---
 title: Arbetslöshet & A-kassa 2026 - Din kompletta guide till trygghet
-date: 2026-07-21
+date: 2026-08-03
 slug: arbetsloshet-akassa-2026-guide
+status: published
 category: Lön och Karriär
 keywords: [a-kassa, arbetslöshet, försäkring, trygghet, ekonomi, inkomstförsäkring, arbetslöshetsersättning]
 meta_description: Fullständig guide till arbetslöshetsförsäkringen i Sverige - hur a-kassan fungerar, vad den täcker, och hur du skyddar din ekonomi vid uppsägning 2026.
@@ -399,4 +400,4 @@ För att läsa mer om lön och ekonomi i Sverige kan du kolla:
 
 ---
 
-*Källor: Arbetsförmedlingen, Sveriges a-kassor, LO, TCO, Saco, Inspektionen för arbetslöshetsförsäkringen (IAF), Försäkringskassan, Skatteverket. Siffror uppdaterade för 2026. Senast uppdaterad: 21 juli 2026.*
+*Källor: Arbetsförmedlingen, Sveriges a-kassor, LO, TCO, Saco, Inspektionen för arbetslöshetsförsäkringen (IAF), Försäkringskassan, Skatteverket. Siffror uppdaterade för 2026. Senast uppdaterad: 3 augusti 2026.*

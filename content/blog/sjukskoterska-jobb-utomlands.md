@@ -1,7 +1,7 @@
 ---
 title: "Jobba som Sjuksköterska Utomlands 2026: Den Kompletta Guiden"
 slug: sjukskoterska-jobb-utomlands
-date: 2026-07-29
+date: 2026-08-03
 category: Karriär
 meta_description: "Vad tjänar en sjuksköterska i Danmark, Norge eller Australien 2026? Se löner, licensiering och steg-för-steg guide för att jobba utomlands."
 keywords: ["sjuksköterska utomlands", "sjuksköterska lön danmark", "vad tjänar en sjuksköterska i danmark", "sjuksköterska jobb utomlands", "sjuksköterska norge lön", "sjuksköterska utomlands lön"]
@@ -282,6 +282,10 @@ Grundlön: 47 000–55 000 NOK/mån (~48 000 SEK). Med OB och feriepenger kan du
 ### Vad tjänar en sjuksköterska i Danmark?
 35 000–40 000 DKK/mån (~52 000 SEK), vilket motsvarar cirka 52 000 SEK före skatt. Grundlönen för nyutexaminerade ligger på cirka 28 500 DKK, medan specialister och sjuksköterskor med 5+ års erfarenhet kan nå upp till 42 000 DKK/mån. Höga skatter men starka fackliga villkor, 25 dagars semester, och generösare semesterersättning än i Sverige. Danska Regioner rapporterar fortsatt brist på sjuksköterskor 2026 — särskilt inom psykiatri och geriatrik.
 
+### Lön sjuksköterska Danmark — aktuella siffror 2026
+
+En sjuksköterska i Danmark tjänar mellan 35 000 och 40 000 DKK per månad brutto (cirka 52 000 SEK). Nyutexaminerade börjar på cirka 28 500 DKK medan specialister med 5+ års erfarenhet kan nå 42 000 DKK. Totalkompensationen är bland Nordens högsta — med starka fackliga villkor, 25 dagars semester och generös semesterersättning rapporterar Danske Regioner fortsatt brist på sjuksköterskor 2026, särskilt inom psykiatri och geriatrik.
+
 ### Hur mycket tjänar en sjuksköterska i USA?
 En svensk sjuksköterska som jobbar i USA kan tjäna mellan $70 000 och $120 000 per år, vilket motsvarar cirka 85 000 SEK i månaden. I Kalifornien kan erfarna sjuksköterskor nå över $150 000/år (≈105 000 SEK/mån). Lönen varierar kraftigt mellan delstater — Texas och Florida ligger lägre, medan Kalifornien, New York och Massachusetts toppar listan. Tänk på att sjukförsäkring, pension och levnadskostnader äter upp en del av skillnaden jämfört med svenska villkor.
 
@@ -332,4 +336,4 @@ Du har kunskapen. Du har erfarenheten. Världen väntar.
 
 [Läs om att jobba som sjuksköterska i Sverige](/blogg/jobba-som-sjukskoterska)
 
-*Källor: SCB, Helsedirektoratet, Styrelsen for Patientsikkerhed, Danske Regioner, Dignus Medical, Socialstyrelsen. Senast uppdaterad: 29 juli 2026.*
+*Källor: SCB, Helsedirektoratet, Styrelsen for Patientsikkerhed, Danske Regioner, Dignus Medical, Socialstyrelsen. Senast uppdaterad: 3 augusti 2026.*

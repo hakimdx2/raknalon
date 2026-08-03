@@ -1,9 +1,9 @@
 ---
 title: "Undersköterska lön i Norge 2026: Så dubblar du lönen – komplett guide"
 slug: underskoterska-utomlands-2026
-meta_description: "Undersköterska lön i Norge 2026: Tjäna 44% mer som helsefagarbeider. Komplett guide till auktorisation, jobb, skatt och levnadskostnader. Jämför lön Norge vs Sverige vs Spanien."
+meta_description: "Undersköterska norge lön 2026: tjäna 44% mer som helsefagarbeider. Komplett guide till auktorisation, jobb, skatt och levnadskostnader. Jämför lön Norge vs Sverige vs Spanien."
 keywords: ["undersköterska lön norge 2026", "helsefagarbeider lön", "jobba som undersköterska i norge", "norge lön undersköterska", "auktorisation helsefagarbeider"]
-date: 2026-07-30
+date: 2026-08-03
 category: Karriär
 image: /img/blog/underskoterska-utomlands-2026.jpg
 image_license: unsplash
@@ -400,4 +400,4 @@ Oavsett väg: Du är en efterfrågad professionell. Använd det för att forma d
 
 ---
 
-*Källor: Helsedirektoratet, NAV, SSB, Försäkringskassan, worknorway.se, vardinsats.se, sydkusten.es, lommeregner.no. Senast uppdaterad: 30 juli 2026.*
+*Källor: Helsedirektoratet, NAV, SSB, Försäkringskassan, worknorway.se, vardinsats.se, sydkusten.es, lommeregner.no. Senast uppdaterad: 3 augusti 2026.*

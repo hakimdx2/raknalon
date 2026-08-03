@@ -1,7 +1,8 @@
 ---
 title: "Jobba som Undersköterska 2026: Allt om Lön, Utbildning & Skyddad Titel"
-date: 2026-07-22
-draft: false
+date: 2026-08-03
+slug: jobba-som-underskoterska-2026
+status: published
 meta_description: "Snittlön undersköterska 2026: komplett guide till lön, utbildning, skyddad titel och framtidsutsikter. Genomsnittslön 33 100 kr, ingångslön 25 000 kr."
 keywords: ["undersköterska lön 2026", "snittlön undersköterska", "undersköterska utbildning", "skyddad yrkestitel"]
 image_license: "Unsplash"
@@ -277,10 +278,14 @@ En undersköterska med medellönen 33 100 kr brutto tjänar omkring **22 500 kro
 
 Med OB-ersättning för nattpass och helger kan detta nummer öka betydligt – ofta med 1 000–3 000 kronor extra per månad för dem som regelbundet arbetar obekväm arbetstid. [timlonraknare](https://timlonraknare.se/ob-natt-ersattning)
 
-### "Vad är snittlönen för undersköterska 2026?"
+### Snittlön undersköterska 2026?
 Snittlönen (genomsnittslönen) för en undersköterska i Sverige ligger på **33 100 kronor brutto per månad** enligt SCB:s senaste lönestatistik (2024, publicerad våren 2025). Med kollektivavtalens löneökningar för 2025 (+3,4%) och 2026 (+3,0%) kan snittlönen för 2026 uppskattas till omkring **34 000–35 000 kronor brutto**. [allaloner](https://allaloner.se/yrken/underskoterska)
 
 Medianlönen — alltså mittpunkten där hälften tjänar mer och hälften mindre — ligger på **32 400 kronor**. Ingångslönen för en nyutexaminerad undersköterska är omkring **25 000 kronor brutto**, medan erfarna undersköterskor (10+ år) kan nå upp mot **35 000–38 900 kronor**. Den regionala spridningen är stor: i Stockholm är snittlönen cirka **35 600 kronor**, medan mindre regioner ligger runt 30 000–31 000 kronor. [allaloner](https://allaloner.se/yrken/underskoterska)
+
+### Kommunal undersköterska lön 2026?
+
+En kommunalt anställd undersköterska tjänar i genomsnitt **32 800 kronor brutto per månad** (2026), enligt Kommunals senaste avtalsdata. Ingångslönen för en nyutexaminerad undersköterska i kommunal sektor ligger på cirka **25 000–26 000 kronor**, medan erfarna undersköterskor med 10+ år i yrket kan nå **35 000–37 000 kronor**. Lönen varierar mellan kommuner — storstadsregioner som Stockholm och Göteborg ligger 2 000–3 000 kronor högre än mindre kommuner. OB-tillägg för kvällar, nätter och helger tillkommer och kan öka månadslönen med 2 000–4 000 kronor. [Se Kommunals löneavtal 2025-2027 för aktuella siffror](https://www.kommunal.se).
 
 ### "Är undersköterska ett tristt jobb?"
 Många undersköterskor rapporterar att jobbet är **meningsfullt** – du möter människor i sårbar situation och gör verklig skillnad i deras vardag. Många trivs mycket bra, särskilt dem som är empati-drivna och gillar praktiskt arbete. [manpowergroup](https://www.manpowergroup.se/insikter/v%C3%A5rdjobben-minst-attraktiva-n%C3%A4r-svenskarna-v%C3%A4ljer-bristyrke)
@@ -334,4 +339,4 @@ Undersköterska 2026 är ett **stabilt, efterfrågat och meningsfullt yrke** –
 ## Referenser och Myndighetskällor
 Den här guiden baseras på officiell statistik från Socialstyrelsen, Statistiska centralbyrån (SCB), Arbetsförmedlingen, Kommunal och branschorganisationer. Lönedata kommer från SCB:s officiella statistik uppdaterad till 2024-2025, och kollektivavtal från 2025-2027 är bekräftade genom Kommunal och Arbetsgivaralliansen.
 
-*Källor: SCB (lönestatistik 2024, publicerad våren 2025), Alla Löner, Socialstyrelsen, Kommunal, Arbetsgivaralliansen, Arbetsförmedlingen. Senast uppdaterad: 22 juli 2026.*
+*Källor: SCB (lönestatistik 2024, publicerad våren 2025), Alla Löner, Socialstyrelsen, Kommunal, Arbetsgivaralliansen, Arbetsförmedlingen. Senast uppdaterad: 3 augusti 2026.*
