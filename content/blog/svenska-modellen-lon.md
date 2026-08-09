@@ -1,6 +1,6 @@
 ---
 title: Den Svenska Modellen - Hur fungerar arbetsmarknaden och din lön i Sverige?
-date: 2026-07-22
+date: 2026-08-09
 slug: den-svenska-modellen-arbetsmarknad-lon
 category: Lön och Karriär
 meta_description: En omfattande guide till den svenska arbetsmarknadsmodellen — hur löner bestäms, varför kollektivavtal är viktiga, och hur du skyddas som arbetstagare i Sverige. Från Saltsjöbadsavtalet 1938 till dagens gig-ekonomi.
@@ -270,4 +270,4 @@ För att lära dig mer om lön och karriär i Sverige kan du kolla in dessa resu
 
 [4] Facklig organisationsgrad: https://arenaide.se/rapporter/den-svenska-modellen-2025/
 
-*Källor: LO, Kommunal, Svenskt Näringsliv, Arena Idé, Sveriges Ingenjörer. Senast uppdaterad: 22 juli 2026.*
+*Källor: LO, Kommunal, Svenskt Näringsliv, Arena Idé, Sveriges Ingenjörer. Senast uppdaterad: 9 augusti 2026.*
