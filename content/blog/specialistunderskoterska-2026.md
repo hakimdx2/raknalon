@@ -1,7 +1,7 @@
 ---
 title: "Specialistundersköterska 2026: Din Väg till Högre Lön och Specialkompetens"
 slug: specialistunderskoterska-2026
-date: 2026-07-23
+date: 2026-08-10
 category: Karriär
 meta_description: "Vill du höja din lön och ta nästa steg i karriären? Läs allt om att bli specialistundersköterska 2026, YH-utbildningar, löner och hur du pluggar med 80% lön."
 keywords: ["specialistundersköterska", "specialistundersköterska lön", "YH-utbildning undersköterska", "Silviasyster", "specialistundersköterska psykiatri", "omställningsstudiestöd undersköterska"]
@@ -131,4 +131,4 @@ När löneökningen kommer — [förhandla som ett proffs](/blogg/hemliga-lonefo
 
 ---
 
-*Källor: [SCB](https://www.scb.se) — lönestatistik 2025 (publicerad våren 2026), [Kommunal](https://www.kommunal.se) — yrke och utbildning, [Yrkeshögskolan](https://www.yrkeshogskolan.se), [CSN — Omställningsstudiestödet](https://www.csn.se/bidrag-och-lan/studiestod/omstallningsstudiestod.html). Senast uppdaterad: 23 juli 2026.*
+*Källor: [SCB](https://www.scb.se) — lönestatistik 2025 (publicerad våren 2026), [Kommunal](https://www.kommunal.se) — yrke och utbildning, [Yrkeshögskolan](https://www.yrkeshogskolan.se), [CSN — Omställningsstudiestödet](https://www.csn.se/bidrag-och-lan/studiestod/omstallningsstudiestod.html). Senast uppdaterad: 10 augusti 2026.*
