@@ -1,6 +1,6 @@
 ---
 title: "Den Svenska Föräldraledighetsguiden 2026: Allt Du Behöver Veta"
-date: 2026-07-24
+date: 2026-08-11
 slug: foraldraledighet-guide-2026
 status: published
 image: "/img/blog/foraldraledighet-guide-2026.jpg"
@@ -602,7 +602,7 @@ Lycka Till Med Din Föräldraledighet – Du Förtjänar Det!
 
 Användbara Länkar
 
-*Källor: Försäkringskassan, Socialförsäkringsbalken (11 kap.), Föräldraledighetslagen, Skatteverket. Senast uppdaterad: 24 juli 2026.*
+*Källor: Försäkringskassan, Socialförsäkringsbalken (11 kap.), Föräldraledighetslagen, Skatteverket. Senast uppdaterad: 11 augusti 2026.*
 
 Försäkringskassan: https://www.forsakringskassan.se
 

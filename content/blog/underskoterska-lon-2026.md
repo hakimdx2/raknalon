@@ -1,7 +1,7 @@
 ---
 title: "Undersköterska Lön 2026: Lönestatistik och Framtidsutsikter"
 slug: underskoterska-lon-2026
-date: 2026-07-31
+date: 2026-08-11
 category: Lön och Karriär
 meta_description: "Vad tjänar en undersköterska 2026? Se aktuell lönestatistik, ingångslöner och löneskillnader mellan kommun och region. Räkna ut din lön efter skatt."
 keywords: ["undersköterska lön", "undersköterska lön 2026", "lönestatistik undersköterska", "ingångslön undersköterska", "vad tjänar en undersköterska"]
@@ -113,4 +113,4 @@ En kommunalt anställd undersköterska tjänar i snitt **29 500 kr/mån** (brutt
 - [Lön efter skatt 2026 — räkna ut din nettolön](/blogg/lon-efter-skatt-2026)
 - [Hemliga löneförhandlingstekniker — få högre lön](/blogg/hemliga-loneforhandlings-tekniker)
 
-*Källor: SCB (Statistiska centralbyrån), Socialstyrelsen, Kommunal. Senast uppdaterad: 31 juli 2026.*
+*Källor: SCB (Statistiska centralbyrån), Socialstyrelsen, Kommunal. Senast uppdaterad: 11 augusti 2026.*
