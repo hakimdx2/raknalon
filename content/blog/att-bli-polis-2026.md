@@ -2,7 +2,7 @@
 title: "Att bli och vara Polis 2026: Den ultimata guiden till verkligheten bakom uniformen"
 meta_description: "Den kompletta guiden till polisyrket i Sverige 2026. Lön, utbildning, antagning, specialiseringar och den brutala sanningen om skiftarbete och gängvåld."
 slug: att-bli-polis-2026
-date: 2026-07-25
+date: 2026-08-12
 category: Karriär och Utbildning
 keywords: ["polis lön 2026", "bli polis", "polisutbildning", "polis antagning", "polisyrket", "polis karriär"]
 image: /img/blog/polis-2026.png
@@ -281,4 +281,4 @@ Men var medveten: **Detta jobb kommer att förändra dig.** Gå in med öppna ö
 
 *Denna artikel är en del av Räkna Löns karriärguide 2026. Läs mer om löner och yrken i vår [statistikdatabas](/yrken).*
 
-*Källor: Polismyndigheten, Plikt- och Prövningsverket, SCB Lönestatistik 2025, Medlingsinstitutet. Senast uppdaterad: 25 juli 2026.*
+*Källor: Polismyndigheten, Plikt- och Prövningsverket, SCB Lönestatistik 2025, Medlingsinstitutet. Senast uppdaterad: 12 augusti 2026.*

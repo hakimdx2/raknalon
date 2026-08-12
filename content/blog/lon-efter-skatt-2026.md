@@ -3,7 +3,7 @@ title: "Lön efter skatt 2026: Komplett guide till din nettolön"
 slug: lon-efter-skatt-2026
 meta_description: "Räkna ut din lön efter skatt 2026. Se skattesatser, brytpunkter och jobbskatteavdrag. Jämför nettolön för olika lönenivåer och kommuner."
 keywords: ["lön efter skatt 2026", "nettolön", "skattesatser 2026", "jobbskatteavdrag", "statlig skatt brytpunkt", "kommunalskatt"]
-date: 2026-07-31
+date: 2026-08-12
 category: Skatt och Ekonomi
 status: published
 image: /img/blog/lon-efter-skatt-2026.png
@@ -75,7 +75,7 @@ Jobbskatteavdraget är en skattereduktion som automatiskt minskar den skatt du b
 
 Avdraget innebär att din effektiva skatt blir betydligt lägre än den nominella kommunalskattesatsen.
 
-## Lön efter skatt: Beräkningsexempel
+## Lön efter skatt 2026: Beräkningsexempel
 
 Nedan följer exempel på vad olika bruttolöner ger i nettolön, beräknat med en genomsnittlig kommunalskatt på 32,38% och aktuellt jobbskatteavdrag.
 
@@ -190,4 +190,4 @@ Din lön efter skatt 2026 beror på din bruttolön, din kommuns skattesats, och 
 
 ---
 
-*Källor: Skatteverket (skatteverket.se), SCB (scb.se), Regeringen — Budgetpropositionen 2026. Senast uppdaterad: 31 juli 2026.*
+*Källor: Skatteverket (skatteverket.se), SCB (scb.se), Regeringen — Budgetpropositionen 2026. Senast uppdaterad: 12 augusti 2026.*
