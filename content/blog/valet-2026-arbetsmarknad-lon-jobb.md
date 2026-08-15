@@ -1,6 +1,6 @@
 ---
 title: "Valet 2026: Så påverkar partiernas politik din lön, ditt jobb och din trygghet"
-date: 2026-07-26
+date: 2026-08-15
 slug: valet-2026-arbetsmarknad-lon-jobb
 category: Lön och Karriär
 meta_description: "Valet 2026 närmar sig. Vi går igenom vad partierna vill för arbetsmarknaden — löner, a-kassa, LAS och jobbskapande — och vad det betyder för din plånbok."
@@ -13,7 +13,7 @@ status: published
 
 # Valet 2026: Så påverkar partiernas politik din lön, ditt jobb och din trygghet
 
-Söndagen den **13 september 2026** går svenska folket till valurnorna. Om knappt två månader avgörs vilken politik som ska styra Sverige de kommande fyra åren — och få frågor påverkar dig som arbetstagare mer direkt än arbetsmarknadspolitiken.
+Söndagen den **13 september 2026** går svenska folket till valurnorna. Om knappt en månad avgörs vilken politik som ska styra Sverige de kommande fyra åren — och få frågor påverkar dig som arbetstagare mer direkt än arbetsmarknadspolitiken.
 
 Din lön. Din anställningstrygghet. Din a-kassa. Dina möjligheter till vidareutbildning. Allt detta avgörs inte bara av din chef eller ditt fackförbund — det avgörs också av vilka partier som får majoritet i riksdagen.
 
@@ -21,7 +21,7 @@ I den här guiden går vi igenom vad riksdagspartierna faktiskt vill för den sv
 
 ## När är valet 2026 — och varför spelar det roll för dig?
 
-Valet 2026 äger rum **söndagen den 13 september**. Förtidsröstningen öppnar cirka tre veckor innan, vilket betyder att du kan rösta från slutet av augusti.
+Valet 2026 äger rum **söndagen den 13 september**. Förtidsröstningen öppnar cirka tre veckor innan — från omkring den 23 augusti kan du rösta i förtid.
 
 Arbetsmarknadsfrågorna har seglat upp som en av valets hetaste potatisar. Fackförbundet **Unionen** har under våren 2026 genomfört valsamtal med samtliga riksdagspartier — ett tydligt tecken på att jobbfrågorna står högt på agendan. [1]
 
@@ -124,7 +124,7 @@ Omställningsstudiestödet — som infördes 2023 — ger dig rätt till ekonomi
 
 ### När är valet 2026 i Sverige?
 
-Valet äger rum **söndagen den 13 september 2026**. Förtidsröstning öppnar cirka tre veckor tidigare, från slutet av augusti. Du behöver inget särskilt skäl för att förtidsrösta — det är öppet för alla.
+Valet äger rum **söndagen den 13 september 2026**. Förtidsröstning öppnar cirka tre veckor tidigare, omkring den 23 augusti. Du behöver inget särskilt skäl för att förtidsrösta — det är öppet för alla.
 
 ### Vilket parti har bäst arbetsmarknadspolitik?
 
@@ -174,4 +174,4 @@ Och kom ihåg: oavsett valresultat är din bästa strategi för en högre lön a
 
 [7] Medlingsinstitutet, "Avtalsrörelsen och lönebildningen 2025", årsrapport. https://www.mi.se
 
-*Källor: Unionen, SCB, Moderaterna, Medlingsinstitutet. Senast uppdaterad: 26 juli 2026.*
+*Källor: Unionen, SCB, Moderaterna, Medlingsinstitutet. Senast uppdaterad: 15 augusti 2026.*
