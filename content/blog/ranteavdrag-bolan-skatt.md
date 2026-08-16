@@ -1,7 +1,7 @@
 ---
 title: "Ränteavdrag 2026: Så fungerar skatteavdraget för dina bolån"
 slug: ranteavdrag-bolan-skatt
-date: 2026-07-27
+date: 2026-08-16
 category: "Skatt och Ekonomi"
 meta_description: "Ränteavdrag 2026: 30% på räntor upp till 100 000 kr, 21% över. Så mycket får du tillbaka på dina bolån — komplett guide med räkneexempel."
 keywords: ["ränteavdrag 2026", "skatteavdrag bolån", "ränteavdrag skatteverket", "avdrag ränta", "bolåneränta avdrag"]
@@ -148,7 +148,7 @@ Nej, det är två helt olika saker. Rotavdrag (30 % av arbetskostnaden för repa
 
 ## Ränteavdragets framtid
 
-Det har diskuterats politiskt att förändra ränteavdraget — exempelvis att sänka procentsatserna eller införa ett tak. I dagsläget (juli 2026) finns inga konkreta lagförslag om förändringar, men debatten fortsätter. Håll koll på:
+Det har diskuterats politiskt att förändra ränteavdraget — exempelvis att sänka procentsatserna eller införa ett tak. I dagsläget (augusti 2026) finns inga konkreta lagförslag om förändringar, men debatten fortsätter. Håll koll på:
 
 - **Finansdepartementets budgetpropositioner** (lämnas i september varje år)
 - **Skatteverkets nyhetsbrev** om skatteförändringar
@@ -165,4 +165,4 @@ Det har diskuterats politiskt att förändra ränteavdraget — exempelvis att s
 
 ---
 
-*Källor: Skatteverket (skatteverket.se), Inkomstskattelagen (1999:1229), Sveriges Riksbank. Senast uppdaterad: 27 juli 2026.*
+*Källor: Skatteverket (skatteverket.se), Inkomstskattelagen (1999:1229), Sveriges Riksbank. Senast uppdaterad: 16 augusti 2026.*
