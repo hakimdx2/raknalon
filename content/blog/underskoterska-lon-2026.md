@@ -1,7 +1,7 @@
 ---
 title: "Undersköterska Lön 2026: Lönestatistik och Framtidsutsikter"
 slug: underskoterska-lon-2026
-date: 2026-08-11
+date: 2026-08-17
 category: Lön och Karriär
 meta_description: "Vad tjänar en undersköterska 2026? Se aktuell lönestatistik, ingångslöner och löneskillnader mellan kommun och region. Räkna ut din lön efter skatt."
 keywords: ["undersköterska lön", "undersköterska lön 2026", "lönestatistik undersköterska", "ingångslön undersköterska", "vad tjänar en undersköterska"]
@@ -105,6 +105,12 @@ Medellönen för undersköterskor 2026 är **31 500 kr/mån** (brutto). Medianl�
 ### Kommunal undersköterska lön 2026 — vad tjänar man i kommunen?
 En kommunalt anställd undersköterska tjänar i snitt **29 500 kr/mån** (brutto) 2026. Lönen varierar mellan cirka 27 000 kr för nyexaminerade och upp till 32 000 kr för erfarna med specialistkompetens. OB-tillägg för kvällar, helger och nätter kan höja månadsinkomsten med 3 000 – 7 000 kr. Jämfört med regionen (ca 30 000 kr) är kommunlönen något lägre, men schemaläggningen kan vara mer flexibel. För högsta möjliga lön rekommenderas bemanning (38 000 – 45 000 kr/mån) eller att specialisera sig via YH-utbildning.
 
+### Lön undersköterska 2026 — vad tjänar man i genomsnitt?
+En undersköterska i Sverige tjänar i genomsnitt **31 500 kr/mån** (brutto) 2026, med en medianlön på **30 500 kr/mån**. Lönen varierar från cirka 26 000 kr som nyexaminerad upp till 45 000 kr/mån för erfarna bemanningsundersköterskor. I kommunen ligger snittet på cirka 29 500 kr, i regionen cirka 30 000 kr och i privat sektor 32 000 – 33 000 kr.
+
+### Ingångslön undersköterska 2026 — vad får du som nyexaminerad?
+Som nyexaminerad från Vård- och omsorgsprogrammet ligger ingångslönen 2026 på **26 000 – 28 000 kr/mån**. Lönen sätts individuellt och påverkas av tidigare arbetslivserfarenhet, språkkunskaper och var i landet du söker jobb — storstadsregioner ligger ofta högre.
+
 ---
 
 **Läs mer:**
@@ -113,4 +119,4 @@ En kommunalt anställd undersköterska tjänar i snitt **29 500 kr/mån** (brutt
 - [Lön efter skatt 2026 — räkna ut din nettolön](/blogg/lon-efter-skatt-2026)
 - [Hemliga löneförhandlingstekniker — få högre lön](/blogg/hemliga-loneforhandlings-tekniker)
 
-*Källor: SCB (Statistiska centralbyrån), Socialstyrelsen, Kommunal. Senast uppdaterad: 11 augusti 2026.*
+*Källor: SCB (Statistiska centralbyrån), Socialstyrelsen, Kommunal. Senast uppdaterad: 17 augusti 2026.*
