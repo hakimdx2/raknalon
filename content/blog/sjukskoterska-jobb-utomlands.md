@@ -1,7 +1,7 @@
 ---
 title: "Jobba som Sjuksköterska Utomlands 2026: Den Kompletta Guiden"
 slug: sjukskoterska-jobb-utomlands
-date: 2026-08-10
+date: 2026-08-19
 category: Karriär
 meta_description: "Vad tjänar en sjuksköterska i Danmark, Norge eller Australien 2026? Se löner, licensiering och steg-för-steg guide för att jobba utomlands."
 keywords: ["sjuksköterska utomlands", "sjuksköterska lön danmark", "vad tjänar en sjuksköterska i danmark", "sjuksköterska jobb utomlands", "sjuksköterska norge lön", "sjuksköterska utomlands lön"]
@@ -336,4 +336,4 @@ Du har kunskapen. Du har erfarenheten. Världen väntar.
 
 [Läs om att jobba som sjuksköterska i Sverige](/blogg/jobba-som-sjukskoterska)
 
-*Källor: SCB, Helsedirektoratet, Styrelsen for Patientsikkerhed, Danske Regioner, Dignus Medical, Socialstyrelsen. Senast uppdaterad: 10 augusti 2026.*
+*Källor: SCB, Helsedirektoratet, Styrelsen for Patientsikkerhed, Danske Regioner, Dignus Medical, Socialstyrelsen. Senast uppdaterad: 19 augusti 2026.*

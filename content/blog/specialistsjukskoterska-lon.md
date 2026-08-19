@@ -1,13 +1,14 @@
 ---
 title: "Specialistsjuksköterska 2026: Löner, Utbildningar & Karriärvägar"
 slug: specialistsjukskoterska-lon-2026
-date: 2026-07-30
+date: 2026-08-19
 category: Karriär
 meta_description: "Vilken specialistsjuksköterska tjänar mest 2026? Se löner för anestesi, operation, IVA och distrikt. Guide till 18 specialistutbildningar och 7-stegsmodellen."
 keywords: ["specialistsjuksköterska lön", "vilken specialistsjuksköterska tjänar mest", "specialistsjuksköterska utbildning", "anestesisjuksköterska lön", "operationssjuksköterska lön"]
 image: /img/blog/sjukskoterska_specialist_hero.png
 image_license: unsplash
 potential_score: 68
+status: published
 ---
 
 *"Efter min specialisering till anestesi ökade min lön med 8 000 kr i månaden. Det var de bästa 1,5 åren jag lagt på utbildning."*
@@ -292,4 +293,4 @@ Redo att ta nästa steg i karriären? Med 900+ nya specialister som behövs varj
 
 ---
 
-*Källor: SCB, Vårdförbundet, regionslönestatistik. Senast uppdaterad: 30 juli 2026.*
+*Källor: SCB, Vårdförbundet, regionslönestatistik. Senast uppdaterad: 19 augusti 2026.*

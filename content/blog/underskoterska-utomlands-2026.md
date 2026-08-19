@@ -7,6 +7,7 @@ date: 2026-08-18
 category: Karriär
 image: /img/blog/underskoterska-utomlands-2026.jpg
 image_license: unsplash
+status: published
 ---
 
 ## The Golden Opportunity: Norge als löneökning på 44%
