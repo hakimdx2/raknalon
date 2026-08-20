@@ -1,7 +1,7 @@
 ---
 title: "Utbildning till Sjuksköterska 2026: Krav, Längd & Antagning"
 slug: utbildning-sjukskoterska-2026
-date: 2026-08-01
+date: 2026-08-20
 category: Utbildning
 status: published
 meta_description: "Antagningspoäng sjuksköterska 2026 — se aktuella krav för Karolinska, Göteborg, Uppsala och fler. Behörighet, distansstudier och alternativa vägar."
@@ -97,7 +97,7 @@ Du behöver gymnasiebehörighet med Matematik 2, Naturkunskap 2 och Samhällskun
 Ja, flera universitet erbjuder distansutbildning. Praktiken (VFU) sker dock alltid på plats.
 
 ### Antagningspoäng sjuksköterska 2026
-Antagningspoängen för sjuksköterskeprogrammet varierar mellan lärosäten. För hösten 2025 låg betygsgränsen (BI) på 19.85 för Karolinska Institutet, 18.80 för Göteborgs universitet och 17.50 för Malmö universitet. Mindre konkurrerande lärosäten som Högskolan Väst hade gränser ner till 14.10. Poängen för 2026 publiceras på [Antagning.se](https://www.antagning.se) efter urval 1 i juli.
+Antagningspoängen för sjuksköterskeprogrammet varierar mellan lärosäten. För hösten 2025 låg betygsgränsen (BI) på 19.85 för Karolinska Institutet, 18.80 för Göteborgs universitet och 17.50 för Malmö universitet. Mindre konkurrerande lärosäten som Högskolan Väst hade gränser ner till 14.10. Preliminära antagningspoäng för hösten 2026 finns nu publicerade på [Antagning.se](https://www.antagning.se) (urval 1 publicerades i juli, urval 2 i slutet av juli).
 
 ### Vilka betyg behöver man för sjuksköterska?
 Det beror på lärosätet. På Karolinska krävs ca 19.85, men mindre konkurrerande skolor har lägre krav (ner till 14).
@@ -117,4 +117,4 @@ Vill du veta hur vardagen ser ut?
 
 ---
 
-*Källor: [Antagning.se](https://www.antagning.se) — antagningsstatistik hösten 2025, [Universitets- och högskolerådet (UHR)](https://www.uhr.se) — behörighetskrav 2026, [Skolverket](https://www.skolverket.se) — Komvux. Senast uppdaterad: 1 augusti 2026.*
+*Källor: [Antagning.se](https://www.antagning.se) — antagningsstatistik hösten 2025, [Universitets- och högskolerådet (UHR)](https://www.uhr.se) — behörighetskrav 2026, [Skolverket](https://www.skolverket.se) — Komvux. Senast uppdaterad: 20 augusti 2026.*
