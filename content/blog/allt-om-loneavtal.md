@@ -1,6 +1,6 @@
 ---
 title: "Allt om Löneavtal 2026 — Hur påverkas din lön av avtalsrörelsen?"
-date: 2026-08-02
+date: 2026-08-21
 slug: allt-om-loneavtal
 category: Lön och Karriär
 meta_description: "Komplett guide till löneavtal 2026: märket, lönepott, individuell lönesättning. Så fungerar avtalsrörelsen, kollektivavtal och ditt lönesamtal."
@@ -15,7 +15,7 @@ status: published
 
 Avtalsrörelsen 2025 är avslutad. Nya kollektivavtal är signerade. Märket är satt. Men vad betyder det egentligen för din lön? Och vad är en lönepott? Varför finns det något som kallas "märket" och varför verkar alla följa det?
 
-För många arbetstagare är avtalsörelsen något som händer långt borta – någonstans där facken och arbetsgivarorganisationerna förhandlar. Medan det pågår läser man ibland något i tidningen om att facken krävde fyra procent och arbetsgivarna ville ge två procent, och att medlaren försöker få dem att komma överens.
+För många arbetstagare är avtalsrörelsen något som händer långt borta – någonstans där facken och arbetsgivarorganisationerna förhandlar. Medan det pågår läser man ibland något i tidningen om att facken krävde fyra procent och arbetsgivarna ville ge två procent, och att medlaren försöker få dem att komma överens.
 
 Men sanningen är att avtalsrörelsen påverkar din lön mycket direkt. För även om du själv inte är direkt inblandad i förhandlingarna, påverkar resultatet av avtalsrörelsen vilken lönepott som finns att fördela på din arbetsplats, vilka lägstalöner som gäller, och vilka standarder som ställs på lönesamtal.
 
@@ -150,7 +150,7 @@ Det kan också ge arbetsgivaren mer flexibilitet i lönebildningen. Istället f�
 
 Men forskning visar också att individuell lönesättning kan ha betydande nackdelar. Studier från arbetspsykologi visar att **godtycklig individuell lönesättning ofta ökar sjukfrånvaron och personalomsättningen**. Arbetstagare blir frustrerade när de inte förstår varför de får mindre löneökning än kollegor, eller när de upplever att löneökningen inte motsvarar deras prestation.
 
-Individuell lönesättning kan också undergräva **arbetarsolidaritet**. När löner är hemliga och varje person konkurrerar mot varandra om ett begränsat päron blir det svårare för arbetstagare att organisera sig tillsammans. Det kan också göra att arbetstagare inte berättar om missförhållanden på jobbet – de frågade sig kanske om det påverkar deras löneökning negativt.
+Individuell lönesättning kan också undergräva **arbetarsolidaritet**. När löner är hemliga och varje person konkurrerar mot varandra om en begränsad lönepott blir det svårare för arbetstagare att organisera sig tillsammans. Det kan också göra att arbetstagare inte berättar om missförhållanden på jobbet – de frågade sig kanske om det påverkar deras löneökning negativt.
 
 En annan risk är att arbetsgivare belönar det som är lätt att mäta, inte det som är viktigast. En lärare kan till exempel bli belönad för höga testresultat, även om det bästa för eleverna vore mer fokus på välutvecklad undervisning och stöd till svaga elever. En sjuksköterska kan bli belönad för antal patienter behandlad, även om det bästa vore högre kvalitet på omvårdnaden.
 
@@ -262,7 +262,7 @@ Det finns också skillnader mellan olika regioner. Löner i Stockholm och andra 
 
 ## Om din arbetsplats saknar kollektivavtal
 
-Om du arbetar på en arbetsplats som saknar kollektivavtal är situationen annorlunda. Det finns omkring **500 000 menneskor** i Sverige som arbetar på arbetsplatser utan kollektivavtal – ungefär 10 procent av alla anställda.
+Om du arbetar på en arbetsplats som saknar kollektivavtal är situationen annorlunda. Det finns omkring **500 000 människor** i Sverige som arbetar på arbetsplatser utan kollektivavtal – ungefär 10 procent av alla anställda.
 
 ### Vilka risker finns?
 
@@ -369,4 +369,4 @@ Läs mer om lön och karriär i Sverige på dessa sidor:
 
 **Viktiga källor för denna artikel:**
 
-Denna artikel bygger på information från Medlingsinstitutet, Konjunkturinstitutet, IF Metall, Unionen, Kommunal, Svenskt Näringsliv, och andra officiella källor om Sveriges arbetsmarknad och lönebildning. Senast uppdaterad: 2 augusti 2026.
+Denna artikel bygger på information från Medlingsinstitutet, Konjunkturinstitutet, IF Metall, Unionen, Kommunal, Svenskt Näringsliv, och andra officiella källor om Sveriges arbetsmarknad och lönebildning. Senast uppdaterad: 21 augusti 2026.

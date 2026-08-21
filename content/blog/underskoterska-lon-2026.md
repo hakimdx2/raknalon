@@ -1,7 +1,7 @@
 ---
 title: "Undersköterska Lön 2026: Lönestatistik och Framtidsutsikter"
 slug: underskoterska-lon-2026
-date: 2026-08-17
+date: 2026-08-21
 category: Lön och Karriär
 meta_description: "Vad tjänar en undersköterska 2026? Se aktuell lönestatistik, ingångslöner och löneskillnader mellan kommun och region. Räkna ut din lön efter skatt."
 keywords: ["undersköterska lön", "undersköterska lön 2026", "lönestatistik undersköterska", "ingångslön undersköterska", "vad tjänar en undersköterska"]
@@ -111,6 +111,9 @@ En undersköterska i Sverige tjänar i genomsnitt **31 500 kr/mån** (brutto) 20
 ### Ingångslön undersköterska 2026 — vad får du som nyexaminerad?
 Som nyexaminerad från Vård- och omsorgsprogrammet ligger ingångslönen 2026 på **26 000 – 28 000 kr/mån**. Lönen sätts individuellt och påverkas av tidigare arbetslivserfarenhet, språkkunskaper och var i landet du söker jobb — storstadsregioner ligger ofta högre.
 
+### Undersköterska lön sjukhus 2026 — vad tjänar man i regionen?
+En undersköterska som arbetar på sjukhus (inom en region) tjänar i snitt **30 000 kr/mån** (brutto) 2026. Lönen varierar mellan cirka 28 000 kr som nyexaminerad och upp till 33 000 kr med erfarenhet och specialistkompetens. På sjukhus tillkommer ofta OB-tillägg för kvällar, nätter och helger, vilket kan höja månadsinkomsten med 3 000 – 6 000 kr. Jämfört med kommunen (ca 29 500 kr) är sjukhuslönen något högre, och du får mer erfarenhet av avancerad sjukvård inom regionen.
+
 ---
 
 **Läs mer:**
@@ -119,4 +122,4 @@ Som nyexaminerad från Vård- och omsorgsprogrammet ligger ingångslönen 2026 p
 - [Lön efter skatt 2026 — räkna ut din nettolön](/blogg/lon-efter-skatt-2026)
 - [Hemliga löneförhandlingstekniker — få högre lön](/blogg/hemliga-loneforhandlings-tekniker)
 
-*Källor: SCB (Statistiska centralbyrån), Socialstyrelsen, Kommunal. Senast uppdaterad: 17 augusti 2026.*
+*Källor: SCB (Statistiska centralbyrån), Socialstyrelsen, Kommunal. Senast uppdaterad: 21 augusti 2026.*
