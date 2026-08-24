@@ -1,7 +1,7 @@
 ---
 title: Arbetslöshet & A-kassa 2026 - Din kompletta guide till trygghet
-date: 2026-08-03
-slug: arbetsloshet-akassa-2026-guide
+date: 2026-08-24
+slug: arbetsloshet-akassa-guide
 status: published
 category: Lön och Karriär
 keywords: [a-kassa, arbetslöshet, försäkring, trygghet, ekonomi, inkomstförsäkring, arbetslöshetsersättning]
@@ -318,7 +318,7 @@ En sak som många är förvånad över är hur mycket skatt man betalar på a-ka
 
 ### Hur beskattas a-kassan?
 
-A-kassan är **skattepliktig inkomst**. Du betalar skatt på ersättningen från a-kassan precis som på vanlig lön.
+A-kassan är **skattepliktig inkomst**. Du betalar skatt på ersättningen från a-kassan precis som på vanlig lön. För att se exakt hur mycket du får kvar i plånboken på olika lönenivåer, läs vår guide om [lön efter skatt 2026](/blogg/lon-efter-skatt-2026).
 
 Skatten dras automatiskt från din a-kassaersättning enligt din skattetabell. Din a-kassa rapporterar också din a-kassainkomst till Skatteverket.
 
@@ -400,4 +400,4 @@ För att läsa mer om lön och ekonomi i Sverige kan du kolla:
 
 ---
 
-*Källor: Arbetsförmedlingen, Sveriges a-kassor, LO, TCO, Saco, Inspektionen för arbetslöshetsförsäkringen (IAF), Försäkringskassan, Skatteverket. Siffror uppdaterade för 2026. Senast uppdaterad: 3 augusti 2026.*
+*Källor: Arbetsförmedlingen, Sveriges a-kassor, LO, TCO, Saco, Inspektionen för arbetslöshetsförsäkringen (IAF), Försäkringskassan, Skatteverket. Siffror uppdaterade för 2026. Senast uppdaterad: 24 augusti 2026.*
