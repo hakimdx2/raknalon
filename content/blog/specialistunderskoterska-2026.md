@@ -1,7 +1,7 @@
 ---
 title: "Specialistundersköterska 2026: Din Väg till Högre Lön och Specialkompetens"
 slug: specialistunderskoterska-2026
-date: 2026-08-10
+date: 2026-08-25
 category: Karriär
 meta_description: "Vill du höja din lön och ta nästa steg i karriären? Läs allt om att bli specialistundersköterska 2026, YH-utbildningar, löner och hur du pluggar med 80% lön."
 keywords: ["specialistundersköterska", "specialistundersköterska lön", "YH-utbildning undersköterska", "Silviasyster", "specialistundersköterska psykiatri", "omställningsstudiestöd undersköterska"]
@@ -104,6 +104,9 @@ Ansökningsperioden är ofta **februari – april** med start i augusti/septembe
 ***
 
 ## FAQ om Specialistundersköterska
+### Specialistundersköterska lön kommunal — vad tjänar man i kommunen?
+En specialistundersköterska anställd av en kommun tjänar i regel **35 000 – 40 000 kr/mån** beroende på inriktning och erfarenhet, enligt löneläget 2026 (vissa inriktningar som akutsjukvård når upp mot 41 000 kr). Många kommuner ger ett lönepåslag på 2 000 – 4 000 kr direkt vid examen för att behålla specialister, men påslaget är inte garanterat centralt — det förhandlas ofta individuellt eller lokalt. Fackförbundet Kommunal har i avtalen 2025–2027 förhandlat fram löneökningar på 3,4 % (2025) och 3,0 % (2026) som även gäller specialistundersköterskor i offentlig sektor. Jämfört med regioner ligger kommunlönen ofta något lägre, men OB-tillägg och flexibel schemaläggning kan kompensera skillnaden. Kolla din kommuns lönepolicy eller [Kommunals lönestatistik](https://www.kommunal.se) för en exakt siffra.
+
 ### "Får jag automatiskt högre lön?"
 A: Inte automatiskt enligt lag, men det ger dig ett mycket starkt förhandlingsläge. Jämför med [grundlönerna för undersköterskor](/blogg/jobba-som-underskoterska-2026) för att se skillnaden. Många kommuner har infört lönepåslag för att behålla specialister. Fråga din chef *innan* du börjar plugga!
 
@@ -131,4 +134,4 @@ När löneökningen kommer — [förhandla som ett proffs](/blogg/hemliga-lonefo
 
 ---
 
-*Källor: [SCB](https://www.scb.se) — lönestatistik 2025 (publicerad våren 2026), [Kommunal](https://www.kommunal.se) — yrke och utbildning, [Yrkeshögskolan](https://www.yrkeshogskolan.se), [CSN — Omställningsstudiestödet](https://www.csn.se/bidrag-och-lan/studiestod/omstallningsstudiestod.html). Senast uppdaterad: 10 augusti 2026.*
+*Källor: [SCB](https://www.scb.se) — lönestatistik 2025 (publicerad våren 2026), [Kommunal](https://www.kommunal.se) — yrke och utbildning, [Yrkeshögskolan](https://www.yrkeshogskolan.se), [CSN — Omställningsstudiestödet](https://www.csn.se/bidrag-och-lan/studiestod/omstallningsstudiestod.html). Senast uppdaterad: 25 augusti 2026.*

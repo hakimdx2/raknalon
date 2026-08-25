@@ -1,18 +1,16 @@
 ---
 title: "Jobba som Undersköterska 2026: Allt om Lön, Utbildning & Skyddad Titel"
-date: 2026-08-03
+date: 2026-08-25
 slug: jobba-som-underskoterska-2026
 status: published
 meta_description: "Snittlön undersköterska 2026: komplett guide till lön, utbildning, skyddad titel och framtidsutsikter. Genomsnittslön 33 100 kr, ingångslön 25 000 kr."
 keywords: ["undersköterska lön 2026", "snittlön undersköterska", "undersköterska utbildning", "skyddad yrkestitel"]
 image_license: "Unsplash"
 potential_score: 62
-status: "published"
 category: "Karriär"
 image: "/img/blog/jobba-som-underskoterska-2026.jpg"
 ---
 
-## Featured Snippet
 En undersköterska är en yrkesperson som utför praktisk omvårdnad inom sjukvård, hemsjukvård, äldreomsorg och hemtjänst. Yrket innebär att assistera patienter och brukare med personlig hygien, måltider, mobilitet och medicintilldelning under ledning av sjuksköterskan eller läkaren. Från juli 2023 är undersköterska en skyddad yrkestitel i Sverige som kräver formell utbildning och registrering hos Socialstyrelsen.
 
 ***
@@ -339,4 +337,4 @@ Undersköterska 2026 är ett **stabilt, efterfrågat och meningsfullt yrke** –
 ## Referenser och Myndighetskällor
 Den här guiden baseras på officiell statistik från Socialstyrelsen, Statistiska centralbyrån (SCB), Arbetsförmedlingen, Kommunal och branschorganisationer. Lönedata kommer från SCB:s officiella statistik uppdaterad till 2024-2025, och kollektivavtal från 2025-2027 är bekräftade genom Kommunal och Arbetsgivaralliansen.
 
-*Källor: SCB (lönestatistik 2024, publicerad våren 2025), Alla Löner, Socialstyrelsen, Kommunal, Arbetsgivaralliansen, Arbetsförmedlingen. Senast uppdaterad: 3 augusti 2026.*
+*Källor: SCB (lönestatistik 2024, publicerad våren 2025), Alla Löner, Socialstyrelsen, Kommunal, Arbetsgivaralliansen, Arbetsförmedlingen. Senast uppdaterad: 25 augusti 2026.*
